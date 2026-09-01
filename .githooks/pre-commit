@@ -1,0 +1,29 @@
+#!/bin/sh
+# Trava de sigilo e de consistência. Instalar com: sh scripts/instalar-hooks.sh
+#
+# O .gitignore não segura `git add -f`, e o deny de Read no settings.json não
+# alcança o Bash. Esta é a única trava que vale para os dois casos: nada sob
+# privado/ chega a um commit, com ou sem -f.
+set -e
+
+vazado=$(git diff --cached --name-only --diff-filter=ACMR \
+         | grep -E '^privado/|(^|/)painel-processual|\.prazos\.json$' || true)
+if [ -n "$vazado" ]; then
+  echo "COMMIT BLOQUEADO — sigilo profissional." >&2
+  echo "Estes caminhos não entram em commit:" >&2
+  echo "$vazado" | sed 's/^/  ✗ /' >&2
+  echo "" >&2
+  echo "Retire do índice: git restore --staged <caminho>" >&2
+  echo "Se você usou 'git add -f', foi exatamente isto que o hook existe para pegar." >&2
+  exit 1
+fi
+
+# Derivados de base/teses.json têm de estar em dia — senão o mapa e o portal
+# divergem, que foi o problema que a geração veio resolver.
+if git diff --cached --name-only | grep -qE '^base/teses\.json$|^base/mapa-de-teses\.md$|^portal/'; then
+  python3 scripts/gerar.py --check >&2 || {
+    echo "" >&2
+    echo "Rode 'python3 scripts/gerar.py' e inclua os derivados no commit." >&2
+    exit 1
+  }
+fi

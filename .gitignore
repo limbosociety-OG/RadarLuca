@@ -1,0 +1,11 @@
+# Sigilo profissional — nada daqui entra em commit
+privado/
+*.prazos.json
+painel-processual*.json
+
+# Saída de render e ambiente
+pecas/**/saida/
+__pycache__/
+.venv/
+.DS_Store
+node_modules/

@@ -1,0 +1,108 @@
+{
+  "peca": "iptu-tema-1455",
+  "verificacao": {
+    "processo":   { "valor": "ARE 1.593.784/SC", "estado": "confirmado", "fonte": "portal.stf.jus.br", "data": "2026-08-20" },
+    "tema":       { "valor": "Tema 1.455 RG", "estado": "confirmado", "fonte": "portal.stf.jus.br", "data": "2026-08-20" },
+    "orgao":      { "valor": "Plenário Virtual", "estado": "confirmado", "fonte": "portal.stf.jus.br", "data": "2026-08-20" },
+    "julgamento": { "valor": "05.08.2026", "estado": "confirmado", "fonte": "portal.stf.jus.br", "data": "2026-08-20" },
+    "acordao":    { "valor": "14.08.2026", "estado": "confirmado", "fonte": "DJe", "data": "2026-08-20" },
+    "embargos":   { "valor": "prazo em curso", "estado": "confirmado", "fonte": "andamento", "data": "2026-08-20" },
+    "modulacao":  { "valor": "ausente no acórdão", "estado": "confirmado", "fonte": "inteiro teor", "data": "2026-08-20" }
+  },
+  "slides": [
+    {
+      "tema": "escuro", "capa": true,
+      "eyebrow_esq": "RADAR TRIBUTÁRIO", "eyebrow_dir": "STF · TEMA 1.455",
+      "blocos": [
+        { "tipo": "kicker", "texto": "Julgado em 05.08.2026 — unânime" },
+        { "tipo": "manchete", "texto": "Seu IPTU foi calculado pelo tamanho do imóvel?", "filete": true },
+        { "tipo": "paragrafo", "texto": "O Supremo decidiu que essa cobrança é inconstitucional. A decisão vale para trás — e o prazo para discutir os anos já pagos corre agora." }
+      ]
+    },
+    {
+      "tema": "claro",
+      "eyebrow_esq": "01 — O que foi decidido", "eyebrow_dir": "ARE 1.593.784",
+      "blocos": [
+        { "tipo": "manchete", "texto": "A tese fixada, na letra." },
+        { "tipo": "regua" },
+        { "tipo": "citacao", "texto": "É inconstitucional a fixação, por lei municipal posterior à EC nº 29/2000, de alíquota do IPTU em razão da área do imóvel." },
+        { "tipo": "mono", "texto": "STF, Plenário Virtual, ARE 1.593.784/SC — Tema 1.455 de repercussão geral.\nRel. Min. Dias Toffoli · julgado em 05.08.2026 · acórdão publicado em 14.08.2026.\nDecisão unânime, com repercussão geral: vincula todos os tribunais do país." }
+      ]
+    },
+    {
+      "tema": "claro",
+      "eyebrow_esq": "02 — Traduzindo", "eyebrow_dir": "METRAGEM ≠ RIQUEZA",
+      "blocos": [
+        { "tipo": "manchete", "texto": "Metro quadrado não mede capacidade de pagar.", "filete": true },
+        { "tipo": "paragrafo", "texto": "Muitos municípios criaram faixas: **passou de tantos metros, a alíquota sobe.** Chapecó (SC), o caso julgado, cobrava 1% dos imóveis a partir de 400 m²." },
+        { "tipo": "paragrafo", "texto": "O problema é aritmético antes de ser jurídico." },
+        { "tipo": "duo", "colunas": [
+          { "rotulo": "Galpão na periferia", "numero": "3.000 m²", "texto": "Área grande, valor por metro baixo.", "tag": "pagava mais", "tom": "alerta" },
+          { "rotulo": "Apartamento na orla", "numero": "120 m²", "texto": "Área pequena, valor por metro alto.", "tag": "pagava menos", "tom": "ok" }
+        ] }
+      ]
+    },
+    {
+      "tema": "claro",
+      "eyebrow_esq": "03 — O limite exato", "eyebrow_dir": "CF, ART. 156, §1º",
+      "blocos": [
+        { "tipo": "manchete", "texto": "O que caiu foi a alíquota. Não o imposto." },
+        { "tipo": "regua" },
+        { "tipo": "caixas", "itens": [
+          { "rotulo": "Continua válido", "tom": "ok", "linhas": [
+            "Alíquota maior conforme o **valor venal** do imóvel — progressividade.",
+            "Alíquota diferente conforme **localização e uso** — seletividade.",
+            "A área entrar na conta do **valor** do imóvel."
+          ] },
+          { "rotulo": "Não pode mais", "tom": "alerta", "linhas": [
+            "A **metragem**, sozinha, definir a alíquota.",
+            "Para o STF, é progressividade disfarçada de seletividade: área é dimensão, não é valor, não é localização, não é uso."
+          ] }
+        ] }
+      ]
+    },
+    {
+      "tema": "claro",
+      "eyebrow_esq": "04 — Como saber se te alcança", "eyebrow_dir": "TRÊS CHECAGENS",
+      "blocos": [
+        { "tipo": "manchete", "texto": "Três perguntas ao seu carnê.", "filete": true },
+        { "tipo": "numerada", "itens": [
+          { "titulo": "A alíquota muda por faixa de metros?", "texto": "Está na lei do município, normalmente na tabela anexa ao Código Tributário municipal. Se há degrau por m², é este o caso." },
+          { "titulo": "A lei é posterior ao ano 2000?", "texto": "A tese alcança lei municipal editada depois da Emenda Constitucional 29/2000." },
+          { "titulo": "Houve pagamento nos últimos cinco anos?", "texto": "Galpões, indústrias, lajes corporativas, terrenos e glebas urbanas são os mais expostos — mas residências grandes também entram." }
+        ] }
+      ]
+    },
+    {
+      "tema": "escuro",
+      "eyebrow_esq": "05 — O que ninguém falou", "eyebrow_dir": "MODULAÇÃO",
+      "blocos": [
+        { "tipo": "kicker", "texto": "O detalhe que decide o valor da tese" },
+        { "tipo": "manchete", "texto": "Não houve modulação de efeitos.", "filete": true },
+        { "tipo": "paragrafo", "texto": "Quando o Supremo *modula*, ele decide que a nova regra só vale daqui para frente — e o passado fica intocado, salvo para quem já discutia em juízo." },
+        { "tipo": "paragrafo", "texto": "**Nesse julgamento, isso não foi feito.** A inconstitucionalidade alcança o que já foi cobrado." },
+        { "tipo": "paragrafo", "texto": "O noticiário parou no “prefeitura não pode cobrar mais caro por imóvel grande”. A pergunta que importa é outra: **e o que já foi pago?**" }
+      ]
+    },
+    {
+      "tema": "claro",
+      "eyebrow_esq": "06 — A janela", "eyebrow_dir": "CTN, ART. 168",
+      "blocos": [
+        { "tipo": "manchete", "texto": "A decisão não devolve nada sozinha.", "filete": true },
+        { "tipo": "paragrafo", "texto": "Tese fixada é fundamento, não é pagamento. Para reaver o que foi cobrado a maior é preciso pedir — administrativa ou judicialmente. **Quem não pede, não recebe.**" },
+        { "tipo": "prazo", "vencidas": 1, "total": 6, "esq": "já prescrito", "centro": "cinco anos ainda discutíveis →", "dir": "hoje" },
+        { "tipo": "paragrafo", "texto": "O prazo é de cinco anos contados de cada pagamento. Ele não espera: **a cada mês, a parcela mais antiga sai da janela.** E municípios ainda podem pedir modulação em embargos — se ela vier, a tendência do STF é preservar quem já estava discutindo." }
+      ]
+    },
+    {
+      "tema": "escuro", "fecho": true,
+      "eyebrow_esq": "07 — O que fica", "eyebrow_dir": "RADAR TRIBUTÁRIO",
+      "blocos": [
+        { "tipo": "citacao", "texto": "O direito já existia antes do julgamento. O que o Supremo fez foi tirar a dúvida. Quem decide o resultado, agora, é o calendário." },
+        { "tipo": "regua" },
+        { "tipo": "paragrafo", "texto": "Quando o IPTU de um imóvel é calculado por faixa de metragem, a leitura começa em dois documentos: a lei do município e os últimos cinco carnês." },
+        { "tipo": "mono", "texto": "Conteúdo informativo, sem análise de caso concreto. Cada município tem legislação própria: a aplicação da tese depende do texto local e da situação do imóvel.\nPublicação de caráter técnico, nos termos do Provimento 205/2021 da OAB." }
+      ]
+    }
+  ]
+}

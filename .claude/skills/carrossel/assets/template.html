@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+__FONTFACE__
+
+:root{
+  /* fundos — amostrados dos PNGs da peça do Tema 1.455 */
+  --escuro:#17181D;
+  --claro:#E6E9EE;
+  /* tinta */
+  --tinta:#14161B;      --tinta2:#4A515C;   --tinta3:#7B828D;
+  --papel:#E8EAEF;      --papel2:#A9AFBA;   --papel3:#767C88;
+  /* acentos */
+  --indigo:#1F2A5E;     --lavanda:#8B92C6;  --coral:#C08D89;
+  --alerta:#A32B22;     --alerta-bg:#F7E9E8; --alerta-brd:#C24A40;
+  --ok:#1C5A44;         --ok-bg:#E3EDE6;
+  /* tipografia */
+  --didone:'Bodoni Moda',Didot,'Times New Roman',serif;
+  --corpo:'Spectral',Georgia,serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#555}
+
+.slide{
+  position:relative; width:1080px; height:1350px; overflow:hidden;
+  padding:74px 88px 66px; display:flex; flex-direction:column;
+  font-family:var(--corpo); -webkit-font-smoothing:antialiased;
+}
+/* granulado: a peça original tem textura, sem ela o fundo chapa */
+.slide::before{
+  content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='0.5'/></svg>");
+}
+.slide.escuro{background:var(--escuro); color:var(--papel)}
+.slide.escuro::before{opacity:.055; mix-blend-mode:screen}
+.slide.claro{background:var(--claro); color:var(--tinta)}
+.slide.claro::before{opacity:.05; mix-blend-mode:multiply}
+.slide>*{position:relative; z-index:1}
+
+/* ---------- cabeçalho ---------- */
+.topo{display:flex; justify-content:space-between; align-items:baseline;
+      font-family:var(--mono); font-size:15.5px; letter-spacing:.19em; text-transform:uppercase}
+.escuro .topo .esq{color:var(--papel3)} .escuro .topo .dir{color:var(--lavanda)}
+.claro  .topo .esq{color:var(--tinta3)} .claro  .topo .dir{color:var(--indigo)}
+.fio{height:1px; margin-top:20px}
+.escuro .fio{background:#33353C} .claro .fio{background:#C9CED6}
+
+/* ---------- miolo ---------- */
+.miolo{flex:1; display:flex; flex-direction:column; justify-content:center; padding:52px 0}
+.miolo.topo-alinhado{justify-content:flex-start; padding-top:62px}
+.bloco+.bloco{margin-top:30px}
+
+.kicker{font-family:var(--mono); font-size:16px; letter-spacing:.2em;
+        text-transform:uppercase; margin-bottom:26px}
+.escuro .kicker{color:var(--coral)} .claro .kicker{color:var(--indigo)}
+
+h1{font-family:var(--didone); font-weight:700; font-size:66px; line-height:1.08;
+   letter-spacing:-.012em}
+.capa h1{font-size:82px; line-height:1.06}
+h1.curta{font-size:78px}
+
+.filete{width:96px; height:4px; margin:28px 0 36px}
+.escuro .filete{background:var(--lavanda)} .claro .filete{background:var(--indigo)}
+.regua{height:1px; margin:30px 0}
+.escuro .regua{background:#33353C} .claro .regua{background:#C9CED6}
+
+p.corpo{font-size:25px; line-height:1.52}
+.escuro p.corpo{color:#CBD0D8} .claro p.corpo{color:var(--tinta2)}
+p.corpo b{font-weight:600}
+.escuro p.corpo b{color:var(--papel)} .claro p.corpo b{color:var(--tinta)}
+p.corpo+p.corpo{margin-top:22px}
+
+blockquote{border-left:4px solid; padding-left:32px; font-style:italic;
+           font-size:33px; line-height:1.4; font-family:var(--corpo)}
+.escuro blockquote{border-color:var(--lavanda); color:var(--papel)}
+.claro blockquote{border-color:var(--indigo); color:var(--tinta)}
+
+.mono{font-family:var(--mono); font-size:15px; line-height:1.75; white-space:pre-line;
+      letter-spacing:.01em}
+.escuro .mono{color:var(--papel3)} .claro .mono{color:var(--tinta3)}
+
+/* ---------- duo ---------- */
+.duo{display:grid; grid-template-columns:1fr 1fr; gap:0; border-top:1px solid;
+     border-bottom:1px solid}
+.escuro .duo{border-color:#33353C} .claro .duo{border-color:#C9CED6}
+.duo>div{padding:36px 34px}
+.duo>div+div{border-left:1px solid}
+.escuro .duo>div+div{border-color:#33353C} .claro .duo>div+div{border-color:#C9CED6}
+.duo .rot{font-family:var(--mono); font-size:14.5px; letter-spacing:.17em;
+          text-transform:uppercase; margin-bottom:16px}
+.escuro .duo .rot{color:var(--papel3)} .claro .duo .rot{color:var(--tinta3)}
+.duo .num{font-family:var(--didone); font-weight:700; font-size:60px; line-height:1;
+          margin-bottom:14px}
+.duo .txt{font-size:22px; line-height:1.45}
+.escuro .duo .txt{color:#CBD0D8} .claro .duo .txt{color:var(--tinta2)}
+.tag{display:inline-block; margin-top:18px; font-family:var(--mono); font-size:15px;
+     padding:5px 11px}
+.tag.alerta{background:var(--alerta-bg); color:var(--alerta)}
+.tag.ok{background:var(--ok-bg); color:var(--ok)}
+
+/* ---------- caixas ---------- */
+.caixa{padding:32px 34px}
+.caixa+.caixa{margin-top:22px}
+.caixa.ok{background:#F2F4F6}
+.escuro .caixa.ok{background:#1E2027}
+.caixa.alerta{background:var(--alerta-bg); border:1px solid var(--alerta-brd)}
+.escuro .caixa.alerta{background:#241B1C; border-color:#7A3A34}
+.caixa .rot{font-family:var(--mono); font-size:15px; letter-spacing:.17em;
+            text-transform:uppercase; margin-bottom:18px}
+.caixa.ok .rot{color:var(--ok)} .caixa.alerta .rot{color:var(--alerta)}
+.caixa p{font-size:24px; line-height:1.46}
+.escuro .caixa p{color:#CBD0D8} .claro .caixa p{color:var(--tinta2)}
+.caixa p b{font-weight:600}
+.claro .caixa p b{color:var(--tinta)} .escuro .caixa p b{color:var(--papel)}
+.caixa p+p{margin-top:12px}
+
+/* ---------- numerada ---------- */
+.item{display:grid; grid-template-columns:78px 1fr; padding:28px 0; border-top:1px solid}
+.escuro .item{border-color:#33353C} .claro .item{border-color:#C9CED6}
+.item:last-child{border-bottom:1px solid}
+.escuro .item:last-child{border-color:#33353C} .claro .item:last-child{border-color:#C9CED6}
+.item .n{font-family:var(--mono); font-size:17px; padding-top:10px}
+.escuro .item .n{color:var(--lavanda)} .claro .item .n{color:var(--indigo)}
+.item h2{font-family:var(--didone); font-weight:700; font-size:34px; line-height:1.15;
+         margin-bottom:10px}
+.item p{font-size:22px; line-height:1.45}
+.escuro .item p{color:#CBD0D8} .claro .item p{color:var(--tinta2)}
+
+/* ---------- prazo ---------- */
+.prazo{display:flex; border:1px solid; height:78px; margin:6px 0 0}
+.escuro .prazo{border-color:#4A4D56} .claro .prazo{border-color:var(--tinta)}
+.prazo i{flex:1; border-right:1px solid}
+.escuro .prazo i{border-color:#4A4D56} .claro .prazo i{border-color:var(--tinta)}
+.prazo i:last-child{border-right:none}
+.prazo i.viva{background:var(--ok-bg)}
+.prazo i.morta{background-image:repeating-linear-gradient(45deg,transparent,transparent 7px,#3A3D45 7px,#3A3D45 8px)}
+.prazo-rot{display:flex; justify-content:space-between; font-family:var(--mono);
+           font-size:15px; letter-spacing:.1em; margin-top:12px}
+.escuro .prazo-rot{color:var(--papel3)} .claro .prazo-rot{color:var(--tinta3)}
+
+/* ---------- story 1080x1920 ---------- */
+/* A moldura do Instagram cobre ~230px no topo e ~210px na base. O padding do
+   story existe para manter manchete e microtipografia fora dessa faixa — não é
+   respiro estético, é a área que o app não come. */
+.slide.story{width:1080px; height:1920px; padding:250px 88px 230px}
+.slide.story .miolo{padding:60px 0}
+.slide.story .topo{font-size:17px}
+.slide.story h1{font-size:76px}
+.slide.story h1.curta{font-size:88px}
+.slide.story.capa h1{font-size:92px}
+.slide.story p.corpo{font-size:29px; line-height:1.55}
+.slide.story blockquote{font-size:38px}
+.slide.story .mono{font-size:17px; line-height:1.8}
+.slide.story .kicker{font-size:18px}
+.slide.story .duo .num{font-size:66px}
+.slide.story .duo .txt{font-size:25px}
+.slide.story .caixa p{font-size:27px}
+.slide.story .item h2{font-size:38px}
+.slide.story .item p{font-size:25px}
+.slide.story .pe .marca{font-size:40px}
+.slide.story .filete{margin:32px 0 40px}
+
+/* ---------- rodapé ---------- */
+.pe{display:flex; justify-content:space-between; align-items:flex-end}
+.pe .marca{font-family:var(--didone); font-weight:700; font-size:36px; letter-spacing:-.01em}
+.pe .papel{font-family:var(--mono); font-size:15px; letter-spacing:.2em;
+           text-transform:uppercase; margin-top:6px}
+.escuro .pe .papel{color:var(--papel3)} .claro .pe .papel{color:var(--tinta3)}
+.pe .pag{font-family:var(--mono); font-size:16px; letter-spacing:.2em}
+.escuro .pe .pag{color:var(--papel3)} .claro .pe .pag{color:var(--tinta3)}
+.pe .pag.arraste{color:var(--lavanda)}
+</style></head><body>
+__SLIDES__
+</body></html>

@@ -1,0 +1,374 @@
+{
+  "versao": "2026-09-01",
+  "corte": "2026-09-01",
+  "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão — a edição é perdida na próxima geração.",
+  "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
+  "blocos": [
+    {
+      "id": "pis-cofins",
+      "nome": "PIS/Cofins — base de cálculo",
+      "titulo": "Base de cálculo do PIS/Cofins — as \"teses filhotes\" do Tema 69",
+      "nota": "O núcleo duro do contencioso da última década, e que precisa ser resolvido antes de o PIS/Cofins ser extinto em 2027. Estudar este bloco é estudar o conceito constitucional de faturamento.",
+      "acao": "Em todas essas teses o histórico do STF é de modulação restritiva (Tema 69: só quem já tinha ação ajuizada recuperou os cinco anos anteriores). A decisão de ajuizar preventivamente é anterior ao resultado do julgamento."
+    },
+    {
+      "id": "irpj-csll",
+      "nome": "IRPJ e CSLL",
+      "titulo": "IRPJ / CSLL",
+      "nota": "",
+      "acao": ""
+    },
+    {
+      "id": "reforma",
+      "nome": "Reforma — IBS/CBS",
+      "titulo": "Reforma tributária — IBS/CBS",
+      "nota": "O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurisprudência, mas já começou a produzir.",
+      "acao": "Frentes a vigiar: split payment, cashback, regimes específicos e diferenciados, creditamento e o desenho da não cumulatividade plena, contencioso administrativo do IBS (quem julga?), e a repartição federativa."
+    },
+    {
+      "id": "irpf",
+      "nome": "IRPF e dividendos",
+      "titulo": "Tributação da renda das pessoas físicas / dividendos",
+      "nota": "",
+      "acao": ""
+    },
+    {
+      "id": "indiretos",
+      "nome": "ICMS, ISS e indiretos",
+      "titulo": "ICMS / ISS / tributos indiretos",
+      "nota": "",
+      "acao": ""
+    },
+    {
+      "id": "processo",
+      "nome": "Processo e cobrança",
+      "titulo": "Processo tributário, contencioso e cobrança",
+      "nota": "",
+      "acao": "Pareceres de dispensa de contestação da PGFN são fonte subutilizada e de altíssimo valor prático: sinalizam teses já ganhas."
+    },
+    {
+      "id": "carf",
+      "nome": "CARF",
+      "titulo": "CARF — o que a Câmara Superior vem decidindo",
+      "nota": "",
+      "acao": ""
+    }
+  ],
+  "teses": [
+    {
+      "id": "t1", "bloco": "pis-cofins", "tribunal": "STF", "tema": "Tema 118", "processo": "RE 592.616",
+      "titulo": "ISS na base de cálculo do PIS/Cofins",
+      "resumo": "Desdobramento direto do Tema 69: se o ISS é mero ingresso transitório destinado ao município, não é faturamento.",
+      "status": "iminente",
+      "placar": { "c": 5, "f": 5, "p": 1 },
+      "placarNota": "5×5. Pendente o voto de desempate do Min. Fux. Retirado da pauta de 25/02/2026, sem nova data.",
+      "edai": "Janela aberta. Se houver modulação nos moldes do Tema 69, só recupera os cinco anos anteriores quem já tiver ação ajuizada. Levantar carteira de prestadores de serviço no lucro real e presumido.",
+      "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=118",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Confirmar no portal de RG se houve reinclusão em pauta depois de 25/02/2026."
+    },
+    {
+      "id": "t2", "bloco": "pis-cofins", "tribunal": "STF", "tema": "Tema 843", "processo": "RE 835.818",
+      "titulo": "Créditos presumidos de ICMS na base do PIS/Cofins",
+      "resumo": "Define os limites entre incentivo fiscal estadual e tributação federal. Impacto estimado de R$ 16,5 bi.",
+      "status": "curso", "placar": null, "placarNota": "", "edai": "",
+      "fonte": "@agenda", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Impacto estimado vem de fonte secundária. Conferir previsão de pauta."
+    },
+    {
+      "id": "t3", "bloco": "pis-cofins", "tribunal": "STF", "tema": "Imposto por dentro", "processo": "",
+      "titulo": "Exclusão do PIS/Cofins de suas próprias bases",
+      "resumo": "Repercussão geral reconhecida desde 2019, sem previsão de pauta. Impacto estimado de R$ 65,7 bi.",
+      "status": "curso", "placar": null, "placarNota": "", "edai": "",
+      "fonte": "https://fenacon.org.br/noticias/filhotes-da-tese-do-seculo-vao-dominar-pauta-dos-tribunais-em-2026/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Número do tema de RG não anotado. Localizar no portal do STF antes de qualquer uso."
+    },
+    {
+      "id": "t4", "bloco": "pis-cofins", "tribunal": "STJ", "tema": "Tema 1.372", "processo": "",
+      "titulo": "ICMS-DIFAL na base do PIS/Cofins",
+      "resumo": "Repetitivo com suspensão nacional, julgado pela 1ª Seção na sessão de 20/08/2026. O resultado e a redação da modulação ainda não foram conferidos no acórdão.",
+      "status": "afetado", "placar": null, "placarNota": "",
+      "edai": "Se a tese foi mesmo fixada com modulação a partir de 15/03/2017, o corte é praticamente inerte para quem ajuíza hoje: o quinquênio do art. 168 do CTN já ultrapassou a data. A aritmética precisa ser refeita contra o acórdão antes de virar peça.",
+      "fonte": "@agenda", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Sessão de 20/08/2026 realizada. Confirmar tese fixada, redação exata da modulação e alcance da suspensão no inteiro teor. Ver base/pendencias.md."
+    },
+    {
+      "id": "t5", "bloco": "pis-cofins", "tribunal": "STJ", "tema": "Tema 1.412", "processo": "",
+      "titulo": "Bonificações e descontos comerciais na base do PIS/Cofins",
+      "resumo": "Repetitivo afetado em 2026, com suspensão nacional ativa. Alcança varejo, atacado, indústria e distribuição — setores que negociam preço por bonificação de forma estrutural. Julgamento adiado.",
+      "status": "afetado", "placar": null, "placarNota": "", "edai": "",
+      "fonte": "@agenda", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Adiado. Confirmar nova data de julgamento e se a suspensão nacional segue ativa."
+    },
+    {
+      "id": "t6", "bloco": "pis-cofins", "tribunal": "STF", "tema": "ADC 98", "processo": "ADC 98",
+      "titulo": "Tese ampla da União: todos os tributos integrariam a base do PIS/Cofins",
+      "resumo": "Movimento estratégico da AGU capaz de esvaziar o Tema 118 e as demais filhotes de uma só vez, independentemente do placar no RE.",
+      "status": "iminente", "placar": null, "placarNota": "",
+      "edai": "É o maior risco sistêmico do bloco. Acompanhar semanalmente.",
+      "fonte": "https://blindagemfiscal.com.br/blog/a-exclusao-do-iss-da-base-de-calculo-do-pis-cofins-para-2026-analise-estrategica/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Fonte é blog de banca. Conferir a petição inicial e o andamento no portal do STF."
+    },
+    {
+      "id": "t7", "bloco": "irpj-csll", "tribunal": "STF", "tema": "Tema 1.401", "processo": "",
+      "titulo": "Trava dos 30% na extinção da pessoa jurídica",
+      "resumo": "O STF já validou a limitação anual. Aqui a particularidade é a extinção: o saldo não aproveitado se perde em definitivo, sem exercício futuro.",
+      "status": "curso", "placar": null, "placarNota": "",
+      "edai": "Relevante em liquidações, incorporações e reorganizações com ativo fiscal acumulado.",
+      "fonte": "@agenda", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Confirmar número do RE e previsão de pauta."
+    },
+    {
+      "id": "t8", "bloco": "irpj-csll", "tribunal": "STJ", "tema": "Tema 1.416", "processo": "",
+      "titulo": "Créditos presumidos de ICMS nas bases de IRPJ e CSLL",
+      "resumo": "Antes e depois da Lei 14.789/2023. Repetitivo com suspensão nacional. Testa a sobrevivência do EREsp 1.517.492 sob o novo regime legal.",
+      "status": "afetado", "placar": null, "placarNota": "", "edai": "",
+      "fonte": "@agenda", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Confirmar alcance da suspensão e previsão de julgamento."
+    },
+    {
+      "id": "t9", "bloco": "irpj-csll", "tribunal": "STF", "tema": "RE 870.214", "processo": "RE 870.214",
+      "titulo": "Lucros de controladas em países com tratado de dupla tributação",
+      "resumo": "Julgamento dividido, aguardando retomada após pedido de vista. Afeta estruturas de investimento no exterior de grupos brasileiros.",
+      "status": "curso", "placar": null, "placarNota": "", "edai": "",
+      "fonte": "@agenda", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Confirmar se a vista foi devolvida e qual o placar parcial."
+    },
+    {
+      "id": "t10", "bloco": "irpj-csll", "tribunal": "STJ", "tema": "Tema 1.319", "processo": "",
+      "titulo": "JCP extemporâneo é dedutível",
+      "resumo": "Tese firmada e já acatada pela PGFN no Parecer SEI 1.391/2026, que dispensou a contestação.",
+      "status": "fixada", "placar": null, "placarNota": "",
+      "edai": "Tese madura. Não há mais litígio: é revisão de apuração de exercícios anteriores.",
+      "fonte": "https://news.fcrlaw.com.br/news/pgfn-adota-tese-do-stj-e-libera-deducao-de-jcp-de-exercicios-anteriores/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Ler o Parecer SEI 1.391/2026 na origem antes de usar. Fonte atual é secundária."
+    },
+    {
+      "id": "t11", "bloco": "irpj-csll", "tribunal": "STJ", "tema": "Tema 1.312", "processo": "",
+      "titulo": "PIS/Cofins na base do IRPJ e da CSLL no lucro presumido",
+      "resumo": "Acompanhar a definição da 1ª Seção.",
+      "status": "afetado", "placar": null, "placarNota": "", "edai": "",
+      "fonte": "@conjur", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Confirmar afetação e eventual suspensão."
+    },
+    {
+      "id": "t12", "bloco": "reforma", "tribunal": "RFB/CGIBS", "tema": "Ato Conjunto 4/2026", "processo": "",
+      "titulo": "Destaque obrigatório de IBS e CBS nos documentos fiscais",
+      "resumo": "Desde 03/08/2026 a NF-e do regime regular é rejeitada sem os campos de IBS e CBS, com alíquota-teste de 1% (0,9% CBS e 0,1% IBS). Cronograma faseado: novas fases em outubro e dezembro de 2026, Simples Nacional em janeiro de 2027.",
+      "status": "iminente", "placar": null, "placarNota": "",
+      "edai": "Risco operacional imediato: nota rejeitada trava faturamento. E o descumprimento faz perder a dispensa de recolhimento do período de teste.",
+      "fonte": "https://news.fcrlaw.com.br/news/receita-federal-e-comite-gestor-publicam-cronograma-para-notas-com-ibs-e-cbs/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Correção de prazo para 01/10/2026 noticiada. Conferir no texto do ato conjunto RFB/CGIBS. Ver base/pendencias.md."
+    },
+    {
+      "id": "t13", "bloco": "reforma", "tribunal": "STF", "tema": "LC 214/2025", "processo": "",
+      "titulo": "Alíquota zero de IBS e CBS em veículos para PcD e autistas",
+      "resumo": "A Corte declarou inconstitucionais as travas que limitavam o benefício aos casos severos ou profundos. Primeiro controle de constitucionalidade sobre a lei da reforma.",
+      "status": "fixada", "placar": null, "placarNota": "",
+      "edai": "Marco: o novo sistema começou a ser judicializado. Precedente de método para atacar restrições da LC 214.",
+      "fonte": "https://news.fcrlaw.com.br/news/stf-derruba-exigencia-de-gravidade-para-isencao-de-ibs-e-cbs-em-veiculos-para-pcd-e-autistas/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Localizar a classe e o número da ação e conferir a existência de modulação."
+    },
+    {
+      "id": "t14", "bloco": "reforma", "tribunal": "Legislação", "tema": "LC 224/2025", "processo": "",
+      "titulo": "Corte linear de benefícios fiscais e direito a crédito",
+      "resumo": "Corte de cerca de 10% em benefícios fiscais. Decisões de 1ª e 2ª instâncias vêm garantindo crédito de PIS/Cofins e IPI sobre a tributação residual, por violação à não cumulatividade. A Receita recuou quanto à ZFM na Nota Cosit 207/2026.",
+      "status": "curso", "placar": null, "placarNota": "",
+      "edai": "Frente jovem, com jurisprudência se formando em 1ª e 2ª instâncias — decisões não vinculantes. Bom momento para entrar, com a ressalva de que não há precedente obrigatório.",
+      "fonte": "https://news.fcrlaw.com.br/news/justica-garante-direito-a-creditos-apos-corte-de-beneficios-fiscais-pela-lc-224-2025/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Ler a Nota Cosit 207/2026 na origem."
+    },
+    {
+      "id": "t15", "bloco": "reforma", "tribunal": "CGIBS", "tema": "Resolução 14/2026", "processo": "",
+      "titulo": "Alíquota de referência estimada em 27,91% para 2033",
+      "resumo": "Resolução CGIBS nº 14, de 29/07/2026. Acima da projeção anterior de 26,5%. O valor não é definitivo e será revisto conforme as regras de calibragem.",
+      "status": "curso", "placar": null, "placarNota": "", "edai": "",
+      "fonte": "https://brasil61.com/n/reforma-tributaria-ibs-e-cbs-comecam-a-aparecer-nas-notas-fiscais-veja-como-sera-a-transicao-bras2616897",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Conferir o texto da Resolução 14/2026 no sítio do CGIBS."
+    },
+    {
+      "id": "t16", "bloco": "irpf", "tribunal": "TRF-4", "tema": "Lei 15.270/2025", "processo": "",
+      "titulo": "Proporcionalidade da retenção mensal de 10% sobre dividendos",
+      "resumo": "Retenção de 10% sobre lucros e dividendos acima de R$ 50 mil/mês, com ajuste anual progressivo de 0% a 10% entre R$ 600 mil e R$ 1,2 mi. Liminar do TRF-4 limitou a retenção mensal à alíquota anual projetada, por antecipação excessiva. Monocrática, provisória, inter partes.",
+      "status": "curso", "placar": null, "placarNota": "",
+      "edai": "A discussão migrou da existência da tributação para a proporcionalidade da antecipação. Tese nova, pouco povoada — e sem qualquer efeito vinculante.",
+      "fonte": "https://news.fcrlaw.com.br/news/trf-4-limita-retencao-mensal-de-ir-sobre-dividendos-a-aliquota-anual-estimada/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Status do recurso da PGFN e existência de decisões no mesmo sentido em outros tribunais. Pauta de alto apelo para sócios: não publicar sem o mapa de litigância atualizado. Ver base/pendencias.md."
+    },
+    {
+      "id": "t17", "bloco": "indiretos", "tribunal": "STF", "tema": "Tema 1.367", "processo": "",
+      "titulo": "Modulação da ADC 49 — transferência entre estabelecimentos",
+      "resumo": "A não incidência de ICMS na transferência entre estabelecimentos do mesmo titular produz efeitos a partir do exercício de 2024, ressalvados os processos pendentes até 29/04/2021.",
+      "status": "fixada", "placar": null, "placarNota": "", "edai": "",
+      "fonte": "https://www.trenchrossi.com/wp-content/uploads/2026/01/STF-e-STJ-Pauta-Tributaria-do-1o-semestre-2026.pdf",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Modulação: conferir a redação exata do dispositivo e o rol de ressalvas no inteiro teor."
+    },
+    {
+      "id": "t18", "bloco": "indiretos", "tribunal": "STJ", "tema": "Tema 1.304", "processo": "",
+      "titulo": "ICMS, PIS e Cofins permanecem na base do IPI",
+      "resumo": "A 1ª Seção recusou a extensão analógica do Tema 69 por materialidades distintas: os tributos são calculados por dentro e integram o valor da operação do art. 47, II, \"a\", do CTN.",
+      "status": "fixada", "placar": null, "placarNota": "",
+      "edai": "Derrota importante — serve de limite ao argumento de que toda tese filhote segue o Tema 69.",
+      "fonte": "@conjur", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Confirmar a redação da tese fixada nos repetitivos do STJ."
+    },
+    {
+      "id": "t19", "bloco": "indiretos", "tribunal": "STF", "tema": "Tema 1.348", "processo": "",
+      "titulo": "Imunidade de ITBI na integralização de capital por empresa imobiliária",
+      "resumo": "Discute se a imunidade do art. 156, §2º, I, da CF alcança a pessoa jurídica com atividade preponderantemente imobiliária.",
+      "status": "curso", "placar": { "c": 4, "f": 0, "p": 7 },
+      "placarNota": "4 votos pela imunidade incondicionada. Retomada após pedido de destaque.",
+      "edai": "Crítico para holdings patrimoniais e planejamento sucessório.",
+      "fonte": "@agenda", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Placar parcial vem de fonte secundária. Conferir no andamento antes de citar número de votos."
+    },
+    {
+      "id": "t20", "bloco": "indiretos", "tribunal": "STJ", "tema": "Tema 1.244", "processo": "",
+      "titulo": "PIS/Cofins-Importação sobre mercadorias do GATT destinadas à ZFM",
+      "resumo": "Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Pautado para a sessão de 20/08/2026; o resultado não foi confirmado.",
+      "status": "afetado", "placar": null, "placarNota": "", "edai": "",
+      "fonte": "@agenda", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Resultado da sessão de 20/08/2026 não confirmado. Ver base/pendencias.md."
+    },
+    {
+      "id": "t21", "bloco": "indiretos", "tribunal": "STF", "tema": "Tema 1.455", "processo": "ARE 1.593.784/SC",
+      "titulo": "Alíquota de IPTU fixada em razão da área do imóvel é inconstitucional",
+      "resumo": "Rel. Min. Dias Toffoli, Plenário Virtual, sessão encerrada em 05/08/2026, unânime, negado provimento ao recurso do município de Chapecó (LC municipal 639/2018, alíquota de 1% a partir de 400 m² de área construída). Tese: é inconstitucional a fixação, por lei municipal posterior à EC 29/2000, de alíquota do IPTU em razão da área do imóvel.",
+      "status": "fixada", "placar": null, "placarNota": "",
+      "edai": "Sem modulação de efeitos: a inconstitucionalidade alcança o passado, limitada pelo quinquênio do art. 168 do CTN, que corre a cada pagamento. Municípios ainda podem pedir modulação em embargos. Progressividade por valor venal e seletividade por localização e uso permanecem válidas — o que caiu foi a área como critério de alíquota. Abre frente de repetição de indébito contra municípios com legislação semelhante.",
+      "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1455",
+      "verificacao": "confirmado", "verificado_em": "2026-09-01",
+      "pendencia": "Número correto é ARE 1.593.784 (não 1.593.384). Confirmado no portal de RG do STF, incidente 7524215, e no comunicado oficial da Corte."
+    },
+    {
+      "id": "t22", "bloco": "processo", "tribunal": "RFB", "tema": "Editais 9 e 10/2026", "processo": "",
+      "titulo": "Transação tributária no contencioso administrativo",
+      "resumo": "Adesão até 30/10/2026. Edital 9: débitos em contencioso administrativo de até R$ 50 mi, desconto de até 65% (70% para PF, ME e EPP), com uso de prejuízo fiscal e base negativa. Edital 10: pequeno valor, até 60 salários mínimos.",
+      "status": "iminente", "placar": null, "placarNota": "",
+      "edai": "Prazo com data certa. A adesão implica desistência de impugnações — cotejar desconto contra probabilidade de êxito, processo a processo.",
+      "fonte": "https://news.fcrlaw.com.br/news/receita-federal-abre-novos-editais-de-transacao-tributaria-com-descontos-de-ate-70/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Prazo de 30/10/2026 e percentuais: conferir no texto dos editais no sítio da RFB. Prazo em peça exige fonte primária."
+    },
+    {
+      "id": "t23", "bloco": "processo", "tribunal": "Legislação", "tema": "LC 225/2026", "processo": "",
+      "titulo": "Devedor contumaz e redirecionamento a sócios",
+      "resumo": "A União começou a redirecionar execuções fiscais para alcançar bens de administradores e sócios em casos de inadimplência deliberada e reiterada.",
+      "status": "curso", "placar": null, "placarNota": "",
+      "edai": "Frente sensível. Vigiar os critérios de caracterização da contumácia e os limites da desconsideração.",
+      "fonte": "https://news.fcrlaw.com.br/news/governo-avanca-sobre-patrimonio-de-socios-no-combate-a-devedores-contumazes/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Ler a LC 225/2026 no DOU e anotar os critérios legais de contumácia."
+    },
+    {
+      "id": "t24", "bloco": "processo", "tribunal": "STJ", "tema": "Tema 1.263", "processo": "",
+      "titulo": "Seguro garantia obsta protesto e inscrição em CADIN?",
+      "resumo": "Define o efeito da garantia sobre atos de cobrança indireta.",
+      "status": "curso", "placar": null, "placarNota": "", "edai": "",
+      "fonte": "@zna", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Confirmar afetação e status."
+    },
+    {
+      "id": "t25", "bloco": "processo", "tribunal": "PGFN", "tema": "Parecer SEI 1.535/2026", "processo": "",
+      "titulo": "Fim da contestação sobre cumulação de multa isolada e de ofício",
+      "resumo": "A PGFN aplicou o princípio da consunção pacificado no STJ e deixou de recorrer contra a exclusão da multa isolada por não recolhimento de estimativas quando cumulada com multa de ofício.",
+      "status": "fixada", "placar": null, "placarNota": "",
+      "edai": "Pareceres de dispensa da PGFN sinalizam teses já ganhas. Fonte subutilizada — monitorar sempre.",
+      "fonte": "https://news.fcrlaw.com.br/news/pgfn-encerra-contestacao-sobre-cobranca-simultanea-de-multas-no-irpj-e-csll/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Ler o Parecer SEI 1.535/2026 na origem, no sítio da PGFN."
+    },
+    {
+      "id": "t26", "bloco": "processo", "tribunal": "STF", "tema": "Selic em depósitos judiciais", "processo": "",
+      "titulo": "Termo inicial da Selic sobre depósitos judiciais",
+      "resumo": "Repercussão geral reconhecida. Reflexos sobre garantias e créditos de valor elevado.",
+      "status": "afetado", "placar": null, "placarNota": "", "edai": "",
+      "fonte": "@agenda", "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Número do tema de RG não anotado. Localizar no portal do STF."
+    },
+    {
+      "id": "t27", "bloco": "carf", "tribunal": "CSRF", "tema": "Ágio", "processo": "",
+      "titulo": "Laudo de avaliação entregue após o fechamento não invalida o ágio",
+      "resumo": "Validada a amortização com laudo apresentado 49 dias após a aquisição, por ser anterior à primeira obrigação fiscal impactada. Operações sob a legislação anterior à Lei 12.973/2014.",
+      "status": "fixada", "placar": null, "placarNota": "",
+      "edai": "Acórdão de Câmara Superior não vincula: é orientação, não precedente obrigatório.",
+      "fonte": "https://news.fcrlaw.com.br/news/carf-valida-amortizacao-de-agio-com-laudo-elaborado-antes-da-primeira-deducao-fiscal/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Número do acórdão da CSRF não anotado. Localizar antes de citar."
+    },
+    {
+      "id": "t28", "bloco": "carf", "tribunal": "CSRF", "tema": "Preços de transferência", "processo": "",
+      "titulo": "ROACE é inadequado para ajuste de preço parâmetro no método PIC",
+      "resumo": "O índice mede desempenho corporativo global, não o retorno do ativo individual. Caso de afretamento de plataformas, com reflexos para óleo e gás.",
+      "status": "fixada", "placar": null, "placarNota": "",
+      "edai": "Acórdão de Câmara Superior não vincula: é orientação, não precedente obrigatório.",
+      "fonte": "https://news.fcrlaw.com.br/news/carf-rejeita-ajustes-da-receita-em-precos-de-transferencia-na-importacao-de-plataformas/",
+      "verificacao": "a_confirmar", "verificado_em": "2026-08-19",
+      "pendencia": "Número do acórdão da CSRF não anotado. Localizar antes de citar."
+    }
+  ],
+  "boletins": [
+    {
+      "id": "b1", "data": "19 ago 2026", "titulo": "Boletim de abertura",
+      "corpo": "Semana de retomada. Três repetitivos pesados na 1ª Seção do STJ em 20/08: Difal na base do PIS/Cofins (Tema 1.372), bonificações comerciais (Tema 1.412) e Zona Franca no PIS/Cofins-Importação (Tema 1.244).\n\nJanela aberta: transação da Receita (Editais 9 e 10) com adesão até 30/10. E o Tema 118 segue sem data, o que mantém aberta — por ora — a chance de ajuizar antes da modulação.\n\nPara estudar: modulação de efeitos. É o conceito que decide quanto vale, na prática, cada uma das teses deste painel.",
+      "fonte": "@agenda"
+    }
+  ],
+  "backlog": [
+    { "id": "e1", "txt": "Modulação de efeitos: critérios, evolução no STF e como orienta a decisão de ajuizar preventivamente.", "feito": false },
+    { "id": "e2", "txt": "Conceito constitucional de receita e faturamento, do RE 574.706 até as filhotes.", "feito": false },
+    { "id": "e3", "txt": "Não cumulatividade comparada: PIS/Cofins, ICMS e a plena do IBS/CBS. Três desenhos diferentes.", "feito": false },
+    { "id": "e4", "txt": "Regimes específicos e diferenciados da LC 214/2025.", "feito": false },
+    { "id": "e5", "txt": "Devedor contumaz e os limites da responsabilidade de sócios.", "feito": false }
+  ],
+  "atalhos_de_fonte": {
+    "agenda": "https://news.fcrlaw.com.br/news/stf-e-stj-pautam-julgamentos-tributarios-de-alto-impacto-para-o-2o-semestre-de-2026/",
+    "conjur": "https://www.conjur.com.br/2026-jan-18/stj-perspectiva-tributaria-para-2026-a-luz-de-2025/",
+    "zna": "https://zna.adv.br/noticias/2026/01/19/expectativa-de-julgamentos-tributarios-no-stf-e-stj-para-2026/"
+  },
+  "fontes_monitoramento": {
+    "primarias": [
+      "portal de repercussão geral do STF",
+      "repetitivos e Informativo do STJ",
+      "acórdãos da Câmara Superior do CARF",
+      "Soluções de Consulta Cosit",
+      "pareceres SEI da PGFN",
+      "atos do CGIBS e atos conjuntos RFB/CGIBS",
+      "DOU"
+    ],
+    "secundarias": [
+      "JOTA",
+      "Conjur",
+      "Migalhas",
+      "Valor",
+      "boletins semanais gratuitos de bancas tributárias",
+      "relatórios semestrais de pauta tributária (Trench Rossi, entre outros)",
+      "publicações do IBDT"
+    ]
+  },
+  "fontes_fixas": [
+    { "nome": "STF — repercussão geral", "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/" },
+    { "nome": "STJ — recursos repetitivos", "url": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/" },
+    { "nome": "PGFN — RG favoráveis ao contribuinte", "url": "https://www.gov.br/pgfn/pt-br/cidadania-tributaria/por-tipo-de-ato/temas-de-repercussao-geral/repercussoes-gerais-favoraveis-ao-contribuinte-julgadas-pelo-stf" },
+    { "nome": "Comitê Gestor do IBS", "url": "https://www.cgibs.gov.br/" },
+    { "nome": "Trench Rossi — pauta do semestre", "url": "https://www.trenchrossi.com/alertas-legais/stf-e-stj-pauta-tributaria-do-2o-semestre-2026/" },
+    { "nome": "FCR Law — expresso semanal", "url": "https://news.fcrlaw.com.br/expresso" },
+    { "nome": "Conjur — panorama do STJ", "url": "https://www.conjur.com.br/2026-jan-18/stj-perspectiva-tributaria-para-2026-a-luz-de-2025/" },
+    { "nome": "JOTA — análise", "url": "https://www.jota.info/opiniao-e-analise/artigos/pautas-tributarias-do-stf-em-2026-desafiam-coerencia-constitucional" }
+  ],
+  "transicao": [
+    { "ano": "2026", "ativo": true, "txt": "Ano-teste. Destaque obrigatório de IBS/CBS na nota, alíquota de 1%.", "fonte": "https://www.cgibs.gov.br/" },
+    { "ano": "2027", "ativo": false, "txt": "CBS cheia. Fim de PIS/Cofins. IPI a zero, exceto ZFM.", "fonte": "" },
+    { "ano": "2029–2032", "ativo": false, "txt": "IBS sobe, ICMS e ISS descem em proporção.", "fonte": "" },
+    { "ano": "2033", "ativo": false, "txt": "Sistema definitivo. Alíquota de referência estimada em 27,91%.", "fonte": "https://brasil61.com/n/reforma-tributaria-ibs-e-cbs-comecam-a-aparecer-nas-notas-fiscais-veja-como-sera-a-transicao-bras2616897" }
+  ]
+}

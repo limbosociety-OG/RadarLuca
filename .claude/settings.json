@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/gerar.py:*)",
+      "Bash(python3 scripts/doctor.py:*)",
+      "Bash(python3 .claude/skills/carrossel/scripts/compliance.py:*)",
+      "Bash(python3 .claude/skills/carrossel/scripts/testa_compliance.py:*)",
+      "Bash(python3 .claude/skills/carrossel/scripts/build.py:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "deny": [
+      "Read(privado/**)",
+      "Read(./privado/**)",
+      "Bash(git add -f:*)",
+      "Bash(git add --force:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}
