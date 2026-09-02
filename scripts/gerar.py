@@ -12,6 +12,7 @@ O arquivo-fonte é `base/teses.json`. Editar um derivado à mão é trabalho per
 a próxima geração sobrescreve.
 """
 import argparse
+import base64
 import json
 import pathlib
 import re
@@ -20,8 +21,13 @@ import sys
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 FONTE = RAIZ / "base" / "teses.json"
 FONTE_RADAR = RAIZ / "base" / "radar.json"
+FONTE_AULAS = RAIZ / "base" / "posfgv" / "aulas.json"
 MAPA = RAIZ / "base" / "mapa-de-teses.md"
 PORTAL = RAIZ / "portal" / "radar-tributario.html"
+
+FONTES_DIR = RAIZ / "portal" / "assets" / "fonts"
+F_ABRE = "/* FONTES:INICIO — geradas de portal/assets/fonts por scripts/gerar.py */"
+F_FECHA = "/* FONTES:FIM */"
 
 ABRE = "/* GERADO:INICIO — não editar à mão. Fonte: base/teses.json (scripts/gerar.py) */"
 FECHA = "/* GERADO:FIM */"
@@ -37,7 +43,13 @@ def carregar():
     validar(d)
     r = json.loads(FONTE_RADAR.read_text(encoding="utf-8"))
     validar_radar(r, d)
-    return d, r
+    a = json.loads(FONTE_AULAS.read_text(encoding="utf-8"))
+    ids = {t["id"] for t in d["teses"]}
+    ruins = [f"{au.get('id','?')} → {i}" for au in a["aulas"]
+             for i in au.get("teses", []) if i not in ids]
+    if ruins:
+        sys.exit("base/posfgv/aulas.json aponta para tese inexistente: " + ", ".join(ruins))
+    return d, r, a
 
 
 def validar(d):
@@ -182,7 +194,7 @@ def gerar_mapa(d):
 
 
 # ------------------------------------------------------------------ semente do portal
-def gerar_semente(d, r):
+def gerar_semente(d, r, a):
     nome = {b["id"]: b["nome"] for b in d["blocos"]}
     teses = [{
         "id": t["id"], "bloco": nome[t["bloco"]], "tribunal": t["tribunal"],
@@ -199,7 +211,7 @@ def gerar_semente(d, r):
         "semente": d["versao"],
         "teses": teses,
         "boletins": [{**b, "fonte": url(d, b.get("fonte", ""))} for b in d["boletins"]],
-        "aulas": [],
+        "aulas": a["aulas"],
         "backlog": d["backlog"],
         "radar": [{**it, "fonte": url(d, it.get("fonte", ""))} for it in r["itens"]],
         "termometro": r["termometro"],
@@ -217,11 +229,40 @@ def gerar_semente(d, r):
     ])
 
 
+# O painel não busca fonte na rede. Era a única dependência externa que sobrava,
+# e num arquivo aberto do disco ela significa cair para fonte de sistema offline.
+FACES = [
+    ("Bricolage Grotesque", "BricolageGrotesque.woff2", "400 800", "normal"),
+    ("Spectral", "Spectral-Regular.woff2", "400", "normal"),
+    ("Spectral", "Spectral-SemiBold.woff2", "600", "normal"),
+    ("Spectral", "Spectral-Italic.woff2", "400", "italic"),
+    ("IBM Plex Mono", "IBMPlexMono.woff2", "400 600", "normal"),
+]
+
+
+def gerar_fontes():
+    linhas = [F_ABRE]
+    for fam, arq, peso, estilo in FACES:
+        f = FONTES_DIR / arq
+        if not f.exists():
+            sys.exit(f"ERRO: fonte do painel ausente: {f}")
+        b64 = base64.b64encode(f.read_bytes()).decode()
+        linhas.append(f"@font-face{{font-family:'{fam}';src:url(data:font/woff2;base64,"
+                      f"{b64}) format('woff2');font-weight:{peso};font-style:{estilo};"
+                      f"font-display:swap}}")
+    linhas.append(F_FECHA)
+    return "\n".join(linhas)
+
+
+def injetar_entre(html, abre, fecha, conteudo, oque):
+    if abre not in html or fecha not in html:
+        sys.exit(f"ERRO: marcadores de {oque} ausentes em {PORTAL}")
+    i, f = html.index(abre), html.index(fecha) + len(fecha)
+    return html[:i] + conteudo + html[f:]
+
+
 def injetar(html, semente):
-    if ABRE not in html or FECHA not in html:
-        sys.exit(f"ERRO: marcadores ausentes em {PORTAL}. Esperado:\n{ABRE}\n…\n{FECHA}")
-    i, f = html.index(ABRE), html.index(FECHA) + len(FECHA)
-    return html[:i] + semente + html[f:]
+    return injetar_entre(html, ABRE, FECHA, semente, "dados")
 
 
 # ------------------------------------------------------------------ main
@@ -231,10 +272,12 @@ def main():
                     help="não escreve; sai 1 se algum derivado estiver desatualizado")
     a = ap.parse_args()
 
-    d, r = carregar()
+    d, r, au = carregar()
     saidas = {
         MAPA: gerar_mapa(d),
-        PORTAL: injetar(PORTAL.read_text(encoding="utf-8"), gerar_semente(d, r)),
+        PORTAL: injetar(injetar_entre(PORTAL.read_text(encoding="utf-8"),
+                                      F_ABRE, F_FECHA, gerar_fontes(), "fontes"),
+                        gerar_semente(d, r, au)),
     }
 
     if a.check:
@@ -255,7 +298,8 @@ def main():
     naoconf = sum(1 for t in d["teses"] if t["verificacao"] != "confirmado")
     med = (r.get("termometro") or {}).get("medido_em") or "nunca medido"
     print(f"{len(d['teses'])} teses · {naoconf} marcadas `a confirmar` · "
-          f"{len(r['itens'])} itens no radar · termômetro: {med}")
+          f"{len(r['itens'])} itens no radar · {len(au['aulas'])} aulas · "
+          f"termômetro: {med}")
     return 0
 
 

@@ -19,6 +19,7 @@ JANELA_PENDENCIA = 30       # dias antes de cobrar reverificação de uma tese
 JANELA_RADAR = 14           # dias sem item novo antes de cobrar uma varredura
 JANELA_TERMOMETRO = 7       # validade da medição do X; igual à do painel
 MAGICOS_FONTE = (b"\x00\x01\x00\x00", b"true", b"ttcf", b"OTTO")
+EM_CI = bool(os.environ.get("CI"))
 
 erros, avisos, oks = [], [], []
 
@@ -55,9 +56,16 @@ def checar_sigilo():
     if "privado/" not in gi:
         erro(".gitignore não cobre privado/")
 
-    if git("config", "core.hooksPath").strip() != ".githooks":
-        erro("hook de pré-commit não instalado — `git add -f privado/…` passaria. "
-             "Rode: sh scripts/instalar-hooks.sh")
+    hook = RAIZ / ".githooks" / "pre-commit"
+    if not hook.exists():
+        erro(".githooks/pre-commit não existe — a trava de sigilo sumiu do repositório")
+    elif EM_CI:
+        # Em CI não há clone de trabalho para proteger: o que importa é o hook
+        # existir no repositório, e o próprio workflow refaz a checagem de sigilo.
+        ok(".githooks/pre-commit versionado (CI: não se cobra instalação local)")
+    elif git("config", "core.hooksPath").strip() != ".githooks":
+        erro("hook de pré-commit não instalado neste clone — `git add -f privado/…` "
+             "passaria. Rode: sh scripts/instalar-hooks.sh")
     else:
         ok("hook de pré-commit ativo")
 
@@ -152,9 +160,25 @@ def checar_fontes():
         elif f.stat().st_size < 20000 or f.read_bytes()[:4] not in MAGICOS_FONTE:
             ruins.append(f"{n}: arquivo inválido")
     if ruins:
-        erro("fontes vendorizadas: " + "; ".join(ruins))
+        erro("fontes do carrossel: " + "; ".join(ruins))
     else:
-        ok(f"{len(esperadas)} fontes vendorizadas íntegras")
+        ok(f"{len(esperadas)} fontes do carrossel íntegras")
+
+    # O painel também não busca fonte na rede: as woff2 são embutidas por gerar.py.
+    pf = RAIZ / "portal" / "assets" / "fonts"
+    faltam = [n for n in ("BricolageGrotesque.woff2", "Spectral-Regular.woff2",
+                          "Spectral-SemiBold.woff2", "Spectral-Italic.woff2",
+                          "IBMPlexMono.woff2")
+              if not (pf / n).exists() or (pf / n).read_bytes()[:4] != b"wOF2"]
+    if faltam:
+        erro("fontes do painel ausentes ou inválidas: " + ", ".join(faltam))
+    else:
+        ok("5 fontes do painel vendorizadas — o painel não busca nada na rede")
+
+    html = (RAIZ / "portal" / "radar-tributario.html").read_text(encoding="utf-8")
+    if "fonts.googleapis" in html or "fonts.gstatic" in html:
+        erro("o painel voltou a referenciar o CDN de fontes — offline ele cai para "
+             "fonte de sistema")
 
 
 # ------------------------------------------------------------------ 5. peças

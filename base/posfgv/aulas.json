@@ -1,0 +1,5 @@
+{
+  "versao": "2026-09-02",
+  "nota_de_geracao": "Caderno da pós. Fonte da verdade das aulas — o painel lê daqui. Anotação feita no painel vive no navegador até ser importada: exportar json no painel e rodar `python3 scripts/importar.py <arquivo>`. Navegador não é lugar de guardar trabalho de pós-graduação.",
+  "aulas": []
+}

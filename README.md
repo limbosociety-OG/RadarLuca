@@ -36,6 +36,7 @@ voz editorial, aprendizados. Nada disso viaja automaticamente; por isso está es
 | Estudar um tema | `claude` → "estuda modulação de efeitos" |
 | Carrossel | `claude` → "faz a peça sobre o Tema X" |
 | Regerar mapa e portal | `python3 scripts/gerar.py` |
+| Trazer de volta o que editei no painel | `python3 scripts/importar.py <json> --aplicar` |
 | Conferir se estão em dia | `python3 scripts/gerar.py --check` |
 | Só o gate da OAB | `python3 .claude/skills/carrossel/scripts/compliance.py pecas/.../roteiro.json` |
 | Testar o próprio gate | `python3 .claude/skills/carrossel/scripts/testa_compliance.py` |
@@ -48,6 +49,7 @@ voz editorial, aprendizados. Nada disso viaja automaticamente; por isso está es
 CLAUDE.md                   instruções permanentes — leia antes de mexer em qualquer coisa
 base/teses.json             A FONTE DA VERDADE do acervo
 base/radar.json             notícia e termômetro do X — a skill `radar` escreve aqui
+base/posfgv/aulas.json      o caderno da pós
 base/mapa-de-teses.md       gerado de teses.json — não editar à mão
 base/pendencias.md          a prosa do que ainda não foi confirmado
 base/posfgv/                caderno da pós
@@ -101,6 +103,38 @@ quê. Ausência de dado é ausência de seção.
 `gerar.py` reprova item de radar sem `e daí?`. A regra do `CLAUDE.md` — notícia sem
 consequência prática não entra — virou código, porque é assim que timeline não vira
 clipping.
+
+## O ciclo de volta
+
+O painel abre por `file://` e o navegador não deixa uma página escrever no disco. Então
+edição feita ali — o "e daí?", anotação de aula, boletim, backlog — fica no `localStorage`
+até você trazê-la de volta. O painel mostra um aviso enquanto houver coisa não importada,
+com a contagem.
+
+```
+exportar json (rodapé)  →  python3 scripts/importar.py <arquivo>            (mostra)
+                        →  python3 scripts/importar.py <arquivo> --aplicar  (escreve)
+                        →  python3 scripts/gerar.py
+```
+
+Isso importa porque `localStorage` é o lugar mais frágil do sistema: some ao limpar dados
+do site, não vai junto para outra máquina, não tem histórico. Caderno de pós-graduação não
+mora ali.
+
+## Prazo de carteira
+
+Copie `scripts/exemplos/prazos.js` para `privado/prazos.js` e edite. A aba *Hoje* passa a
+misturar os seus prazos aos públicos, ordenados por dias restantes, com marca de privado.
+
+É `.js` e não `.json` por causa do `file://`: o navegador bloqueia `fetch()` de outro
+arquivo local, mas `<script src>` funciona. O arquivo está sob todas as travas de
+`privado/`. Sem ele o painel funciona igual — só não sabe da sua semana.
+
+## Integração contínua
+
+`.github/workflows/doctor.yml` roda a cada push: sigilo, derivados em dia, a suíte do gate
+e o `doctor` inteiro. Existe porque as outras travas dependem de um hook local que clone
+novo não tem — norma que não roda sozinha não é trava.
 
 ## Verificação
 

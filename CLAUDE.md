@@ -60,12 +60,13 @@ base/teses.json                A FONTE DA VERDADE do acervo — todo o resto der
 base/radar.json                camada de notícia: linha do tempo e termômetro do X
 base/mapa-de-teses.md          GERADO de teses.json — não editar à mão
 base/pendencias.md             a prosa do que está aberto; o estado por tese vive no json
-base/posfgv/                   aulas, fichamentos, conexões com o mapa
+base/posfgv/aulas.json         o caderno da pós — fonte, não o localStorage do navegador
 boletins/AAAA-MM-DD.md         boletim semanal, um arquivo por semana
 pecas/AAAA-MM-DD-slug/         roteiro.json, legenda.md, png/ — uma pasta por publicação
 portal/radar-tributario.html   painel; o bloco de dados é GERADO de teses.json
 privado/                       NÃO VERSIONADO — prazos, clientes, painel processual
 scripts/gerar.py               regrava mapa e portal a partir de teses.json
+scripts/importar.py            traz de volta o que foi editado no painel
 scripts/doctor.py              diagnóstico: sigilo, skills, fontes, gate, pendências
 .claude/skills/                carrossel · radar · boletim
 .githooks/pre-commit           trava de sigilo — instalar com sh scripts/instalar-hooks.sh
@@ -137,7 +138,18 @@ servidor, sem credencial. Quem mede é a skill `radar`; o quadro carrega a data 
 vira histórico depois de 7 dias. Sem reação pública verificável, ele fica vazio de propósito
 — ausência de dado é ausência de seção, nunca estimativa.
 
-**"como está o repositório"** → `python3 scripts/doctor.py`. Roda depois de clonar em
+**Edição feita no painel não está no repositório.** O painel abre por `file://` e não
+escreve em disco: ele acumula no `localStorage` e avisa quando há coisa não importada. O
+ciclo fecha com `exportar json` no rodapé e `python3 scripts/importar.py <arquivo>
+--aplicar`, seguido de `gerar.py`. Quando esse aviso aparecer, ou quando o usuário
+mencionar anotação feita no painel, lembrar dele — é trabalho que some ao limpar dados do
+site.
+
+**Prazo de carteira vive em `privado/prazos.js`** e aparece no *Hoje* misturado aos
+públicos, com marca de privado. Nunca versionado, nunca citado em peça ou boletim.
+
+**"como está o repositório"** → `python3 scripts/doctor.py`. Roda também em CI a cada push
+(`.github/workflows/doctor.yml`), porque hook local não existe em clone novo. Roda depois de clonar em
 máquina nova, antes de publicar, e quando algo parecer fora do lugar.
 
 ---

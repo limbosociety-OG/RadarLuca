@@ -1,0 +1,39 @@
+name: doctor
+
+# As travas deste repositório vivem em hook local de git, que um clone novo não
+# tem. Sem isto, todo invariante depende de alguém ter rodado instalar-hooks.sh.
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Sigilo — nada de privado/ versionado
+        run: |
+          if git ls-files | grep -q '^privado/'; then
+            echo "::error::privado/ está versionado. Sigilo profissional."
+            git ls-files | grep '^privado/'
+            exit 1
+          fi
+          echo "privado/ fora do versionamento"
+
+      - name: Derivados em dia com base/teses.json
+        run: python3 scripts/gerar.py --check
+
+      - name: Gate de compliance — a suíte que prova que ele morde
+        run: python3 .claude/skills/carrossel/scripts/testa_compliance.py
+
+      - name: Diagnóstico completo
+        run: python3 scripts/doctor.py
