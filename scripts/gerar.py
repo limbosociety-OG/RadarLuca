@@ -231,25 +231,29 @@ def gerar_semente(d, r, a):
 
 # O painel não busca fonte na rede. Era a única dependência externa que sobrava,
 # e num arquivo aberto do disco ela significa cair para fonte de sistema offline.
+# A folha do painel pede `font-stretch:88%` e `92%` no wordmark e nos títulos.
+# Sem o descritor de largura, o navegador entende que a face só cobre 100% e
+# cai para fallback em silêncio — que é o modo como uma fonte some sem erro.
 FACES = [
-    ("Bricolage Grotesque", "BricolageGrotesque.woff2", "400 800", "normal"),
-    ("Spectral", "Spectral-Regular.woff2", "400", "normal"),
-    ("Spectral", "Spectral-SemiBold.woff2", "600", "normal"),
-    ("Spectral", "Spectral-Italic.woff2", "400", "italic"),
-    ("IBM Plex Mono", "IBMPlexMono.woff2", "400 600", "normal"),
+    ("Bricolage Grotesque", "BricolageGrotesque.woff2", "400 800", "normal", "85% 100%"),
+    ("Spectral", "Spectral-Regular.woff2", "400", "normal", None),
+    ("Spectral", "Spectral-SemiBold.woff2", "600", "normal", None),
+    ("Spectral", "Spectral-Italic.woff2", "400", "italic", None),
+    ("IBM Plex Mono", "IBMPlexMono.woff2", "400 600", "normal", None),
 ]
 
 
 def gerar_fontes():
     linhas = [F_ABRE]
-    for fam, arq, peso, estilo in FACES:
+    for fam, arq, peso, estilo, largura in FACES:
         f = FONTES_DIR / arq
         if not f.exists():
             sys.exit(f"ERRO: fonte do painel ausente: {f}")
         b64 = base64.b64encode(f.read_bytes()).decode()
+        larg = f"font-stretch:{largura};" if largura else ""
         linhas.append(f"@font-face{{font-family:'{fam}';src:url(data:font/woff2;base64,"
                       f"{b64}) format('woff2');font-weight:{peso};font-style:{estilo};"
-                      f"font-display:swap}}")
+                      f"{larg}font-display:swap}}")
     linhas.append(F_FECHA)
     return "\n".join(linhas)
 

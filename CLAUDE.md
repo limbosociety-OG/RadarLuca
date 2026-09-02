@@ -67,6 +67,7 @@ portal/radar-tributario.html   painel; o bloco de dados é GERADO de teses.json
 privado/                       NÃO VERSIONADO — prazos, clientes, painel processual
 scripts/gerar.py               regrava mapa e portal a partir de teses.json
 scripts/importar.py            traz de volta o que foi editado no painel
+scripts/publicar.py            variante de celular do painel, sem a camada privada
 scripts/doctor.py              diagnóstico: sigilo, skills, fontes, gate, pendências
 .claude/skills/                carrossel · radar · boletim
 .githooks/pre-commit           trava de sigilo — instalar com sh scripts/instalar-hooks.sh

@@ -42,6 +42,7 @@ voz editorial, aprendizados. Nada disso viaja automaticamente; por isso está es
 | Testar o próprio gate | `python3 .claude/skills/carrossel/scripts/testa_compliance.py` |
 | Só o render | `python3 .claude/skills/carrossel/scripts/build.py pecas/.../roteiro.json --out ./saida --formato ambos` |
 | Painel | abrir `portal/radar-tributario.html` no navegador |
+| Versão de celular | `python3 scripts/publicar.py`, depois publicar como Artifact |
 
 ## Estrutura
 
@@ -120,6 +121,19 @@ exportar json (rodapé)  →  python3 scripts/importar.py <arquivo>            (
 Isso importa porque `localStorage` é o lugar mais frágil do sistema: some ao limpar dados
 do site, não vai junto para outra máquina, não tem histórico. Caderno de pós-graduação não
 mora ali.
+
+## Celular
+
+`python3 scripts/publicar.py` gera `portal/celular.html` a partir do mesmo painel: sem o
+esqueleto de documento (o Artifact fornece), **sem `privado/prazos.js`** e somente leitura.
+Publique como Artifact e abra do telefone.
+
+Somente leitura de propósito. O painel do disco já acumula edição no `localStorage` até ser
+importada; uma segunda superfície gravável, com armazenamento próprio, criaria uma terceira
+cópia que nunca volta para o repositório. No telefone se consulta.
+
+O arquivo não é versionado — é saída de build, como os PNG do carrossel. Republique quando
+o acervo mudar.
 
 ## Prazo de carteira
 
