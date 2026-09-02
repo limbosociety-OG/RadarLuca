@@ -19,7 +19,6 @@
       "Read(./privado/**)",
       "Bash(git add -f:*)",
       "Bash(git add --force:*)",
-      "Bash(git push:*)"
     ]
   }
 }
