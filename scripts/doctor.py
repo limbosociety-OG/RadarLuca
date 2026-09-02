@@ -166,16 +166,16 @@ def checar_fontes():
 
     # O painel também não busca fonte na rede: as woff2 são embutidas por gerar.py.
     pf = RAIZ / "portal" / "assets" / "fonts"
-    faltam = [n for n in ("BricolageGrotesque.woff2", "Spectral-Regular.woff2",
+    faltam = [n for n in ("Archivo.woff2", "Spectral-Regular.woff2",
                           "Spectral-SemiBold.woff2", "Spectral-Italic.woff2",
                           "IBMPlexMono.woff2")
               if not (pf / n).exists() or (pf / n).read_bytes()[:4] != b"wOF2"]
     if faltam:
         erro("fontes do painel ausentes ou inválidas: " + ", ".join(faltam))
     else:
-        ok("5 fontes do painel vendorizadas — o painel não busca nada na rede")
+        ok("5 fontes do painel vendorizadas, o painel não busca nada na rede")
 
-    html = (RAIZ / "portal" / "radar-tributario.html").read_text(encoding="utf-8")
+    html = (RAIZ / "portal" / "radar.html").read_text(encoding="utf-8")
     if "fonts.googleapis" in html or "fonts.gstatic" in html:
         erro("o painel voltou a referenciar o CDN de fontes — offline ele cai para "
              "fonte de sistema")

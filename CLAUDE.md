@@ -57,13 +57,13 @@ cliente sem que eu tenha dado os fatos.
 
 ```
 base/teses.json                A FONTE DA VERDADE do acervo — todo o resto deriva daqui
-base/radar.json                camada de notícia: linha do tempo e termômetro do X
+base/radar.json                camada de notícia: as sete áreas e o termômetro do X
 base/mapa-de-teses.md          GERADO de teses.json — não editar à mão
 base/pendencias.md             a prosa do que está aberto; o estado por tese vive no json
 base/posfgv/aulas.json         o caderno da pós — fonte, não o localStorage do navegador
 boletins/AAAA-MM-DD.md         boletim semanal, um arquivo por semana
 pecas/AAAA-MM-DD-slug/         roteiro.json, legenda.md, png/ — uma pasta por publicação
-portal/radar-tributario.html   painel; o bloco de dados é GERADO de teses.json
+portal/radar.html   painel; o bloco de dados é GERADO de teses.json
 privado/                       NÃO VERSIONADO — prazos, clientes, painel processual
 scripts/gerar.py               regrava mapa e portal a partir de teses.json
 scripts/importar.py            traz de volta o que foi editado no painel
@@ -128,11 +128,16 @@ teses, nunca corre em paralelo.
 sem pular etapa: verificar → pauta → roteiro → **legenda** → gate → render → diff. A
 legenda vem antes do gate, porque ela também passa pelo gate.
 
-**O painel tem quatro abas.** *Hoje* mostra o que vence primeiro — prazo com data certa,
-janela rolante, verificação envelhecendo — e é a superfície que justifica abrir o painel de
-manhã. *Mapa de teses*, o acervo. *Notícias*, a linha do tempo e o termômetro do X.
-*pósFGV*, o caderno. Prazo entra em `base/teses.json`, campo `prazo`; notícia e termômetro
-entram em `base/radar.json`. Nenhum dos dois aceita data sem fonte.
+**O portal é de notícia jurídica em sete áreas**, não só de tributário: tributário,
+empresarial, societário, imobiliário, civil, IA e tecnologia, atualidade. Três abas.
+*Notícias* é a superfície principal, com manchete, resumo, o "e daí?" quando há, e o link
+para a fonte. *Tributário* é a aba de foco: o que vence primeiro, o mapa de teses, o
+termômetro e os boletins. *pósFGV*, o caderno.
+
+Notícia entra em `base/radar.json` com `area`, `titulo`, `resumo`, `fonte` e `veiculo`.
+`gerar.py` reprova item sem fonte, e reprova item de tributário sem `edai`: no eixo de foco,
+notícia sem consequência prática é clipping. Fora dele, manchete e resumo bastam. Prazo entra
+em `base/teses.json`, campo `prazo`.
 
 **O termômetro do X não é ao vivo, e não vai ser.** O painel é arquivo aberto do disco: sem
 servidor, sem credencial. Quem mede é a skill `radar`; o quadro carrega a data da medição e

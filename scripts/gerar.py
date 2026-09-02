@@ -23,7 +23,7 @@ FONTE = RAIZ / "base" / "teses.json"
 FONTE_RADAR = RAIZ / "base" / "radar.json"
 FONTE_AULAS = RAIZ / "base" / "posfgv" / "aulas.json"
 MAPA = RAIZ / "base" / "mapa-de-teses.md"
-PORTAL = RAIZ / "portal" / "radar-tributario.html"
+PORTAL = RAIZ / "portal" / "radar.html"
 
 FONTES_DIR = RAIZ / "portal" / "assets" / "fonts"
 F_ABRE = "/* FONTES:INICIO — geradas de portal/assets/fonts por scripts/gerar.py */"
@@ -96,6 +96,7 @@ def validar_radar(r, d):
     prática não entra, e o que não foi confirmado se declara."""
     erros = []
     ids_tese = {t["id"] for t in d["teses"]}
+    ids_area = {a["id"] for a in r["areas"]}
     vistos = set()
     for it in r["itens"]:
         onde = f"radar {it.get('id', '?')}"
@@ -104,9 +105,16 @@ def validar_radar(r, d):
         vistos.add(it["id"])
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", it.get("data", "")):
             erros.append(f"{onde}: data ausente ou fora de AAAA-MM-DD")
-        if not it.get("edai"):
-            erros.append(f"{onde}: sem `e daí?` — notícia sem consequência prática "
-                         f"não entra no radar, vira clipping")
+        if it.get("area") not in ids_area:
+            erros.append(f"{onde}: área `{it.get('area')}` não existe")
+        for campo in ("titulo", "resumo", "fonte"):
+            if not it.get(campo):
+                erros.append(f"{onde}: sem `{campo}`")
+        # `e daí?` é obrigatório no eixo de foco. Fora dele a manchete e o resumo
+        # bastam: o portal é de notícia, e exigir análise de tudo seca a lista.
+        if it.get("area") == "tributario" and not it.get("edai"):
+            erros.append(f"{onde}: item de tributário sem `e daí?`. Notícia sem "
+                         f"consequência prática no eixo de foco é clipping")
         if it.get("verificacao") not in ("confirmado", "a_confirmar"):
             erros.append(f"{onde}: verificacao precisa ser `confirmado` ou `a_confirmar`")
         if it.get("verificacao") == "a_confirmar" and not it.get("pendencia"):
@@ -165,7 +173,7 @@ def gerar_mapa(d):
             proc = t.get("processo", "")
             ref = f"**{t['tema']}**" + (f" ({proc})" if proc and proc != t["tema"] else "")
             sit = t["resumo"].replace("\n", " ")
-            L.append(f"| {SINAL[t['status']]}{marca} | {t['tribunal']} — {ref} "
+            L.append(f"| {SINAL[t['status']]}{marca} | {t['tribunal']} · {ref} "
                      f"| {t['titulo']} | {sit} |")
         L.append("")
         for t in doBloco:
@@ -214,6 +222,7 @@ def gerar_semente(d, r, a):
         "aulas": a["aulas"],
         "backlog": d["backlog"],
         "radar": [{**it, "fonte": url(d, it.get("fonte", ""))} for it in r["itens"]],
+        "areas": r["areas"],
         "termometro": r["termometro"],
     }
     j = lambda o: json.dumps(o, ensure_ascii=False, indent=1)
@@ -235,7 +244,7 @@ def gerar_semente(d, r, a):
 # Sem o descritor de largura, o navegador entende que a face só cobre 100% e
 # cai para fallback em silêncio — que é o modo como uma fonte some sem erro.
 FACES = [
-    ("Bricolage Grotesque", "BricolageGrotesque.woff2", "400 800", "normal", "85% 100%"),
+    ("Archivo", "Archivo.woff2", "400 700", "normal", None),
     ("Spectral", "Spectral-Regular.woff2", "400", "normal", None),
     ("Spectral", "Spectral-SemiBold.woff2", "600", "normal", None),
     ("Spectral", "Spectral-Italic.woff2", "400", "italic", None),
@@ -302,8 +311,8 @@ def main():
     naoconf = sum(1 for t in d["teses"] if t["verificacao"] != "confirmado")
     med = (r.get("termometro") or {}).get("medido_em") or "nunca medido"
     print(f"{len(d['teses'])} teses · {naoconf} marcadas `a confirmar` · "
-          f"{len(r['itens'])} itens no radar · {len(au['aulas'])} aulas · "
-          f"termômetro: {med}")
+          f"{len(r['itens'])} notícias em {len(r['areas'])} áreas · "
+          f"{len(au['aulas'])} aulas · termômetro: {med}")
     return 0
 
 

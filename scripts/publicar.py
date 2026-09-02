@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Gera a variante de celular do painel, para publicar como Artifact.
+"""Gera a variante de celular do portal, para publicar como Artifact.
 
     python3 scripts/publicar.py
 
-Escreve `portal/celular.html` a partir de `portal/radar-tributario.html`. Mesma
+Escreve `portal/celular.html` a partir de `portal/radar.html`. Mesma
 fonte, mesmo sistema visual — o que muda é o que não faz sentido no telefone:
 
   * fora o `<!DOCTYPE>`, `<html>`, `<head>` e `<body>`: o Artifact envolve a página
@@ -21,28 +21,25 @@ import re
 import sys
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
-ORIGEM = RAIZ / "portal" / "radar-tributario.html"
+ORIGEM = RAIZ / "portal" / "radar.html"
 DESTINO = RAIZ / "portal" / "celular.html"
 
 SO_LEITURA = """
 /* ---------- variante de celular: consulta, não edição ---------- */
 #nova-tese,#novo-boletim,#nova-aula,#novo-estudo,#exportar,#importar,#zerar,
-.ficha-pe,.mini,#aviso-semente,#aviso-sujo,dialog,.backlog input[type=checkbox]{
-  display:none!important}
-.edai-txt,.boletim-corpo,.aula-notas,.backlog .txt{cursor:default}
-.edai-txt:hover,.aula-notas:hover{background:transparent}
-.instantaneo{font-family:var(--mono);font-size:11px;line-height:1.6;color:var(--ink2);
-  background:var(--indigo-soft);border:1px solid #C3C9E0;border-radius:3px;
-  padding:10px 13px;margin:18px 0 0}
-.instantaneo b{color:var(--indigo)}
-@media (max-width:720px){
-  .masthead{padding:26px 0 18px}
-  .abas{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;flex-wrap:nowrap}
-  .aba{white-space:nowrap;font-size:13px;padding:10px 12px}
-  .sub{gap:6px 16px;font-size:11px}
-  .prazo-lista,.grade,.term-grade{grid-template-columns:1fr}
-  .linha{padding-left:20px}
-  .ev::before{left:-19px}
+.ts-acoes,#aviso-semente,#aviso-sujo,dialog,.rodape .acoes,
+.backlog input[type=checkbox]{display:none!important}
+.edai-txt,.aula-notas,.backlog .txt{cursor:default}
+.edai-txt:empty{display:none}
+.instantaneo{font-family:var(--dado);font-size:11px;line-height:1.65;color:var(--tinta2);
+  border-left:2px solid var(--acento);padding:2px 0 2px 14px;margin:26px 0 0;max-width:74ch}
+.instantaneo b{color:var(--acento)}
+@media (max-width:860px){
+  .topo{padding:20px 0 12px}
+  .numeros{gap:12px;font-size:11px}
+  .abas{gap:16px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .filtros{gap:14px}
+  .term-grade{grid-template-columns:1fr}
 }
 """
 
@@ -71,7 +68,7 @@ def main():
     s = re.sub(r"</?html(?:\s[^>]*)?>\s*", "", s, flags=re.I)
     s = re.sub(r"</?head\s*>\s*", "", s, flags=re.I)
     s = re.sub(r"</?body(?:\s[^>]*)?>\s*", "", s, flags=re.I)
-    if "<header" not in s or 'class="masthead"' not in s:
+    if "<header" not in s or 'class="topo"' not in s:
         sys.exit("ERRO: o cabeçalho da página se perdeu na conversão.")
     s = re.sub(r'<meta charset[^>]*>\s*|<meta name="viewport"[^>]*>\s*', "", s, flags=re.I)
 
@@ -83,7 +80,7 @@ def main():
     s = s[:corte] + SO_LEITURA + s[corte:]
 
     # No Artifact o <title> é o nome na galeria e na aba. Nome, não legenda.
-    s = re.sub(r"<title>.*?</title>", "<title>Radar Tributário</title>", s, flags=re.S)
+    s = re.sub(r"<title>.*?</title>", "<title>Radar Jurídico</title>", s, flags=re.S)
 
     hoje = datetime.date.today().isoformat()
     s = s.replace('<div id="aviso-armazenamento"></div>',

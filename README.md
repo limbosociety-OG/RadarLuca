@@ -1,4 +1,4 @@
-# Radar Tributário — repositório
+# Radar Jurídico, repositório
 
 Portal permanente de atualização, acervo e produção editorial em direito tributário.
 Sai do Projeto no chat e passa a viver em disco, versionado.
@@ -41,7 +41,7 @@ voz editorial, aprendizados. Nada disso viaja automaticamente; por isso está es
 | Só o gate da OAB | `python3 .claude/skills/carrossel/scripts/compliance.py pecas/.../roteiro.json` |
 | Testar o próprio gate | `python3 .claude/skills/carrossel/scripts/testa_compliance.py` |
 | Só o render | `python3 .claude/skills/carrossel/scripts/build.py pecas/.../roteiro.json --out ./saida --formato ambos` |
-| Painel | abrir `portal/radar-tributario.html` no navegador |
+| Painel | abrir `portal/radar.html` no navegador |
 | Versão de celular | `python3 scripts/publicar.py`, depois publicar como Artifact |
 
 ## Estrutura
@@ -85,14 +85,17 @@ Quatro abas, e a ordem é opinativa:
 
 | aba | o que responde | de onde vem |
 |---|---|---|
-| **Hoje** | o que vence primeiro | campo `prazo` em `base/teses.json` |
-| **Mapa de teses** | o que estou acompanhando | `base/teses.json` |
-| **Notícias** | o que se moveu, e o que estão falando | `base/radar.json` |
-| **pósFGV** | o caderno e o backlog | `localStorage` do navegador |
+| **Notícias** | o que saiu, em sete áreas | `base/radar.json` |
+| **Tributário** | o que vence, o acervo, o termômetro | `base/teses.json` |
+| **pósFGV** | o caderno e o backlog | `base/posfgv/aulas.json` |
 
-*Hoje* abre primeiro por um motivo: notícia você lê no JOTA e no Conjur, e melhor. O que
-não existe em lugar nenhum é o seu acervo cruzado com prazo. É isso que faz abrir o painel
-de manhã.
+As áreas são tributário, empresarial, societário, imobiliário, civil, IA e tecnologia, e
+atualidade. Cada notícia carrega manchete, resumo, o link para a fonte e, quando há, o
+"e daí?". `gerar.py` reprova item sem fonte, e reprova item de tributário sem `edai`: no
+eixo de foco, notícia sem consequência prática é clipping.
+
+A aba **Tributário** é a de foco e carrega o que o portal tem de próprio: o que vence
+primeiro, o mapa de teses com o campo de impacto editável, o termômetro e os boletins.
 
 **O termômetro do X não é ao vivo.** Não é limitação de esforço: o painel é um arquivo
 aberto do disco, sem servidor para consultar a rede e sem lugar seguro para guardar

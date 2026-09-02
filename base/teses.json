@@ -1,13 +1,13 @@
 {
   "versao": "2026-09-01",
   "corte": "2026-09-01",
-  "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão — a edição é perdida na próxima geração.",
+  "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
     {
       "id": "pis-cofins",
-      "nome": "PIS/Cofins — base de cálculo",
-      "titulo": "Base de cálculo do PIS/Cofins — as \"teses filhotes\" do Tema 69",
+      "nome": "PIS/Cofins, base de cálculo",
+      "titulo": "Base de cálculo do PIS/Cofins, as \"teses filhotes\" do Tema 69",
       "nota": "O núcleo duro do contencioso da última década, e que precisa ser resolvido antes de o PIS/Cofins ser extinto em 2027. Estudar este bloco é estudar o conceito constitucional de faturamento.",
       "acao": "Em todas essas teses o histórico do STF é de modulação restritiva (Tema 69: só quem já tinha ação ajuizada recuperou os cinco anos anteriores). A decisão de ajuizar preventivamente é anterior ao resultado do julgamento."
     },
@@ -20,8 +20,8 @@
     },
     {
       "id": "reforma",
-      "nome": "Reforma — IBS/CBS",
-      "titulo": "Reforma tributária — IBS/CBS",
+      "nome": "Reforma, IBS/CBS",
+      "titulo": "Reforma tributária, IBS/CBS",
       "nota": "O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurisprudência, mas já começou a produzir.",
       "acao": "Frentes a vigiar: split payment, cashback, regimes específicos e diferenciados, creditamento e o desenho da não cumulatividade plena, contencioso administrativo do IBS (quem julga?), e a repartição federativa."
     },
@@ -49,7 +49,7 @@
     {
       "id": "carf",
       "nome": "CARF",
-      "titulo": "CARF — o que a Câmara Superior vem decidindo",
+      "titulo": "CARF, o que a Câmara Superior vem decidindo",
       "nota": "",
       "acao": ""
     }
@@ -134,7 +134,7 @@
       "tema": "Tema 1.412",
       "processo": "",
       "titulo": "Bonificações e descontos comerciais na base do PIS/Cofins",
-      "resumo": "Repetitivo afetado em 2026, com suspensão nacional ativa. Alcança varejo, atacado, indústria e distribuição — setores que negociam preço por bonificação de forma estrutural. Julgamento adiado.",
+      "resumo": "Repetitivo afetado em 2026, com suspensão nacional ativa. Alcança varejo, atacado, indústria e distribuição, setores que negociam preço por bonificação de forma estrutural. Julgamento adiado.",
       "status": "afetado",
       "placar": null,
       "placarNota": "",
@@ -296,7 +296,7 @@
       "status": "curso",
       "placar": null,
       "placarNota": "",
-      "edai": "Frente jovem, com jurisprudência se formando em 1ª e 2ª instâncias — decisões não vinculantes. Bom momento para entrar, com a ressalva de que não há precedente obrigatório.",
+      "edai": "Frente jovem, com jurisprudência se formando em 1ª e 2ª instâncias, decisões não vinculantes. Bom momento para entrar, com a ressalva de que não há precedente obrigatório.",
       "fonte": "https://news.fcrlaw.com.br/news/justica-garante-direito-a-creditos-apos-corte-de-beneficios-fiscais-pela-lc-224-2025/",
       "verificacao": "a_confirmar",
       "verificado_em": "2026-08-19",
@@ -330,7 +330,7 @@
       "status": "curso",
       "placar": null,
       "placarNota": "",
-      "edai": "A discussão migrou da existência da tributação para a proporcionalidade da antecipação. Tese nova, pouco povoada — e sem qualquer efeito vinculante.",
+      "edai": "A discussão migrou da existência da tributação para a proporcionalidade da antecipação. Tese nova, pouco povoada, e sem qualquer efeito vinculante.",
       "fonte": "https://news.fcrlaw.com.br/news/trf-4-limita-retencao-mensal-de-ir-sobre-dividendos-a-aliquota-anual-estimada/",
       "verificacao": "a_confirmar",
       "verificado_em": "2026-08-19",
@@ -342,7 +342,7 @@
       "tribunal": "STF",
       "tema": "Tema 1.367",
       "processo": "",
-      "titulo": "Modulação da ADC 49 — transferência entre estabelecimentos",
+      "titulo": "Modulação da ADC 49, transferência entre estabelecimentos",
       "resumo": "A não incidência de ICMS na transferência entre estabelecimentos do mesmo titular produz efeitos a partir do exercício de 2024, ressalvados os processos pendentes até 29/04/2021.",
       "status": "fixada",
       "placar": null,
@@ -364,7 +364,7 @@
       "status": "fixada",
       "placar": null,
       "placarNota": "",
-      "edai": "Derrota importante — serve de limite ao argumento de que toda tese filhote segue o Tema 69.",
+      "edai": "Derrota importante, serve de limite ao argumento de que toda tese filhote segue o Tema 69.",
       "fonte": "@conjur",
       "verificacao": "a_confirmar",
       "verificado_em": "2026-08-19",
@@ -419,7 +419,7 @@
       "status": "fixada",
       "placar": null,
       "placarNota": "",
-      "edai": "Sem modulação de efeitos: a inconstitucionalidade alcança o passado, limitada pelo quinquênio do art. 168 do CTN, que corre a cada pagamento. Municípios ainda podem pedir modulação em embargos. Progressividade por valor venal e seletividade por localização e uso permanecem válidas — o que caiu foi a área como critério de alíquota. Abre frente de repetição de indébito contra municípios com legislação semelhante.",
+      "edai": "Sem modulação de efeitos: a inconstitucionalidade alcança o passado, limitada pelo quinquênio do art. 168 do CTN, que corre a cada pagamento. Municípios ainda podem pedir modulação em embargos. Progressividade por valor venal e seletividade por localização e uso permanecem válidas, o que caiu foi a área como critério de alíquota. Abre frente de repetição de indébito contra municípios com legislação semelhante.",
       "prazo": {
         "tipo": "rolante",
         "data": null,
@@ -441,7 +441,7 @@
       "status": "iminente",
       "placar": null,
       "placarNota": "",
-      "edai": "Prazo com data certa. A adesão implica desistência de impugnações — cotejar desconto contra probabilidade de êxito, processo a processo.",
+      "edai": "Prazo com data certa. A adesão implica desistência de impugnações, cotejar desconto contra probabilidade de êxito, processo a processo.",
       "prazo": {
         "tipo": "data_certa",
         "data": "2026-10-30",
@@ -497,7 +497,7 @@
       "status": "fixada",
       "placar": null,
       "placarNota": "",
-      "edai": "Pareceres de dispensa da PGFN sinalizam teses já ganhas. Fonte subutilizada — monitorar sempre.",
+      "edai": "Pareceres de dispensa da PGFN sinalizam teses já ganhas. Fonte subutilizada, monitorar sempre.",
       "fonte": "https://news.fcrlaw.com.br/news/pgfn-encerra-contestacao-sobre-cobranca-simultanea-de-multas-no-irpj-e-csll/",
       "verificacao": "a_confirmar",
       "verificado_em": "2026-08-19",
@@ -560,7 +560,7 @@
       "id": "b1",
       "data": "19 ago 2026",
       "titulo": "Boletim de abertura",
-      "corpo": "Semana de retomada. Três repetitivos pesados na 1ª Seção do STJ em 20/08: Difal na base do PIS/Cofins (Tema 1.372), bonificações comerciais (Tema 1.412) e Zona Franca no PIS/Cofins-Importação (Tema 1.244).\n\nJanela aberta: transação da Receita (Editais 9 e 10) com adesão até 30/10. E o Tema 118 segue sem data, o que mantém aberta — por ora — a chance de ajuizar antes da modulação.\n\nPara estudar: modulação de efeitos. É o conceito que decide quanto vale, na prática, cada uma das teses deste painel.",
+      "corpo": "Semana de retomada. Três repetitivos pesados na 1ª Seção do STJ em 20/08: Difal na base do PIS/Cofins (Tema 1.372), bonificações comerciais (Tema 1.412) e Zona Franca no PIS/Cofins-Importação (Tema 1.244).\n\nJanela aberta: transação da Receita (Editais 9 e 10) com adesão até 30/10. E o Tema 118 segue sem data, o que mantém aberta, por ora, a chance de ajuizar antes da modulação.\n\nPara estudar: modulação de efeitos. É o conceito que decide quanto vale, na prática, cada uma das teses deste painel.",
       "fonte": "@agenda"
     }
   ],
@@ -618,15 +618,15 @@
   },
   "fontes_fixas": [
     {
-      "nome": "STF — repercussão geral",
+      "nome": "STF, repercussão geral",
       "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/"
     },
     {
-      "nome": "STJ — recursos repetitivos",
+      "nome": "STJ, recursos repetitivos",
       "url": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
     },
     {
-      "nome": "PGFN — RG favoráveis ao contribuinte",
+      "nome": "PGFN, RG favoráveis ao contribuinte",
       "url": "https://www.gov.br/pgfn/pt-br/cidadania-tributaria/por-tipo-de-ato/temas-de-repercussao-geral/repercussoes-gerais-favoraveis-ao-contribuinte-julgadas-pelo-stf"
     },
     {
@@ -634,19 +634,19 @@
       "url": "https://www.cgibs.gov.br/"
     },
     {
-      "nome": "Trench Rossi — pauta do semestre",
+      "nome": "Trench Rossi, pauta do semestre",
       "url": "https://www.trenchrossi.com/alertas-legais/stf-e-stj-pauta-tributaria-do-2o-semestre-2026/"
     },
     {
-      "nome": "FCR Law — expresso semanal",
+      "nome": "FCR Law, expresso semanal",
       "url": "https://news.fcrlaw.com.br/expresso"
     },
     {
-      "nome": "Conjur — panorama do STJ",
+      "nome": "Conjur, panorama do STJ",
       "url": "https://www.conjur.com.br/2026-jan-18/stj-perspectiva-tributaria-para-2026-a-luz-de-2025/"
     },
     {
-      "nome": "JOTA — análise",
+      "nome": "JOTA, análise",
       "url": "https://www.jota.info/opiniao-e-analise/artigos/pautas-tributarias-do-stf-em-2026-desafiam-coerencia-constitucional"
     }
   ],
@@ -664,7 +664,7 @@
       "fonte": ""
     },
     {
-      "ano": "2029–2032",
+      "ano": "2029-2032",
       "ativo": false,
       "txt": "IBS sobe, ICMS e ISS descem em proporção.",
       "fonte": ""
