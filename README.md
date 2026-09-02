@@ -93,9 +93,15 @@ qualquer caminho sob `privado/` no índice — com ou sem `-f`. O hook é a que 
 
 Conferência manual: `git ls-files | grep privado` tem que voltar vazio.
 
-`git push` está negado por padrão nas permissões. Retirar da lista de `deny` só depois de
-decidir conscientemente qual remoto recebe o quê — repositório de banca com dado de
-carteira dentro é problema de sigilo, não de git.
+`git push` esteve no `deny` das permissões até a decisão consciente de qual remoto recebe
+o quê. Está liberado para `limbosociety-og/radarluca`. A pergunta que justificava a trava
+segue valendo a cada remoto novo: repositório de banca com dado de carteira dentro é
+problema de sigilo, não de git.
+
+**Ao editar `.claude/settings.json`, valide o JSON.** Remover uma linha de lista costuma
+deixar vírgula sobrando antes do `]`, e aí o arquivo inteiro fica inválido — o risco não é
+perder a regra que você tirou, é perder *todas*, inclusive o `deny` de `Read(privado/**)`.
+`python3 scripts/doctor.py` reprova arquivo que não faz parse.
 
 **Fontes vendorizadas.** `assets/fonts/` contém Bodoni Moda, Spectral e IBM Plex Mono
 (OFL). O build **não baixa fonte**: confere existência, tamanho e assinatura de arquivo, e

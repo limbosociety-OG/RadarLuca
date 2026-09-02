@@ -61,9 +61,19 @@ def checar_sigilo():
 
     cfg = RAIZ / ".claude" / "settings.json"
     if cfg.exists():
-        d = json.loads(cfg.read_text(encoding="utf-8"))
+        try:
+            d = json.loads(cfg.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            # JSON torto aqui não é detalhe: o Claude Code pode descartar o bloco
+            # inteiro de permissões, e aí some junto o deny de Read(privado/**).
+            erro(f"settings.json não é JSON válido ({e}) — com ele quebrado, as regras "
+                 f"de permissão podem não valer nenhuma. Vírgula sobrando antes de `]` "
+                 f"é a causa mais comum ao remover uma linha.")
+            return
         deny = d.get("permissions", {}).get("deny", [])
-        for regra in ("Read(privado/**)", "Bash(git push:*)", "Bash(git add -f:*)"):
+        # `Bash(git push:*)` saiu do deny por decisão consciente sobre o remoto,
+        # conforme o README. Não é regra faltando; não cobrar.
+        for regra in ("Read(privado/**)", "Bash(git add -f:*)"):
             if regra not in deny:
                 aviso(f"settings.json sem a regra de deny `{regra}`")
 
