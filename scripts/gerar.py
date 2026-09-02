@@ -19,6 +19,7 @@ import sys
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 FONTE = RAIZ / "base" / "teses.json"
+FONTE_RADAR = RAIZ / "base" / "radar.json"
 MAPA = RAIZ / "base" / "mapa-de-teses.md"
 PORTAL = RAIZ / "portal" / "radar-tributario.html"
 
@@ -34,7 +35,9 @@ MES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "no
 def carregar():
     d = json.loads(FONTE.read_text(encoding="utf-8"))
     validar(d)
-    return d
+    r = json.loads(FONTE_RADAR.read_text(encoding="utf-8"))
+    validar_radar(r, d)
+    return d, r
 
 
 def validar(d):
@@ -60,8 +63,58 @@ def validar(d):
         f = t.get("fonte", "")
         if f.startswith("@") and f[1:] not in d["atalhos_de_fonte"]:
             erros.append(f"{onde}: atalho de fonte `{f}` não existe")
+        pz = t.get("prazo")
+        if pz:
+            if pz.get("tipo") not in ("data_certa", "rolante"):
+                erros.append(f"{onde}: prazo.tipo precisa ser `data_certa` ou `rolante`")
+            if pz.get("tipo") == "data_certa" and not re.fullmatch(
+                    r"\d{4}-\d{2}-\d{2}", pz.get("data") or ""):
+                erros.append(f"{onde}: prazo de data certa sem data em AAAA-MM-DD")
+            if not pz.get("oque"):
+                erros.append(f"{onde}: prazo sem dizer o que vence")
     if erros:
         print("base/teses.json inválido:\n", file=sys.stderr)
+        for e in erros:
+            print(f"  ✗ {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+def validar_radar(r, d):
+    """A camada de notícia tem a mesma régua da de teses: item sem consequência
+    prática não entra, e o que não foi confirmado se declara."""
+    erros = []
+    ids_tese = {t["id"] for t in d["teses"]}
+    vistos = set()
+    for it in r["itens"]:
+        onde = f"radar {it.get('id', '?')}"
+        if it["id"] in vistos:
+            erros.append(f"{onde}: id repetido")
+        vistos.add(it["id"])
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", it.get("data", "")):
+            erros.append(f"{onde}: data ausente ou fora de AAAA-MM-DD")
+        if not it.get("edai"):
+            erros.append(f"{onde}: sem `e daí?` — notícia sem consequência prática "
+                         f"não entra no radar, vira clipping")
+        if it.get("verificacao") not in ("confirmado", "a_confirmar"):
+            erros.append(f"{onde}: verificacao precisa ser `confirmado` ou `a_confirmar`")
+        if it.get("verificacao") == "a_confirmar" and not it.get("pendencia"):
+            erros.append(f"{onde}: `a_confirmar` sem dizer o que falta")
+        if it.get("tese") and it["tese"] not in ids_tese:
+            erros.append(f"{onde}: aponta para tese `{it['tese']}`, que não existe")
+        f = it.get("fonte", "")
+        if f.startswith("@") and f[1:] not in d["atalhos_de_fonte"]:
+            erros.append(f"{onde}: atalho de fonte `{f}` não existe")
+
+    term = r.get("termometro") or {}
+    if term.get("assuntos") and not term.get("medido_em"):
+        erros.append("termometro: tem assunto e não tem `medido_em`. Medição sem data "
+                     "não é medição — o painel precisa poder envelhecer o dado à vista")
+    for a in term.get("assuntos", []):
+        if a.get("tese") and a["tese"] not in ids_tese:
+            erros.append(f"termometro «{a.get('assunto','?')}»: tese inexistente")
+
+    if erros:
+        print("base/radar.json inválido:\n", file=sys.stderr)
         for e in erros:
             print(f"  ✗ {e}", file=sys.stderr)
         sys.exit(1)
@@ -129,7 +182,7 @@ def gerar_mapa(d):
 
 
 # ------------------------------------------------------------------ semente do portal
-def gerar_semente(d):
+def gerar_semente(d, r):
     nome = {b["id"]: b["nome"] for b in d["blocos"]}
     teses = [{
         "id": t["id"], "bloco": nome[t["bloco"]], "tribunal": t["tribunal"],
@@ -137,6 +190,7 @@ def gerar_semente(d):
         "titulo": t["titulo"], "resumo": t["resumo"], "fonte": url(d, t.get("fonte", "")),
         "placar": t.get("placar"), "placarNota": t.get("placarNota", ""),
         "edai": t.get("edai", ""), "verificacao": t["verificacao"],
+        "prazo": t.get("prazo"),
         "pendencia": t.get("pendencia", ""), "verificadoEm": t["verificado_em"],
         "atualizado": mes_ano(t["verificado_em"]),
     } for t in d["teses"]]
@@ -147,6 +201,8 @@ def gerar_semente(d):
         "boletins": [{**b, "fonte": url(d, b.get("fonte", ""))} for b in d["boletins"]],
         "aulas": [],
         "backlog": d["backlog"],
+        "radar": [{**it, "fonte": url(d, it.get("fonte", ""))} for it in r["itens"]],
+        "termometro": r["termometro"],
     }
     j = lambda o: json.dumps(o, ensure_ascii=False, indent=1)
     return "\n".join([
@@ -175,10 +231,10 @@ def main():
                     help="não escreve; sai 1 se algum derivado estiver desatualizado")
     a = ap.parse_args()
 
-    d = carregar()
+    d, r = carregar()
     saidas = {
         MAPA: gerar_mapa(d),
-        PORTAL: injetar(PORTAL.read_text(encoding="utf-8"), gerar_semente(d)),
+        PORTAL: injetar(PORTAL.read_text(encoding="utf-8"), gerar_semente(d, r)),
     }
 
     if a.check:
@@ -197,7 +253,9 @@ def main():
         p.write_text(novo, encoding="utf-8")
         print(f"escrito {p.relative_to(RAIZ)}")
     naoconf = sum(1 for t in d["teses"] if t["verificacao"] != "confirmado")
-    print(f"{len(d['teses'])} teses · {naoconf} marcadas `a confirmar`")
+    med = (r.get("termometro") or {}).get("medido_em") or "nunca medido"
+    print(f"{len(d['teses'])} teses · {naoconf} marcadas `a confirmar` · "
+          f"{len(r['itens'])} itens no radar · termômetro: {med}")
     return 0
 
 

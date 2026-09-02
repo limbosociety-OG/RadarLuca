@@ -16,6 +16,8 @@ import sys
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 JANELA_PENDENCIA = 30       # dias antes de cobrar reverificação de uma tese
+JANELA_RADAR = 14           # dias sem item novo antes de cobrar uma varredura
+JANELA_TERMOMETRO = 7       # validade da medição do X; igual à do painel
 MAGICOS_FONTE = (b"\x00\x01\x00\x00", b"true", b"ttcf", b"OTTO")
 
 erros, avisos, oks = [], [], []
@@ -198,6 +200,40 @@ def checar_pendencias():
     ok(f"{len(d['teses'])} teses no acervo, {naoconf} marcadas `a confirmar`")
 
 
+# ------------------------------------------------------------------ 6b. radar
+def checar_radar():
+    """A camada de notícia envelhece mais rápido que a de teses. Painel de radar
+    parado é pior que painel vazio: passa a impressão de que nada se moveu."""
+    r = json.loads((RAIZ / "base" / "radar.json").read_text(encoding="utf-8"))
+    hoje = datetime.date.today()
+
+    itens = r.get("itens", [])
+    if not itens:
+        aviso("base/radar.json sem itens — a linha do tempo do painel abre vazia. "
+              "Peça `radar` no chat.")
+    else:
+        ultimo = max(datetime.date.fromisoformat(i["data"]) for i in itens)
+        idade = (hoje - ultimo).days
+        naoconf = sum(1 for i in itens if i.get("verificacao") != "confirmado")
+        if idade > JANELA_RADAR:
+            aviso(f"último item do radar é de {ultimo} ({idade} dias). "
+                  f"Rode o radar antes de tratar o painel como atual.")
+        ok(f"{len(itens)} itens no radar, o mais recente de {ultimo} "
+           f"({naoconf} a confirmar)")
+
+    term = r.get("termometro") or {}
+    if not term.get("medido_em"):
+        ok("termômetro do X sem medição — o painel diz isso na cara, que é a resposta "
+           "certa quando não há reação verificável")
+    else:
+        idade = (hoje - datetime.date.fromisoformat(term["medido_em"])).days
+        if idade > JANELA_TERMOMETRO:
+            aviso(f"termômetro do X medido há {idade} dias "
+                  f"(teto de {JANELA_TERMOMETRO}) — o painel já o mostra como histórico")
+        else:
+            ok(f"termômetro do X medido há {idade} dias, dentro da validade")
+
+
 # ------------------------------------------------------------------ 7. testes
 def checar_testes():
     t = RAIZ / ".claude" / "skills" / "carrossel" / "scripts" / "testa_compliance.py"
@@ -214,7 +250,7 @@ def checar_testes():
 
 def main():
     for fn in (checar_sigilo, checar_skills, checar_derivados, checar_fontes,
-               checar_pecas, checar_pendencias, checar_testes):
+               checar_pecas, checar_pendencias, checar_radar, checar_testes):
         try:
             fn()
         except Exception as e:  # um check quebrado não pode esconder os outros

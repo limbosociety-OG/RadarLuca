@@ -106,6 +106,51 @@ Para cada item:
 [Publica / não publica / segura para verificação. Se publica: qual item, qual eixo, por quê.]
 ```
 
+## Gravar no acervo — depois de entregar o relatório
+
+O relatório em prosa é a entrega ao usuário. Mas ele evapora no chat, e o painel precisa
+do dado. **Todo item aprovado vai também para `base/radar.json`**, e depois roda-se
+`python3 scripts/gerar.py`.
+
+```json
+{
+  "id": "n6",
+  "data": "2026-09-02",
+  "orgao": "STJ",
+  "titulo": "manchete curta, sem ementa",
+  "fato": "o que aconteceu, só fato, com número e data",
+  "edai": "a consequência operativa — obrigatório",
+  "eixo": "pis-cofins | irpj-csll | reforma | irpf | indiretos | processo | carf",
+  "tese": "t4",
+  "fonte": "url ou @atalho",
+  "verificacao": "confirmado | a_confirmar",
+  "pendencia": "o que falta, quando `a_confirmar`"
+}
+```
+
+`gerar.py` reprova item sem `edai` — a régua do projeto virou código: notícia sem
+consequência prática é clipping, e clipping não entra. Reprova também `tese` apontando
+para id que não existe, e `a_confirmar` sem dizer o que falta.
+
+**Termômetro.** Vai em `radar.termometro`, com `medido_em` obrigatório sempre que houver
+assunto. O painel mostra a data e trata medição com mais de 7 dias como histórico, não
+como "o que está fervendo agora".
+
+```json
+"termometro": {
+  "medido_em": "2026-09-02",
+  "metodo": "como se mediu, em uma linha, com a fonte da checagem",
+  "assuntos": [
+    { "assunto": "...", "volume": "ordem de grandeza observada", "nota": "...",
+      "tese": "t4", "fonte": "url" }
+  ]
+}
+```
+
+Sem reação pública verificável, `assuntos` fica `[]` e `medido_em` fica `null`. O painel
+tem um estado vazio escrito para esse caso e ele é a resposta certa — não se preenche
+termômetro com estimativa para a tela não ficar vazia.
+
 ## Antes de entregar
 
 Rodar estas quatro perguntas. Falhou uma, refaz:

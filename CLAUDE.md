@@ -57,6 +57,7 @@ cliente sem que eu tenha dado os fatos.
 
 ```
 base/teses.json                A FONTE DA VERDADE do acervo — todo o resto deriva daqui
+base/radar.json                camada de notícia: linha do tempo e termômetro do X
 base/mapa-de-teses.md          GERADO de teses.json — não editar à mão
 base/pendencias.md             a prosa do que está aberto; o estado por tese vive no json
 base/posfgv/                   aulas, fichamentos, conexões com o mapa
@@ -124,6 +125,17 @@ teses, nunca corre em paralelo.
 **"carrossel" / "faz a peça" / "leva pro feed"** → skill `carrossel`. Pipeline sequencial,
 sem pular etapa: verificar → pauta → roteiro → **legenda** → gate → render → diff. A
 legenda vem antes do gate, porque ela também passa pelo gate.
+
+**O painel tem quatro abas.** *Hoje* mostra o que vence primeiro — prazo com data certa,
+janela rolante, verificação envelhecendo — e é a superfície que justifica abrir o painel de
+manhã. *Mapa de teses*, o acervo. *Notícias*, a linha do tempo e o termômetro do X.
+*pósFGV*, o caderno. Prazo entra em `base/teses.json`, campo `prazo`; notícia e termômetro
+entram em `base/radar.json`. Nenhum dos dois aceita data sem fonte.
+
+**O termômetro do X não é ao vivo, e não vai ser.** O painel é arquivo aberto do disco: sem
+servidor, sem credencial. Quem mede é a skill `radar`; o quadro carrega a data da medição e
+vira histórico depois de 7 dias. Sem reação pública verificável, ele fica vazio de propósito
+— ausência de dado é ausência de seção, nunca estimativa.
 
 **"como está o repositório"** → `python3 scripts/doctor.py`. Roda depois de clonar em
 máquina nova, antes de publicar, e quando algo parecer fora do lugar.

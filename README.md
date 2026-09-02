@@ -47,6 +47,7 @@ voz editorial, aprendizados. Nada disso viaja automaticamente; por isso está es
 ```
 CLAUDE.md                   instruções permanentes — leia antes de mexer em qualquer coisa
 base/teses.json             A FONTE DA VERDADE do acervo
+base/radar.json             notícia e termômetro do X — a skill `radar` escreve aqui
 base/mapa-de-teses.md       gerado de teses.json — não editar à mão
 base/pendencias.md          a prosa do que ainda não foi confirmado
 base/posfgv/                caderno da pós
@@ -74,6 +75,32 @@ O painel guarda as edições de quem o usa (o "e daí?", boletins, caderno de au
 `localStorage` do navegador. Quando o repositório traz uma semente mais nova, ele avisa e
 deixa escolher entre adotar o mapa novo ou seguir com o seu — boletins, aulas e backlog
 ficam preservados nos dois caminhos. Antes de adotar, `exportar json`.
+
+## O painel
+
+Quatro abas, e a ordem é opinativa:
+
+| aba | o que responde | de onde vem |
+|---|---|---|
+| **Hoje** | o que vence primeiro | campo `prazo` em `base/teses.json` |
+| **Mapa de teses** | o que estou acompanhando | `base/teses.json` |
+| **Notícias** | o que se moveu, e o que estão falando | `base/radar.json` |
+| **pósFGV** | o caderno e o backlog | `localStorage` do navegador |
+
+*Hoje* abre primeiro por um motivo: notícia você lê no JOTA e no Conjur, e melhor. O que
+não existe em lugar nenhum é o seu acervo cruzado com prazo. É isso que faz abrir o painel
+de manhã.
+
+**O termômetro do X não é ao vivo.** Não é limitação de esforço: o painel é um arquivo
+aberto do disco, sem servidor para consultar a rede e sem lugar seguro para guardar
+credencial num repositório que também abriga `privado/`. Quem mede é a skill `radar`, que
+tem busca; o quadro mostra a data da medição e passa a tratá-la como histórico depois de 7
+dias. Sem reação pública verificável, o quadro fica vazio — e o estado vazio explica por
+quê. Ausência de dado é ausência de seção.
+
+`gerar.py` reprova item de radar sem `e daí?`. A regra do `CLAUDE.md` — notícia sem
+consequência prática não entra — virou código, porque é assim que timeline não vira
+clipping.
 
 ## Verificação
 

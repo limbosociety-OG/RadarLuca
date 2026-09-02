@@ -69,6 +69,70 @@ body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:
 .btn.ghost{background:transparent;color:var(--ink2);border-color:var(--rule)}
 .btn.ghost:hover{color:var(--ink);border-color:var(--ink)}
 
+/* abas */
+.abas{display:flex;gap:2px;margin-top:26px;border-bottom:1.5px solid var(--ink);flex-wrap:wrap}
+.aba{font-family:var(--display);font-weight:600;font-stretch:92%;font-size:14px;letter-spacing:-.005em;
+     padding:11px 16px;border:none;background:transparent;color:var(--ink3);cursor:pointer;
+     border-bottom:2.5px solid transparent;margin-bottom:-1.5px;transition:.15s;display:flex;align-items:center;gap:7px}
+.aba:hover{color:var(--ink)}
+.aba[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--indigo)}
+.sino{display:none;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--quente);
+      color:#fff;font-family:var(--mono);font-size:10px;font-style:normal;line-height:18px;text-align:center}
+.sino.tem{display:inline-block}
+[hidden]{display:none!important}
+
+/* prazos — o que vence primeiro */
+.prazo-lista{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+.pz{background:var(--card);border:1px solid var(--rule);border-radius:4px;box-shadow:var(--shadow);
+    padding:16px 18px;display:flex;flex-direction:column;gap:9px;border-left:3px solid var(--frio)}
+.pz.quente{border-left-color:var(--quente)} .pz.morno{border-left-color:var(--morno)}
+.pz.rolante{border-left-color:var(--indigo)}
+.pz-topo{display:flex;align-items:baseline;gap:10px;justify-content:space-between}
+.pz-contagem{font-family:var(--display);font-weight:800;font-stretch:88%;font-size:30px;line-height:1;letter-spacing:-.03em}
+.pz.quente .pz-contagem{color:var(--quente)} .pz.morno .pz-contagem{color:var(--morno)}
+.pz.rolante .pz-contagem{font-size:19px;color:var(--indigo)}
+.pz-unidade{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.pz-data{font-family:var(--mono);font-size:11px;color:var(--ink3);text-align:right;line-height:1.5}
+.pz-oque{font-size:15px;line-height:1.45;color:var(--ink)}
+.pz-tese{font-family:var(--mono);font-size:11px;color:var(--indigo);background:var(--indigo-soft);
+         border:none;padding:4px 9px;border-radius:999px;cursor:pointer;align-self:flex-start;text-align:left}
+.pz-tese:hover{outline:1px solid var(--indigo)}
+
+/* termômetro */
+.term{background:var(--card);border:1px solid var(--rule);border-radius:4px;box-shadow:var(--shadow);padding:20px 22px}
+.term-vazio{border-style:dashed;background:transparent;box-shadow:none}
+.term-vazio p{margin:0 0 10px;font-size:15px;line-height:1.6;color:var(--ink2);max-width:62ch}
+.term-vazio p:last-child{margin-bottom:0}
+.term-vazio code{font-family:var(--mono);font-size:13px;background:#EFF1F4;padding:2px 6px;border-radius:2px}
+.term-grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:4px}
+.assunto{border:1px solid var(--rule);border-radius:3px;padding:13px 15px;background:#fff}
+.assunto h4{font-family:var(--display);font-weight:600;font-stretch:92%;font-size:15px;margin:0 0 6px}
+.assunto .vol{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3)}
+.assunto .nota{font-size:13.5px;line-height:1.5;color:var(--ink2);margin:7px 0 0}
+.term-idade{font-family:var(--mono);font-size:11px;line-height:1.6;color:var(--ink2);
+            border-top:1px solid var(--rule);margin-top:14px;padding-top:11px}
+.term-idade.velha{color:var(--morno)}
+
+/* linha do tempo */
+.linha{position:relative;padding-left:26px;max-width:860px}
+.linha::before{content:'';position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:var(--rule)}
+.ev{position:relative;padding:0 0 26px}
+.ev::before{content:'';position:absolute;left:-25px;top:6px;width:11px;height:11px;border-radius:50%;
+            background:var(--card);border:2px solid var(--frio)}
+.ev.confirmado::before{border-color:var(--firme)}
+.ev.aconfirmar::before{border-color:var(--morno)}
+.ev-data{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.ev-orgao{color:var(--indigo);font-weight:600}
+.ev h3{font-family:var(--display);font-weight:600;font-stretch:92%;font-size:17.5px;line-height:1.25;
+       letter-spacing:-.01em;margin:5px 0 7px}
+.ev .fato{font-size:14.5px;line-height:1.55;color:var(--ink2);margin:0}
+.ev .edai-bloco{margin-top:11px;padding:11px 13px;background:var(--card);border:1px solid var(--rule);
+                border-left:2px solid var(--indigo);border-radius:0 3px 3px 0}
+.ev .edai-bloco .rot{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+                     color:var(--indigo);font-weight:600;margin-bottom:4px}
+.ev .edai-bloco p{margin:0;font-size:14px;line-height:1.55;color:var(--ink)}
+.ev-pe{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:10px}
+
 /* seções */
 .secao{padding-top:46px}
 .secao-titulo{font-family:var(--display);font-weight:600;font-stretch:88%;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);padding-bottom:10px;border-bottom:1px solid var(--rule);margin:0 0 22px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
@@ -203,11 +267,31 @@ footer{margin-top:70px;padding-top:20px;border-top:1.5px solid var(--ink);font-f
     </div>
   </header>
 
+  <nav class="abas" id="abas" aria-label="Seções do painel">
+    <button class="aba" data-pane="hoje" aria-pressed="true">Hoje <i class="sino" id="sino-hoje"></i></button>
+    <button class="aba" data-pane="mapa" aria-pressed="false">Mapa de teses</button>
+    <button class="aba" data-pane="noticias" aria-pressed="false">Notícias</button>
+    <button class="aba" data-pane="pos" aria-pressed="false">pósFGV</button>
+  </nav>
+
+  <div class="pane" id="pane-hoje">
   <section class="transicao">
     <div class="transicao-head">Transição da reforma do consumo</div>
     <div class="trilho" id="trilho"></div>
   </section>
 
+    <section class="secao">
+      <h2 class="secao-titulo">O que vence primeiro <span id="rotulo-hoje"></span></h2>
+      <div id="prazos"></div>
+    </section>
+
+    <section class="secao">
+      <h2 class="secao-titulo">Última movimentação <span>as cinco mais recentes do radar</span></h2>
+      <div id="hoje-radar"></div>
+    </section>
+  </div>
+
+  <div class="pane" id="pane-mapa" hidden>
   <div class="controles">
     <input class="busca" id="busca" type="search" placeholder="buscar tema, tributo, tribunal…" aria-label="Buscar">
     <button class="chip" data-f="todos" aria-pressed="true">tudo</button>
@@ -224,12 +308,26 @@ footer{margin-top:70px;padding-top:20px;border-top:1.5px solid var(--ink);font-f
     <h2 class="secao-titulo">Mapa de teses <span id="rotulo-filtro"></span></h2>
     <div id="mapa"></div>
   </section>
+  </div>
+
+  <div class="pane" id="pane-noticias" hidden>
+    <section class="secao">
+      <h2 class="secao-titulo">Termômetro do X <span id="rotulo-termometro"></span></h2>
+      <div id="termometro"></div>
+    </section>
+
+    <section class="secao">
+      <h2 class="secao-titulo">Linha do tempo <span id="rotulo-radar"></span></h2>
+      <div class="linha" id="radar"></div>
+    </section>
 
   <section class="secao">
     <h2 class="secao-titulo">Boletins <span><button class="btn ghost" id="novo-boletim">+ registrar</button></span></h2>
     <div id="boletins"></div>
   </section>
+  </div>
 
+  <div class="pane" id="pane-pos" hidden>
   <section class="secao">
     <h2 class="secao-titulo">pósFGV · caderno de aulas <span><button class="btn ghost" id="nova-aula">+ aula</button></span></h2>
     <div id="aulas"></div>
@@ -244,6 +342,7 @@ footer{margin-top:70px;padding-top:20px;border-top:1.5px solid var(--ink);font-f
     <h2 class="secao-titulo">Fontes de monitoramento</h2>
     <div class="fontes-grid" id="fontes-fixas"></div>
   </section>
+  </div>
 
   <div id="aviso-armazenamento"></div>
 
@@ -304,6 +403,7 @@ const PADRAO={
    "placarNota": "5×5. Pendente o voto de desempate do Min. Fux. Retirado da pauta de 25/02/2026, sem nova data.",
    "edai": "Janela aberta. Se houver modulação nos moldes do Tema 69, só recupera os cinco anos anteriores quem já tiver ação ajuizada. Levantar carteira de prestadores de serviço no lucro real e presumido.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Confirmar no portal de RG se houve reinclusão em pauta depois de 25/02/2026.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -322,6 +422,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Impacto estimado vem de fonte secundária. Conferir previsão de pauta.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -340,6 +441,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Número do tema de RG não anotado. Localizar no portal do STF antes de qualquer uso.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -358,6 +460,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "Se a tese foi mesmo fixada com modulação a partir de 15/03/2017, o corte é praticamente inerte para quem ajuíza hoje: o quinquênio do art. 168 do CTN já ultrapassou a data. A aritmética precisa ser refeita contra o acórdão antes de virar peça.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Sessão de 20/08/2026 realizada. Confirmar tese fixada, redação exata da modulação e alcance da suspensão no inteiro teor. Ver base/pendencias.md.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -376,6 +479,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Adiado. Confirmar nova data de julgamento e se a suspensão nacional segue ativa.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -394,6 +498,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "É o maior risco sistêmico do bloco. Acompanhar semanalmente.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Fonte é blog de banca. Conferir a petição inicial e o andamento no portal do STF.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -412,6 +517,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "Relevante em liquidações, incorporações e reorganizações com ativo fiscal acumulado.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Confirmar número do RE e previsão de pauta.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -430,6 +536,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Confirmar alcance da suspensão e previsão de julgamento.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -448,6 +555,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Confirmar se a vista foi devolvida e qual o placar parcial.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -466,6 +574,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "Tese madura. Não há mais litígio: é revisão de apuração de exercícios anteriores.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Ler o Parecer SEI 1.391/2026 na origem antes de usar. Fonte atual é secundária.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -484,6 +593,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Confirmar afetação e eventual suspensão.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -502,6 +612,11 @@ const PADRAO={
    "placarNota": "",
    "edai": "Risco operacional imediato: nota rejeitada trava faturamento. E o descumprimento faz perder a dispensa de recolhimento do período de teste.",
    "verificacao": "a_confirmar",
+   "prazo": {
+    "tipo": "data_certa",
+    "data": "2026-10-01",
+    "oque": "Próxima fase do cronograma de IBS/CBS no documento fiscal"
+   },
    "pendencia": "Correção de prazo para 01/10/2026 noticiada. Conferir no texto do ato conjunto RFB/CGIBS. Ver base/pendencias.md.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -520,6 +635,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "Marco: o novo sistema começou a ser judicializado. Precedente de método para atacar restrições da LC 214.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Localizar a classe e o número da ação e conferir a existência de modulação.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -538,6 +654,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "Frente jovem, com jurisprudência se formando em 1ª e 2ª instâncias — decisões não vinculantes. Bom momento para entrar, com a ressalva de que não há precedente obrigatório.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Ler a Nota Cosit 207/2026 na origem.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -556,6 +673,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Conferir o texto da Resolução 14/2026 no sítio do CGIBS.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -574,6 +692,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "A discussão migrou da existência da tributação para a proporcionalidade da antecipação. Tese nova, pouco povoada — e sem qualquer efeito vinculante.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Status do recurso da PGFN e existência de decisões no mesmo sentido em outros tribunais. Pauta de alto apelo para sócios: não publicar sem o mapa de litigância atualizado. Ver base/pendencias.md.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -592,6 +711,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Modulação: conferir a redação exata do dispositivo e o rol de ressalvas no inteiro teor.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -610,6 +730,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "Derrota importante — serve de limite ao argumento de que toda tese filhote segue o Tema 69.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Confirmar a redação da tese fixada nos repetitivos do STJ.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -632,6 +753,7 @@ const PADRAO={
    "placarNota": "4 votos pela imunidade incondicionada. Retomada após pedido de destaque.",
    "edai": "Crítico para holdings patrimoniais e planejamento sucessório.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Placar parcial vem de fonte secundária. Conferir no andamento antes de citar número de votos.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -650,6 +772,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Resultado da sessão de 20/08/2026 não confirmado. Ver base/pendencias.md.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -668,6 +791,11 @@ const PADRAO={
    "placarNota": "",
    "edai": "Sem modulação de efeitos: a inconstitucionalidade alcança o passado, limitada pelo quinquênio do art. 168 do CTN, que corre a cada pagamento. Municípios ainda podem pedir modulação em embargos. Progressividade por valor venal e seletividade por localização e uso permanecem válidas — o que caiu foi a área como critério de alíquota. Abre frente de repetição de indébito contra municípios com legislação semelhante.",
    "verificacao": "confirmado",
+   "prazo": {
+    "tipo": "rolante",
+    "data": null,
+    "oque": "Prescrição do art. 168 do CTN: a cada mês a parcela mais antiga de IPTU sai da janela dos cinco anos"
+   },
    "pendencia": "Número correto é ARE 1.593.784 (não 1.593.384). Confirmado no portal de RG do STF, incidente 7524215, e no comunicado oficial da Corte.",
    "verificadoEm": "2026-09-01",
    "atualizado": "set/2026"
@@ -686,6 +814,11 @@ const PADRAO={
    "placarNota": "",
    "edai": "Prazo com data certa. A adesão implica desistência de impugnações — cotejar desconto contra probabilidade de êxito, processo a processo.",
    "verificacao": "a_confirmar",
+   "prazo": {
+    "tipo": "data_certa",
+    "data": "2026-10-30",
+    "oque": "Fim da adesão à transação da RFB (Editais 9 e 10/2026)"
+   },
    "pendencia": "Prazo de 30/10/2026 e percentuais: conferir no texto dos editais no sítio da RFB. Prazo em peça exige fonte primária.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -704,6 +837,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "Frente sensível. Vigiar os critérios de caracterização da contumácia e os limites da desconsideração.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Ler a LC 225/2026 no DOU e anotar os critérios legais de contumácia.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -722,6 +856,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Confirmar afetação e status.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -740,6 +875,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "Pareceres de dispensa da PGFN sinalizam teses já ganhas. Fonte subutilizada — monitorar sempre.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Ler o Parecer SEI 1.535/2026 na origem, no sítio da PGFN.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -758,6 +894,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Número do tema de RG não anotado. Localizar no portal do STF.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -776,6 +913,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "Acórdão de Câmara Superior não vincula: é orientação, não precedente obrigatório.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Número do acórdão da CSRF não anotado. Localizar antes de citar.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -794,6 +932,7 @@ const PADRAO={
    "placarNota": "",
    "edai": "Acórdão de Câmara Superior não vincula: é orientação, não precedente obrigatório.",
    "verificacao": "a_confirmar",
+   "prazo": null,
    "pendencia": "Número do acórdão da CSRF não anotado. Localizar antes de citar.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -835,7 +974,79 @@ const PADRAO={
    "txt": "Devedor contumaz e os limites da responsabilidade de sócios.",
    "feito": false
   }
- ]
+ ],
+ "radar": [
+  {
+   "id": "n1",
+   "data": "2026-08-03",
+   "orgao": "RFB/CGIBS",
+   "titulo": "Campos de IBS e CBS passam a ser obrigatórios na NF-e",
+   "fato": "Desde 03/08/2026 o documento fiscal eletrônico do regime regular é rejeitado sem os campos de IBS e CBS, com alíquota-teste de 1% (0,9% CBS e 0,1% IBS).",
+   "edai": "Risco operacional imediato, não tributário: nota rejeitada trava faturamento. E o descumprimento faz perder a dispensa de recolhimento do período de teste.",
+   "eixo": "reforma",
+   "tese": "t12",
+   "fonte": "https://news.fcrlaw.com.br/news/stf-e-stj-pautam-julgamentos-tributarios-de-alto-impacto-para-o-2o-semestre-de-2026/",
+   "verificacao": "a_confirmar",
+   "pendencia": "Conferir o texto do Ato Conjunto RFB/CGIBS nº 4/2026 e o cronograma das fases seguintes."
+  },
+  {
+   "id": "n2",
+   "data": "2026-08-05",
+   "orgao": "STF",
+   "titulo": "Alíquota de IPTU por área do imóvel é inconstitucional",
+   "fato": "Plenário Virtual, sessão encerrada em 05/08/2026, unânime, no ARE 1.593.784/SC — Tema 1.455. Negado provimento ao recurso do município de Chapecó.",
+   "edai": "Sem modulação: a inconstitucionalidade alcança o passado, limitada pelo quinquênio do art. 168 do CTN, que corre a cada pagamento. Municípios ainda podem pedir modulação em embargos.",
+   "eixo": "indiretos",
+   "tese": "t21",
+   "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1455",
+   "verificacao": "confirmado",
+   "pendencia": ""
+  },
+  {
+   "id": "n3",
+   "data": "2026-08-14",
+   "orgao": "STF",
+   "titulo": "Publicado o acórdão do Tema 1.455",
+   "fato": "Acórdão do ARE 1.593.784/SC publicado no DJe em 14/08/2026, abrindo o prazo de embargos de declaração.",
+   "edai": "Enquanto os embargos correm, a tese vale mas a modulação ainda pode aparecer. Peça sobre o tema tem de dizer isso — é a diferença entre tese fixada e tese fixada com trânsito.",
+   "eixo": "indiretos",
+   "tese": "t21",
+   "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1455",
+   "verificacao": "confirmado",
+   "pendencia": ""
+  },
+  {
+   "id": "n4",
+   "data": "2026-08-20",
+   "orgao": "STJ",
+   "titulo": "Três repetitivos pesados na pauta da 1ª Seção",
+   "fato": "Sessão de 20/08/2026 com Tema 1.372 (ICMS-DIFAL na base do PIS/Cofins), Tema 1.412 (bonificações comerciais) e Tema 1.244 (ZFM no PIS/Cofins-Importação). Os três estavam sob suspensão nacional.",
+   "edai": "Circulou notícia de tese fixada no 1.372 com modulação a partir de 15/03/2017. Se for isso, o corte é praticamente inerte para quem ajuíza hoje, dado o quinquênio — mas nada disso foi conferido no acórdão, e sem conferir não vira peça nem parecer.",
+   "eixo": "pis-cofins",
+   "tese": "t4",
+   "fonte": "https://news.fcrlaw.com.br/news/stf-e-stj-pautam-julgamentos-tributarios-de-alto-impacto-para-o-2o-semestre-de-2026/",
+   "verificacao": "a_confirmar",
+   "pendencia": "Resultado dos três não confirmado em fonte primária. Ver base/pendencias.md."
+  },
+  {
+   "id": "n5",
+   "data": "2026-09-01",
+   "orgao": "Interno",
+   "titulo": "Divergência do número do ARE do Tema 1.455 encerrada",
+   "fato": "1.593.784 é o correto; 1.593.384 era erro replicado de material em material. Confirmado no portal de repercussão geral (incidente 7524215) e no comunicado oficial da Corte.",
+   "edai": "O gate de compliance passou a conferir toda citação de processo contra a ficha de verificação da peça. O erro não volta pela mesma porta.",
+   "eixo": "indiretos",
+   "tese": "t21",
+   "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1455",
+   "verificacao": "confirmado",
+   "pendencia": ""
+  }
+ ],
+ "termometro": {
+  "medido_em": null,
+  "metodo": "",
+  "assuntos": []
+ }
 };
 const FONTES_FIXAS=[
  {
@@ -913,6 +1124,10 @@ function carregar(){
   try{ const b=localStorage.getItem(CHAVE); estado=b?JSON.parse(b):clonar(PADRAO); }
   catch(e){ temArmazenamento=false; estado=clonar(PADRAO); }
   if(!estado.aulas) estado.aulas=[];
+  // radar e termômetro são do repositório, não anotação local: seguem a semente
+  // sempre. Estado velho de painel não pode fazer notícia sumir.
+  estado.radar=clonar(PADRAO.radar||[]);
+  estado.termometro=clonar(PADRAO.termometro||{});
   if(!estado.semente) estado.semente=SEMENTE;
   salvar();   // grava a semente já no primeiro acesso, senão o aviso nunca dispara
 }
@@ -992,6 +1207,143 @@ function ficha(x){
   </article>`;
 }
 
+/* ---------- datas ---------- */
+const DIA=86400000;
+function hojeZero(){ const d=new Date(); d.setHours(0,0,0,0); return d; }
+function diasAte(iso){
+  const m=String(iso||'').match(/^(\d{4})-(\d{2})-(\d{2})$/); if(!m) return null;
+  return Math.round((new Date(+m[1],+m[2]-1,+m[3]) - hojeZero())/DIA);
+}
+function diasDesde(iso){ const d=diasAte(iso); return d===null?null:-d; }
+function porExtenso(iso){
+  const m=String(iso||'').match(/^(\d{4})-(\d{2})-(\d{2})$/); if(!m) return iso||'';
+  return `${m[3]} ${MES[+m[2]-1]} ${m[1]}`;
+}
+function plural(n,um,muitos){ return `${n} ${Math.abs(n)===1?um:muitos}`; }
+
+/* ---------- hoje: o que vence primeiro ---------- */
+/* Ordena por urgência real. Prazo sem data não é ignorado — vira `rolante`, que é
+   o caso da prescrição: não vence num dia, perde um mês por mês. */
+function prazosOrdenados(){
+  const fora=[];
+  estado.teses.forEach(t=>{
+    if(!t.prazo) return;
+    const dias = t.prazo.tipo==='data_certa' ? diasAte(t.prazo.data) : null;
+    if(t.prazo.tipo==='data_certa' && dias!==null && dias<0) return;  // já passou
+    fora.push({t, dias, rolante:t.prazo.tipo!=='data_certa'});
+  });
+  return fora.sort((a,b)=>{
+    if(a.rolante!==b.rolante) return a.rolante?1:-1;
+    return (a.dias??1e9)-(b.dias??1e9);
+  });
+}
+function desenharPrazos(){
+  const alvo=document.getElementById('prazos'), lista=prazosOrdenados();
+  const urgentes=lista.filter(x=>!x.rolante&&x.dias<=45).length;
+  const sino=document.getElementById('sino-hoje');
+  sino.textContent=urgentes||''; sino.classList.toggle('tem',urgentes>0);
+  document.getElementById('rotulo-hoje').textContent=
+    lista.length?`${plural(lista.length,'frente','frentes')} com relógio correndo`:'';
+  if(!lista.length){
+    alvo.innerHTML='<p class="vazio">Nenhum prazo anotado.<br>'
+      +'Prazo entra no <b>base/teses.json</b>, campo <code>prazo</code> — e só com data que a fonte confirme.</p>';
+    return;
+  }
+  alvo.innerHTML='<div class="prazo-lista">'+lista.map(({t,dias,rolante})=>{
+    const tom = rolante?'rolante':(dias<=30?'quente':(dias<=90?'morno':''));
+    const contagem = rolante
+      ? '<div class="pz-contagem">janela contínua</div>'
+      : `<div><span class="pz-contagem">${dias}</span> <span class="pz-unidade">${dias===1?'dia':'dias'}</span></div>`;
+    const data = rolante ? 'sem data de corte' : porExtenso(t.prazo.data);
+    const alerta = t.verificacao!=='confirmado'
+      ? '<span class="selo aconfirmar" title="a data precisa ser conferida na fonte">data a confirmar</span>' : '';
+    return `<article class="pz ${tom}">
+      <div class="pz-topo">${contagem}<span class="pz-data">${esc(data)}<br>${esc(t.tribunal)}</span></div>
+      <div class="pz-oque">${esc(t.prazo.oque)}</div>
+      ${alerta}
+      <button class="pz-tese" data-acao="ir-tese" data-id="${t.id}">${esc(t.tema)} — ${esc(t.titulo.slice(0,52))}${t.titulo.length>52?'…':''}</button>
+    </article>`;
+  }).join('')+'</div>';
+}
+
+/* ---------- radar: linha do tempo ---------- */
+function eventoHTML(x){
+  const conf = x.verificacao==='confirmado';
+  const t = estado.teses.find(y=>y.id===x.tese);
+  return `<article class="ev ${conf?'confirmado':'aconfirmar'}">
+    <div class="ev-data">${esc(porExtenso(x.data))} · <span class="ev-orgao">${esc(x.orgao)}</span>
+      ${conf?'':' · <span style="color:var(--morno)">a confirmar</span>'}</div>
+    <h3>${esc(x.titulo)}</h3>
+    <p class="fato">${esc(x.fato)}</p>
+    <div class="edai-bloco"><div class="rot">e daí?</div><p>${esc(x.edai)}</p></div>
+    ${!conf&&x.pendencia?`<div class="pend" style="margin:10px 0 0"><b>Falta:</b> ${esc(x.pendencia)}</div>`:''}
+    <div class="ev-pe">
+      ${x.fonte?linkFonte(x.fonte):''}
+      ${t?`<button class="pz-tese" data-acao="ir-tese" data-id="${t.id}">${esc(t.tema)} no mapa</button>`:''}
+    </div>
+  </article>`;
+}
+function ordemRadar(){ return [...(estado.radar||[])].sort((a,b)=>b.data.localeCompare(a.data)); }
+function desenharRadar(){
+  const lista=ordemRadar();
+  document.getElementById('rotulo-radar').textContent=
+    lista.length?`${plural(lista.length,'item','itens')} · mais recente primeiro`:'';
+  document.getElementById('radar').innerHTML = lista.length
+    ? lista.map(eventoHTML).join('')
+    : '<p class="vazio">Nenhum item registrado.<br>Peça <b>radar</b> no chat: a skill varre as fontes, aplica os seis critérios e grava aqui.</p>';
+  document.getElementById('hoje-radar').innerHTML = lista.length
+    ? '<div class="linha">'+lista.slice(0,5).map(eventoHTML).join('')+'</div>'
+    : '<p class="vazio">Sem movimentação registrada.</p>';
+}
+
+/* ---------- termômetro do X ---------- */
+/* Não é ao vivo e não finge ser: o painel é um arquivo em disco, sem servidor e
+   sem credencial. A medição vem da skill `radar` e envelhece à vista. */
+const TERM_VALIDADE=7;
+function desenharTermometro(){
+  const t=estado.termometro||{}, alvo=document.getElementById('termometro');
+  const rot=document.getElementById('rotulo-termometro');
+  if(!t.medido_em||!(t.assuntos||[]).length){
+    rot.textContent='nenhuma medição registrada';
+    alvo.innerHTML=`<div class="term term-vazio">
+      <p><b>Este quadro não é ao vivo, e não dá para ser.</b> O painel é um arquivo aberto do disco:
+      não há servidor para consultar o X, nem lugar seguro para guardar credencial num repositório
+      que também abriga <code>privado/</code>.</p>
+      <p>Quem mede é a skill <code>radar</code>, que tem busca. Peça <b>radar</b> no chat: ela varre,
+      confere se há reação pública real e grava aqui com a data da medição. Se não houver reação
+      verificável, esta seção continua vazia — de propósito. Ausência de dado é ausência de seção,
+      não estimativa.</p>
+    </div>`;
+    return;
+  }
+  const idade=diasDesde(t.medido_em), velha=idade>TERM_VALIDADE;
+  rot.textContent=`medido em ${porExtenso(t.medido_em)}`;
+  alvo.innerHTML=`<div class="term">
+    <div class="term-grade">${t.assuntos.map(a=>{
+      const tese=estado.teses.find(y=>y.id===a.tese);
+      return `<div class="assunto">
+        <h4>${esc(a.assunto)}</h4>
+        ${a.volume?`<div class="vol">${esc(a.volume)}</div>`:''}
+        ${a.nota?`<p class="nota">${esc(a.nota)}</p>`:''}
+        ${tese?`<button class="pz-tese" style="margin-top:9px" data-acao="ir-tese" data-id="${tese.id}">${esc(tese.tema)}</button>`:''}
+      </div>`;}).join('')}</div>
+    <div class="term-idade${velha?' velha':''}">
+      Medição de ${esc(porExtenso(t.medido_em))} — ${plural(idade,'dia','dias')} atrás.
+      ${velha?'<b>Fora da validade de '+TERM_VALIDADE+' dias:</b> trate como histórico, não como o que está fervendo agora. Rode o radar de novo.'
+             :'Dentro da validade de '+TERM_VALIDADE+' dias.'}
+      ${t.metodo?'<br>Método: '+esc(t.metodo):''}
+    </div>
+  </div>`;
+}
+
+/* ---------- abas ---------- */
+function trocarAba(nome){
+  document.querySelectorAll('.aba').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.pane===nome)));
+  document.querySelectorAll('.pane').forEach(pn=>{ pn.hidden = pn.id!=='pane-'+nome; });
+  try{ localStorage.setItem(CHAVE+'-aba',nome); }catch(e){}
+}
+document.querySelectorAll('.aba').forEach(b=>b.addEventListener('click',()=>trocarAba(b.dataset.pane)));
+
 /* ---------- boletins ---------- */
 function desenharBoletins(){
   const alvo=document.getElementById('boletins');
@@ -1054,7 +1406,7 @@ function desenharBacklog(){
     </li>`).join('');
 }
 function desenharCabecalho(){
-  document.getElementById('corte').textContent=CORTE;
+  document.getElementById('corte').textContent=porExtenso(CORTE);
   document.getElementById('cont-aconfirmar').textContent=
     estado.teses.filter(x=>x.verificacao!=='confirmado').length;
   document.getElementById('trilho').innerHTML=TRANSICAO.map(m=>`
@@ -1085,7 +1437,7 @@ function avisarSemente(){
   </div>`;
 }
 
-function desenhar(){ desenharMapa(); desenharBoletins(); desenharAulas(); desenharBacklog(); avisar(); avisarSemente(); }
+function desenhar(){ desenharMapa(); desenharPrazos(); desenharRadar(); desenharTermometro(); desenharBoletins(); desenharAulas(); desenharBacklog(); avisar(); avisarSemente(); }
 
 /* ---------- edição inline ---------- */
 document.addEventListener('focusout',e=>{
@@ -1113,11 +1465,13 @@ document.addEventListener('click',e=>{
   if(acao==='editar-aula') abrirFormAula(estado.aulas.find(x=>x.id===id));
   if(acao==='semente-adotar'){
     const meu={boletins:estado.boletins,aulas:estado.aulas,backlog:estado.backlog};
+    // radar e termômetro já vêm da semente em carregar(); não precisam ser preservados
     estado=clonar(PADRAO); Object.assign(estado,meu); estado.semente=SEMENTE;
     salvar(); desenharCabecalho(); desenhar(); return;
   }
   if(acao==='semente-manter'){ estado.semente=SEMENTE; salvar(); avisarSemente(); return; }
   if(acao==='ir-tese'){
+    trocarAba('mapa');   // a tese mora no mapa; pular para lá antes de destacar
     filtro='todos'; termo=''; document.getElementById('busca').value='';
     document.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed',String(c.dataset.f==='todos')));
     desenharMapa();
@@ -1230,6 +1584,7 @@ document.getElementById('arquivo').addEventListener('change',e=>{
       const d=JSON.parse(r.result);
       if(!d.teses) throw new Error('formato');
       estado=d; if(!estado.aulas) estado.aulas=[]; if(!estado.semente) estado.semente='importado';
+      estado.radar=clonar(PADRAO.radar||[]); estado.termometro=clonar(PADRAO.termometro||{});
       salvar(); desenhar();
     }catch(err){ alert('Esse arquivo não tem o formato do painel. Use um json exportado daqui.'); }
   };
@@ -1241,7 +1596,12 @@ document.getElementById('zerar').addEventListener('click',()=>{
   }
 });
 
-carregar(); desenharFontes(); desenharCabecalho(); desenhar();
+carregar(); desenharFontes(); desenharCabecalho();
+let abaInicial='hoje';
+try{ abaInicial=localStorage.getItem(CHAVE+'-aba')||'hoje'; }catch(e){}
+if(!document.getElementById('pane-'+abaInicial)) abaInicial='hoje';
+trocarAba(abaInicial);
+desenhar();
 </script>
 </body>
 </html>

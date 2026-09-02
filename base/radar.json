@@ -1,0 +1,76 @@
+{
+  "versao": "2026-09-02",
+  "nota_de_geracao": "Fonte da camada RADAR: linha do tempo de notícia jurídica e termômetro do X. A skill `radar` escreve aqui; o painel lê daqui via scripts/gerar.py. Regra do projeto: item sem consequência prática não entra, e nada não confirmado entra como fato.",
+  "termometro": {
+    "medido_em": null,
+    "metodo": "",
+    "assuntos": []
+  },
+  "itens": [
+    {
+      "id": "n1",
+      "data": "2026-08-03",
+      "orgao": "RFB/CGIBS",
+      "titulo": "Campos de IBS e CBS passam a ser obrigatórios na NF-e",
+      "fato": "Desde 03/08/2026 o documento fiscal eletrônico do regime regular é rejeitado sem os campos de IBS e CBS, com alíquota-teste de 1% (0,9% CBS e 0,1% IBS).",
+      "edai": "Risco operacional imediato, não tributário: nota rejeitada trava faturamento. E o descumprimento faz perder a dispensa de recolhimento do período de teste.",
+      "eixo": "reforma",
+      "tese": "t12",
+      "fonte": "@agenda",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir o texto do Ato Conjunto RFB/CGIBS nº 4/2026 e o cronograma das fases seguintes."
+    },
+    {
+      "id": "n2",
+      "data": "2026-08-05",
+      "orgao": "STF",
+      "titulo": "Alíquota de IPTU por área do imóvel é inconstitucional",
+      "fato": "Plenário Virtual, sessão encerrada em 05/08/2026, unânime, no ARE 1.593.784/SC — Tema 1.455. Negado provimento ao recurso do município de Chapecó.",
+      "edai": "Sem modulação: a inconstitucionalidade alcança o passado, limitada pelo quinquênio do art. 168 do CTN, que corre a cada pagamento. Municípios ainda podem pedir modulação em embargos.",
+      "eixo": "indiretos",
+      "tese": "t21",
+      "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1455",
+      "verificacao": "confirmado",
+      "pendencia": ""
+    },
+    {
+      "id": "n3",
+      "data": "2026-08-14",
+      "orgao": "STF",
+      "titulo": "Publicado o acórdão do Tema 1.455",
+      "fato": "Acórdão do ARE 1.593.784/SC publicado no DJe em 14/08/2026, abrindo o prazo de embargos de declaração.",
+      "edai": "Enquanto os embargos correm, a tese vale mas a modulação ainda pode aparecer. Peça sobre o tema tem de dizer isso — é a diferença entre tese fixada e tese fixada com trânsito.",
+      "eixo": "indiretos",
+      "tese": "t21",
+      "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1455",
+      "verificacao": "confirmado",
+      "pendencia": ""
+    },
+    {
+      "id": "n4",
+      "data": "2026-08-20",
+      "orgao": "STJ",
+      "titulo": "Três repetitivos pesados na pauta da 1ª Seção",
+      "fato": "Sessão de 20/08/2026 com Tema 1.372 (ICMS-DIFAL na base do PIS/Cofins), Tema 1.412 (bonificações comerciais) e Tema 1.244 (ZFM no PIS/Cofins-Importação). Os três estavam sob suspensão nacional.",
+      "edai": "Circulou notícia de tese fixada no 1.372 com modulação a partir de 15/03/2017. Se for isso, o corte é praticamente inerte para quem ajuíza hoje, dado o quinquênio — mas nada disso foi conferido no acórdão, e sem conferir não vira peça nem parecer.",
+      "eixo": "pis-cofins",
+      "tese": "t4",
+      "fonte": "@agenda",
+      "verificacao": "a_confirmar",
+      "pendencia": "Resultado dos três não confirmado em fonte primária. Ver base/pendencias.md."
+    },
+    {
+      "id": "n5",
+      "data": "2026-09-01",
+      "orgao": "Interno",
+      "titulo": "Divergência do número do ARE do Tema 1.455 encerrada",
+      "fato": "1.593.784 é o correto; 1.593.384 era erro replicado de material em material. Confirmado no portal de repercussão geral (incidente 7524215) e no comunicado oficial da Corte.",
+      "edai": "O gate de compliance passou a conferir toda citação de processo contra a ficha de verificação da peça. O erro não volta pela mesma porta.",
+      "eixo": "indiretos",
+      "tese": "t21",
+      "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1455",
+      "verificacao": "confirmado",
+      "pendencia": ""
+    }
+  ]
+}
