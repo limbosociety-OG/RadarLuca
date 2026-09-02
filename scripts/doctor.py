@@ -70,9 +70,10 @@ def checar_sigilo():
 
 # ------------------------------------------------------------------ 2. skills
 def checar_skills():
-    """A migração documentada no README só vale se as skills antigas sumirem do
-    ambiente. Enquanto duas skills de carrossel disputam o gatilho, a peça pode
-    sair pela errada — sem gate, sem verificação, com outra tipografia."""
+    """Mais de uma skill de carrossel no ambiente é situação normal aqui: são
+    identidades visuais diferentes, e a escolha é editorial. O que este check
+    faz é dizer qual vale DENTRO deste repositório, e apontar cópia antiga do
+    mesmo sistema — que é o caso perigoso, porque as duas se parecem."""
     nossa = RAIZ / ".claude" / "skills"
     nomes_locais = set()
     for s in sorted(nossa.glob("*/SKILL.md")):
@@ -82,28 +83,37 @@ def checar_skills():
         if nome != s.parent.name:
             erro(f"skill {s.parent.name}: frontmatter diz `name: {nome}` — "
                  f"nome e diretório precisam bater, senão colide com skill instalada")
-    ok(f"skills do repositório: {', '.join(sorted(nomes_locais)) or 'nenhuma'}")
+    ok(f"skills deste repositório (as que valem aqui): {', '.join(sorted(nomes_locais))}")
 
-    suspeitas = ("carrossel", "carousel", "radar", "boletim", "peca", "tributar")
-    externas = []
+    # Cópia antiga do MESMO sistema visual do repositório. Perigosa justamente
+    # por ser parecida: a peça sai quase igual, sem gate novo e sem ficha com prazo.
+    COPIA_ANTIGA = {"carrossel-tributario": "carrossel", "radar-juridico": "radar"}
+    # Identidade visual diferente, que existe de propósito e não se mexe daqui.
+    OUTRA_IDENTIDADE = {
+        "producao-carrossel": "Moody Blue #21324C + off-white, Cormorant Garamond / "
+                              "Italiana / Instrument, seis batidas",
+    }
+
+    copias, outras = [], []
     for base in (pathlib.Path.home() / ".claude" / "skills",
                  pathlib.Path.home() / ".claude" / "plugins"):
         if not base.exists():
             continue
         for s in base.glob("**/SKILL.md"):
             nome = s.parent.name
-            if any(p in nome.lower() for p in suspeitas):
-                externas.append(f"{nome} ({s.parent})")
-    if externas:
-        erro("skill concorrente instalada fora do repositório:\n      "
-             + "\n      ".join(externas)
-             + "\n      Duas skills disputando o mesmo pedido é como a peça sai pela"
-               "\n      errada — sem gate, sem ficha, com outra tipografia."
-               "\n      Caminho com `/synced/` é skill sincronizada da conta claude.ai:"
-               "\n      apagar o diretório não resolve, ela volta. Remova na origem,"
-               "\n      nas configurações de skills da conta.")
-    else:
-        ok("nenhuma skill concorrente no ambiente do usuário")
+            if nome in COPIA_ANTIGA:
+                copias.append((nome, COPIA_ANTIGA[nome]))
+            elif nome in OUTRA_IDENTIDADE:
+                outras.append((nome, OUTRA_IDENTIDADE[nome]))
+
+    for nome, daqui in sorted(set(copias)):
+        aviso(f"`{nome}` instalada na conta é cópia antiga do mesmo sistema visual "
+              f"de `{daqui}`. Some no feed, difere no processo: sem legenda no gate, "
+              f"sem prazo de validade na ficha, sem fontes versionadas. "
+              f"Neste repositório vale `{daqui}` — peça no chat pelo nome.")
+    for nome, ident in sorted(set(outras)):
+        ok(f"`{nome}` no ambiente: outra identidade ({ident}). "
+           f"Coexiste de propósito — não é para remover, e não é a deste projeto.")
 
 
 # ------------------------------------------------------------------ 3. derivados

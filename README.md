@@ -109,19 +109,32 @@ léxico.
 ## Skills
 
 Este repositório tem três: `carrossel`, `radar`, `boletim`. Os nomes batem com os
-diretórios, de propósito.
+diretórios, de propósito — nenhum deles colide com skill instalada na conta.
 
-Se `python3 scripts/doctor.py` acusar `carrossel-tributario`, `producao-carrossel` ou
-`radar-juridico` instaladas fora do repositório, são versões antigas sincronizadas da conta
-claude.ai. **Remova na origem, nas configurações de skills da conta** — apagar o diretório
-local não resolve, ele volta na próxima sincronização. Enquanto duas skills disputam o
-mesmo pedido, a peça pode sair pela errada: sem gate, sem ficha de verificação e com outro
-sistema tipográfico.
+**Duas identidades visuais convivem, e isso é escolha, não defeito.**
+
+| | sistema | onde vive |
+|---|---|---|
+| **Deste projeto** | `#17181D` / `#E6E9EE`, Bodoni Moda · Spectral · IBM Plex Mono. É o do carrossel do Tema 1.455. | `.claude/skills/carrossel` |
+| **A outra** | Moody Blue `#21324C` + off-white, Cormorant Garamond · Italiana · Instrument, seis batidas. | `producao-carrossel`, na conta |
+
+`producao-carrossel` **não é para remover**. Ela só não é a deste repositório: quando a peça
+for daqui, é o sistema do IPTU que vale.
+
+Caso diferente: `carrossel-tributario` e `radar-juridico`, se aparecerem, são cópias antigas
+**do mesmo sistema daqui** — parecidas no feed, piores no processo (sem legenda no gate, sem
+prazo de validade na ficha, sem fontes versionadas). Prefira as do repositório; pedir pelo
+nome (`carrossel`, `radar`) resolve.
+
+`python3 scripts/doctor.py` classifica o que está instalado e diz qual é qual.
 
 ## Migração — o que ficou para trás
 
-O Projeto no chat tinha duas skills de carrossel concorrendo (`carrossel-tributario` e
-`producao-carrossel`), com sistemas tipográficos diferentes. Aqui só existe uma:
-`.claude/skills/carrossel`, com o stack Bodoni/Spectral/Plex. O formato story 1080×1920,
-que era o que a segunda tinha de próprio, foi portado para o template desta e está
-documentado em `references/editorial.md`.
+O Projeto no chat tinha duas skills de carrossel. Elas não eram duplicatas: eram
+**identidades diferentes**, e continuam sendo. Este repositório carrega uma delas — a do
+carrossel do Tema 1.455, com o stack Bodoni/Spectral/Plex. A outra, `producao-carrossel`,
+segue viva na conta e intocada.
+
+O que veio junto foi o formato story 1080×1920, que só a outra tinha implementado. Foi
+portado para o template daqui, na tipografia daqui, e está documentado em
+`references/editorial.md` — inclusive a faixa que a moldura do Instagram cobre.

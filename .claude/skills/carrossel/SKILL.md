@@ -1,6 +1,6 @@
 ---
 name: carrossel
-description: Produz a peça publicável de Instagram sobre direito tributário no sistema visual travado de Luca Martins — fundo #17181D escuro ou #E6E9EE claro, Bodoni Moda / Spectral / IBM Plex Mono, feed 1080×1350 e story 1080×1920. Use sempre que o pedido envolver carrossel, post, peça, slide, story ou conteúdo de Instagram sobre decisão do STF, STJ, CARF, PGFN, Receita, reforma tributária ou legislação nova — inclusive quando o pedido for só "faz um post sobre o Tema X", "transforma isso em carrossel" ou "leva pro feed". Inclui verificação processual obrigatória com prazo de validade, gate de compliance da OAB (Provimento 205/2021) sobre o roteiro E a legenda, e render determinístico com fontes vendorizadas. Esta é a única skill de carrossel deste repositório: se o ambiente tiver `carrossel-tributario` ou `producao-carrossel` instaladas, elas são versões antigas e não devem ser usadas.
+description: Produz a peça publicável de Instagram sobre direito tributário no sistema visual travado de Luca Martins — fundo #17181D escuro ou #E6E9EE claro, Bodoni Moda / Spectral / IBM Plex Mono, feed 1080×1350 e story 1080×1920. Use sempre que o pedido envolver carrossel, post, peça, slide, story ou conteúdo de Instagram sobre decisão do STF, STJ, CARF, PGFN, Receita, reforma tributária ou legislação nova — inclusive quando o pedido for só "faz um post sobre o Tema X", "transforma isso em carrossel" ou "leva pro feed". Inclui verificação processual obrigatória com prazo de validade, gate de compliance da OAB (Provimento 205/2021) sobre o roteiro E a legenda, e render determinístico com fontes vendorizadas. Esta é a skill de carrossel deste repositório. `producao-carrossel`, se existir no ambiente, é outra identidade visual (Moody Blue, Cormorant/Italiana/Instrument) que convive de propósito e não deve ser removida — apenas não é a deste projeto. `carrossel-tributario`, se existir, é cópia antiga deste mesmo sistema e foi substituída por esta.
 ---
 
 # Carrossel — Luca Martins
@@ -29,9 +29,15 @@ inteira se ela faltar.
 python3 scripts/doctor.py       # a partir da raiz do repositório
 ```
 
-Se ele acusar skill concorrente instalada (`carrossel-tributario`, `producao-carrossel`),
-**pare e resolva**: com duas skills disputando o mesmo pedido, a peça pode sair pela
-errada — sem gate, sem ficha de verificação e com outro sistema tipográfico.
+Ele classifica o que está instalado no ambiente. Duas leituras diferentes:
+
+- `producao-carrossel` → outra identidade visual, convive de propósito. **Não remover.** Só
+  não é a deste projeto: aqui a peça sai no sistema do Tema 1.455.
+- `carrossel-tributario` / `radar-juridico` → cópias antigas deste mesmo sistema. Parecidas
+  no feed, piores no processo. Use as do repositório.
+
+Se houver dúvida sobre qual skill foi acionada, perguntar antes de renderizar. Peça
+publicada no sistema errado não se corrige depois: ela já está no feed.
 
 ## 1. Verificar antes de escrever
 

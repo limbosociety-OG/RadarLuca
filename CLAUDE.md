@@ -79,10 +79,20 @@ divergido.
 **Item não confirmado entra como `"verificacao": "a_confirmar"`, com o que falta escrito no
 campo `pendencia`.** Nunca como fato. É assim que o ⚠️ aparece no mapa e no painel.
 
-**Skills: use as deste repositório.** `carrossel`, `radar`, `boletim`. Se o ambiente
-oferecer `carrossel-tributario`, `producao-carrossel` ou `radar-juridico`, são versões
-antigas sincronizadas da conta — não use, e avise que precisam ser removidas na origem.
-`scripts/doctor.py` detecta.
+**Skills: neste repositório, a peça sai no sistema do IPTU.** `carrossel`, `radar`,
+`boletim` — as três daqui. Duas coisas diferentes podem aparecer no ambiente, vindas da
+conta, e não se tratam do mesmo jeito:
+
+- **`producao-carrossel`** é *outra identidade visual*: Moody Blue `#21324C` com off-white,
+  Cormorant Garamond / Italiana / Instrument, arquitetura de seis batidas. Existe de
+  propósito e não se mexe nela. Só não é a deste projeto — aqui o sistema é o do carrossel
+  do Tema 1.455: `#17181D` / `#E6E9EE`, Bodoni Moda / Spectral / IBM Plex Mono.
+- **`carrossel-tributario` e `radar-juridico`** são cópias antigas *do mesmo sistema daqui*.
+  Esse é o caso perigoso, porque a peça sai parecida e o processo é pior: sem legenda no
+  gate, sem prazo de validade na ficha, sem fontes versionadas. Use as do repositório.
+
+Na dúvida sobre qual disparou, pergunte antes de renderizar. `scripts/doctor.py` classifica
+o que está instalado.
 
 **`privado/` nunca entra em commit e nunca vai para remoto.** Sigilo profissional.
 Dado de cliente, número de processo de carteira, prazo de intimação: só ali. Se eu pedir
