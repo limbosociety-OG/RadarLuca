@@ -1,0 +1,7 @@
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--onyx);color:var(--ink-high);font-family:var(--face-text);font-weight:var(--w-text);letter-spacing:var(--tr-text);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--ink-high);text-decoration:none;border-bottom:1px solid var(--rule);transition:color var(--t-fast) var(--ease),border-color var(--t-fast) var(--ease)}
+a:hover{color:var(--ink-full);border-color:var(--rule-strong)}
+h1,h2,h3,p,figure{margin:0}
+p{text-wrap:pretty}
+::selection{background:var(--blue-slate);color:var(--ink-full)}

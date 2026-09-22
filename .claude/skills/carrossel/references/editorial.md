@@ -51,14 +51,20 @@ Campos de slide:
 
 | campo | efeito |
 |---|---|
-| `tema` | `"escuro"` ou `"claro"`. Define fundo, cor de texto e cor dos acentos. |
-| `eyebrow_esq` | Linha mono superior esquerda. Na capa, o nome da série; nas demais, `NN — RÓTULO DA SEÇÃO`. O `NN` é escrito no roteiro (a numeração de seção é editorial, não automática). |
-| `eyebrow_dir` | Linha mono superior direita, em cor de acento. Referência legal curta: `CF, ART. 156, §1º`, `CTN, ART. 168`, `TRÊS CHECAGENS`. |
-| `capa` | `true` na primeira tela. Troca o rodapé direito por `ARRASTE →` e usa a assinatura longa. |
-| `fecho` | `true` na última. Usa assinatura `ADVOGADO · DIREITO TRIBUTÁRIO`. |
+| `tema` | `"escuro"` (obsidiana) ou `"claro"` (papel). Define campo de luz e tinta. |
+| `campo` | Opcional. Troca o campo de luz padrão por outro do sistema: `blob`, `wash`, `cone`, `corner`, `sky`, `horizon`, `onyx`, `slab` (escuros) ou `paper` (o único claro). Padrões: capa `corner`, fecho `blob`, escuro `slab`, claro `paper`. Tela `claro` só aceita `paper`. |
+| `veu` | Opcional. `bottom`, `top`, `left` ou `nenhum`. Protege o texto da passagem clara do campo. Padrões: capa e fecho `bottom`. |
+| `selo` | Opcional na capa e no fecho: `{"anel": "…", "anel_inferior": "…", "marca": "§"}`. Capa, por padrão, usa `eyebrow_dir` no arco de cima, `eyebrow_esq` no de baixo e `§` no centro; o fecho é sempre `Luca Martins` / `Direito Tributário` / `LM`. |
+| `alinhar` | Opcional. `topo`, `centro` ou `base`. Padrão: `base` na capa e no fecho (o texto desce, abaixo do selo), `centro` no resto. |
+| `eyebrow_esq` | Versalete superior esquerdo, antes da régua. Na capa, o nome da série; nas demais, `NN — RÓTULO DA SEÇÃO`. O `NN` é escrito no roteiro (a numeração de seção é editorial, não automática). |
+| `eyebrow_dir` | Versalete superior direito, depois da régua, em tinta plena. Referência legal curta: `CF, ART. 156, §1º`, `CTN, ART. 168`, `TRÊS CHECAGENS`. |
+| `capa` | `true` na primeira tela. Campo `corner`, selo de 168px a 239px do topo, rodapé `ARRASTE · régua · 01 / NN`. |
+| `fecho` | `true` na última. Campo `blob`, o mesmo selo na mesma altura, rodapé com `OAB/RJ 274.439`. |
 | `blocos` | Lista ordenada de blocos (abaixo). |
 
-A paginação (`03 / 08`) é calculada pelo script a partir do total de slides.
+A paginação (`03 / 08`) é calculada pelo script a partir do total de slides. Tela com bloco
+`numerada` — o board de aplicação — recebe sozinha o aviso `conteúdo informativo · não
+constitui consulta` acima do rodapé.
 
 ---
 
@@ -67,50 +73,52 @@ A paginação (`03 / 08`) é calculada pelo script a partir do total de slides.
 Cada bloco é um objeto com `tipo` e os campos que aquele tipo consome.
 
 ### `kicker`
-Linha mono em cor de acento acima da manchete. Usada na capa e nas telas de virada.
+Versalete Poppins acima da manchete. Usada na capa e nas telas de virada.
 ```json
 { "tipo": "kicker", "texto": "JULGADO EM 05.08.2026 — UNÂNIME" }
 ```
-No tema escuro sai em coral; no claro, em índigo.
+Sai em tinta média; o sistema não tem cor de acento.
 
 ### `manchete`
-A linha grande, Bodoni Moda, peso 700. Uma a quatro linhas. Sem ponto final quando é
+A linha grande, Jost leve: 300 a 68px, 200 a 92px quando curta (menos de 34 caracteres),
+200 a 112px na capa. Uma a quatro linhas. Sem ponto final quando é
 pergunta com `?`; com ponto final quando é afirmação — a peça inteira usa ponto final em
 manchete afirmativa, e isso é parte do desenho.
 ```json
 { "tipo": "manchete", "texto": "Metro quadrado não mede capacidade de pagar.", "filete": true }
 ```
-`filete: true` desenha o traço curto de acento abaixo. Usar quando a manchete abre uma
+`filete: true` desenha um fio curto abaixo. Usar quando a manchete abre uma
 seção expositiva; omitir quando ela é seguida imediatamente por uma citação.
 
 ### `regua`
-Linha horizontal fina de largura total. Separa manchete de conteúdo quando não há filete.
+Fio que sangra nas duas pontas (`--rule-bleed`). Separa manchete de conteúdo quando não há filete.
 ```json
 { "tipo": "regua" }
 ```
 
 ### `paragrafo`
-Corpo em Spectral. Aceita `**negrito**` e `*itálico*`.
+Corpo em Archivo, 27px, tinta média; o negrito sobe para tinta plena. Aceita `**negrito**` e `*itálico*`.
 ```json
 { "tipo": "paragrafo", "texto": "Muitos municípios criaram faixas: **passou de tantos metros, a alíquota sobe.**" }
 ```
 
 ### `citacao`
-Bloco recuado com barra vertical de acento à esquerda, Spectral itálico, corpo maior.
+Cormorant Garamond, 50px, entre aspas curvas — o único lugar, além do selo, em que a
+serifa aparece. O script põe as aspas; não escrevê-las no roteiro.
 Reservado para a tese fixada na letra e para a frase de fecho.
 ```json
 { "tipo": "citacao", "texto": "É inconstitucional a fixação, por lei municipal posterior à EC nº 29/2000, de alíquota do IPTU em razão da área do imóvel." }
 ```
 
 ### `mono`
-Microtipografia cinza, IBM Plex Mono. Onde vivem processo, relator, datas, ressalvas e o
+Microtipografia em versalete Poppins, 15px, tinta baixa. Onde vivem processo, relator, datas, ressalvas e o
 aviso do Provimento 205. Quebra de linha com `\n`.
 ```json
 { "tipo": "mono", "texto": "STF, Plenário Virtual, ARE 1.593.784/SC — Tema 1.455 de repercussão geral.\nRel. Min. Dias Toffoli · julgado em 05.08.2026 · acórdão publicado em 14.08.2026." }
 ```
 
 ### `duo`
-Duas colunas comparativas separadas por régua vertical. Para a aritmética que expõe a
+Duas peças de mosaico lado a lado, calha de 10px, numeral em Jost 200. Para a aritmética que expõe a
 distorção.
 ```json
 { "tipo": "duo", "colunas": [
@@ -118,7 +126,8 @@ distorção.
   { "rotulo": "APARTAMENTO NA ORLA", "numero": "120 m²",  "texto": "Área pequena, valor por metro alto.", "tag": "pagava menos", "tom": "ok" }
 ] }
 ```
-`tom`: `alerta` (rosa) ou `ok` (verde).
+`tom`: `alerta` vira laje de obsidiana (`slab`) com etiqueta cheia; `ok` vira placa com
+marcas de registro nos cantos e etiqueta em fio. O sistema não usa verde nem vermelho.
 
 ### `caixas`
 Blocos empilhados de "continua válido" versus "não pode mais". O uso mais forte da peça:
@@ -136,7 +145,8 @@ delimita o alcance exato da decisão e evita que o leitor generalize.
 ```
 
 ### `numerada`
-Lista com numeral mono em índigo, título em Bodoni e descrição em Spectral. Para as
+Lista com numeral Jost 200 a 76px, título em Jost 300 e descrição em Archivo, cada item
+aberto por um fio. Para as
 checagens que o leitor faz sozinho.
 ```json
 { "tipo": "numerada", "itens": [
@@ -145,8 +155,8 @@ checagens que o leitor faz sozinho.
 ```
 
 ### `prazo`
-A barra de prescrição: seis células, as primeiras `vencidas` hachuradas e as demais em
-verde, com rótulos abaixo.
+A barra de prescrição: seis células em mosaico, as primeiras `vencidas` hachuradas em fio
+e as demais em cromo, com rótulos em versalete abaixo.
 ```json
 { "tipo": "prazo", "vencidas": 1, "total": 6,
   "esq": "já prescrito", "centro": "cinco anos ainda discutíveis →", "dir": "hoje" }
@@ -213,7 +223,7 @@ não serve.
 **Corpo.** Frases curtas. Um raciocínio por parágrafo. Negrito só no que decide — em geral
 uma expressão por tela, no máximo duas. Negrito espalhado deixa de sinalizar.
 
-**Microtipografia.** Todo dado verificável desce para o mono cinza: número de processo,
+**Microtipografia.** Todo dado verificável desce para o versalete de tinta baixa: número de processo,
 órgão, relator, datas, dispositivo legal, ressalvas de aplicação. Isso libera o corpo do
 texto para significar e mantém a peça auditável por quem quiser conferir.
 

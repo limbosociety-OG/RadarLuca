@@ -1,0 +1,51 @@
+:root{
+--face-display:"Jost","Futura",sans-serif; /* @kind font */
+--face-spec:"Poppins","Jost",sans-serif; /* @kind font */
+--face-text:"Archivo","Helvetica Neue",sans-serif; /* @kind font */
+--face-ring:"Cormorant Garamond",Didot,serif; /* @kind font */
+
+/* canvas scale — 1080px artboards */
+--t-hero:132px; /* @kind font */
+--t-display:92px; /* @kind font */
+--t-statement:68px; /* @kind font */
+--t-figure:216px; /* @kind font */
+--t-figure-sm:132px; /* @kind font */
+--t-spec:34px; /* @kind font */
+--t-spec-sm:26px; /* @kind font */
+--t-lead:32px; /* @kind font */
+--t-body:27px; /* @kind font */
+--t-caption:22px; /* @kind font */
+--t-micro:17px; /* @kind font */
+--t-ring:19px; /* @kind font */
+
+/* screen scale */
+--s-display:clamp(38px,5.4vw,72px); /* @kind font */
+--s-h1:clamp(26px,3vw,40px); /* @kind font */
+--s-spec:clamp(15px,1.5vw,19px); /* @kind font */
+--s-body:16px; /* @kind font */
+--s-micro:11px; /* @kind font */
+
+--lh-hero:0.98; /* @kind other */
+--lh-display:1.05; /* @kind other */
+--lh-statement:1.1; /* @kind other */
+--lh-text:1.5; /* @kind other */
+--lh-spec:1.24; /* @kind other */
+
+/* tracking — the boards run tight on display, very wide on micro caps */
+--tr-hero:-0.02em; /* @kind other */
+--tr-display:-0.015em; /* @kind other */
+--tr-figure:-0.035em; /* @kind other */
+--tr-spec:0.05em; /* @kind other */
+--tr-text:0.005em; /* @kind other */
+--tr-micro:0.2em; /* @kind other */
+--tr-ring:0.3em; /* @kind other */
+--tr-monogram:0.06em; /* @kind other */
+
+--w-display:300; /* @kind other */
+--w-display-thin:200; /* @kind other */
+--w-spec:600; /* @kind other */
+--w-text:400; /* @kind other */
+--w-text-strong:600; /* @kind other */
+--w-micro:500; /* @kind other */
+--w-ring:400; /* @kind other */
+}

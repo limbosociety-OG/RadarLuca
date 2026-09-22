@@ -127,8 +127,8 @@ def checar_skills():
                 outras.append((nome, OUTRA_IDENTIDADE[nome]))
 
     for nome, daqui in sorted(set(copias)):
-        aviso(f"`{nome}` instalada na conta é cópia antiga do mesmo sistema visual "
-              f"de `{daqui}`. Some no feed, difere no processo: sem legenda no gate, "
+        aviso(f"`{nome}` instalada na conta é cópia antiga de `{daqui}`, "
+              f"fora do Obsidian Chrome: sem legenda no gate, "
               f"sem prazo de validade na ficha, sem fontes versionadas. "
               f"Neste repositório vale `{daqui}` — peça no chat pelo nome.")
     for nome, ident in sorted(set(outras)):
@@ -150,8 +150,9 @@ def checar_derivados():
 # ------------------------------------------------------------------ 4. fontes
 def checar_fontes():
     d = RAIZ / ".claude" / "skills" / "carrossel" / "assets" / "fonts"
-    esperadas = ["BodoniModa.ttf", "BodoniModa-Italic.ttf", "Spectral-Regular.ttf",
-                 "Spectral-SemiBold.ttf", "Spectral-Italic.ttf", "IBMPlexMono.ttf"]
+    # Obsidian Chrome (design/obsidian-chrome): Jost, Poppins, Archivo, Cormorant.
+    esperadas = ["Jost.ttf", "Poppins-Medium.ttf", "Poppins-SemiBold.ttf",
+                 "Archivo.ttf", "Archivo-Italic.ttf", "CormorantGaramond.ttf"]
     ruins = []
     for n in esperadas:
         f = d / n
@@ -166,9 +167,8 @@ def checar_fontes():
 
     # O painel também não busca fonte na rede: as woff2 são embutidas por gerar.py.
     pf = RAIZ / "portal" / "assets" / "fonts"
-    faltam = [n for n in ("Archivo.woff2", "Spectral-Regular.woff2",
-                          "Spectral-SemiBold.woff2", "Spectral-Italic.woff2",
-                          "IBMPlexMono.woff2")
+    faltam = [n for n in ("Jost.woff2", "Archivo.woff2", "Poppins-Medium.woff2",
+                          "Poppins-SemiBold.woff2", "CormorantGaramond-LM.woff2")
               if not (pf / n).exists() or (pf / n).read_bytes()[:4] != b"wOF2"]
     if faltam:
         erro("fontes do painel ausentes ou inválidas: " + ", ".join(faltam))
@@ -272,9 +272,34 @@ def checar_testes():
         ok(r.stdout.strip().splitlines()[-1] + " no gate de compliance")
 
 
+# ------------------------------------------------------------------ 4b. sistema visual
+def checar_sistema():
+    """O template do carrossel carrega cópia dos tokens do Obsidian Chrome, porque
+    o build embute tudo num HTML só. Cópia diverge em silêncio: aqui ela é
+    conferida, token a token, contra design/obsidian-chrome/tokens/."""
+    ds = RAIZ / "design" / "obsidian-chrome" / "tokens"
+    tpl = RAIZ / ".claude" / "skills" / "carrossel" / "assets" / "template.html"
+    if not ds.is_dir():
+        erro("design/obsidian-chrome/ ausente — o sistema visual travado não está no repositório")
+        return
+    decl = re.compile(r"(--[a-z0-9-]+)\s*:\s*([^;]+);")
+    fonte = {}
+    for css in ("palette.css", "fields.css", "type.css"):
+        for k, v in decl.findall((ds / css).read_text(encoding="utf-8")):
+            fonte[k] = " ".join(v.split("/*")[0].split())
+    copia = {k: " ".join(v.split()) for k, v in decl.findall(tpl.read_text(encoding="utf-8"))}
+    diverge = sorted(k for k in copia if k in fonte and copia[k] != fonte[k])
+    if diverge:
+        erro("template do carrossel diverge de design/obsidian-chrome nos tokens: "
+             + ", ".join(diverge))
+    else:
+        ok(f"template do carrossel em dia com o Obsidian Chrome "
+           f"({sum(1 for k in copia if k in fonte)} tokens conferidos)")
+
+
 def main():
     for fn in (checar_sigilo, checar_skills, checar_derivados, checar_fontes,
-               checar_pecas, checar_pendencias, checar_radar, checar_testes):
+               checar_sistema, checar_pecas, checar_pendencias, checar_radar, checar_testes):
         try:
             fn()
         except Exception as e:  # um check quebrado não pode esconder os outros

@@ -1,6 +1,6 @@
 ---
 name: carrossel
-description: Produz a peça publicável de Instagram sobre direito tributário no sistema visual travado de Luca Martins — fundo #17181D escuro ou #E6E9EE claro, Bodoni Moda / Spectral / IBM Plex Mono, feed 1080×1350 e story 1080×1920. Use sempre que o pedido envolver carrossel, post, peça, slide, story ou conteúdo de Instagram sobre decisão do STF, STJ, CARF, PGFN, Receita, reforma tributária ou legislação nova — inclusive quando o pedido for só "faz um post sobre o Tema X", "transforma isso em carrossel" ou "leva pro feed". Inclui verificação processual obrigatória com prazo de validade, gate de compliance da OAB (Provimento 205/2021) sobre o roteiro E a legenda, e render determinístico com fontes vendorizadas. Esta é a skill de carrossel deste repositório. `producao-carrossel`, se existir no ambiente, é outra identidade visual (Moody Blue, Cormorant/Italiana/Instrument) que convive de propósito e não deve ser removida — apenas não é a deste projeto. `carrossel-tributario`, se existir, é cópia antiga deste mesmo sistema e foi substituída por esta.
+description: Produz a peça publicável de Instagram sobre direito tributário no sistema visual travado de Luca Martins, o Obsidian Chrome — obsidiana #0A0A0A e campos de luz em cromo, selo circular, Jost / Poppins / Archivo / Cormorant Garamond, feed 1080×1350 e story 1080×1920. Use sempre que o pedido envolver carrossel, post, peça, slide, story ou conteúdo de Instagram sobre decisão do STF, STJ, CARF, PGFN, Receita, reforma tributária ou legislação nova — inclusive quando o pedido for só "faz um post sobre o Tema X", "transforma isso em carrossel" ou "leva pro feed". Inclui verificação processual obrigatória com prazo de validade, gate de compliance da OAB (Provimento 205/2021) sobre o roteiro E a legenda, e render determinístico com fontes vendorizadas. Esta é a skill de carrossel deste repositório. `producao-carrossel`, se existir no ambiente, é outra identidade visual (Moody Blue, Cormorant/Italiana/Instrument) que convive de propósito e não deve ser removida — apenas não é a deste projeto. `carrossel-tributario`, se existir, é cópia antiga desta skill, fora do Obsidian Chrome, e foi substituída por esta.
 ---
 
 # Carrossel — Luca Martins
@@ -32,9 +32,9 @@ python3 scripts/doctor.py       # a partir da raiz do repositório
 Ele classifica o que está instalado no ambiente. Duas leituras diferentes:
 
 - `producao-carrossel` → outra identidade visual, convive de propósito. **Não remover.** Só
-  não é a deste projeto: aqui a peça sai no sistema do Tema 1.455.
-- `carrossel-tributario` / `radar-juridico` → cópias antigas deste mesmo sistema. Parecidas
-  no feed, piores no processo. Use as do repositório.
+  não é a deste projeto: aqui a peça sai no Obsidian Chrome (`design/obsidian-chrome/`).
+- `carrossel-tributario` / `radar-juridico` → cópias antigas desta skill, fora do Obsidian
+  Chrome e piores no processo. Use as do repositório.
 
 Se houver dúvida sobre qual skill foi acionada, perguntar antes de renderizar. Peça
 publicada no sistema errado não se corrige depois: ela já está no feed.
@@ -82,9 +82,11 @@ pela primeira vez.
 
 O essencial, para não abrir o arquivo em pauta simples:
 
-**Ritmo de fundo.** Escuro (`#17181D`) é voz editorial: capa, o achado que ninguém
-publicou, fecho. Claro (`#E6E9EE`) é exposição técnica: a tese na letra, a tradução, os
-limites, as checagens. Tudo claro vira apostila; tudo escuro vira manifesto.
+**Ritmo de fundo.** `escuro` é obsidiana e carrega voz editorial: capa (campo `corner`),
+o achado que ninguém publicou (`slab`), fecho (`blob`). `claro` é o papel (`paper`) e
+carrega exposição técnica: a tese na letra, a tradução, os limites, as checagens. Tudo papel
+vira apostila; tudo obsidiana vira manifesto. Todo fundo é campo de luz do sistema — o
+build recusa campo que não exista em `design/obsidian-chrome/tokens/fields.css`.
 
 **Numeração.** A capa não é seção. A seção `01` fica na tela 2. A paginação do rodapé é
 calculada pelo script — não escrever à mão.
@@ -144,7 +146,8 @@ Roda o gate, confere as fontes vendorizadas e renderiza via Playwright:
 `slide-NN.png` em 1080×1350, `story-NN.png` em 1080×1920. O story usa padding de 250px no
 topo e 230px na base — é a faixa que a moldura do Instagram cobre, não é respiro estético.
 
-**O build não baixa fonte.** As seis famílias estão versionadas em `assets/fonts/`. Se
+**O build não baixa fonte.** Os seis arquivos do Obsidian Chrome (Jost, Poppins 500 e 600,
+Archivo e itálica, Cormorant Garamond) estão versionados em `assets/fonts/`. Se
 alguma estiver ausente, truncada ou não for arquivo de fonte, o build para e diz como
 restaurar. Nunca renderizar com fallback de sistema: a inconsistência é permanente no feed.
 
@@ -175,8 +178,9 @@ política de redes da casa.
 - `references/editorial.md` — esquema do `roteiro.json`, catálogo de blocos, arquiteturas
   de 8 e de 6 telas, exemplos de manchete boa e ruim.
 - `references/verificacao.md` — protocolo de checagem processual, ficha de fatos, validade.
-- `assets/template.html` — o sistema visual, feed e story. Não editar por peça; layout
-  novo vira bloco novo, documentado em `editorial.md`.
+- `assets/template.html` — o sistema visual, feed e story, com os tokens copiados de
+  `design/obsidian-chrome/`. Não editar por peça; layout novo vira bloco novo, documentado
+  em `editorial.md`. Mudança de sistema começa em `design/obsidian-chrome/`, nunca aqui.
 - `scripts/compliance.py` — o gate. Sem bypass.
 - `scripts/testa_compliance.py` — a prova de que o gate morde.
 - `scripts/build.py` — gate, fontes, montagem e render.

@@ -181,8 +181,8 @@ deixar vírgula sobrando antes do `]`, e aí o arquivo inteiro fica inválido �
 perder a regra que você tirou, é perder *todas*, inclusive o `deny` de `Read(privado/**)`.
 `python3 scripts/doctor.py` reprova arquivo que não faz parse.
 
-**Fontes vendorizadas.** `assets/fonts/` contém Bodoni Moda, Spectral e IBM Plex Mono
-(OFL). O build **não baixa fonte**: confere existência, tamanho e assinatura de arquivo, e
+**Fontes vendorizadas.** `assets/fonts/` contém Jost, Poppins, Archivo e Cormorant
+Garamond (OFL), as quatro do Obsidian Chrome. O build **não baixa fonte**: confere existência, tamanho e assinatura de arquivo, e
 para se algo estiver errado. Não substituir por fonte de sistema em nenhuma hipótese.
 
 **O gate não tem bypass.** `compliance.py` reprova e o build morre. Ele lê o roteiro e a
@@ -199,14 +199,14 @@ diretórios, de propósito — nenhum deles colide com skill instalada na conta.
 
 | | sistema | onde vive |
 |---|---|---|
-| **Deste projeto** | `#17181D` / `#E6E9EE`, Bodoni Moda · Spectral · IBM Plex Mono. É o do carrossel do Tema 1.455. | `.claude/skills/carrossel` |
+| **Deste projeto** | Obsidian Chrome: obsidiana `#0A0A0A`, campos de luz em cromo, selo circular; Jost · Poppins · Archivo · Cormorant Garamond. Travado em 10/09/2026. | `design/obsidian-chrome` + `.claude/skills/carrossel` |
 | **A outra** | Moody Blue `#21324C` + off-white, Cormorant Garamond · Italiana · Instrument, seis batidas. | `producao-carrossel`, na conta |
 
 `producao-carrossel` **não é para remover**. Ela só não é a deste repositório: quando a peça
-for daqui, é o sistema do IPTU que vale.
+for daqui, é o Obsidian Chrome que vale.
 
 Caso diferente: `carrossel-tributario` e `radar-juridico`, se aparecerem, são cópias antigas
-**do mesmo sistema daqui** — parecidas no feed, piores no processo (sem legenda no gate, sem
+**da skill daqui**, fora do Obsidian Chrome e piores no processo (sem legenda no gate, sem
 prazo de validade na ficha, sem fontes versionadas). Prefira as do repositório; pedir pelo
 nome (`carrossel`, `radar`) resolve.
 
@@ -215,10 +215,9 @@ nome (`carrossel`, `radar`) resolve.
 ## Migração — o que ficou para trás
 
 O Projeto no chat tinha duas skills de carrossel. Elas não eram duplicatas: eram
-**identidades diferentes**, e continuam sendo. Este repositório carrega uma delas — a do
-carrossel do Tema 1.455, com o stack Bodoni/Spectral/Plex. A outra, `producao-carrossel`,
-segue viva na conta e intocada.
+**identidades diferentes**, e continuam sendo. Este repositório usa o Obsidian Chrome
+(`design/obsidian-chrome/`). A outra, `producao-carrossel`, segue viva na conta e intocada.
 
 O que veio junto foi o formato story 1080×1920, que só a outra tinha implementado. Foi
-portado para o template daqui, na tipografia daqui, e está documentado em
+portado para o template daqui, e está documentado em
 `references/editorial.md` — inclusive a faixa que a moldura do Instagram cobre.

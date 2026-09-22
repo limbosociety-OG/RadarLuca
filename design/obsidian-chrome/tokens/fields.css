@@ -1,0 +1,35 @@
+:root{
+/* the soft blob from the palette boards: dark crown, light floor */
+--field-blob:radial-gradient(118% 86% at 50% 104%,#F2F1EF 0%,#D2D9DC 12%,#8E9FAA 30%,#536878 50%,#1C2E3D 74%,#0A0A0A 100%); /* @kind color */
+/* wall wash: a rectangle of light thrown down a dark wall */
+--field-wash:linear-gradient(180deg,#0A0A0A 0%,#0C121A 34%,#3C5567 62%,#8E9FAA 82%,#0C121A 100%); /* @kind color */
+/* the cone: a single beam opening from a point */
+--field-cone:radial-gradient(74% 120% at 0% 50%,#E8F0F6 0%,rgba(142,159,170,0.55) 10%,rgba(60,85,103,0.35) 26%,rgba(12,18,26,0.96) 58%,#0A0A0A 100%); /* @kind color */
+/* corner light, as on the story covers */
+--field-corner:radial-gradient(128% 96% at 4% -8%,#D2D9DC 0%,#8E9FAA 12%,#3C5567 32%,#111A25 62%,#0A0A0A 100%); /* @kind color */
+/* steel sky, from the equine plate */
+--field-sky:linear-gradient(178deg,#7C93A6 0%,#41596B 42%,#1E2C38 78%,#0A0A0A 100%); /* @kind color */
+/* horizon arc glow behind a dark disc */
+--field-horizon:radial-gradient(80% 60% at 50% 96%,#B4C0C7 0%,#536878 22%,#16232F 52%,#0A0A0A 100%); /* @kind color */
+/* flat grounds */
+--field-onyx:#0A0A0A; /* @kind color */
+--field-slab:linear-gradient(158deg,#16232F 0%,#0C121A 64%,#0A0A0A 100%); /* @kind color */
+--field-paper:linear-gradient(180deg,#F2F1EF 0%,#E5E4E2 100%); /* @kind color */
+
+/* protection: type never sits on the bright pass */
+--veil-bottom:linear-gradient(180deg,rgba(10,10,10,0) 0%,rgba(10,10,10,0.55) 46%,rgba(10,10,10,0.92) 100%); /* @kind color */
+--veil-top:linear-gradient(0deg,rgba(10,10,10,0) 0%,rgba(10,10,10,0.62) 76%,rgba(10,10,10,0.88) 100%); /* @kind color */
+--veil-left:linear-gradient(90deg,rgba(10,10,10,0.9) 0%,rgba(10,10,10,0.4) 52%,rgba(10,10,10,0) 100%); /* @kind color */
+
+/* a hairline that bleeds out at both ends, as on the boards */
+--rule-bleed:linear-gradient(90deg,rgba(229,228,226,0) 0%,rgba(229,228,226,0.30) 14%,rgba(229,228,226,0.30) 86%,rgba(229,228,226,0) 100%); /* @kind color */
+
+--halo-wide:0 0 140px rgba(180,203,220,0.20); /* @kind shadow */
+--halo-tight:0 0 34px rgba(226,238,248,0.42); /* @kind shadow */
+--slab-drop:0 30px 90px rgba(0,0,0,0.62); /* @kind shadow */
+--inset-hair:inset 0 0 0 1px rgba(229,228,226,0.13); /* @kind shadow */
+
+--blur-soft:blur(58px); /* @kind other */
+--blur-chrome:blur(22px); /* @kind other */
+--plate-veil:url("../assets/texture-veil.png"); /* @kind other */
+}

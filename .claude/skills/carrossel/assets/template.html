@@ -3,173 +3,212 @@
 <style>
 __FONTFACE__
 
+/* ============================================================
+   Obsidian Chrome — sistema travado em 10.09.2026.
+   Fonte da verdade: design/obsidian-chrome/ (tokens/, CLAUDE.md).
+   Os tokens abaixo são cópia literal de lá; mudou lá, muda aqui.
+   ============================================================ */
 :root{
-  /* fundos — amostrados dos PNGs da peça do Tema 1.455 */
-  --escuro:#17181D;
-  --claro:#E6E9EE;
-  /* tinta */
-  --tinta:#14161B;      --tinta2:#4A515C;   --tinta3:#7B828D;
-  --papel:#E8EAEF;      --papel2:#A9AFBA;   --papel3:#767C88;
-  /* acentos */
-  --indigo:#1F2A5E;     --lavanda:#8B92C6;  --coral:#C08D89;
-  --alerta:#A32B22;     --alerta-bg:#F7E9E8; --alerta-brd:#C24A40;
-  --ok:#1C5A44;         --ok-bg:#E3EDE6;
+  /* paleta */
+  --onyx:#0A0A0A; --blue-slate:#536878; --alabaster:#E5E4E2;
+  --chrome-3:#536878; --chrome-5:#8E9FAA; --chrome-6:#B4C0C7; --chrome-7:#D2D9DC;
+  --ink-full:#F2F1EF; --ink-high:#E5E4E2;
+  --ink-mid:rgba(229,228,226,0.66); --ink-low:rgba(229,228,226,0.44);
+  --ink-onyx:#0A0A0A; --ink-onyx-mid:rgba(10,10,10,0.62); --ink-onyx-low:rgba(10,10,10,0.44);
+  --rule-faint:rgba(229,228,226,0.13); --rule:rgba(229,228,226,0.24);
+  --rule-strong:rgba(229,228,226,0.42); --rule-onyx:rgba(10,10,10,0.20);
+  --rule-onyx-strong:rgba(10,10,10,0.42);
+
+  /* campos de luz — todo fundo sai daqui */
+  --field-blob:radial-gradient(118% 86% at 50% 104%,#F2F1EF 0%,#D2D9DC 12%,#8E9FAA 30%,#536878 50%,#1C2E3D 74%,#0A0A0A 100%);
+  --field-wash:linear-gradient(180deg,#0A0A0A 0%,#0C121A 34%,#3C5567 62%,#8E9FAA 82%,#0C121A 100%);
+  --field-cone:radial-gradient(74% 120% at 0% 50%,#E8F0F6 0%,rgba(142,159,170,0.55) 10%,rgba(60,85,103,0.35) 26%,rgba(12,18,26,0.96) 58%,#0A0A0A 100%);
+  --field-corner:radial-gradient(128% 96% at 4% -8%,#D2D9DC 0%,#8E9FAA 12%,#3C5567 32%,#111A25 62%,#0A0A0A 100%);
+  --field-sky:linear-gradient(178deg,#7C93A6 0%,#41596B 42%,#1E2C38 78%,#0A0A0A 100%);
+  --field-horizon:radial-gradient(80% 60% at 50% 96%,#B4C0C7 0%,#536878 22%,#16232F 52%,#0A0A0A 100%);
+  --field-onyx:#0A0A0A;
+  --field-slab:linear-gradient(158deg,#16232F 0%,#0C121A 64%,#0A0A0A 100%);
+  --field-paper:linear-gradient(180deg,#F2F1EF 0%,#E5E4E2 100%);
+  --veil-bottom:linear-gradient(180deg,rgba(10,10,10,0) 0%,rgba(10,10,10,0.55) 46%,rgba(10,10,10,0.92) 100%);
+  --veil-top:linear-gradient(0deg,rgba(10,10,10,0) 0%,rgba(10,10,10,0.62) 76%,rgba(10,10,10,0.88) 100%);
+  --veil-left:linear-gradient(90deg,rgba(10,10,10,0.9) 0%,rgba(10,10,10,0.4) 52%,rgba(10,10,10,0) 100%);
+  --rule-bleed:linear-gradient(90deg,rgba(229,228,226,0) 0%,rgba(229,228,226,0.30) 14%,rgba(229,228,226,0.30) 86%,rgba(229,228,226,0) 100%);
+  --rule-bleed-onyx:linear-gradient(90deg,rgba(10,10,10,0) 0%,rgba(10,10,10,0.22) 14%,rgba(10,10,10,0.22) 86%,rgba(10,10,10,0) 100%);
+
   /* tipografia */
-  --didone:'Bodoni Moda',Didot,'Times New Roman',serif;
-  --corpo:'Spectral',Georgia,serif;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --face-display:"Jost","Futura",sans-serif;
+  --face-spec:"Poppins","Jost",sans-serif;
+  --face-text:"Archivo","Helvetica Neue",sans-serif;
+  --face-ring:"Cormorant Garamond",Didot,serif;
+
+  --pad:76px; --gutter:10px; --tick:22px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#555}
+body{background:#050607}
 
+/* ---------- a placa ---------- */
 .slide{
-  position:relative; width:1080px; height:1350px; overflow:hidden;
-  padding:74px 88px 66px; display:flex; flex-direction:column;
-  font-family:var(--corpo); -webkit-font-smoothing:antialiased;
+  position:relative; width:1080px; height:1350px; overflow:hidden; isolation:isolate;
+  padding:var(--pad); display:flex; flex-direction:column;
+  font-family:var(--face-text); font-weight:400; letter-spacing:.005em;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  color:var(--ink-full);
 }
-/* granulado: a peça original tem textura, sem ela o fundo chapa */
-.slide::before{
-  content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='0.5'/></svg>");
-}
-.slide.escuro{background:var(--escuro); color:var(--papel)}
-.slide.escuro::before{opacity:.055; mix-blend-mode:screen}
-.slide.claro{background:var(--claro); color:var(--tinta)}
-.slide.claro::before{opacity:.05; mix-blend-mode:multiply}
-.slide>*{position:relative; z-index:1}
+.slide>.veu{position:absolute; inset:0; pointer-events:none; z-index:0}
+.slide>*:not(.veu){position:relative; z-index:1}
 
-/* ---------- cabeçalho ---------- */
-.topo{display:flex; justify-content:space-between; align-items:baseline;
-      font-family:var(--mono); font-size:15.5px; letter-spacing:.19em; text-transform:uppercase}
-.escuro .topo .esq{color:var(--papel3)} .escuro .topo .dir{color:var(--lavanda)}
-.claro  .topo .esq{color:var(--tinta3)} .claro  .topo .dir{color:var(--indigo)}
-.fio{height:1px; margin-top:20px}
-.escuro .fio{background:#33353C} .claro .fio{background:#C9CED6}
+.campo-blob{background:var(--field-blob)}   .campo-wash{background:var(--field-wash)}
+.campo-cone{background:var(--field-cone)}   .campo-corner{background:var(--field-corner)}
+.campo-sky{background:var(--field-sky)}     .campo-horizon{background:var(--field-horizon)}
+.campo-onyx{background:var(--field-onyx)}   .campo-slab{background:var(--field-slab)}
+.campo-paper{background:var(--field-paper); color:var(--ink-onyx)}
+.veu-bottom{background:var(--veil-bottom)} .veu-top{background:var(--veil-top)}
+.veu-left{background:var(--veil-left)}
+
+/* tinta por fundo: o papel é o único campo claro */
+.slide{--t1:var(--ink-full); --t2:var(--ink-mid); --t3:var(--ink-low);
+       --r1:var(--rule); --r2:var(--rule-strong); --rb:var(--rule-bleed)}
+.slide.campo-paper{--t1:var(--ink-onyx); --t2:var(--ink-onyx-mid); --t3:var(--ink-onyx-low);
+       --r1:var(--rule-onyx); --r2:var(--rule-onyx-strong); --rb:var(--rule-bleed-onyx)}
+
+/* ---------- versalete: rótulo · régua · número ---------- */
+.caps{font-family:var(--face-spec); font-weight:500; font-size:17px; letter-spacing:.2em;
+      text-transform:uppercase; line-height:1.24}
+.linha{display:flex; align-items:baseline; gap:16px}
+.linha .esq{color:var(--t2); white-space:nowrap}
+.linha .dir{color:var(--t1); white-space:nowrap}
+.linha .regua-f{flex:1; height:1px; background:var(--r1); align-self:center}
 
 /* ---------- miolo ---------- */
-.miolo{flex:1; display:flex; flex-direction:column; justify-content:center; padding:52px 0}
-.miolo.topo-alinhado{justify-content:flex-start; padding-top:62px}
-.bloco+.bloco{margin-top:30px}
+.miolo{flex:1; display:flex; flex-direction:column; justify-content:flex-start;
+       padding:48px 0 40px; min-height:0}
+.miolo.centro{justify-content:center}
+.miolo.base{justify-content:flex-end}
+.bloco+.bloco{margin-top:32px}
 
-.kicker{font-family:var(--mono); font-size:16px; letter-spacing:.2em;
-        text-transform:uppercase; margin-bottom:26px}
-.escuro .kicker{color:var(--coral)} .claro .kicker{color:var(--indigo)}
+.kicker{color:var(--t2); margin-bottom:4px}
 
-h1{font-family:var(--didone); font-weight:700; font-size:66px; line-height:1.08;
-   letter-spacing:-.012em}
-.capa h1{font-size:82px; line-height:1.06}
-h1.curta{font-size:78px}
+h1{font-family:var(--face-display); font-weight:300; font-size:68px; line-height:1.1;
+   letter-spacing:-.015em; color:var(--t1); max-width:880px; text-wrap:balance}
+h1.curta{font-weight:200; font-size:92px; line-height:1.05}
+.capa h1{font-weight:200; font-size:112px; line-height:.98; letter-spacing:-.02em}
+.fecho h1{font-weight:200; font-size:92px; line-height:1.05}
 
-.filete{width:96px; height:4px; margin:28px 0 36px}
-.escuro .filete{background:var(--lavanda)} .claro .filete{background:var(--indigo)}
-.regua{height:1px; margin:30px 0}
-.escuro .regua{background:#33353C} .claro .regua{background:#C9CED6}
+.filete{width:96px; height:1px; background:var(--r2); margin:36px 0 4px}
+.regua{height:1px; background:var(--rb); margin:8px 0}
 
-p.corpo{font-size:25px; line-height:1.52}
-.escuro p.corpo{color:#CBD0D8} .claro p.corpo{color:var(--tinta2)}
-p.corpo b{font-weight:600}
-.escuro p.corpo b{color:var(--papel)} .claro p.corpo b{color:var(--tinta)}
-p.corpo+p.corpo{margin-top:22px}
+p.corpo{font-size:27px; line-height:1.5; color:var(--t2); max-width:880px; text-wrap:pretty}
+.capa p.corpo, .fecho p.corpo{font-size:32px; max-width:760px}
+p.corpo b, .caixa p b, .item p b, .duo .txt b{font-weight:600; color:var(--t1)}
+p.corpo+p.corpo{margin-top:20px}
 
-blockquote{border-left:4px solid; padding-left:32px; font-style:italic;
-           font-size:33px; line-height:1.4; font-family:var(--corpo)}
-.escuro blockquote{border-color:var(--lavanda); color:var(--papel)}
-.claro blockquote{border-color:var(--indigo); color:var(--tinta)}
+blockquote{font-family:var(--face-ring); font-weight:400; font-size:50px; line-height:1.28;
+           letter-spacing:.01em; color:var(--t1); max-width:900px}
 
-.mono{font-family:var(--mono); font-size:15px; line-height:1.75; white-space:pre-line;
-      letter-spacing:.01em}
-.escuro .mono{color:var(--papel3)} .claro .mono{color:var(--tinta3)}
+.mono{font-family:var(--face-spec); font-weight:500; font-size:15px; line-height:1.9;
+      letter-spacing:.12em; text-transform:uppercase; color:var(--t3); max-width:900px}
 
-/* ---------- duo ---------- */
-.duo{display:grid; grid-template-columns:1fr 1fr; gap:0; border-top:1px solid;
-     border-bottom:1px solid}
-.escuro .duo{border-color:#33353C} .claro .duo{border-color:#C9CED6}
-.duo>div{padding:36px 34px}
-.duo>div+div{border-left:1px solid}
-.escuro .duo>div+div{border-color:#33353C} .claro .duo>div+div{border-color:#C9CED6}
-.duo .rot{font-family:var(--mono); font-size:14.5px; letter-spacing:.17em;
-          text-transform:uppercase; margin-bottom:16px}
-.escuro .duo .rot{color:var(--papel3)} .claro .duo .rot{color:var(--tinta3)}
-.duo .num{font-family:var(--didone); font-weight:700; font-size:60px; line-height:1;
-          margin-bottom:14px}
-.duo .txt{font-size:22px; line-height:1.45}
-.escuro .duo .txt{color:#CBD0D8} .claro .duo .txt{color:var(--tinta2)}
-.tag{display:inline-block; margin-top:18px; font-family:var(--mono); font-size:15px;
-     padding:5px 11px}
-.tag.alerta{background:var(--alerta-bg); color:var(--alerta)}
-.tag.ok{background:var(--ok-bg); color:var(--ok)}
+/* ---------- mosaico: duo e caixas ---------- */
+.duo{display:grid; grid-template-columns:1fr 1fr; gap:var(--gutter)}
+.tile{position:relative; padding:40px 36px 36px; background:var(--field-slab); color:var(--ink-full);
+      --t1:var(--ink-full); --t2:var(--ink-mid); --t3:var(--ink-low)}
+.tile.plate{background:none; color:var(--t1); outline:1px solid var(--r1); outline-offset:-1px}
+.slide.campo-paper .tile.plate{--t1:var(--ink-onyx); --t2:var(--ink-onyx-mid); --t3:var(--ink-onyx-low)}
+.tile .rot{color:var(--t2); margin-bottom:22px}
+.duo .num{font-family:var(--face-display); font-weight:200; font-size:96px; line-height:.86;
+          letter-spacing:-.035em; color:var(--t1); margin-bottom:22px; white-space:nowrap}
+.duo .txt{font-size:23px; line-height:1.45; color:var(--t2)}
+.tag{display:inline-block; margin-top:24px; padding:8px 12px 7px; font-size:14px}
+.tag.ok{outline:1px solid var(--r2); outline-offset:-1px; color:var(--t1)}
+.tag.alerta{background:var(--ink-full); color:var(--ink-onyx)}
+.tile.plate .tag.alerta{background:var(--t1); color:var(--ink-onyx)}
+.slide.campo-paper .tile.plate .tag.alerta{color:var(--ink-full)}
 
-/* ---------- caixas ---------- */
-.caixa{padding:32px 34px}
-.caixa+.caixa{margin-top:22px}
-.caixa.ok{background:#F2F4F6}
-.escuro .caixa.ok{background:#1E2027}
-.caixa.alerta{background:var(--alerta-bg); border:1px solid var(--alerta-brd)}
-.escuro .caixa.alerta{background:#241B1C; border-color:#7A3A34}
-.caixa .rot{font-family:var(--mono); font-size:15px; letter-spacing:.17em;
-            text-transform:uppercase; margin-bottom:18px}
-.caixa.ok .rot{color:var(--ok)} .caixa.alerta .rot{color:var(--alerta)}
-.caixa p{font-size:24px; line-height:1.46}
-.escuro .caixa p{color:#CBD0D8} .claro .caixa p{color:var(--tinta2)}
-.caixa p b{font-weight:600}
-.claro .caixa p b{color:var(--tinta)} .escuro .caixa p b{color:var(--papel)}
+/* marcas de registro nos cantos — o Plate */
+.tick{position:absolute; width:var(--tick); height:var(--tick); pointer-events:none; border:0 solid var(--r2)}
+.tick.tl{top:16px; left:16px; border-top-width:1px; border-left-width:1px}
+.tick.tr{top:16px; right:16px; border-top-width:1px; border-right-width:1px}
+.tick.bl{bottom:16px; left:16px; border-bottom-width:1px; border-left-width:1px}
+.tick.br{bottom:16px; right:16px; border-bottom-width:1px; border-right-width:1px}
+
+.caixas{display:grid; gap:var(--gutter)}
+.caixa p{font-size:24px; line-height:1.46; color:var(--t2)}
 .caixa p+p{margin-top:12px}
 
 /* ---------- numerada ---------- */
-.item{display:grid; grid-template-columns:78px 1fr; padding:28px 0; border-top:1px solid}
-.escuro .item{border-color:#33353C} .claro .item{border-color:#C9CED6}
-.item:last-child{border-bottom:1px solid}
-.escuro .item:last-child{border-color:#33353C} .claro .item:last-child{border-color:#C9CED6}
-.item .n{font-family:var(--mono); font-size:17px; padding-top:10px}
-.escuro .item .n{color:var(--lavanda)} .claro .item .n{color:var(--indigo)}
-.item h2{font-family:var(--didone); font-weight:700; font-size:34px; line-height:1.15;
-         margin-bottom:10px}
-.item p{font-size:22px; line-height:1.45}
-.escuro .item p{color:#CBD0D8} .claro .item p{color:var(--tinta2)}
+.item{display:grid; grid-template-columns:120px 1fr; gap:28px; align-items:start;
+      border-top:1px solid var(--r1); padding-top:26px}
+.item+.item{margin-top:30px}
+.item .n{font-family:var(--face-display); font-weight:200; font-size:76px; line-height:.86;
+         letter-spacing:-.035em; color:var(--t1)}
+.item h2{font-family:var(--face-display); font-weight:300; font-size:36px; line-height:1.15;
+         letter-spacing:-.01em; color:var(--t1); margin-bottom:10px}
+.item p{font-size:23px; line-height:1.45; color:var(--t2)}
 
 /* ---------- prazo ---------- */
-.prazo{display:flex; border:1px solid; height:78px; margin:6px 0 0}
-.escuro .prazo{border-color:#4A4D56} .claro .prazo{border-color:var(--tinta)}
-.prazo i{flex:1; border-right:1px solid}
-.escuro .prazo i{border-color:#4A4D56} .claro .prazo i{border-color:var(--tinta)}
-.prazo i:last-child{border-right:none}
-.prazo i.viva{background:var(--ok-bg)}
-.prazo i.morta{background-image:repeating-linear-gradient(45deg,transparent,transparent 7px,#3A3D45 7px,#3A3D45 8px)}
-.prazo-rot{display:flex; justify-content:space-between; font-family:var(--mono);
-           font-size:15px; letter-spacing:.1em; margin-top:12px}
-.escuro .prazo-rot{color:var(--papel3)} .claro .prazo-rot{color:var(--tinta3)}
+.prazo{display:flex; gap:var(--gutter); height:84px}
+.prazo i{flex:1}
+.prazo i.viva{background:linear-gradient(180deg,#B4C0C7 0%,#536878 100%)}
+.prazo i.morta{outline:1px solid var(--r1); outline-offset:-1px;
+  background-image:repeating-linear-gradient(45deg,transparent 0 7px,var(--r1) 7px 8px)}
+.prazo-rot{display:flex; justify-content:space-between; margin-top:16px; font-size:14px; color:var(--t2)}
+
+/* ---------- selo ---------- */
+.selo{position:relative; flex:0 0 auto}
+.selo svg{display:block; position:absolute; inset:0}
+.selo .marca{position:absolute; inset:0; display:flex; flex-direction:column; align-items:center;
+             justify-content:center; font-family:var(--face-ring); font-weight:500;
+             letter-spacing:.02em; line-height:.82; color:var(--ink-full)}
+/* capa e fecho: mesmo selo, 168px, 239px do topo */
+.slide>.selo-placa{position:absolute; left:var(--pad); top:239px; z-index:1}
+
+/* ---------- aviso do board de aplicação ---------- */
+.aviso{color:var(--t2); margin-bottom:24px}
 
 /* ---------- story 1080x1920 ---------- */
 /* A moldura do Instagram cobre ~230px no topo e ~210px na base. O padding do
    story existe para manter manchete e microtipografia fora dessa faixa — não é
    respiro estético, é a área que o app não come. */
-.slide.story{width:1080px; height:1920px; padding:250px 88px 230px}
-.slide.story .miolo{padding:60px 0}
-.slide.story .topo{font-size:17px}
+.slide.story{height:1920px; padding:250px var(--pad) 230px}
+.slide.story>.selo-placa{top:413px}
+.slide.story .miolo{padding:64px 0 48px}
+.slide.story .caps{font-size:18px}
 .slide.story h1{font-size:76px}
-.slide.story h1.curta{font-size:88px}
-.slide.story.capa h1{font-size:92px}
-.slide.story p.corpo{font-size:29px; line-height:1.55}
-.slide.story blockquote{font-size:38px}
-.slide.story .mono{font-size:17px; line-height:1.8}
-.slide.story .kicker{font-size:18px}
-.slide.story .duo .num{font-size:66px}
+.slide.story h1.curta, .slide.story.fecho h1{font-size:100px}
+.slide.story.capa h1{font-size:124px}
+.slide.story p.corpo{font-size:30px; line-height:1.55}
+.slide.story.capa p.corpo, .slide.story.fecho p.corpo{font-size:34px}
+.slide.story blockquote{font-size:56px}
+.slide.story .mono{font-size:17px}
+.slide.story .duo .num{font-size:104px}
 .slide.story .duo .txt{font-size:25px}
 .slide.story .caixa p{font-size:27px}
-.slide.story .item h2{font-size:38px}
-.slide.story .item p{font-size:25px}
-.slide.story .pe .marca{font-size:40px}
-.slide.story .filete{margin:32px 0 40px}
-
-/* ---------- rodapé ---------- */
-.pe{display:flex; justify-content:space-between; align-items:flex-end}
-.pe .marca{font-family:var(--didone); font-weight:700; font-size:36px; letter-spacing:-.01em}
-.pe .papel{font-family:var(--mono); font-size:15px; letter-spacing:.2em;
-           text-transform:uppercase; margin-top:6px}
-.escuro .pe .papel{color:var(--papel3)} .claro .pe .papel{color:var(--tinta3)}
-.pe .pag{font-family:var(--mono); font-size:16px; letter-spacing:.2em}
-.escuro .pe .pag{color:var(--papel3)} .claro .pe .pag{color:var(--tinta3)}
-.pe .pag.arraste{color:var(--lavanda)}
+.slide.story .item h2{font-size:40px}
+.slide.story .item p{font-size:26px}
+.slide.story .prazo{height:96px}
+.slide.story .prazo-rot, .slide.story .tag{font-size:15px}
 </style></head><body>
 __SLIDES__
+<script>
+/* Selo: encaixa o texto no arco. Porta literal de design/obsidian-chrome/
+   components/Seal/Seal.jsx — primeiro aperta o tracking até 0.08em, e só
+   depois reduz o corpo. O build espera `window.__selos` antes da captura. */
+(async () => {
+  await document.fonts.ready;
+  const BASE = 6.2, MIN = 0.08;
+  for (const t of document.querySelectorAll('text[data-arco]')) {
+    const med = t.previousElementSibling, arco = +t.dataset.arco, gap = +t.dataset.gap;
+    const len = med.getComputedTextLength(), n = med.textContent.length;
+    const glifos = len - n * gap * BASE;
+    let fs = BASE, g = gap;
+    if (len > arco) {
+      const justo = glifos + n * MIN * BASE;
+      if (justo <= arco) g = Math.max(MIN, (arco - glifos) / (n * BASE));
+      else { g = MIN; fs = BASE * (arco / justo); }
+    }
+    t.style.fontSize = fs + 'px'; t.style.letterSpacing = g + 'em';
+  }
+  window.__selos = true;
+})();
+</script>
 </body></html>

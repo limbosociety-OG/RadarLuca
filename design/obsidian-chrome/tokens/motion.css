@@ -1,0 +1,13 @@
+:root{
+--ease:cubic-bezier(0.16,1,0.30,1); /* @kind other */
+--ease-soft:cubic-bezier(0.4,0,0.2,1); /* @kind other */
+--t-fast:160ms; /* @kind other */
+--t-base:300ms; /* @kind other */
+--t-slow:520ms; /* @kind other */
+--t-reveal:1100ms; /* @kind other */
+--lift:10px; /* @kind spacing */
+}
+@keyframes oc-rise{from{opacity:0;transform:translateY(var(--lift))}to{opacity:1;transform:none}}
+@keyframes oc-fade{from{opacity:0}to{opacity:1}}
+@keyframes oc-widen{from{letter-spacing:0.05em;opacity:0}to{letter-spacing:var(--tr-micro);opacity:1}}
+@keyframes oc-turn{from{transform:rotate(0)}to{transform:rotate(360deg)}}

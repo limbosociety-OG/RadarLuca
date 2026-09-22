@@ -1,0 +1,21 @@
+<!-- @dsCard group="Componentes" viewport="1200x820" name="Mosaic" subtitle="Grade densa de mosaico — 12 colunas, calha de 10px" -->
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:var(--u-9);min-height:100vh}</style></head><body><div id="root"></div>
+<script>
+const { Field, Seal, Mosaic, Tile, SpecLine, Figure, Plate, Statement } = window.LucaMartinsDesignSystem_f910c3;
+const h = React.createElement;
+
+function Card(){return h(Mosaic,{cols:12,gap:'var(--gutter-mosaic)'},
+  h(Tile,{span:5,rowSpan:2},h(Field,{variant:'corner',ratio:'4 / 5'})),
+  h(Tile,{span:7},h(Field,{variant:'wash',ratio:'16 / 7'})),
+  h(Tile,{span:4},h(Field,{variant:'onyx',style:{height:'100%'}},h(Plate,{style:{display:'flex',alignItems:'flex-end'}},h(Figure,{value:'12',label:'Teses firmadas',size:'sm'})))),
+  h(Tile,{span:3},h(Field,{variant:'horizon',ratio:'1 / 1'})),
+  h(Tile,{span:3},h(Field,{variant:'cone',ratio:'1 / 1'})),
+  h(Tile,{span:4},h(Field,{variant:'paper',ratio:'3 / 2',pad:'var(--u-5)'},h(Statement,{level:'caps',tone:'dark'},'Placa clara'))),
+  h(Tile,{span:5},h(Field,{variant:'slab',ratio:'2 / 1'})));}
+
+ReactDOM.createRoot(document.getElementById('root')).render(h(Card));
+</script></body></html>
