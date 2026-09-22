@@ -24,7 +24,7 @@
 :root{
   color-scheme: dark;
   --papel:#0A0A0A;      --caixa:#111A25;     --tinta:#F2F1EF;
-  --tinta2:rgba(229,228,226,.66);            --tinta3:rgba(229,228,226,.44);
+  --tinta2:rgba(229,228,226,.66);            --tinta3:rgba(229,228,226,.56);
   --regua:rgba(229,228,226,.24);             --regua2:rgba(229,228,226,.13);
   --realce:rgba(22,35,47,.55);
   --acento:#B4C0C7;     --acento-fraco:#16232F;
@@ -37,19 +37,22 @@
   --anel:'Cormorant Garamond',Didot,serif;
   --campo-canto:radial-gradient(128% 96% at 4% -8%,#D2D9DC 0%,#8E9FAA 12%,#3C5567 32%,#111A25 62%,#0A0A0A 100%);
   --veu-base:linear-gradient(180deg,rgba(10,10,10,0) 0%,rgba(10,10,10,.55) 46%,#0A0A0A 100%);
+  --veu-topo:linear-gradient(90deg,rgba(10,10,10,.5) 0%,rgba(10,10,10,.2) 45%,rgba(10,10,10,0) 70%);
   --coluna:1180px;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0; color:var(--tinta);
-  background:var(--veu-base) top/100% 560px no-repeat, var(--campo-canto) top/100% 560px no-repeat, var(--papel);
+  background:var(--veu-topo) top/100% 560px no-repeat, var(--veu-base) top/100% 560px no-repeat, var(--campo-canto) top/100% 560px no-repeat, var(--papel);
   font-family:var(--leitura); font-size:16px; line-height:1.55; letter-spacing:.005em;
   -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
 }
 .folha{max-width:var(--coluna); margin:0 auto; padding:0 28px 90px}
 a{color:inherit}
-:focus-visible{outline:1px solid var(--acento); outline-offset:3px}
+:focus-visible{outline:2px solid var(--acento); outline-offset:3px}
+::selection{background:#3C5567; color:#F2F1EF}
+.so-leitor{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
 button{font:inherit; color:inherit; background:none; border:none; padding:0; cursor:pointer}
 
 /* ---------- cabeçalho ---------- */
@@ -87,13 +90,60 @@ button{font:inherit; color:inherit; background:none; border:none; padding:0; cur
   border-bottom:1px solid transparent; margin-bottom:-1px; display:flex; align-items:center; gap:7px; white-space:nowrap;
 }
 .aba:hover{color:var(--tinta)}
-.aba[aria-pressed="true"]{color:var(--tinta); border-bottom-color:var(--tinta)}
+.aba[aria-selected="true"]{color:var(--tinta); border-bottom-color:var(--tinta)}
+.filtros-grupo{display:flex; gap:18px; flex-wrap:wrap; align-items:center}
 .selo-conta{
-  font-family:var(--dado); font-size:10px; font-weight:600; line-height:1; font-style:normal;
+  font-family:var(--dado); font-size:11px; font-weight:600; line-height:1; font-style:normal;
   background:var(--urgente); color:#0A0A0A; padding:3px 5px; letter-spacing:.04em;
   font-variant-numeric:tabular-nums;
 }
 [hidden]{display:none !important}
+/* ---------- vence primeiro: a primeira leitura, em todas as abas ---------- */
+.vence{margin:0 0 26px; padding:16px 18px 18px; border:1px solid var(--regua2);
+  background:linear-gradient(158deg,#16232F 0%,#0C121A 64%,#0A0A0A 100%)}
+.vence-topo{display:flex; align-items:baseline; gap:14px; font-family:var(--dado); font-weight:500;
+  font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--tinta2); margin:0 0 12px}
+.vence-topo .regua-f{flex:1; height:1px; background:var(--regua); align-self:center}
+.vence-tudo{font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--tinta)}
+.vence-tudo:hover{color:var(--acento)}
+.vence-lista{list-style:none; margin:0; padding:0; display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:10px}
+.vc{width:100%; height:100%; display:grid; grid-template-columns:auto 1fr; gap:4px 14px; align-items:baseline;
+  text-align:left; padding:12px 14px; background:rgba(10,10,10,.42); border:1px solid var(--regua2)}
+.vc:hover{border-color:var(--regua)}
+.vc-n{grid-row:span 2; font-family:var(--titulo); font-weight:200; font-size:44px; line-height:.86;
+  letter-spacing:-.035em; font-variant-numeric:tabular-nums}
+.vc-n small{display:block; font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--tinta3); margin-top:6px}
+.vc.urgente .vc-n{color:var(--urgente)} .vc.atencao .vc-n{color:var(--atencao)}
+.vc.aberta .vc-n{font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--acento); line-height:1.4}
+.vc-oque{font-size:14.5px; line-height:1.4; color:var(--tinta);
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
+.vc-quando{font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--tinta2)}
+.vence-vazio{margin:0; font-size:14.5px; color:var(--tinta2)}
+/* ---------- desfazer: sempre ao alcance do polegar ---------- */
+.desfazer{position:fixed; left:50%; transform:translateX(-50%);
+  bottom:calc(18px + env(safe-area-inset-bottom, 0px)); z-index:20;
+  display:flex; align-items:center; gap:18px; width:max-content; max-width:calc(100% - 32px);
+  padding:12px 16px 12px 18px; background:#111A25; border:1px solid var(--regua);
+  box-shadow:0 18px 48px rgba(0,0,0,.55); font-size:14.5px; color:var(--tinta)}
+.desfazer button{font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--acento); min-height:32px}
+@media (prefers-reduced-motion:no-preference){
+  .desfazer{animation:subir .2s cubic-bezier(.16,1,.3,1)}
+  @keyframes subir{from{opacity:0; transform:translate(-50%,8px)}to{opacity:1; transform:translate(-50%,0)}}
+}
+/* ---------- alvo de toque: 44px sem mudar o desenho ---------- */
+@media (pointer:coarse){
+  .ts-acoes button,.ts-status,.filtro,.aba,.vinculo,.ligacao,.acao,.vence-tudo,
+  .desfazer button{min-height:44px; display:inline-flex; align-items:center}
+  .atalho{padding-block:13px}
+  .backlog input{width:22px; height:22px}
+}
+
 
 /* ---------- filtros de área ---------- */
 .filtros{
@@ -106,7 +156,7 @@ button{font:inherit; color:inherit; background:none; border:none; padding:0; cur
 }
 .filtro:hover{color:var(--tinta)}
 .filtro[aria-pressed="true"]{color:var(--tinta); border-bottom-color:var(--tinta)}
-.filtro em{font-style:normal; font-family:var(--dado); font-size:10px; color:var(--tinta3); margin-left:6px; letter-spacing:.04em}
+.filtro em{font-style:normal; font-family:var(--dado); font-size:11px; color:var(--tinta3); margin-left:6px; letter-spacing:.04em}
 .busca{
   margin-left:auto; font-family:var(--leitura); font-size:14px; padding:6px 2px;
   border:none; border-bottom:1px solid var(--regua); background:transparent;
@@ -122,7 +172,7 @@ button{font:inherit; color:inherit; background:none; border:none; padding:0; cur
   padding:22px 0; border-bottom:1px solid var(--regua2);
 }
 .nt:hover{background:var(--realce)}
-.nt-lado{font-family:var(--dado); font-weight:500; font-size:10.5px; line-height:1.9; letter-spacing:.14em; text-transform:uppercase; color:var(--tinta3)}
+.nt-lado{font-family:var(--dado); font-weight:500; font-size:11px; line-height:1.9; letter-spacing:.14em; text-transform:uppercase; color:var(--tinta3)}
 .nt-data{color:var(--tinta2); font-variant-numeric:tabular-nums; display:block}
 .nt-area{color:var(--acento); display:block; font-weight:500}
 .nt-orgao{display:block}
@@ -132,30 +182,28 @@ button{font:inherit; color:inherit; background:none; border:none; padding:0; cur
 }
 .nt-resumo{margin:0; font-size:15.5px; line-height:1.6; color:var(--tinta2); max-width:68ch}
 .nt-edai{
-  margin:12px 0 0; padding-left:15px; border-left:2px solid var(--acento);
+  margin:12px 0 0; padding-left:15px; border-left:1px solid var(--acento);
   font-size:15px; line-height:1.6; color:var(--tinta); max-width:66ch;
 }
-.nt-edai{border-left:1px solid var(--acento)}
 .nt-pe{display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin-top:12px}
 .ligacao{
-  font-family:var(--dado); font-weight:500; font-size:10.5px; letter-spacing:.14em;
+  font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.14em;
   text-transform:uppercase; color:var(--acento); text-decoration:none;
   border-bottom:1px solid var(--regua); padding-bottom:2px;
 }
 .ligacao:hover{border-bottom-color:var(--acento)}
-.ligacao::after{content:' ↗'; font-size:10px}
+.ligacao::after{content:' ↗'; font-size:11px}
 .pendente{
-  font-family:var(--dado); font-size:11px; line-height:1.55; color:var(--atencao);
+  font-family:var(--dado); font-size:12px; line-height:1.55; color:var(--atencao);
   max-width:64ch;
 }
 .vinculo{
-  font-family:var(--dado); font-size:11px; color:var(--tinta2);
+  font-family:var(--dado); font-size:12px; color:var(--tinta2);
   border-bottom:1px dotted var(--tinta3);
 }
 .vinculo:hover{color:var(--acento); border-bottom-color:var(--acento)}
 
 /* ---------- seções ---------- */
-.secao{padding-top:38px}
 .secao{padding-top:52px}
 .secao > h2{
   font-family:var(--titulo); font-weight:200; font-size:34px; letter-spacing:-.015em; line-height:1.1;
@@ -175,24 +223,20 @@ button{font:inherit; color:inherit; background:none; border:none; padding:0; cur
 .prazos{display:flex; flex-direction:column}
 .pz{
   display:grid; grid-template-columns:96px 1fr auto; gap:22px; align-items:baseline;
-  padding:15px 0 15px 14px; border-bottom:1px solid var(--regua2);
-  border-left:3px solid var(--regua);
+  padding:15px 0; border-bottom:1px solid var(--regua2);
 }
-.pz.urgente{border-left-color:var(--urgente)}
-.pz.atencao{border-left-color:var(--atencao)}
-.pz.aberta{border-left-color:var(--acento)}
-.pz.carteira{border-left-color:var(--tinta); background:var(--realce)}
+.pz.carteira{background:var(--realce); padding-inline:14px}
 .pz-conta{
   font-family:var(--titulo); font-weight:200; font-size:40px; line-height:.86;
   letter-spacing:-.035em; font-variant-numeric:tabular-nums;
 }
 .pz.urgente .pz-conta{color:var(--urgente)}
 .pz.atencao .pz-conta{color:var(--atencao)}
-.pz-conta small{font-family:var(--dado); font-size:10px; font-weight:500; color:var(--tinta3); margin-left:5px; letter-spacing:.16em; text-transform:uppercase}
-.pz-conta.aberta{font-family:var(--dado); font-size:10.5px; font-weight:500; color:var(--acento); letter-spacing:.16em; text-transform:uppercase; line-height:1.5}
+.pz-conta small{font-family:var(--dado); font-size:11px; font-weight:500; color:var(--tinta3); margin-left:5px; letter-spacing:.16em; text-transform:uppercase}
+.pz-conta.aberta{font-family:var(--dado); font-size:11px; font-weight:500; color:var(--acento); letter-spacing:.16em; text-transform:uppercase; line-height:1.5}
 .pz-oque{font-size:15px; line-height:1.5; max-width:60ch}
-.pz-quando{font-family:var(--dado); font-weight:500; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--tinta3); line-height:1.8; text-align:right; white-space:nowrap}
-.pz-marca{font-family:var(--dado); font-size:10.5px; color:var(--atencao); display:block}
+.pz-quando{font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--tinta3); line-height:1.8; text-align:right; white-space:nowrap}
+.pz-marca{font-family:var(--dado); font-size:11px; color:var(--atencao); display:block}
 
 /* ---------- teses ---------- */
 .blocos > h3{
@@ -200,25 +244,38 @@ button{font:inherit; color:inherit; background:none; border:none; padding:0; cur
   text-transform:uppercase; color:var(--tinta2); margin:30px 0 2px; padding-bottom:6px; border-bottom:1px solid var(--regua);
 }
 .ts{
-  display:grid; grid-template-columns:1fr 168px; gap:22px;
+  display:grid; grid-template-columns:1fr 236px; gap:28px;
   padding:14px 0; border-bottom:1px solid var(--regua2);
 }
 .ts:hover{background:var(--realce)}
 .ts h4{font-family:var(--titulo); font-weight:400; font-size:19px; letter-spacing:-.01em; line-height:1.25; margin:0 0 6px; max-width:52ch}
-.ts .resumo{margin:0; font-size:14.5px; line-height:1.55; color:var(--tinta2); max-width:76ch}
+.ts .resumo{margin:0; font-size:14.5px; line-height:1.55; color:var(--tinta2); max-width:70ch}
 .ts .edai-txt{
   margin:9px 0 0; padding-left:14px; border-left:1px solid var(--acento);
   font-size:14.5px; line-height:1.55; max-width:70ch; min-height:20px;
 }
-.ts .edai-txt:empty::before{content:'Anote aqui o impacto prático'; color:var(--tinta3); font-style:italic}
-.ts .edai-txt:focus{outline:none; background:var(--acento-fraco)}
-.ts-lado{font-family:var(--dado); font-weight:500; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; line-height:1.9; color:var(--tinta3); text-align:right}
+.ts .edai-txt:empty::before{content:'anotar o e daí?'; color:var(--tinta3)}
+.ts .edai-txt:focus{outline:1px solid var(--regua); outline-offset:4px; background:var(--acento-fraco)}
+.ts-lado{font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.1em; text-transform:uppercase; line-height:1.9; color:var(--tinta3); text-align:right}
 .ts-estado{display:block; font-weight:600}
 .ts-estado.iminente{color:var(--urgente)} .ts-estado.curso{color:var(--atencao)}
 .ts-estado.fixada{color:var(--firme)} .ts-estado.afetado{color:var(--tinta3)}
 .ts-ref{display:block; color:var(--tinta2)}
-.ts-acoes{display:flex; gap:10px; justify-content:flex-end; margin-top:7px}
-.ts-acoes button{font-family:var(--dado); font-size:10.5px; color:var(--tinta3)}
+.ts-lado > span{display:block}
+.ts-mod{color:var(--tinta2); margin-top:4px}
+.ts-mod.sem,.ts-mod.com{color:var(--tinta)}
+.ts-mod.pendente{color:var(--atencao)}
+.placar-txt{display:block; margin-top:6px; color:var(--tinta)}
+.placar-nota{display:block; font-family:var(--leitura); text-transform:none; letter-spacing:0;
+  font-size:12.5px; line-height:1.45; color:var(--tinta2); margin-top:4px; text-align:right}
+.ts-acoes{display:flex; gap:16px; justify-content:flex-end; align-items:center; margin-top:9px; flex-wrap:wrap}
+.ts-acoes button{font-family:var(--dado); font-size:11px; color:var(--tinta3)}
+.ts-acoes [data-acao^="excluir"]{margin-left:8px}
+.ts-status{font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--tinta2); background:transparent; border:0;
+  border-bottom:1px solid var(--regua); padding:2px 0; cursor:pointer}
+.ts-status option{background:#111A25; color:var(--tinta); text-transform:none}
+.busca-tese{margin-left:auto}
 .ts-acoes button:hover{color:var(--tinta)}
 .ts.marcada{background:var(--acento-fraco)}
 .placar{display:flex; gap:2px; justify-content:flex-end; margin-top:6px}
@@ -234,11 +291,11 @@ button{font:inherit; color:inherit; background:none; border:none; padding:0; cur
 .term-grade{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
 .assunto h4{font-family:var(--titulo); font-weight:400; font-size:18px; margin:0 0 4px}
 .assunto p{font-size:14px; color:var(--tinta2); margin:0}
-.idade{font-family:var(--dado); font-size:11px; color:var(--tinta3); margin-top:14px; padding-top:11px; border-top:1px solid var(--regua)}
+.idade{font-family:var(--dado); font-size:12px; color:var(--tinta3); margin-top:14px; padding-top:11px; border-top:1px solid var(--regua)}
 .idade.velha{color:var(--atencao)}
 
 .aula{padding:16px 0; border-bottom:1px solid var(--regua2)}
-.aula-topo{font-family:var(--dado); font-size:11px; color:var(--tinta3); margin-bottom:5px}
+.aula-topo{font-family:var(--dado); font-size:12px; color:var(--tinta3); margin-bottom:5px}
 .aula h4{font-family:var(--titulo); font-weight:400; font-size:20px; margin:0 0 6px; letter-spacing:-.01em}
 .aula-notas{font-size:15px; line-height:1.6; color:var(--tinta2); white-space:pre-wrap; min-height:22px}
 .aula-notas:empty::before{content:'Clique e escreva as anotações da aula'; color:var(--tinta3); font-style:italic}
@@ -255,7 +312,7 @@ button{font:inherit; color:inherit; background:none; border:none; padding:0; cur
 
 /* ---------- avisos, botões, vazio ---------- */
 .aviso{
-  font-family:var(--dado); font-size:11.5px; line-height:1.7; color:var(--atencao);
+  font-family:var(--dado); font-size:12px; line-height:1.7; color:var(--atencao);
   border-left:1px solid var(--atencao); padding:2px 0 2px 14px; margin:20px 0 0; max-width:78ch;
 }
 .aviso.info{color:var(--acento); border-left-color:var(--acento)}
@@ -264,7 +321,7 @@ button{font:inherit; color:inherit; background:none; border:none; padding:0; cur
 .aviso .acoes{display:flex; gap:16px; margin-top:9px}
 .vazio{font-family:var(--dado); font-size:13px; color:var(--tinta3); padding:34px 0; line-height:1.9}
 .acao{
-  font-family:var(--dado); font-size:10.5px; font-weight:500; letter-spacing:.16em;
+  font-family:var(--dado); font-size:11px; font-weight:500; letter-spacing:.16em;
   text-transform:uppercase; color:var(--acento); border-bottom:1px solid var(--regua); padding-bottom:2px;
 }
 .acao:hover{border-bottom-color:var(--acento)}
@@ -272,7 +329,7 @@ button{font:inherit; color:inherit; background:none; border:none; padding:0; cur
 .rodape{
   margin-top:72px; padding-top:18px; border-top:1px solid var(--regua);
   display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;
-  font-family:var(--dado); font-weight:500; font-size:10.5px; letter-spacing:.16em;
+  font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.16em;
   text-transform:uppercase; color:var(--tinta3);
 }
 .rodape .acoes{display:flex; gap:18px; flex-wrap:wrap}
@@ -286,7 +343,7 @@ dialog{
 dialog::backdrop{background:rgba(5,6,7,.72)}
 .dlg{padding:26px 28px 22px}
 .dlg h2{font-family:var(--titulo); font-weight:300; font-size:28px; margin:0 0 16px; letter-spacing:-.015em}
-.dlg label{display:block; font-family:var(--dado); font-weight:500; font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--tinta2); margin:16px 0 6px}
+.dlg label{display:block; font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--tinta2); margin:16px 0 6px}
 .dlg input,.dlg textarea,.dlg select{
   width:100%; font-family:var(--leitura); font-size:15px; padding:8px 10px;
   border:1px solid var(--regua); background:var(--papel); color:var(--tinta);
@@ -294,7 +351,7 @@ dialog::backdrop{background:rgba(5,6,7,.72)}
 .dlg textarea{min-height:80px; resize:vertical; line-height:1.5}
 .dlg select[multiple]{height:150px; font-family:var(--dado); font-size:12.5px}
 .dlg input:focus,.dlg textarea:focus,.dlg select:focus{outline:none; border-color:var(--acento)}
-.dlg .dica{font-family:var(--dado); font-size:11px; color:var(--tinta3); margin:5px 0 0}
+.dlg .dica{font-family:var(--dado); font-size:12px; color:var(--tinta3); margin:5px 0 0}
 .dlg-pe{display:flex; gap:20px; justify-content:flex-end; margin-top:22px}
 
 /* ---------- responsivo ---------- */
@@ -323,7 +380,7 @@ dialog::backdrop{background:rgba(5,6,7,.72)}
   body{background:#fff; color:#000; font-size:10.5pt}
   .selo-lm{border-color:#0A0A0A}
   .folha{max-width:none; padding:0}
-  .abas,.filtros,.ts-acoes,.rodape .acoes,dialog,.aviso,.acao,#nova-tese{display:none !important}
+  .abas,.filtros,.ts-acoes,.rodape .acoes,dialog,.aviso,.acao,#nova-tese,.vence,.desfazer,.busca{display:none !important}
   .pane[hidden]{display:block !important}
   .pane{break-before:page}
   .pane:first-of-type{break-before:auto}
@@ -349,28 +406,30 @@ dialog::backdrop{background:rgba(5,6,7,.72)}
       <span><b id="c-noticias">0</b> notícias</span>
       <span><b id="c-teses">0</b> teses</span>
       <button class="atalho" id="ir-aconfirmar"><b id="c-aconfirmar">0</b> a confirmar</button>
-      <span>corte <b id="c-corte">…</b></span>
+      <span>acervo até <b id="c-corte">…</b></span>
+      <span class="nuvem" id="estado-nuvem" role="status" hidden></span>
     </div>
   </header>
 
-  <nav class="abas" aria-label="Seções">
-    <button class="aba" data-pane="noticias" aria-pressed="true">Notícias</button>
-    <button class="aba" data-pane="tributario" aria-pressed="false">
-      Tributário <i class="selo-conta" id="selo-prazo" hidden></i>
-    </button>
-    <button class="aba" data-pane="posfgv" aria-pressed="false">pósFGV</button>
+  <section class="vence" id="vence" aria-labelledby="vence-titulo"></section>
+
+  <nav class="abas" role="tablist" aria-label="Seções">
+    <button class="aba" role="tab" id="aba-noticias" data-pane="noticias" aria-controls="pane-noticias" aria-selected="true">Notícias</button>
+    <button class="aba" role="tab" id="aba-tributario" data-pane="tributario" aria-controls="pane-tributario" aria-selected="false" tabindex="-1">Tributário</button>
+    <button class="aba" role="tab" id="aba-posfgv" data-pane="posfgv" aria-controls="pane-posfgv" aria-selected="false" tabindex="-1">pósFGV</button>
   </nav>
 
   <!-- ============ NOTÍCIAS ============ -->
-  <div class="pane" id="pane-noticias">
+  <div class="pane" id="pane-noticias" role="tabpanel" aria-labelledby="aba-noticias">
+    <h2 class="so-leitor">Notícias</h2>
     <div class="filtros" id="filtros">
-      <input class="busca" id="busca" type="search" placeholder="buscar no radar" aria-label="Buscar notícia">
+      <input class="busca" id="busca" type="search" placeholder="buscar no radar  /" aria-label="Buscar notícia" aria-keyshortcuts="/">
     </div>
     <div class="noticias" id="noticias"></div>
   </div>
 
   <!-- ============ TRIBUTÁRIO ============ -->
-  <div class="pane" id="pane-tributario" hidden>
+  <div class="pane" id="pane-tributario" role="tabpanel" aria-labelledby="aba-tributario" hidden>
     <section class="secao">
       <h2>O que vence primeiro <span id="r-prazos"></span></h2>
       <p class="abertura">Prazo com data certa, janela que fecha por prescrição, e o que estiver em
@@ -379,10 +438,13 @@ dialog::backdrop{background:rgba(5,6,7,.72)}
     </section>
 
     <section class="secao">
-      <h2>Mapa de teses <span id="r-teses"></span></h2>
+      <h2>Mapa de teses <span><span id="r-teses"></span> · <button class="acao discreta" id="nova-tese">nova tese</button></span></h2>
       <p class="abertura">O acervo que acompanho. O campo de impacto é editável: o que você escrever
         aqui fica no navegador até voltar para o repositório.</p>
-      <div class="filtros" id="filtros-tese"></div>
+      <div class="filtros" id="filtros-tese-linha">
+        <div class="filtros-grupo" id="filtros-tese"></div>
+        <input class="busca busca-tese" id="busca-tese" type="search" placeholder="tema, processo, título  /" aria-label="Buscar tese" aria-keyshortcuts="/">
+      </div>
       <div class="blocos" id="mapa"></div>
     </section>
 
@@ -398,7 +460,7 @@ dialog::backdrop{background:rgba(5,6,7,.72)}
   </div>
 
   <!-- ============ pósFGV ============ -->
-  <div class="pane" id="pane-posfgv" hidden>
+  <div class="pane" id="pane-posfgv" role="tabpanel" aria-labelledby="aba-posfgv" hidden>
     <section class="secao">
       <h2>Caderno de aulas <span><button class="acao discreta" id="nova-aula">nova aula</button></span></h2>
       <p class="abertura">A fonte é <code>base/posfgv/aulas.json</code>. Aula criada aqui vive no
@@ -424,7 +486,6 @@ dialog::backdrop{background:rgba(5,6,7,.72)}
   <footer class="rodape">
     <span>Radar Jurídico, uso interno</span>
     <span class="acoes">
-      <button class="acao discreta" id="nova-tese">nova tese</button>
       <button class="acao discreta" id="exportar">exportar json</button>
       <button class="acao discreta" id="importar">importar json</button>
       <button class="acao discreta" id="zerar">restaurar padrão</button>
@@ -436,11 +497,12 @@ dialog::backdrop{background:rgba(5,6,7,.72)}
   <h2 id="dlg-titulo">Nova tese</h2>
   <div id="campos"></div>
   <div class="dlg-pe">
-    <button class="acao discreta" value="cancelar" type="submit">cancelar</button>
+    <button class="acao discreta" type="button" id="dlg-cancelar">cancelar</button>
     <button class="acao" value="salvar" type="submit">salvar</button>
   </div>
 </form></dialog>
 <input type="file" id="arquivo" accept="application/json" hidden>
+<div class="desfazer" id="desfazer" role="status" aria-live="polite" hidden></div>
 
 <script>
 /* GERADO:INICIO — não editar à mão. Fonte: base/teses.json (scripts/gerar.py) */
@@ -477,6 +539,7 @@ const PADRAO={
    "edai": "Janela aberta. Se houver modulação nos moldes do Tema 69, só recupera os cinco anos anteriores quem já tiver ação ajuizada. Levantar carteira de prestadores de serviço no lucro real e presumido.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Confirmar no portal de RG se houve reinclusão em pauta depois de 25/02/2026.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -496,6 +559,7 @@ const PADRAO={
    "edai": "",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Impacto estimado vem de fonte secundária. Conferir previsão de pauta.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -515,6 +579,7 @@ const PADRAO={
    "edai": "",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Número do tema de RG não anotado. Localizar no portal do STF antes de qualquer uso.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -534,6 +599,7 @@ const PADRAO={
    "edai": "Se a tese foi mesmo fixada com modulação a partir de 15/03/2017, o corte é praticamente inerte para quem ajuíza hoje: o quinquênio do art. 168 do CTN já ultrapassou a data. A aritmética precisa ser refeita contra o acórdão antes de virar peça.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Sessão de 20/08/2026 realizada. Confirmar tese fixada, redação exata da modulação e alcance da suspensão no inteiro teor. Ver base/pendencias.md.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -553,6 +619,7 @@ const PADRAO={
    "edai": "",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Adiado. Confirmar nova data de julgamento e se a suspensão nacional segue ativa.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -572,6 +639,7 @@ const PADRAO={
    "edai": "É o maior risco sistêmico do bloco. Acompanhar semanalmente.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Fonte é blog de banca. Conferir a petição inicial e o andamento no portal do STF.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -591,6 +659,7 @@ const PADRAO={
    "edai": "Relevante em liquidações, incorporações e reorganizações com ativo fiscal acumulado.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Confirmar número do RE e previsão de pauta.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -610,6 +679,7 @@ const PADRAO={
    "edai": "",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Confirmar alcance da suspensão e previsão de julgamento.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -629,6 +699,7 @@ const PADRAO={
    "edai": "",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Confirmar se a vista foi devolvida e qual o placar parcial.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -648,6 +719,7 @@ const PADRAO={
    "edai": "Tese madura. Não há mais litígio: é revisão de apuração de exercícios anteriores.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Ler o Parecer SEI 1.391/2026 na origem antes de usar. Fonte atual é secundária.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -667,6 +739,7 @@ const PADRAO={
    "edai": "",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Confirmar afetação e eventual suspensão.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -690,6 +763,7 @@ const PADRAO={
     "data": "2026-10-01",
     "oque": "Próxima fase do cronograma de IBS/CBS no documento fiscal"
    },
+   "modulacao": null,
    "pendencia": "Correção de prazo para 01/10/2026 noticiada. Conferir no texto do ato conjunto RFB/CGIBS. Ver base/pendencias.md.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -709,6 +783,7 @@ const PADRAO={
    "edai": "Marco: o novo sistema começou a ser judicializado. Precedente de método para atacar restrições da LC 214.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Localizar a classe e o número da ação e conferir a existência de modulação.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -728,6 +803,7 @@ const PADRAO={
    "edai": "Frente jovem, com jurisprudência se formando em 1ª e 2ª instâncias, decisões não vinculantes. Bom momento para entrar, com a ressalva de que não há precedente obrigatório.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Ler a Nota Cosit 207/2026 na origem.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -747,6 +823,7 @@ const PADRAO={
    "edai": "",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Conferir o texto da Resolução 14/2026 no sítio do CGIBS.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -766,6 +843,7 @@ const PADRAO={
    "edai": "A discussão migrou da existência da tributação para a proporcionalidade da antecipação. Tese nova, pouco povoada, e sem qualquer efeito vinculante.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Status do recurso da PGFN e existência de decisões no mesmo sentido em outros tribunais. Pauta de alto apelo para sócios: não publicar sem o mapa de litigância atualizado. Ver base/pendencias.md.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -785,6 +863,7 @@ const PADRAO={
    "edai": "",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Modulação: conferir a redação exata do dispositivo e o rol de ressalvas no inteiro teor.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -804,6 +883,7 @@ const PADRAO={
    "edai": "Derrota importante, serve de limite ao argumento de que toda tese filhote segue o Tema 69.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Confirmar a redação da tese fixada nos repetitivos do STJ.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -827,6 +907,7 @@ const PADRAO={
    "edai": "Crítico para holdings patrimoniais e planejamento sucessório.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Placar parcial vem de fonte secundária. Conferir no andamento antes de citar número de votos.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -846,6 +927,7 @@ const PADRAO={
    "edai": "",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Resultado da sessão de 20/08/2026 não confirmado. Ver base/pendencias.md.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -869,6 +951,7 @@ const PADRAO={
     "data": null,
     "oque": "Prescrição do art. 168 do CTN: a cada mês a parcela mais antiga de IPTU sai da janela dos cinco anos"
    },
+   "modulacao": null,
    "pendencia": "Número correto é ARE 1.593.784 (não 1.593.384). Confirmado no portal de RG do STF, incidente 7524215, e no comunicado oficial da Corte.",
    "verificadoEm": "2026-09-01",
    "atualizado": "set/2026"
@@ -892,6 +975,7 @@ const PADRAO={
     "data": "2026-10-30",
     "oque": "Fim da adesão à transação da RFB (Editais 9 e 10/2026)"
    },
+   "modulacao": null,
    "pendencia": "Prazo de 30/10/2026 e percentuais: conferir no texto dos editais no sítio da RFB. Prazo em peça exige fonte primária.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -911,6 +995,7 @@ const PADRAO={
    "edai": "Frente sensível. Vigiar os critérios de caracterização da contumácia e os limites da desconsideração.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Ler a LC 225/2026 no DOU e anotar os critérios legais de contumácia.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -930,6 +1015,7 @@ const PADRAO={
    "edai": "",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Confirmar afetação e status.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -949,6 +1035,7 @@ const PADRAO={
    "edai": "Pareceres de dispensa da PGFN sinalizam teses já ganhas. Fonte subutilizada, monitorar sempre.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Ler o Parecer SEI 1.535/2026 na origem, no sítio da PGFN.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -968,6 +1055,7 @@ const PADRAO={
    "edai": "",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Número do tema de RG não anotado. Localizar no portal do STF.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -987,6 +1075,7 @@ const PADRAO={
    "edai": "Acórdão de Câmara Superior não vincula: é orientação, não precedente obrigatório.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Número do acórdão da CSRF não anotado. Localizar antes de citar.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -1006,6 +1095,7 @@ const PADRAO={
    "edai": "Acórdão de Câmara Superior não vincula: é orientação, não precedente obrigatório.",
    "verificacao": "a_confirmar",
    "prazo": null,
+   "modulacao": null,
    "pendencia": "Número do acórdão da CSRF não anotado. Localizar antes de citar.",
    "verificadoEm": "2026-08-19",
    "atualizado": "ago/2026"
@@ -1485,7 +1575,7 @@ const CHAVE='radar-juridico-lm';
 const ESTADO={iminente:'janela aberta',curso:'em curso',fixada:'tese fixada',afetado:'afetado'};
 const MES=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
 const TERM_VALIDADE=7;
-let estado, area='todas', termo='', filtroTese='todas', temArmazenamento=true;
+let estado, area='todas', termo='', termoTese='', filtroTese='todas', temArmazenamento=true;
 
 const clonar=o=>JSON.parse(JSON.stringify(o));
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -1602,18 +1692,16 @@ function prazosOrdenados(){
 }
 function desenharPrazos(){
   const lista=prazosOrdenados(), alvo=document.getElementById('prazos');
-  const urgentes=lista.filter(x=>!x.aberta&&x.dias<=45).length;
-  const selo=document.getElementById('selo-prazo');
-  selo.textContent=urgentes; selo.hidden=!urgentes;
+  desenharVence(lista);
   document.getElementById('r-prazos').textContent=
     lista.length?plural(lista.length,'frente','frentes'):'';
   if(!lista.length){
     alvo.innerHTML='<p class="vazio">Nenhum prazo anotado.<br>'
-      +'Prazo público entra no campo <b>prazo</b> de base/teses.json. O seu entra em privado/prazos.js.</p>';
+      +'Prazo público entra no campo <b>prazo</b> de base/teses.json. O de carteira, em privado/prazos.js, só no disco.</p>';
     return;
   }
   alvo.innerHTML=lista.map(x=>{
-    const tom=x.carteira?'carteira':(x.aberta?'aberta':(x.dias<=30?'urgente':(x.dias<=90?'atencao':'')));
+    const tom=tomPrazo(x);
     const conta=x.aberta
       ? '<div class="pz-conta aberta">janela contínua</div>'
       : `<div class="pz-conta">${x.dias}<small>${x.dias===1?'dia':'dias'}</small></div>`;
@@ -1629,6 +1717,26 @@ function desenharPrazos(){
       </div>
     </article>`;
   }).join('');
+}
+
+const tomPrazo=x=>x.carteira?'carteira':(x.aberta?'aberta':(x.dias<=30?'urgente':(x.dias<=90?'atencao':'')));
+function desenharVence(lista){
+  const alvo=document.getElementById('vence');
+  const topo=`<h2 class="vence-topo" id="vence-titulo"><span>Vence primeiro</span><span class="regua-f"></span>
+    ${lista.length>3?`<button class="vence-tudo" data-ver-prazos>ver as ${lista.length}</button>`:''}</h2>`;
+  if(!lista.length){
+    alvo.innerHTML=topo+'<p class="vence-vazio">Nenhum prazo anotado no acervo.</p>';
+    return;
+  }
+  alvo.innerHTML=topo+'<ol class="vence-lista">'+lista.slice(0,3).map(x=>{
+    const n=x.aberta?'janela contínua'
+      :`${x.dias}<small>${x.dias===0?'hoje':(x.dias===1?'dia':'dias')}</small>`;
+    return `<li><button class="vc ${tomPrazo(x)}" data-ver-prazos>
+      <span class="vc-n">${n}</span>
+      <span class="vc-oque">${esc(x.oque)}</span>
+      <span class="vc-quando">${x.aberta?'sem data de corte':esc(porExtenso(x.quando))}${x.ref?' · '+esc(x.ref):''}${x.conferir?' · a conferir':''}</span>
+    </button></li>`;
+  }).join('')+'</ol>';
 }
 
 /* ---------- mapa de teses ---------- */
@@ -1647,15 +1755,19 @@ function desenharFiltrosTese(){
 }
 function desenharMapa(){
   const alvo=document.getElementById('mapa');
+  const q=termoTese.trim().toLowerCase();
   const lista=estado.teses.filter(x=>
     filtroTese==='todas' ? true
     : filtroTese==='aconfirmar' ? x.verificacao!=='confirmado'
-    : x.status===filtroTese);
+    : x.status===filtroTese)
+    .filter(x=>!q||[x.tema,x.processo,x.titulo,x.tribunal,x.resumo].join(' ').toLowerCase().includes(q));
   document.getElementById('c-teses').textContent=estado.teses.length;
   document.getElementById('c-aconfirmar').textContent=
     estado.teses.filter(x=>x.verificacao!=='confirmado').length;
   document.getElementById('r-teses').textContent=`${lista.length} de ${estado.teses.length}`;
-  if(!lista.length){ alvo.innerHTML='<p class="vazio">Nada nesse recorte.</p>'; return; }
+  if(!lista.length){ alvo.innerHTML=q
+      ? `<p class="vazio">Nenhuma tese com “${esc(termoTese.trim())}”.<br>A busca olha tema, processo, título, tribunal e resumo.</p>`
+      : '<p class="vazio">Nada nesse recorte.</p>'; return; }
 
   const ordem=[...new Set(estado.teses.map(x=>x.bloco))];
   alvo.innerHTML=ordem.map(b=>{
@@ -1664,18 +1776,29 @@ function desenharMapa(){
     return `<h3>${esc(b)}</h3>`+doBloco.map(ficha).join('');
   }).join('');
 }
+const MODULACAO={sem:'sem modulação',com:'modulada',pendente:'modulação pendente'};
+function linhaModulacao(m){
+  if(!m||!m.estado) return '<span class="ts-mod">modulação não registrada</span>';
+  let t=MODULACAO[m.estado]||m.estado;
+  if(m.corte) t+=` · corte ${porExtenso(m.corte)}`;
+  return `<span class="ts-mod ${esc(m.estado)}" title="${esc(m.nota||'')}">${esc(t)}</span>`;
+}
+function linhaPlacar(x){
+  if(!x.placar) return '';
+  const {c=0,f=0,p=0}=x.placar;
+  const v=[...Array(c).fill('c'),...Array(f).fill('f'),...Array(p).fill('p')];
+  return `<span class="placar-txt">placar ${c} × ${f}${p?` · ${p} ${p===1?'pendente':'pendentes'}`:''}</span>
+    <div class="placar" aria-hidden="true">${v.map(k=>`<i class="voto ${k}"></i>`).join('')}</div>
+    ${x.placarNota?`<span class="placar-nota">${esc(x.placarNota)}</span>`:''}`;
+}
 function ficha(x){
   const aulas=estado.aulas.filter(a=>(a.teses||[]).includes(x.id));
-  let placar='';
-  if(x.placar){
-    const v=[...Array(x.placar.c).fill('c'),...Array(x.placar.f).fill('f'),...Array(x.placar.p).fill('p')];
-    placar=`<div class="placar" title="${esc(x.placarNota||'')}">${v.map(k=>`<i class="voto ${k}"></i>`).join('')}</div>`;
-  }
-  return `<article class="ts" id="tese-${x.id}">
+  const opcoes=Object.entries(ESTADO).map(([k,v])=>`<option value="${k}" ${x.status===k?'selected':''}>${v}</option>`).join('');
+  return `<article class="ts" id="tese-${x.id}" tabindex="-1">
     <div>
       <h4>${esc(x.titulo)}</h4>
       <p class="resumo">${esc(x.resumo)}</p>
-      <div class="edai-txt" contenteditable="true" data-campo="edai" data-id="${x.id}">${esc(x.edai||'')}</div>
+      <div class="edai-txt" contenteditable="true" data-campo="edai" data-id="${x.id}" aria-label="E daí? — ${esc(x.tema)}">${esc(x.edai||'')}</div>
       ${x.verificacao!=='confirmado'&&x.pendencia?`<p class="pendente" style="margin-top:9px">A confirmar: ${esc(x.pendencia)}</p>`:''}
       ${aulas.length?`<div class="aula-vinculos">${aulas.map(a=>`<span class="vinculo">visto na aula de ${esc(a.data)}</span>`).join('')}</div>`:''}
     </div>
@@ -1683,12 +1806,13 @@ function ficha(x){
       <span class="ts-estado ${x.status}">${ESTADO[x.status]||x.status}</span>
       <span class="ts-ref">${esc(x.tribunal)} ${esc(x.tema)}</span>
       ${x.processo&&x.processo!==x.tema?`<span>${esc(x.processo)}</span>`:''}
-      <span>conferido em ${esc(x.verificadoEm||'')}</span>
-      ${placar}
+      ${linhaModulacao(x.modulacao)}
+      ${linhaPlacar(x)}
+      <span>conferido em ${esc(porExtenso(x.verificadoEm||''))}</span>
       ${x.fonte?`<div style="margin-top:6px"><a class="ligacao" href="${esc(x.fonte)}" target="_blank" rel="noopener">${esc(dominio(x.fonte))}</a></div>`:''}
       <div class="ts-acoes">
         <button data-acao="editar" data-id="${x.id}">editar</button>
-        <button data-acao="status" data-id="${x.id}">status</button>
+        <select class="ts-status" data-status="${x.id}" aria-label="Status de ${esc(x.tema)}">${opcoes}</select>
         <button data-acao="excluir" data-id="${x.id}">excluir</button>
       </div>
     </div>
@@ -1817,11 +1941,56 @@ function desenhar(){
 
 /* ---------- abas ---------- */
 function trocarAba(nome){
-  document.querySelectorAll('.aba').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.pane===nome)));
+  document.querySelectorAll('.aba').forEach(b=>{ const ativa=b.dataset.pane===nome;
+    b.setAttribute('aria-selected',String(ativa)); b.tabIndex=ativa?0:-1; });
   document.querySelectorAll('.pane').forEach(p=>{ p.hidden = p.id!=='pane-'+nome; });
   try{ localStorage.setItem(CHAVE+'-aba',nome); }catch(e){}
 }
 document.querySelectorAll('.aba').forEach(b=>b.addEventListener('click',()=>trocarAba(b.dataset.pane)));
+document.querySelector('.abas').addEventListener('keydown',e=>{
+  if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key)) return;
+  const abas=[...document.querySelectorAll('.aba')], i=abas.indexOf(document.activeElement);
+  if(i<0) return;
+  const j=e.key==='Home'?0:e.key==='End'?abas.length-1:(i+(e.key==='ArrowRight'?1:-1)+abas.length)%abas.length;
+  e.preventDefault(); trocarAba(abas[j].dataset.pane); abas[j].focus();
+});
+function verPrazos(){
+  trocarAba('tributario');
+  const alvo=document.getElementById('prazos');
+  alvo.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+}
+/* `/` leva à busca da aba aberta; Esc sai dela */
+document.addEventListener('keydown',e=>{
+  const t=e.target, digitando=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);
+  if(e.key==='/'&&!digitando&&!dlg.open){
+    const aba=document.querySelector('.aba[aria-selected="true"]').dataset.pane;
+    const campo=document.getElementById(aba==='tributario'?'busca-tese':'busca');
+    if(campo){ e.preventDefault(); if(aba==='tributario') campo.scrollIntoView({block:'center'}); campo.focus(); }
+  }
+  if(e.key==='Escape'&&t.classList&&t.classList.contains('busca')) t.blur();
+});
+
+/* ---------- desfazer ---------- */
+let timerDesfazer=null, acaoDesfazer=null;
+function avisarDesfazer(msg, restaurar){
+  const alvo=document.getElementById('desfazer');
+  clearTimeout(timerDesfazer); acaoDesfazer=restaurar;
+  alvo.innerHTML=`<span>${esc(msg)}</span>`+(restaurar?'<button type="button" id="desfazer-btn">desfazer</button>':'');
+  alvo.hidden=false;
+  const btn=document.getElementById('desfazer-btn');
+  if(btn){ btn.addEventListener('click',()=>{ const f=acaoDesfazer; fecharDesfazer(); if(f){ f(); salvar(); desenhar(); } }); }
+  timerDesfazer=setTimeout(fecharDesfazer, restaurar?8000:2500);
+  return btn;
+}
+function fecharDesfazer(){ clearTimeout(timerDesfazer); acaoDesfazer=null; document.getElementById('desfazer').hidden=true; }
+function excluirDe(lista, id, rotulo){
+  const antes=clonar(estado[lista]), i=estado[lista].findIndex(x=>x.id===id);
+  estado[lista]=estado[lista].filter(x=>x.id!==id);
+  salvar(); desenhar();
+  const btn=avisarDesfazer(rotulo+' excluído', ()=>{ estado[lista]=antes; });
+  if(btn) btn.focus({preventScroll:true});
+  return i;
+}
 
 function irParaTese(id){
   trocarAba('tributario'); filtroTese='todas'; desenharFiltrosTese(); desenharMapa();
@@ -1856,24 +2025,27 @@ document.addEventListener('click',e=>{
     salvar(); desenhar(); return;
   }
   if(acao==='semente-manter'){ estado.semente=SEMENTE; salvar(); avisarSemente(); return; }
-  if(acao==='excluir'&&confirm('Remover esta tese do mapa?')){
-    estado.teses=estado.teses.filter(x=>x.id!==id); salvar(); desenhar(); }
-  if(acao==='excluir-boletim'&&confirm('Excluir este boletim?')){
-    estado.boletins=estado.boletins.filter(x=>x.id!==id); salvar(); desenharBoletins(); }
-  if(acao==='excluir-aula'&&confirm('Excluir esta aula do caderno?')){
-    estado.aulas=estado.aulas.filter(x=>x.id!==id); salvar(); desenharAulas(); desenharMapa(); }
-  if(acao==='excluir-estudo'){
-    estado.backlog=estado.backlog.filter(x=>x.id!==id); salvar(); desenharBacklog(); }
+  if(acao==='excluir'&&confirm('Remover esta tese do mapa?')){ marcarSujo('excluir:'+id); excluirDe('teses',id,'Tese'); }
+  if(acao==='excluir-boletim'&&confirm('Excluir este boletim?')){ marcarSujo('boletim:'+id); excluirDe('boletins',id,'Boletim'); }
+  if(acao==='excluir-aula'&&confirm('Excluir esta aula do caderno?')){ marcarSujo('aula:'+id); excluirDe('aulas',id,'Aula'); }
+  if(acao==='excluir-estudo'&&confirm('Remover este item do backlog?')){ marcarSujo('backlog:'+id); excluirDe('backlog',id,'Item'); }
   if(acao==='check'){ const i=estado.backlog.find(x=>x.id===id);
     if(i){ i.feito=b.checked; marcarSujo('backlog:'+id); salvar(); desenharBacklog(); avisarSujo(); } }
-  if(acao==='status'){ const o=['iminente','curso','afetado','fixada'], t=estado.teses.find(x=>x.id===id);
-    if(t){ t.status=o[(o.indexOf(t.status)+1)%o.length]; marcarSujo('status:'+id);
-      salvar(); desenharFiltrosTese(); desenharMapa(); avisarSujo(); } }
   if(acao==='editar') abrirFormTese(estado.teses.find(x=>x.id===id));
   if(acao==='editar-aula') abrirFormAula(estado.aulas.find(x=>x.id===id));
 });
 
 document.getElementById('busca').addEventListener('input',e=>{ termo=e.target.value; desenharNoticias(); });
+document.getElementById('busca-tese').addEventListener('input',e=>{ termoTese=e.target.value; desenharMapa(); });
+document.addEventListener('click',e=>{ if(e.target.closest('[data-ver-prazos]')) verPrazos(); });
+document.addEventListener('change',e=>{
+  const sel=e.target.closest('[data-status]'); if(!sel) return;
+  const t=estado.teses.find(x=>x.id===sel.dataset.status); if(!t) return;
+  const antes=t.status; t.status=sel.value; marcarSujo('status:'+t.id);
+  salvar(); desenharFiltrosTese(); desenharMapa(); avisarSujo();
+  avisarDesfazer(`${t.tema}: ${ESTADO[antes]} → ${ESTADO[t.status]}`, ()=>{ t.status=antes; });
+  const volta=document.querySelector(`[data-status="${t.id}"]`); if(volta) volta.focus({preventScroll:true});
+});
 document.getElementById('ir-aconfirmar').addEventListener('click',()=>{
   trocarAba('tributario'); filtroTese='aconfirmar'; desenharFiltrosTese(); desenharMapa();
   document.getElementById('mapa').scrollIntoView({behavior:'smooth',block:'start'});
@@ -1884,9 +2056,13 @@ const dlg=document.getElementById('dlg');
 let aoSalvar=null;
 function abrirForm(titulo,campos,cb){
   document.getElementById('dlg-titulo').textContent=titulo;
-  document.getElementById('campos').innerHTML=campos;
+  const alvo=document.getElementById('campos'); alvo.innerHTML=campos;
+  alvo.querySelectorAll('label').forEach((l,i)=>{
+    const c=l.nextElementSibling; if(!c||!/^(INPUT|TEXTAREA|SELECT)$/.test(c.tagName)) return;
+    c.id=c.id||'campo-'+(c.name||i); l.htmlFor=c.id; });
   aoSalvar=cb; dlg.showModal();
 }
+document.getElementById('dlg-cancelar').addEventListener('click',()=>{ aoSalvar=null; dlg.close(); });
 document.getElementById('form').addEventListener('submit',e=>{
   if(e.submitter&&e.submitter.value==='salvar'&&aoSalvar){
     const d={};

@@ -75,6 +75,17 @@ def validar(d):
         f = t.get("fonte", "")
         if f.startswith("@") and f[1:] not in d["atalhos_de_fonte"]:
             erros.append(f"{onde}: atalho de fonte `{f}` não existe")
+        # Modulação é informação de primeira ordem (CLAUDE.md): quando registrada,
+        # tem estado fechado e, se modulada, data de corte. Ausente = não registrada,
+        # e o painel diz isso — nunca se presume "sem modulação".
+        md = t.get("modulacao")
+        if md is not None:
+            if md.get("estado") not in ("sem", "com", "pendente"):
+                erros.append(f"{onde}: modulacao.estado precisa ser `sem`, `com` ou `pendente`")
+            if md.get("estado") == "com" and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", md.get("corte") or ""):
+                erros.append(f"{onde}: modulação `com` sem data de corte em AAAA-MM-DD")
+            if not md.get("fonte"):
+                erros.append(f"{onde}: modulação registrada sem fonte")
         pz = t.get("prazo")
         if pz:
             if pz.get("tipo") not in ("data_certa", "rolante"):
@@ -210,7 +221,7 @@ def gerar_semente(d, r, a):
         "titulo": t["titulo"], "resumo": t["resumo"], "fonte": url(d, t.get("fonte", "")),
         "placar": t.get("placar"), "placarNota": t.get("placarNota", ""),
         "edai": t.get("edai", ""), "verificacao": t["verificacao"],
-        "prazo": t.get("prazo"),
+        "prazo": t.get("prazo"), "modulacao": t.get("modulacao"),
         "pendencia": t.get("pendencia", ""), "verificadoEm": t["verificado_em"],
         "atualizado": mes_ano(t["verificado_em"]),
     } for t in d["teses"]]
