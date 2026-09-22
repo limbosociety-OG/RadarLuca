@@ -1,6 +1,6 @@
 {
-  "versao": "2026-09-01",
-  "corte": "2026-09-01",
+  "versao": "2026-09-22T20:28Z",
+  "corte": "2026-09-22",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -389,7 +389,7 @@
       "fonte": "@agenda",
       "verificacao": "a_confirmar",
       "verificado_em": "2026-08-19",
-      "pendencia": "Placar parcial vem de fonte secundária. Conferir no andamento antes de citar número de votos."
+      "pendencia": "Julgamento presencial suspenso em 02/09/2026 após as sustentações orais, com placar virtual de 4 a 1 pelos contribuintes; sem nova data. Placar parcial vem de fonte secundária. Conferir no andamento antes de citar número de votos."
     },
     {
       "id": "t20",
@@ -553,6 +553,43 @@
       "verificacao": "a_confirmar",
       "verificado_em": "2026-08-19",
       "pendencia": "Número do acórdão da CSRF não anotado. Localizar antes de citar."
+    },
+    {
+      "id": "t29",
+      "bloco": "reforma",
+      "tribunal": "CGSN",
+      "tema": "Res. CGSN 186/2026",
+      "processo": "",
+      "titulo": "Simples Nacional pode apurar IBS e CBS pelo regime regular em 2027",
+      "resumo": "Janela de 1º a 30 de setembro de 2026 para a empresa do Simples optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples.",
+      "status": "iminente",
+      "placar": null,
+      "edai": "Fornecedor do Simples que vende para contribuinte do regime regular só transfere crédito integral de IBS e CBS se optar. Quem não optar até 30/09 fica no DAS até junho de 2027 e perde competitividade na cadeia B2B.",
+      "fonte": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/cgsn-define-prazos-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs-para-2027",
+      "verificacao": "a_confirmar",
+      "verificado_em": "2026-09-22",
+      "pendencia": "Conferir no texto da Resolução CGSN 186/2026 a janela, o prazo de cancelamento (fonte secundária fala em 30/11) e o período coberto. Leitura direta da fonte primária bloqueada na varredura de 22/09; o dado veio de fonte secundária.",
+      "prazo": {
+        "tipo": "data_certa",
+        "data": "2026-09-30",
+        "oque": "Fim da janela do Simples para optar pelo regime regular de IBS e CBS em 2027"
+      }
+    },
+    {
+      "id": "t30",
+      "bloco": "processo",
+      "tribunal": "Congresso",
+      "tema": "LC 236/2026",
+      "processo": "",
+      "titulo": "Teto de multa tributária no CTN e retroatividade benigna",
+      "resumo": "Reforma do CTN sancionada em 04/09/2026: multa proporcional limitada a 75% do tributo, 100% em fraude, sonegação ou conluio e 150% na reincidência, além de capítulo de processo administrativo fiscal e incentivo a soluções consensuais.",
+      "status": "iminente",
+      "placar": null,
+      "edai": "Multa em auto de infração ainda não definitivamente julgado pode ser reduzida ao novo teto pela retroatividade benigna do art. 106, II, \"c\", do CTN. Carteira com autuação acima de 75% sem qualificadora, ou com qualificada acima de 100% sem reincidência, deve ser revista agora.",
+      "fonte": "https://www.migalhas.com.br/quentes/464072/nova-lei-altera-ctn-limita-multas-e-amplia-acordos-tributarios",
+      "verificacao": "a_confirmar",
+      "verificado_em": "2026-09-22",
+      "pendencia": "Conferir no DOU o texto publicado, os vetos, a vigência de cada dispositivo e se o teto alcança multas estaduais e municipais antes da adaptação de dois anos. Leitura direta da fonte primária bloqueada na varredura de 22/09; o dado veio de fonte secundária."
     }
   ],
   "boletins": [
