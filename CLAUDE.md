@@ -56,6 +56,7 @@ cliente sem que eu tenha dado os fatos.
 ## Onde as coisas vivem
 
 ```
+design/obsidian-chrome/        o sistema visual travado — tokens, componentes, referências
 base/teses.json                A FONTE DA VERDADE do acervo — todo o resto deriva daqui
 base/radar.json                camada de notícia: as sete áreas e o termômetro do X
 base/mapa-de-teses.md          GERADO de teses.json — não editar à mão
@@ -82,17 +83,19 @@ divergido.
 **Item não confirmado entra como `"verificacao": "a_confirmar"`, com o que falta escrito no
 campo `pendencia`.** Nunca como fato. É assim que o ⚠️ aparece no mapa e no painel.
 
-**Skills: neste repositório, a peça sai no sistema do IPTU.** `carrossel`, `radar`,
+**Skills: neste repositório, a peça sai no Obsidian Chrome.** `carrossel`, `radar`,
 `boletim` — as três daqui. Duas coisas diferentes podem aparecer no ambiente, vindas da
 conta, e não se tratam do mesmo jeito:
 
 - **`producao-carrossel`** é *outra identidade visual*: Moody Blue `#21324C` com off-white,
   Cormorant Garamond / Italiana / Instrument, arquitetura de seis batidas. Existe de
-  propósito e não se mexe nela. Só não é a deste projeto — aqui o sistema é o do carrossel
-  do Tema 1.455: `#17181D` / `#E6E9EE`, Bodoni Moda / Spectral / IBM Plex Mono.
-- **`carrossel-tributario` e `radar-juridico`** são cópias antigas *do mesmo sistema daqui*.
-  Esse é o caso perigoso, porque a peça sai parecida e o processo é pior: sem legenda no
-  gate, sem prazo de validade na ficha, sem fontes versionadas. Use as do repositório.
+  propósito e não se mexe nela. Só não é a deste projeto — aqui o sistema é o **Obsidian
+  Chrome** (`design/obsidian-chrome/`): obsidiana `#0A0A0A`, campos de luz em cromo, selo
+  circular, Jost / Poppins / Archivo / Cormorant Garamond.
+- **`carrossel-tributario` e `radar-juridico`** são cópias antigas da skill daqui, ainda no
+  sistema anterior (`#17181D`, Bodoni / Spectral / Plex). A peça sai no visual aposentado e
+  o processo é pior: sem legenda no gate, sem prazo de validade na ficha, sem fontes
+  versionadas. Use as do repositório.
 
 Na dúvida sobre qual disparou, pergunte antes de renderizar. `scripts/doctor.py` classifica
 o que está instalado.
@@ -203,25 +206,43 @@ sempre separada do fato noticiado.
 
 ## Identidade visual — travada
 
-Não reinterpretar a cada peça. O sistema está no template da skill; estes são os invariantes:
+**Obsidian Chrome**, travado em 10/09/2026. A fonte da verdade é `design/obsidian-chrome/`
+(tokens, componentes, template `Boletim Judicial`, referências e o `CLAUDE.md` dele, que
+lista os invariantes). Substituiu o sistema do Tema 1.455 (Bodoni/Spectral/Plex): a peça
+do IPTU já publicada fica como saiu; o que for produzido daqui em diante sai neste.
+Não reinterpretar a cada peça. Os invariantes:
 
-- Fundo escuro `#17181D` (marca institucional `#0E1522`), com gradiente deslocado e grão fino
-- Fundo claro `#E6E9EE` para exposição técnica
-- Texto off-white `#F6F4EF` — nunca branco puro
-- Acentos: índigo `#1F2A5E`, lavanda `#8B92C6`, coral `#C08D89`, claro `#E6E9EE`
-- Manchete: Bodoni Moda. Corpo: Spectral. Número, processo, data: IBM Plex Mono
-- 1080×1350 no feed, 1080×1920 no story — os dois no mesmo roteiro, `--formato ambos`.
-  No story, 250px de topo e 230px de base são a faixa que a moldura do Instagram cobre:
-  tela densa no feed fica apertada no story, e aí ou se corta item ou se quebra a tela
-- Escuro carrega voz editorial (capa, o que ninguém publicou, fecho); claro carrega
-  exposição técnica. A alternância significa: tudo claro vira apostila, tudo escuro vira
-  manifesto
+- **Obsidiana e cromo.** Fundo `#0A0A0A` e profundidades `#0C121A`→`#1C2E3D`; cromo em
+  ascensão `#2A4356`→`#F2F1EF`; slate `#536878`, alabastro `#E5E4E2`. Tinta `#F2F1EF`,
+  nunca branco puro. Não há cor de acento fora dessa escala
+- **Todo fundo é campo de luz** (`--field-*`: blob, wash, cone, corner, sky, horizon,
+  onyx, slab, paper), nunca cor chapada improvisada. Texto nunca pousa na passagem clara:
+  o véu (`--veil-*`) protege
+- **Tipografia por contraste.** Display em Jost 200–300, escala grande. Versalete em
+  Poppins 500, tracking 0.2em, 17px nos rótulos — é onde vivem número, processo e data.
+  Texto em Archivo. Cormorant Garamond só no monograma do selo e na citação da tese
+- **Selo circular** — anel duplo, texto no arco superior e inferior, monograma no centro.
+  Capa e fecho usam o mesmo selo: 168px, 239px do topo
+- **Raio zero em tudo**; só o selo é redondo. Grade de mosaico com calha de 10px
+- Board 1080×1350, padding 76px; cabeçalho `rótulo · régua · número` no topo, rodapé no pé.
+  1080×1920 no story, os dois no mesmo roteiro, `--formato ambos`. No story, 250px de topo
+  e 230px de base são a faixa que a moldura do Instagram cobre: tela densa no feed fica
+  apertada no story, e aí ou se corta item ou se quebra a tela
+- `OAB/RJ 274.439` no rodapé do fecho; `conteúdo informativo · não constitui consulta` no
+  board de aplicação (o das checagens)
+- Papel (`--field-paper`) carrega exposição técnica; obsidiana carrega voz editorial (capa,
+  o que ninguém publicou, fecho). Tudo papel vira apostila, tudo obsidiana vira manifesto
 - Seção `01` começa na tela 2; a capa não é seção
 - Restrição máxima: nada decorativo, nada de rótulo redundante, nada com cara de template
 
-Fontes vendorizadas em `.claude/skills/carrossel/assets/fonts/`. O build **não baixa nada**:
-se alguma faltar, estiver truncada ou não for arquivo de fonte, ele para e diz como
-restaurar. Render com fallback de sistema produz inconsistência permanente no feed.
+O texto de exemplo do template `Boletim Judicial` ("Revise as apurações", "Salve este
+boletim") é imperativo dirigido ao leitor e não passa no Provimento 205: o que se herda de
+lá é a estrutura, nunca a copy.
+
+Fontes vendorizadas em `.claude/skills/carrossel/assets/fonts/` (carrossel) e
+`portal/assets/fonts/` (painel). O build **não baixa nada**: se alguma faltar, estiver
+truncada ou não for arquivo de fonte, ele para e diz como restaurar. Render com fallback
+de sistema produz inconsistência permanente no feed.
 
 ---
 

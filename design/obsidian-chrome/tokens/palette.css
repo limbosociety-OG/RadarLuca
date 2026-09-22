@@ -1,0 +1,49 @@
+:root{
+/* named swatches, verbatim from the supplied palette boards */
+--onyx:#0A0A0A;
+--blue-slate:#536878;
+--alabaster:#E5E4E2;
+
+/* obsidian depths, sampled from the story and feed boards */
+--obsidian-0:#050607;
+--obsidian-1:#0A0A0A;
+--obsidian-2:#0C121A;
+--obsidian-3:#111A25;
+--obsidian-4:#16232F;
+--obsidian-5:#1C2E3D;
+
+/* chrome rise: slate up into daylight, sampled from the gradient boards */
+--chrome-1:#2A4356;
+--chrome-2:#3C5567;
+--chrome-3:#536878;
+--chrome-4:#6E8391;
+--chrome-5:#8E9FAA;
+--chrome-6:#B4C0C7;
+--chrome-7:#D2D9DC;
+--chrome-8:#E5E4E2;
+--chrome-9:#F2F1EF;
+
+/* steel sky, sampled from the equine plate */
+--sky-deep:#1E2C38;
+--sky-mid:#41596B;
+--sky-high:#7C93A6;
+
+/* ink */
+--ink-full:#F2F1EF;
+--ink-high:#E5E4E2;
+--ink-mid:rgba(229,228,226,0.66);
+--ink-low:rgba(229,228,226,0.44);
+--ink-faint:rgba(229,228,226,0.26);
+--ink-onyx:#0A0A0A;
+--ink-onyx-mid:rgba(10,10,10,0.62);
+
+/* rules — the boards use hairlines only */
+--rule-faint:rgba(229,228,226,0.13);
+--rule:rgba(229,228,226,0.24);
+--rule-strong:rgba(229,228,226,0.42);
+--rule-onyx:rgba(10,10,10,0.20);
+
+/* the light itself */
+--light-core:#F2F7FB;
+--light-halo:rgba(180,203,220,0.55);
+}

@@ -1,0 +1,20 @@
+<!-- @dsCard group="Componentes" viewport="1100x760" name="Statement" subtitle="Escala tipográfica aplicada" -->
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:var(--u-9);min-height:100vh}</style></head><body><div id="root"></div>
+<script>
+const { Field, Seal, Mosaic, Tile, SpecLine, Figure, Plate, Statement } = window.LucaMartinsDesignSystem_f910c3;
+const h = React.createElement;
+
+function Card(){return h(Field,{variant:'onyx',pad:'var(--u-9)'},h('div',{style:{display:'grid',gap:'var(--u-6)'}},
+  h(Statement,{level:'hero'},'Hero'),
+  h(Statement,{level:'display'},'Display'),
+  h(Statement,{level:'statement'},'Statement'),
+  h(Statement,{level:'ring'},'Cormorant no anel'),
+  h(Statement,{level:'lead',measure:'var(--measure-lead)',style:{color:'var(--ink-mid)'}},'Lead em Archivo: o corpo de texto corre em medida controlada, nunca ultrapassando a largura de leitura definida pelo sistema.'),
+  h(Statement,{level:'caps',style:{color:'var(--ink-mid)'}},'Caps · versalete · tracking largo')));}
+
+ReactDOM.createRoot(document.getElementById('root')).render(h(Card));
+</script></body></html>

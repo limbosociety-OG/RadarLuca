@@ -1,0 +1,42 @@
+:root{
+--u-1:4px;
+--u-2:8px;
+--u-3:12px;
+--u-4:16px;
+--u-5:20px;
+--u-6:28px;
+--u-7:36px;
+--u-8:48px;
+--u-9:64px;
+--u-10:76px;
+--u-11:104px;
+--u-12:148px;
+
+--board-feed-w:1080px; /* @kind spacing */
+--board-feed-h:1350px; /* @kind spacing */
+--board-story-w:1080px; /* @kind spacing */
+--board-story-h:1920px; /* @kind spacing */
+--board-square:1080px; /* @kind spacing */
+
+/* the supplied boards run tight margins with content to the edge */
+--pad-board:76px; /* @kind spacing */
+--pad-board-tight:48px; /* @kind spacing */
+--pad-story-safe:250px; /* @kind spacing */
+--gutter-mosaic:10px; /* @kind spacing */
+
+--measure-lead:820px; /* @kind spacing */
+--measure-body:560px; /* @kind spacing */
+--measure-caption:380px; /* @kind spacing */
+
+/* radii: the boards are square. only seals are round. */
+--r-none:0px;
+--r-hair:1px;
+--r-chip:2px;
+--r-round:50%;
+
+--hair:1px; /* @kind spacing */
+--tick:22px; /* @kind spacing */
+--seal-lg:280px; /* @kind spacing */
+--seal-md:168px; /* @kind spacing */
+--seal-sm:96px; /* @kind spacing */
+}
