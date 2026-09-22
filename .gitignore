@@ -6,6 +6,7 @@ painel-processual*.json
 # Saída de render e ambiente
 pecas/**/saida/
 portal/celular.html
+portal/online.html
 __pycache__/
 .venv/
 .DS_Store

@@ -68,7 +68,9 @@ portal/radar.html   painel; o bloco de dados é GERADO de teses.json
 privado/                       NÃO VERSIONADO — prazos, clientes, painel processual
 scripts/gerar.py               regrava mapa e portal a partir de teses.json
 scripts/importar.py            traz de volta o que foi editado no painel
-scripts/publicar.py            variante de celular do painel, sem a camada privada
+scripts/publicar.py            variantes publicáveis: celular (leitura) e --online (edita, grava no banco)
+scripts/sincronizar.py         fecha o ciclo diário: versão, gerar, painel online, doctor
+portal/online.json             onde o painel online vive e o branch principal
 scripts/doctor.py              diagnóstico: sigilo, skills, fontes, gate, pendências
 .claude/skills/                carrossel · radar · boletim
 .githooks/pre-commit           trava de sigilo — instalar com sh scripts/instalar-hooks.sh
@@ -141,17 +143,29 @@ Notícia entra em `base/radar.json` com `area`, `titulo`, `resumo`, `fonte` e `v
 notícia sem consequência prática é clipping. Fora dele, manchete e resumo bastam. Prazo entra
 em `base/teses.json`, campo `prazo`.
 
-**O termômetro do X não é ao vivo, e não vai ser.** O painel é arquivo aberto do disco: sem
-servidor, sem credencial. Quem mede é a skill `radar`; o quadro carrega a data da medição e
+**O termômetro do X não é ao vivo, e não vai ser.** O painel não consulta o X: sem
+credencial, sem raspagem. Quem mede é a skill `radar`, na rotina diária; o quadro carrega a data da medição e
 vira histórico depois de 7 dias. Sem reação pública verificável, ele fica vazio de propósito
 — ausência de dado é ausência de seção, nunca estimativa.
 
-**Edição feita no painel não está no repositório.** O painel abre por `file://` e não
-escreve em disco: ele acumula no `localStorage` e avisa quando há coisa não importada. O
-ciclo fecha com `exportar json` no rodapé e `python3 scripts/importar.py <arquivo>
---aplicar`, seguido de `gerar.py`. Quando esse aviso aparecer, ou quando o usuário
-mencionar anotação feita no painel, lembrar dele — é trabalho que some ao limpar dados do
-site.
+**O painel vive em dois lugares, e só um é de trabalho.** O **painel online**
+(https://claude.ai/artifact/Nr2ExtThg7VVXDSDQud2sk, gerado por `publicar.py --online`) é a
+superfície de uso: abre de qualquer lugar logado no claude.ai, e toda edição — tese nova,
+status, "e daí?", boletim, aula, backlog, exclusão — grava no banco do próprio Artifact
+(documento `painel/estado`), não no navegador. `portal/radar.html` no disco continua sendo o
+único lugar onde aparece o prazo de carteira de `privado/`.
+
+**A rotina diária fecha o ciclo sozinha** (Routine "Radar — sincronização diária", 07h de
+Brasília). Nesta ordem: lê `painel/estado` e aplica com `importar.py --aplicar` (antes do
+radar, porque exclusão de tese só é segura contra a mesma versão do acervo); roda a skill
+`radar`; roda `scripts/sincronizar.py` (carimba a versão, `gerar.py`, `publicar.py --online`,
+doctor); commit e push em `claude/new-session-pavr72`, o branch principal; republica o
+Artifact; apaga `painel/estado` se ele não mudou desde a leitura. Configuração em
+`portal/online.json`. Se o doctor bloquear, a rotina não publica nem commita — e diz por quê.
+
+**Nada de carteira no painel online.** Ele fica no servidor do claude.ai: o que se digita
+nele é remoto. Cliente, número de processo de carteira e prazo de intimação continuam só em
+`privado/`, no disco.
 
 **Prazo de carteira vive em `privado/prazos.js`** e aparece no *Hoje* misturado aos
 públicos, com marca de privado. Nunca versionado, nunca citado em peça ou boletim.
