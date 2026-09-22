@@ -11,3 +11,6 @@ __pycache__/
 .venv/
 .DS_Store
 node_modules/
+
+# estado de execução do Impeccable (servidor de visualização)
+.impeccable/live/

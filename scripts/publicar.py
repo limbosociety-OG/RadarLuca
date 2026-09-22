@@ -40,8 +40,8 @@ SO_LEITURA = """
 .backlog input[type=checkbox]{display:none!important}
 .edai-txt,.aula-notas,.backlog .txt{cursor:default}
 .edai-txt:empty{display:none}
-.instantaneo{font-family:var(--dado);font-size:11px;line-height:1.65;color:var(--tinta2);
-  border-left:2px solid var(--acento);padding:2px 0 2px 14px;margin:26px 0 0;max-width:74ch}
+.instantaneo{font-family:var(--dado);font-size:12px;line-height:1.65;color:var(--tinta2);
+  border-left:1px solid var(--acento);padding:2px 0 2px 14px;margin:26px 0 0;max-width:74ch}
 .instantaneo b{color:var(--acento)}
 @media (max-width:860px){
   .topo{padding:20px 0 12px}
@@ -55,10 +55,10 @@ SO_LEITURA = """
 ONLINE_CSS = """
 /* ---------- painel online: grava no banco do Artifact ---------- */
 #importar,#zerar,#exportar{display:none!important}
-.instantaneo{font-family:var(--dado);font-size:11px;line-height:1.65;color:var(--tinta2);
+.instantaneo{font-family:var(--dado);font-size:12px;line-height:1.65;color:var(--tinta2);
   border-left:1px solid var(--acento);padding:2px 0 2px 14px;margin:26px 0 0;max-width:74ch}
 .instantaneo b{color:var(--acento)}
-.nuvem{font-family:var(--dado);font-weight:500;font-size:10.5px;letter-spacing:.16em;
+.nuvem{font-family:var(--dado);font-weight:500;font-size:11px;letter-spacing:.16em;
   text-transform:uppercase;color:var(--tinta3)}
 .nuvem.ok{color:var(--firme)} .nuvem.falha{color:var(--atencao)}
 [data-armado]{color:var(--urgente)!important}
@@ -144,7 +144,7 @@ def online(s):
     s = troca(s, "/* ---------- estado ---------- */", ONLINE_JS + "\n/* ---------- estado ---------- */",
               "o bloco de estado")
     for msg in ("'Remover esta tese do mapa?'", "'Excluir este boletim?'",
-                "'Excluir esta aula do caderno?'"):
+                "'Excluir esta aula do caderno?'", "'Remover este item do backlog?'"):
         s = troca(s, f"confirm({msg})", "duplo(b)", "a confirmação de exclusão")
     s = troca(s, """function avisarArmazenamento(){
   document.getElementById('aviso-armazenamento').innerHTML = temArmazenamento ? '' :""",
@@ -153,7 +153,7 @@ def online(s):
   if(r){ const t={conectando:'conectando…',salvando:'salvando…',salvo:'salvo na nuvem',
       leitura:'somente leitura',falha:'sem conexão — ficou neste navegador',
       ausente:'sem banco — ficou neste navegador'}[nuvem]||nuvem;
-    r.textContent=t; r.className='nuvem '+(nuvem==='salvo'?'ok':(nuvem==='falha'||nuvem==='ausente')?'falha':''); }
+    r.hidden=false; r.textContent=t; r.className='nuvem '+(nuvem==='salvo'?'ok':(nuvem==='falha'||nuvem==='ausente')?'falha':''); }
   document.getElementById('aviso-armazenamento').innerHTML =
     (nuvem==='falha'||nuvem==='ausente') ? '<div class="aviso">O painel não alcançou o banco. '
     +'O que você mudar agora fica só neste navegador até a conexão voltar.</div>' : '';
@@ -170,9 +170,27 @@ def online(s):
               "Fica salva na nuvem e entra no acervo na sincronização diária. Nada de cliente, "
               "processo de carteira ou prazo de intimação aqui: esta página vive no servidor do claude.ai.",
               "a dica do formulário de tese")
-    s = troca(s, '<span>Radar Jurídico, uso interno</span>',
-              '<span>Radar Jurídico, uso interno · <span id="estado-nuvem" class="nuvem">conectando…</span></span>',
-              "o rodapé")
+    # O que o painel do disco diz sobre si mesmo é falso aqui: ele não lê
+    # privado/, não guarda no navegador e não é arquivo aberto do disco.
+    s = troca(s, """<p class="abertura">Prazo com data certa, janela que fecha por prescrição, e o que estiver em
+        <code>privado/prazos.js</code>, que fica no disco e nunca sai daqui.</p>""",
+              """<p class="abertura">Prazos públicos do acervo: data certa ou janela que fecha por
+        prescrição. Prazo de carteira não aparece aqui, por construção.</p>""", "a abertura de prazos")
+    s = troca(s, """O campo de impacto é editável: o que você escrever
+        aqui fica no navegador até voltar para o repositório.""",
+              """O campo de impacto é editável: o que você escrever
+        fica salvo na nuvem e entra no repositório na sincronização diária.""", "a abertura do mapa")
+    s = troca(s, """<p class="abertura">A fonte é <code>base/posfgv/aulas.json</code>. Aula criada aqui vive no
+        navegador até ser importada, e some se você limpar os dados do site.</p>""",
+              """<p class="abertura">Aula registrada aqui fica salva na nuvem e entra no caderno do
+        repositório na sincronização diária.</p>""", "a abertura das aulas")
+    s = troca(s, """      <p><b>Este quadro não é ao vivo, e não dá para ser.</b> O painel é um arquivo aberto do disco:
+      não há servidor para consultar o X, nem lugar seguro para guardar credencial num repositório
+      que também abriga <code>privado/</code>.</p>""",
+              """      <p><b>Este quadro não é ao vivo.</b> O painel não consulta o X: não há credencial
+      nem raspagem.</p>""", "o termômetro vazio")
+    s = troca(s, """+'Prazo público entra no campo <b>prazo</b> de base/teses.json. O de carteira, em privado/prazos.js, só no disco.</p>';""",
+              """+'Prazo público entra no campo <b>prazo</b> do acervo.</p>';""", "o vazio de prazos")
     # exportar, importar e zerar são do painel do disco: aqui o banco é a
     # persistência, e o visor do Artifact não entrega download nem confirm()
     for bt in ('<button class="acao discreta" id="exportar">exportar json</button>',
@@ -185,7 +203,8 @@ def online(s):
               "/* ---------- início ---------- */\ncarregar();\niniciado=true;\nligarNuvem();", "o início")
     corte = s.rindex("</style>")
     s = s[:corte] + ONLINE_CSS + s[corte:]
-    agora = datetime.datetime.now(datetime.timezone.utc).strftime("%d/%m/%Y %H:%M UTC")
+    brt = datetime.timezone(datetime.timedelta(hours=-3))  # Brasília, sem horário de verão
+    agora = datetime.datetime.now(brt).strftime("%d/%m/%Y às %Hh%M")
     return troca(s, '<div id="aviso-armazenamento"></div>',
                  f'<div class="instantaneo"><b>Painel online</b> — acervo do repositório em '
                  f'{agora}, sem a camada privada. O que você editar aqui é salvo na nuvem e '

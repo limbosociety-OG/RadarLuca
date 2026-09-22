@@ -85,6 +85,12 @@ divergido.
 **Item não confirmado entra como `"verificacao": "a_confirmar"`, com o que falta escrito no
 campo `pendencia`.** Nunca como fato. É assim que o ⚠️ aparece no mapa e no painel.
 
+**Modulação tem campo próprio na tese:** `"modulacao": {"estado": "sem" | "com" | "pendente",
+"corte": "AAAA-MM-DD", "nota": "...", "fonte": "..."}`. Só entra confirmada em fonte, e
+`gerar.py` reprova estado fora dos três, `com` sem data de corte e registro sem fonte. Tese
+sem o campo aparece no painel como "modulação não registrada" — ausência nunca vira "sem
+modulação". O radar preenche quando confirma.
+
 **Skills: neste repositório, a peça sai no Obsidian Chrome.** `carrossel`, `radar`,
 `boletim` — as três daqui. Duas coisas diferentes podem aparecer no ambiente, vindas da
 conta, e não se tratam do mesmo jeito:
