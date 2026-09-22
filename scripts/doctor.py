@@ -128,7 +128,7 @@ def checar_skills():
 
     for nome, daqui in sorted(set(copias)):
         aviso(f"`{nome}` instalada na conta é cópia antiga de `{daqui}`, ainda no "
-              f"sistema visual aposentado (Bodoni/Spectral/Plex): sem legenda no gate, "
+              f"fora do Obsidian Chrome: sem legenda no gate, "
               f"sem prazo de validade na ficha, sem fontes versionadas. "
               f"Neste repositório vale `{daqui}` — peça no chat pelo nome.")
     for nome, ident in sorted(set(outras)):

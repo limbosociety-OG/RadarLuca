@@ -92,9 +92,8 @@ conta, e não se tratam do mesmo jeito:
   propósito e não se mexe nela. Só não é a deste projeto — aqui o sistema é o **Obsidian
   Chrome** (`design/obsidian-chrome/`): obsidiana `#0A0A0A`, campos de luz em cromo, selo
   circular, Jost / Poppins / Archivo / Cormorant Garamond.
-- **`carrossel-tributario` e `radar-juridico`** são cópias antigas da skill daqui, ainda no
-  sistema anterior (`#17181D`, Bodoni / Spectral / Plex). A peça sai no visual aposentado e
-  o processo é pior: sem legenda no gate, sem prazo de validade na ficha, sem fontes
+- **`carrossel-tributario` e `radar-juridico`** são cópias antigas da skill daqui, fora do
+  Obsidian Chrome. A peça sai no visual errado e o processo é pior: sem legenda no gate, sem prazo de validade na ficha, sem fontes
   versionadas. Use as do repositório.
 
 Na dúvida sobre qual disparou, pergunte antes de renderizar. `scripts/doctor.py` classifica
@@ -208,9 +207,7 @@ sempre separada do fato noticiado.
 
 **Obsidian Chrome**, travado em 10/09/2026. A fonte da verdade é `design/obsidian-chrome/`
 (tokens, componentes, template `Boletim Judicial`, referências e o `CLAUDE.md` dele, que
-lista os invariantes). Substituiu o sistema do Tema 1.455 (Bodoni/Spectral/Plex): a peça
-do IPTU já publicada fica como saiu; o que for produzido daqui em diante sai neste.
-Não reinterpretar a cada peça. Os invariantes:
+lista os invariantes). Não reinterpretar a cada peça. Os invariantes:
 
 - **Obsidiana e cromo.** Fundo `#0A0A0A` e profundidades `#0C121A`→`#1C2E3D`; cromo em
   ascensão `#2A4356`→`#F2F1EF`; slate `#536878`, alabastro `#E5E4E2`. Tinta `#F2F1EF`,

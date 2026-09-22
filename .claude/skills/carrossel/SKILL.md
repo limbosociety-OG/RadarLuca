@@ -1,6 +1,6 @@
 ---
 name: carrossel
-description: Produz a peça publicável de Instagram sobre direito tributário no sistema visual travado de Luca Martins, o Obsidian Chrome — obsidiana #0A0A0A e campos de luz em cromo, selo circular, Jost / Poppins / Archivo / Cormorant Garamond, feed 1080×1350 e story 1080×1920. Use sempre que o pedido envolver carrossel, post, peça, slide, story ou conteúdo de Instagram sobre decisão do STF, STJ, CARF, PGFN, Receita, reforma tributária ou legislação nova — inclusive quando o pedido for só "faz um post sobre o Tema X", "transforma isso em carrossel" ou "leva pro feed". Inclui verificação processual obrigatória com prazo de validade, gate de compliance da OAB (Provimento 205/2021) sobre o roteiro E a legenda, e render determinístico com fontes vendorizadas. Esta é a skill de carrossel deste repositório. `producao-carrossel`, se existir no ambiente, é outra identidade visual (Moody Blue, Cormorant/Italiana/Instrument) que convive de propósito e não deve ser removida — apenas não é a deste projeto. `carrossel-tributario`, se existir, é cópia antiga desta skill, ainda no sistema aposentado (Bodoni/Spectral/Plex), e foi substituída por esta.
+description: Produz a peça publicável de Instagram sobre direito tributário no sistema visual travado de Luca Martins, o Obsidian Chrome — obsidiana #0A0A0A e campos de luz em cromo, selo circular, Jost / Poppins / Archivo / Cormorant Garamond, feed 1080×1350 e story 1080×1920. Use sempre que o pedido envolver carrossel, post, peça, slide, story ou conteúdo de Instagram sobre decisão do STF, STJ, CARF, PGFN, Receita, reforma tributária ou legislação nova — inclusive quando o pedido for só "faz um post sobre o Tema X", "transforma isso em carrossel" ou "leva pro feed". Inclui verificação processual obrigatória com prazo de validade, gate de compliance da OAB (Provimento 205/2021) sobre o roteiro E a legenda, e render determinístico com fontes vendorizadas. Esta é a skill de carrossel deste repositório. `producao-carrossel`, se existir no ambiente, é outra identidade visual (Moody Blue, Cormorant/Italiana/Instrument) que convive de propósito e não deve ser removida — apenas não é a deste projeto. `carrossel-tributario`, se existir, é cópia antiga desta skill, fora do Obsidian Chrome, e foi substituída por esta.
 ---
 
 # Carrossel — Luca Martins
@@ -33,8 +33,8 @@ Ele classifica o que está instalado no ambiente. Duas leituras diferentes:
 
 - `producao-carrossel` → outra identidade visual, convive de propósito. **Não remover.** Só
   não é a deste projeto: aqui a peça sai no Obsidian Chrome (`design/obsidian-chrome/`).
-- `carrossel-tributario` / `radar-juridico` → cópias antigas desta skill, ainda no sistema
-  aposentado (Bodoni/Spectral/Plex), e piores no processo. Use as do repositório.
+- `carrossel-tributario` / `radar-juridico` → cópias antigas desta skill, fora do Obsidian
+  Chrome e piores no processo. Use as do repositório.
 
 Se houver dúvida sobre qual skill foi acionada, perguntar antes de renderizar. Peça
 publicada no sistema errado não se corrige depois: ela já está no feed.

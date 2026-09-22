@@ -240,9 +240,6 @@ def gerar_semente(d, r, a):
 
 # O painel não busca fonte na rede. Era a única dependência externa que sobrava,
 # e num arquivo aberto do disco ela significa cair para fonte de sistema offline.
-# A folha do painel pede `font-stretch:88%` e `92%` no wordmark e nos títulos.
-# Sem o descritor de largura, o navegador entende que a face só cobre 100% e
-# cai para fallback em silêncio — que é o modo como uma fonte some sem erro.
 FACES = [
     # Obsidian Chrome (design/obsidian-chrome): Jost no título, Archivo na leitura,
     # Poppins no versalete e no dado, Cormorant só no monograma do selo (subconjunto).

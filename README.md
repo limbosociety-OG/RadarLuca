@@ -206,7 +206,7 @@ diretórios, de propósito — nenhum deles colide com skill instalada na conta.
 for daqui, é o Obsidian Chrome que vale.
 
 Caso diferente: `carrossel-tributario` e `radar-juridico`, se aparecerem, são cópias antigas
-**da skill daqui**, ainda no sistema aposentado (Bodoni/Spectral/Plex) — piores no processo (sem legenda no gate, sem
+**da skill daqui**, fora do Obsidian Chrome e piores no processo (sem legenda no gate, sem
 prazo de validade na ficha, sem fontes versionadas). Prefira as do repositório; pedir pelo
 nome (`carrossel`, `radar`) resolve.
 
@@ -215,10 +215,8 @@ nome (`carrossel`, `radar`) resolve.
 ## Migração — o que ficou para trás
 
 O Projeto no chat tinha duas skills de carrossel. Elas não eram duplicatas: eram
-**identidades diferentes**, e continuam sendo. Este repositório carregava uma delas — a do
-carrossel do Tema 1.455, com o stack Bodoni/Spectral/Plex — e em setembro de 2026 passou ao
-Obsidian Chrome (`design/obsidian-chrome/`). A peça do IPTU segue publicada como saiu. A outra, `producao-carrossel`,
-segue viva na conta e intocada.
+**identidades diferentes**, e continuam sendo. Este repositório usa o Obsidian Chrome
+(`design/obsidian-chrome/`). A outra, `producao-carrossel`, segue viva na conta e intocada.
 
 O que veio junto foi o formato story 1080×1920, que só a outra tinha implementado. Foi
 portado para o template daqui, e está documentado em
