@@ -14,7 +14,8 @@ Escreve `portal/celular.html` a partir de `portal/radar.html`. Mesma
 fonte, mesmo sistema visual — o que muda é o que não faz sentido no telefone:
 
   * fora o `<!DOCTYPE>`, `<html>`, `<head>` e `<body>`: o Artifact envolve a página
-  * fora `privado/prazos.js`: prazo de carteira não sai do disco, nunca
+  * fora `privado/prazos.js` e `privado/processos.js`: carteira não sai do disco,
+    nunca. A aba Meus processos só nasce em file:// ou com o arquivo carregado
   * somente leitura: sem editar, criar, excluir, importar ou zerar
 
 O terceiro ponto é o que importa. O painel do disco já guarda edição no
@@ -220,8 +221,8 @@ def main():
     if not ORIGEM.exists():
         sys.exit(f"ERRO: {ORIGEM} não existe. Rode scripts/gerar.py antes.")
     s = ORIGEM.read_text(encoding="utf-8")
-    # 1. prazo de carteira não viaja
-    s = re.sub(r'<script src="\.\./privado/prazos\.js"[^>]*></script>\n*', "", s)
+    # 1. carteira não viaja: nem prazo, nem processo
+    s = re.sub(r'<script src="\.\./privado/[\w.-]+\.js"[^>]*></script>\n*', "", s)
     # O que vaza é CARREGAMENTO ou DADO, não menção. `PRAZOS_PRIVADOS`, a classe
     # `.pz.privado` e o texto que explica a pasta continuam — sem o arquivo,
     # ficam inertes. O que não pode existir é algo que traga a pasta para dentro.
@@ -231,6 +232,8 @@ def main():
         sys.exit("ERRO: a variante publicável carrega privado/: " + "; ".join(carrega))
     if re.search(r"PRAZOS_PRIVADOS\s*=\s*\[\s*\{", s):
         sys.exit("ERRO: prazo de carteira embutido na variante publicável.")
+    if re.search(r"PROCESSOS_PRIVADOS\s*=\s*\{", s):
+        sys.exit("ERRO: processo de carteira embutido na variante publicável.")
 
     # 2. o Artifact fornece o esqueleto do documento
     s = re.sub(r"<!DOCTYPE html>\s*", "", s, flags=re.I)

@@ -72,6 +72,7 @@ scripts/publicar.py            variantes publicáveis: celular (leitura) e --onl
 scripts/sincronizar.py         fecha o ciclo diário: versão, gerar, painel online, doctor
 portal/online.json             onde o painel online vive e o branch principal
 scripts/doctor.py              diagnóstico: sigilo, skills, fontes, gate, pendências
+scripts/processos.py           Meus processos: DJEN + DataJud → privado/processos.js (só local)
 .claude/skills/                carrossel · radar · boletim
 .githooks/pre-commit           trava de sigilo — instalar com sh scripts/instalar-hooks.sh
 ```
@@ -172,6 +173,17 @@ Artifact; apaga `painel/estado` se ele não mudou desde a leitura. Configuraçã
 **Nada de carteira no painel online.** Ele fica no servidor do claude.ai: o que se digita
 nele é remoto. Cliente, número de processo de carteira e prazo de intimação continuam só em
 `privado/`, no disco.
+
+**Meus processos é a quarta aba, e só existe no painel do disco.** A lista fica em
+`privado/processos.json` (`python3 scripts/processos.py --adicionar <número>`, que recusa
+número com dígito verificador errado). `scripts/processos.py` busca sozinho no DJEN, por OAB
+274.439/RJ e por número, e no DataJud, e grava `privado/processos.js`, que o painel lê. Processo
+em que houver intimação pela OAB e que não estiver na lista entra sozinho, marcado para
+confirmar. A aba separa intimação (DJEN, abre prazo) de movimentação (DataJud, atrasada, não
+abre prazo) e não calcula prazo: a contagem é do advogado, e o prazo contado vai para
+`privado/prazos.js`. A automação é o cron da máquina (`--agenda`), não a rotina da nuvem, que
+não tem `privado/` e não deve ter. `publicar.py` tira o carregamento e reprova dado embutido;
+fora de `file://` a aba nem é criada. O doctor avisa quando a busca passa de 30 horas.
 
 **Prazo de carteira vive em `privado/prazos.js`** e aparece no *Hoje* misturado aos
 públicos, com marca de privado. Nunca versionado, nunca citado em peça ou boletim.

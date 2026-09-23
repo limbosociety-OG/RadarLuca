@@ -297,8 +297,25 @@ def checar_sistema():
            f"({sum(1 for k in copia if k in fonte)} tokens conferidos)")
 
 
+# ------------------------------------------------------------------ 4c. processos
+def checar_processos():
+    """Só olha a data dos arquivos de privado/, nunca o conteúdo."""
+    lista, js = RAIZ / "privado" / "processos.json", RAIZ / "privado" / "processos.js"
+    if EM_CI or not lista.exists():
+        return
+    if not js.exists():
+        aviso("processos cadastrados e nunca buscados — rode `python3 scripts/processos.py`")
+        return
+    horas = (datetime.datetime.now().timestamp() - js.stat().st_mtime) / 3600
+    if horas > 30:
+        aviso(f"Meus processos buscado há {horas:.0f} horas — o agendamento local parou? "
+              "`python3 scripts/processos.py --agenda`")
+    else:
+        ok(f"Meus processos buscado há {horas:.0f} hora(s)")
+
+
 def main():
-    for fn in (checar_sigilo, checar_skills, checar_derivados, checar_fontes,
+    for fn in (checar_sigilo, checar_processos, checar_skills, checar_derivados, checar_fontes,
                checar_sistema, checar_pecas, checar_pendencias, checar_radar, checar_testes):
         try:
             fn()
