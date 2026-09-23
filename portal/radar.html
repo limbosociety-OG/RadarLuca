@@ -372,6 +372,36 @@ dialog::backdrop{background:rgba(5,6,7,.72)}
 @media (prefers-reduced-motion:reduce){*{animation:none !important; transition:none !important}}
 
 /* ---------- impressão ---------- */
+/* ---------- meus processos: só no disco ---------- */
+.pr-int{display:grid; grid-template-columns:118px 1fr; gap:6px 22px; padding:15px 0; border-bottom:1px solid var(--regua2)}
+.pr-int.nova{background:var(--realce); padding-inline:14px}
+.pr-data{font-family:var(--dado); font-weight:500; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--tinta2); line-height:1.8}
+.pr-data b{display:block; color:var(--atencao); font-weight:500}
+.pr-num{font-family:var(--dado); font-weight:500; font-size:12px; letter-spacing:.08em; font-variant-numeric:tabular-nums; color:var(--tinta)}
+button.pr-num{border-bottom:1px solid var(--regua)} button.pr-num:hover{color:var(--acento); border-bottom-color:var(--acento)}
+.pr-meta{font-family:var(--dado); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--tinta3); line-height:1.8}
+.pr-teor summary{cursor:pointer; font-size:14.5px; color:var(--tinta2); list-style:none; max-width:74ch}
+.pr-teor summary::-webkit-details-marker{display:none}
+.pr-teor summary::after{content:' · ler teor'; font-family:var(--dado); font-size:11px; letter-spacing:.1em; color:var(--tinta3)}
+.pr-teor[open] summary::after{content:' · fechar'}
+.pr-teor pre{white-space:pre-wrap; font-family:var(--leitura); font-size:14px; line-height:1.6; color:var(--tinta2); max-width:78ch; margin:10px 0 0; padding-left:14px; border-left:1px solid var(--regua)}
+.pr-cartoes{display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:10px}
+.pr-c{border:1px solid var(--regua2); padding:18px 18px 16px; background:rgba(12,18,26,.5); scroll-margin-top:24px}
+.pr-c:target,.pr-c.foco{border-color:var(--acento)}
+.pr-c h3{font-family:var(--titulo); font-weight:300; font-size:21px; line-height:1.25; margin:6px 0 4px}
+.pr-ult{margin:14px 0 0; padding-top:11px; border-top:1px solid var(--regua2); font-size:14px; color:var(--tinta2)}
+.pr-ult .pr-meta{display:block}
+.pr-c details{margin-top:10px}
+.pr-c details summary{cursor:pointer; font-family:var(--dado); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--tinta3)}
+.pr-c details summary:hover{color:var(--tinta)}
+.pr-movs{list-style:none; margin:8px 0 0; padding:0; font-size:13.5px; color:var(--tinta2)}
+.pr-movs li{display:grid; grid-template-columns:88px 1fr; gap:10px; padding:5px 0; border-bottom:1px solid var(--regua2)}
+.pr-movs time{font-family:var(--dado); font-size:11px; color:var(--tinta3); font-variant-numeric:tabular-nums; padding-top:2px}
+.pr-flag{font-family:var(--dado); font-size:11px; color:var(--atencao); display:block; margin-top:4px}
+.pr-estado{font-family:var(--dado); font-size:12px; color:var(--tinta3); margin-top:34px; padding-top:11px; border-top:1px solid var(--regua); line-height:1.8}
+.pr-estado .erro{color:var(--urgente); display:block}
+@media (max-width:640px){ .pr-int{grid-template-columns:1fr} .pr-cartoes{grid-template-columns:1fr} }
+
 @media print{
   @page{margin:15mm}
   :root{--papel:#fff; --tinta:#0A0A0A; --tinta2:rgba(10,10,10,.66); --tinta3:rgba(10,10,10,.5);
@@ -391,6 +421,7 @@ dialog::backdrop{background:rgba(5,6,7,.72)}
 </head>
 <body>
 <script src="../privado/prazos.js" onerror="void 0"></script>
+<script src="../privado/processos.js" onerror="void 0"></script>
 
 <div class="folha">
 
@@ -2181,8 +2212,114 @@ function avisarSujo(){
 function desenhar(){
   desenharFiltros(); desenharNoticias(); desenharPrazos();
   desenharFiltrosTese(); desenharMapa(); desenharTermometro();
-  desenharBoletins(); desenharAulas(); desenharBacklog();
+  desenharBoletins(); desenharAulas(); desenharBacklog(); desenharProcessos();
   avisarArmazenamento(); avisarSemente(); avisarSujo();
+}
+
+/* ---------- meus processos ----------
+   Carteira. Existe só no painel do disco: o dado vem de privado/processos.js,
+   gerado por scripts/processos.py, e a aba nem é criada fora de file:// sem ele.
+   Intimação (DJEN) abre prazo; movimentação (DataJud) é contexto atrasado. */
+const PROC=window.PROCESSOS_PRIVADOS||null;
+const TEM_PROCESSOS=!!PROC||location.protocol==='file:';
+let termoProc='';
+function montarAbaProcessos(){
+  if(!TEM_PROCESSOS||document.getElementById('pane-processos')) return;
+  const novas=PROC?PROC.processos.reduce((n,p)=>n+p.intimacoes.filter(i=>i.nova).length,0):0;
+  const b=document.createElement('button');
+  b.className='aba'; b.setAttribute('role','tab'); b.id='aba-processos'; b.dataset.pane='processos';
+  b.setAttribute('aria-controls','pane-processos'); b.setAttribute('aria-selected','false'); b.tabIndex=-1;
+  b.innerHTML='Meus processos'+(novas?` <em class="selo-conta" title="intimações capturadas nas últimas 72 horas">${novas}</em>`:'');
+  b.addEventListener('click',()=>trocarAba('processos'));
+  document.querySelector('.abas').appendChild(b);
+  const p=document.createElement('div');
+  p.className='pane'; p.id='pane-processos'; p.setAttribute('role','tabpanel');
+  p.setAttribute('aria-labelledby','aba-processos'); p.hidden=true;
+  p.innerHTML=`<section class="secao">
+      <h2>Intimações <span id="r-intimacoes"></span></h2>
+      <p class="abertura">Do Diário de Justiça Eletrônico Nacional, pela OAB e pelo número. Intimação abre
+        prazo: a contagem é sua, e o prazo contado vai para <code>privado/prazos.js</code>.</p>
+      <div id="intimacoes"></div>
+    </section>
+    <section class="secao">
+      <h2>Processos <span id="r-processos"></span></h2>
+      <p class="abertura">Classe, órgão e movimentação do DataJud, que chega com dias de atraso e não abre
+        prazo. Fica no disco: não entra em commit nem no painel online.</p>
+      <div class="filtros"><input class="busca" id="busca-proc" type="search" placeholder="buscar processo  /" aria-label="Buscar processo" aria-keyshortcuts="/"></div>
+      <div class="pr-cartoes" id="processos"></div>
+      <div class="pr-estado" id="pr-estado"></div>
+    </section>`;
+  document.getElementById('pane-posfgv').after(p);
+  document.getElementById('busca-proc').addEventListener('input',e=>{ termoProc=e.target.value.trim().toLowerCase(); desenharProcessos(); });
+  p.addEventListener('click',e=>{
+    const n=e.target.closest('[data-proc]'); if(!n) return;
+    termoProc=''; document.getElementById('busca-proc').value=''; desenharProcessos();
+    const c=document.getElementById('proc-'+n.dataset.proc); if(!c) return;
+    document.querySelectorAll('.pr-c.foco').forEach(x=>x.classList.remove('foco'));
+    c.classList.add('foco'); c.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+}
+const procId=n=>String(n).replace(/\D/g,'');
+function nomeProc(p){ return p.apelido||p.classe||'Processo'; }
+function desenharProcessos(){
+  const alvoI=document.getElementById('intimacoes'); if(!alvoI) return;
+  const alvoP=document.getElementById('processos'), st=document.getElementById('pr-estado');
+  if(!PROC){
+    alvoI.innerHTML=`<p class="vazio">Nenhum dado ainda. No terminal, na pasta do repositório:<br>
+      <code>python3 scripts/processos.py --adicionar &lt;número&gt; &lt;número&gt; …</code><br>
+      <code>python3 scripts/processos.py</code><br>
+      e, para rodar sozinho, <code>python3 scripts/processos.py --agenda</code>.</p>`;
+    alvoP.innerHTML=''; st.innerHTML=''; return;
+  }
+  const ints=[];
+  PROC.processos.forEach(p=>p.intimacoes.forEach(i=>ints.push({...i,proc:p})));
+  ints.sort((a,b)=>(b.nova-a.nova)||b.data.localeCompare(a.data));
+  const recentes=ints.filter(i=>i.nova||(diasDesde(i.data)??99)<=30);
+  document.getElementById('r-intimacoes').textContent=
+    recentes.length?`${recentes.length} nos últimos 30 dias`:'';
+  alvoI.innerHTML=recentes.length?recentes.map(i=>`<article class="pr-int${i.nova?' nova':''}">
+      <div class="pr-data">${i.nova?'<b>nova</b>':''}disponibilizada<br>${esc(porExtenso(i.data))}</div>
+      <div>
+        <button class="pr-num" data-proc="${procId(i.processo)}">${esc(i.processo)}</button>
+        <span class="pr-meta"> · ${esc(nomeProc(i.proc))}</span>
+        <div class="pr-meta">${esc([i.tipo,i.documento,i.orgao].filter(Boolean).join(' · '))}</div>
+        ${i.texto?`<details class="pr-teor"><summary>${esc(i.texto.slice(0,180))}${i.texto.length>180?'…':''}</summary><pre>${esc(i.texto)}</pre></details>`:''}
+        ${i.link?`<a class="ligacao" href="${esc(i.link)}" target="_blank" rel="noopener">documento no tribunal</a>`:''}
+      </div>
+    </article>`).join('')
+    :'<p class="vazio">Nenhuma intimação nos últimos 30 dias.</p>';
+
+  const t=termoProc;
+  const lista=PROC.processos.filter(p=>!t||[p.numero,p.apelido,p.notas,p.classe,p.orgao,...p.assuntos,
+    ...p.movimentos.map(m=>m.nome)].join(' ').toLowerCase().includes(t));
+  const ultima=p=>[p.intimacoes[0]&&p.intimacoes[0].data,p.movimentos[0]&&p.movimentos[0].data].filter(Boolean).sort().pop()||'';
+  lista.sort((a,b)=>ultima(b).localeCompare(ultima(a)));
+  document.getElementById('r-processos').textContent=plural(PROC.processos.length,'processo','processos');
+  alvoP.innerHTML=lista.length?lista.map(p=>{
+    const m=p.movimentos[0];
+    return `<article class="pr-c" id="proc-${procId(p.numero)}">
+      <div class="pr-num">${esc(p.numero)}</div>
+      <div class="pr-meta">${esc([p.tribunal,p.grau].filter(Boolean).join(' · '))}</div>
+      <h3>${esc(nomeProc(p))}</h3>
+      <div class="pr-meta">${esc(p.orgao)}</div>
+      ${p.assuntos.length?`<div class="pr-meta">${esc(p.assuntos.join(' · '))}</div>`:''}
+      ${p.notas?`<p class="pr-ult" style="border:0;padding:0;margin-top:8px">${esc(p.notas)}</p>`:''}
+      ${p.origem==='djen'?'<span class="pr-flag">entrou pelo DJEN, fora da lista: confirme se é seu e dê um apelido</span>':''}
+      ${!p.dv?'<span class="pr-flag">dígito verificador não confere: número copiado errado?</span>':''}
+      ${p.no_datajud===false?'<span class="pr-flag">não localizado no DataJud; segredo de justiça ou base desatualizada</span>':''}
+      ${m?`<div class="pr-ult"><span class="pr-meta">última movimentação · ${esc(porExtenso(m.data))}</span>${esc(m.nome)}${m.complemento?` — ${esc(m.complemento)}`:''}</div>`:''}
+      ${p.movimentos.length>1?`<details><summary>${plural(p.movimentos.length,'movimento','movimentos')}</summary><ul class="pr-movs">${
+        p.movimentos.map(x=>`<li><time>${esc(porExtenso(x.data))}</time><span>${esc(x.nome)}${x.complemento?` — ${esc(x.complemento)}`:''}</span></li>`).join('')}</ul></details>`:''}
+      ${p.intimacoes.length?`<details><summary>${plural(p.intimacoes.length,'intimação','intimações')} no histórico</summary><ul class="pr-movs">${
+        p.intimacoes.map(x=>`<li><time>${esc(porExtenso(x.data))}</time><span>${esc([x.tipo,x.documento].filter(Boolean).join(' · '))}${x.texto?` — ${esc(x.texto.slice(0,160))}…`:''}</span></li>`).join('')}</ul></details>`:''}
+    </article>`;
+  }).join(''):'<p class="vazio">Nada com esse termo.</p>';
+
+  const quando=PROC.atualizado?new Date(PROC.atualizado):null;
+  const horas=quando?Math.round((Date.now()-quando)/36e5):null;
+  st.innerHTML=`Buscado em ${quando?quando.toLocaleString('pt-BR',{dateStyle:'short',timeStyle:'short'}):'—'}`
+    +(horas!==null&&horas>30?` · <span class="erro">há ${horas} horas — o agendamento parou?</span>`:'')
+    +(PROC.erros||[]).map(e=>`<span class="erro">${esc(e)}</span>`).join('');
 }
 
 /* ---------- abas ---------- */
@@ -2210,7 +2347,7 @@ document.addEventListener('keydown',e=>{
   const t=e.target, digitando=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);
   if(e.key==='/'&&!digitando&&!dlg.open){
     const aba=document.querySelector('.aba[aria-selected="true"]').dataset.pane;
-    const campo=document.getElementById(aba==='tributario'?'busca-tese':'busca');
+    const campo=document.getElementById(aba==='tributario'?'busca-tese':aba==='processos'?'busca-proc':'busca');
     if(campo){ e.preventDefault(); if(aba==='tributario') campo.scrollIntoView({block:'center'}); campo.focus(); }
   }
   if(e.key==='Escape'&&t.classList&&t.classList.contains('busca')) t.blur();
@@ -2403,6 +2540,7 @@ document.getElementById('zerar').addEventListener('click',()=>{
 carregar();
 document.getElementById('c-corte').textContent=porExtenso(CORTE);
 desenharFontes();
+montarAbaProcessos();
 let abaInicial='noticias';
 try{ abaInicial=localStorage.getItem(CHAVE+'-aba')||'noticias'; }catch(e){}
 if(!document.getElementById('pane-'+abaInicial)) abaInicial='noticias';
