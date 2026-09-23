@@ -14,8 +14,9 @@ Escreve `portal/celular.html` a partir de `portal/radar.html`. Mesma
 fonte, mesmo sistema visual — o que muda é o que não faz sentido no telefone:
 
   * fora o `<!DOCTYPE>`, `<html>`, `<head>` e `<body>`: o Artifact envolve a página
-  * fora `privado/prazos.js` e `privado/processos.js`: carteira não sai do disco,
-    nunca. A aba Meus processos só nasce em file:// ou com o arquivo carregado
+  * fora `privado/prazos.js` e `privado/processos.js`: carteira não sai do disco.
+    A aba Meus processos completa só nasce em file://; no painel online (--online)
+    ela é outra, só número e link, lida do documento `carteira/processos` do banco
   * somente leitura: sem editar, criar, excluir, importar ou zerar
 
 O terceiro ponto é o que importa. O painel do disco já guarda edição no
@@ -75,6 +76,91 @@ ONLINE_CSS = """
 # Troca o localStorage pelo banco. O localStorage continua como cache de
 # primeira pintura; a fonte é o documento `painel/estado`.
 ONLINE_JS = r"""
+/* ---------- carteira online: só número e link ----------
+   Decisão do titular (23/09/2026): no painel online a aba Meus processos lista
+   número e link de consulta, nada mais. A lista vive no documento
+   `carteira/processos` do banco, nunca no repositório; sem teor de intimação,
+   cliente ou prazo, que continuam só em privado/, no disco. */
+let carteiraRef=null, carteira=[];
+const soDig=n=>String(n||'').replace(/\D/g,'');
+function mascaraCNJ(n){ const d=soDig(n); return d.length!==20?n:`${d.slice(0,7)}-${d.slice(7,9)}.${d.slice(9,13)}.${d[13]}.${d.slice(14,16)}.${d.slice(16)}`; }
+function dvCNJ(n){ const d=soDig(n); if(d.length!==20) return false;
+  const b=BigInt(d.slice(0,7)+d.slice(9)+'00'); return 98n-b%97n===BigInt(d.slice(7,9)); }
+function consultas(n){
+  const d=soDig(n), l=[];
+  if(d[13]==='8'&&d.slice(14,16)==='19'){
+    l.push(d.startsWith('08')
+      ? ['PJe TJRJ','https://tjrj.pje.jus.br/1g/ConsultaPublica/listView.seam']
+      : ['consulta TJRJ','https://www3.tjrj.jus.br/consultaprocessual/']);
+  }
+  l.push(['DJEN','https://comunica.pje.jus.br/']);
+  return l;
+}
+function abaCarteira(){
+  if(document.getElementById('pane-processos')) return;
+  const b=document.createElement('button');
+  b.className='aba'; b.setAttribute('role','tab'); b.id='aba-processos'; b.dataset.pane='processos';
+  b.setAttribute('aria-controls','pane-processos'); b.setAttribute('aria-selected','false'); b.tabIndex=-1;
+  b.textContent='Meus processos';
+  b.addEventListener('click',()=>trocarAba('processos'));
+  document.querySelector('.abas').appendChild(b);
+  const p=document.createElement('div');
+  p.className='pane'; p.id='pane-processos'; p.setAttribute('role','tabpanel');
+  p.setAttribute('aria-labelledby','aba-processos'); p.hidden=true;
+  p.innerHTML=`<section class="secao">
+      <h2>Processos <span id="r-processos"></span></h2>
+      <p class="abertura">Número e link de consulta. Clicar no número copia; a consulta abre na página
+        pública do tribunal. Intimação, teor e prazo ficam no painel do disco, que não sai do computador.</p>
+      <div class="pr-cartoes" id="processos"></div>
+      <div class="filtros" style="margin-top:22px">
+        <input class="busca" id="novo-proc" type="text" inputmode="numeric" placeholder="0000000-00.0000.0.00.0000" aria-label="Número CNJ do processo">
+        <button class="acao discreta" id="add-proc">acompanhar</button>
+        <span class="pr-flag" id="erro-proc" role="status"></span>
+      </div>
+    </section>`;
+  document.getElementById('pane-posfgv').after(p);
+  document.getElementById('add-proc').addEventListener('click',adicionarProc);
+  document.getElementById('novo-proc').addEventListener('keydown',e=>{ if(e.key==='Enter') adicionarProc(); });
+  p.addEventListener('click',async e=>{
+    const c=e.target.closest('[data-copiar]');
+    if(c){ try{ await navigator.clipboard.writeText(c.dataset.copiar); c.dataset.antes=c.dataset.antes||c.textContent;
+        c.textContent='copiado'; setTimeout(()=>{ c.textContent=c.dataset.antes; },1400); }
+      catch(_){ const r=document.createRange(); r.selectNodeContents(c); const s=getSelection(); s.removeAllRanges(); s.addRange(r); } return; }
+    const x=e.target.closest('[data-tirar]');
+    if(x&&duplo(x)){ gravarCarteira(carteira.filter(q=>soDig(q.numero)!==x.dataset.tirar)); }
+  });
+  try{ if(localStorage.getItem(CHAVE+'-aba')==='processos') trocarAba('processos'); }catch(e){}
+}
+function desenharCarteira(){
+  const alvo=document.getElementById('processos'); if(!alvo) return;
+  document.getElementById('r-processos').textContent=carteira.length?plural(carteira.length,'processo','processos'):'';
+  alvo.innerHTML=carteira.length?carteira.map(q=>`<article class="pr-c">
+      <button class="pr-num" data-copiar="${esc(q.numero)}" title="copiar o número">${esc(q.numero)}</button>
+      <div class="pr-meta">${soDig(q.numero)[13]==='8'&&soDig(q.numero).slice(14,16)==='19'?'TJRJ':''}${q.apelido?' · '+esc(q.apelido):''}</div>
+      <div class="pr-ult">${consultas(q.numero).map(([n,u])=>`<a class="ligacao" href="${u}" target="_blank" rel="noopener">${n}</a>`).join(' &nbsp; ')}
+        <button class="acao discreta" data-tirar="${soDig(q.numero)}" style="float:right">remover</button></div>
+    </article>`).join(''):'<p class="vazio">Nenhum processo na lista.</p>';
+}
+async function gravarCarteira(lista){
+  if(!carteiraRef) return;
+  try{ await carteiraRef.set({processos:lista, alterado_em:new Date().toISOString()}); }
+  catch(e){ document.getElementById('erro-proc').textContent='não gravou: sem permissão ou sem conexão'; }
+}
+function adicionarProc(){
+  const campo=document.getElementById('novo-proc'), erro=document.getElementById('erro-proc');
+  const n=campo.value.trim(); erro.textContent='';
+  if(!dvCNJ(n)){ erro.textContent='dígito verificador não confere: número copiado errado?'; return; }
+  if(carteira.some(q=>soDig(q.numero)===soDig(n))){ erro.textContent='já está na lista'; return; }
+  campo.value=''; gravarCarteira([...carteira,{numero:mascaraCNJ(n),apelido:''}]);
+}
+function ligarCarteira(db){
+  carteiraRef=db.doc('carteira/processos');
+  carteiraRef.onSnapshot(snap=>{
+    const d=snap.exists?snap.data():null;
+    carteira=(d&&Array.isArray(d.processos))?d.processos.filter(q=>q&&q.numero):[];
+    abaCarteira(); desenharCarteira();
+  },()=>{});
+}
 /* ---------- nuvem: o banco do Artifact ---------- */
 const EDITAVEIS=['teses','boletins','aulas','backlog','sujo','semente'];
 let docRef=null, nuvem='conectando', timerNuvem=null, gravando=false, pendente=false,
@@ -113,6 +199,7 @@ async function ligarNuvem(){
   try{ db = window.claude && window.claude.use ? await window.claude.use('db') : null; }catch(e){ db=null; }
   if(!db){ nuvem='ausente'; avisarArmazenamento(); return; }
   docRef=db.doc('painel/estado');
+  ligarCarteira(db);
   let primeiro=true;
   docRef.onSnapshot(snap=>{
     if(snap.metadata.hasPendingWrites) return;
@@ -234,6 +321,9 @@ def main():
         sys.exit("ERRO: prazo de carteira embutido na variante publicável.")
     if re.search(r"PROCESSOS_PRIVADOS\s*=\s*\{", s):
         sys.exit("ERRO: processo de carteira embutido na variante publicável.")
+    # a aba completa, de privado/, nunca nasce numa variante publicável
+    s = troca(s, "const TEM_PROCESSOS=!!PROC||location.protocol==='file:';",
+              "const TEM_PROCESSOS=false;", "a aba de processos do disco")
 
     # 2. o Artifact fornece o esqueleto do documento
     s = re.sub(r"<!DOCTYPE html>\s*", "", s, flags=re.I)

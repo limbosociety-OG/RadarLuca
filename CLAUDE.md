@@ -170,9 +170,12 @@ doctor); commit e push em `claude/new-session-pavr72`, o branch principal; repub
 Artifact; apaga `painel/estado` se ele não mudou desde a leitura. Configuração em
 `portal/online.json`. Se o doctor bloquear, a rotina não publica nem commita — e diz por quê.
 
-**Nada de carteira no painel online.** Ele fica no servidor do claude.ai: o que se digita
-nele é remoto. Cliente, número de processo de carteira e prazo de intimação continuam só em
-`privado/`, no disco.
+**Nada de carteira no painel online, com uma exceção decidida em 23/09/2026.** Ele fica no
+servidor do claude.ai: o que se digita nele é remoto. A exceção: a aba *Meus processos* online
+lista **só número CNJ e link de consulta pública**, guardados no documento `carteira/processos`
+do banco do Artifact — nunca no repositório, nunca em `teses.json`, nunca em commit. Teor de
+intimação, movimentação, cliente e prazo continuam só em `privado/`, no disco. Quem receber o
+link do painel vê a lista: não compartilhar o Artifact sem pensar nisso.
 
 **Meus processos é a quarta aba, e só existe no painel do disco.** A lista fica em
 `privado/processos.json` (`python3 scripts/processos.py --adicionar <número>`, que recusa
