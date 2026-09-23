@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-09-22 · **versão:** 2026-09-22T20:28Z
+**Corte:** 2026-09-23 · **versão:** 2026-09-23T10:06Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -24,12 +24,15 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 | ⚪⚠️ | STJ · **Tema 1.372** | ICMS-DIFAL na base do PIS/Cofins | Repetitivo com suspensão nacional, julgado pela 1ª Seção na sessão de 20/08/2026. O resultado e a redação da modulação ainda não foram conferidos no acórdão. |
 | ⚪⚠️ | STJ · **Tema 1.412** | Bonificações e descontos comerciais na base do PIS/Cofins | Repetitivo afetado em 2026, com suspensão nacional ativa. Alcança varejo, atacado, indústria e distribuição, setores que negociam preço por bonificação de forma estrutural. Julgamento adiado. |
 | 🔴⚠️ | STF · **ADC 98** | Tese ampla da União: todos os tributos integrariam a base do PIS/Cofins | Movimento estratégico da AGU capaz de esvaziar o Tema 118 e as demais filhotes de uma só vez, independentemente do placar no RE. |
+| 🟢⚠️ | STJ · **Tema 1.276** (REsp 2.123.904/SP) | CPRB permanece na base do PIS/Cofins | A 1ª Seção fixou em 09/09/2026, por unanimidade e sob o rito dos repetitivos, que a contribuição previdenciária sobre a receita bruta integra a base de cálculo do PIS e da Cofins. A tentativa de estender a lógica do Tema 69 foi rejeitada. |
 
 **Tema 118 — e daí?** Janela aberta. Se houver modulação nos moldes do Tema 69, só recupera os cinco anos anteriores quem já tiver ação ajuizada. Levantar carteira de prestadores de serviço no lucro real e presumido.
 
 **Tema 1.372 — e daí?** Se a tese foi mesmo fixada com modulação a partir de 15/03/2017, o corte é praticamente inerte para quem ajuíza hoje: o quinquênio do art. 168 do CTN já ultrapassou a data. A aritmética precisa ser refeita contra o acórdão antes de virar peça.
 
 **ADC 98 — e daí?** É o maior risco sistêmico do bloco. Acompanhar semanalmente.
+
+**Tema 1.276 — e daí?** Tese perdida para o contribuinte, e com efeito vinculante. Ação em curso sobre a CPRB perde a perspectiva de êxito no STJ e a provisão deixa de ser remota; resta saber se a discussão sobe ao STF como matéria constitucional.
 
 > ⚠️ **Tema 118** — a confirmar: Confirmar no portal de RG se houve reinclusão em pauta depois de 25/02/2026. (última checagem: 2026-08-19)
 
@@ -42,6 +45,8 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 > ⚠️ **Tema 1.412** — a confirmar: Adiado. Confirmar nova data de julgamento e se a suspensão nacional segue ativa. (última checagem: 2026-08-19)
 
 > ⚠️ **ADC 98** — a confirmar: Fonte é blog de banca. Conferir a petição inicial e o andamento no portal do STF. (última checagem: 2026-08-19)
+
+> ⚠️ **Tema 1.276** — a confirmar: Conferir a redação da tese no portal de repetitivos do STJ e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-23)
 
 **Ponto de ação.** Em todas essas teses o histórico do STF é de modulação restritiva (Tema 69: só quem já tinha ação ajuizada recuperou os cinco anos anteriores). A decisão de ajuizar preventivamente é anterior ao resultado do julgamento.
 
@@ -155,6 +160,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 | 🟢⚠️ | PGFN · **Parecer SEI 1.535/2026** | Fim da contestação sobre cumulação de multa isolada e de ofício | A PGFN aplicou o princípio da consunção pacificado no STJ e deixou de recorrer contra a exclusão da multa isolada por não recolhimento de estimativas quando cumulada com multa de ofício. |
 | ⚪⚠️ | STF · **Selic em depósitos judiciais** | Termo inicial da Selic sobre depósitos judiciais | Repercussão geral reconhecida. Reflexos sobre garantias e créditos de valor elevado. |
 | 🔴⚠️ | Congresso · **LC 236/2026** | Teto de multa tributária no CTN e retroatividade benigna | Reforma do CTN sancionada em 04/09/2026: multa proporcional limitada a 75% do tributo, 100% em fraude, sonegação ou conluio e 150% na reincidência, além de capítulo de processo administrativo fiscal e incentivo a soluções consensuais. |
+| 🟢⚠️ | STF · **ADI 7.587** | Limite mensal de compensação de crédito judicial acima de R$ 10 milhões | Maioria formada no Plenário Virtual encerrado em 14/09/2026, com o relator, Min. Cristiano Zanin, pela constitucionalidade da Lei 14.873/2024: crédito reconhecido em decisão definitiva acima de R$ 10 milhões só pode ser compensado dentro de um limite mensal. |
 
 **Editais 9 e 10/2026 — e daí?** Prazo com data certa. A adesão implica desistência de impugnações, cotejar desconto contra probabilidade de êxito, processo a processo.
 
@@ -163,6 +169,8 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 **Parecer SEI 1.535/2026 — e daí?** Pareceres de dispensa da PGFN sinalizam teses já ganhas. Fonte subutilizada, monitorar sempre.
 
 **LC 236/2026 — e daí?** Multa em auto de infração ainda não definitivamente julgado pode ser reduzida ao novo teto pela retroatividade benigna do art. 106, II, "c", do CTN. Carteira com autuação acima de 75% sem qualificadora, ou com qualificada acima de 100% sem reincidência, deve ser revista agora.
+
+**ADI 7.587 — e daí?** Crédito judicial grande não vira caixa de uma vez: a compensação segue fracionada e o planejamento de fluxo precisa contar com o cronograma legal. Ação que discute o limite perde força.
 
 > ⚠️ **Editais 9 e 10/2026** — a confirmar: Prazo de 30/10/2026 e percentuais: conferir no texto dos editais no sítio da RFB. Prazo em peça exige fonte primária. (última checagem: 2026-08-19)
 
@@ -175,6 +183,8 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 > ⚠️ **Selic em depósitos judiciais** — a confirmar: Número do tema de RG não anotado. Localizar no portal do STF. (última checagem: 2026-08-19)
 
 > ⚠️ **LC 236/2026** — a confirmar: Conferir no DOU o texto publicado, os vetos, a vigência de cada dispositivo e se o teto alcança multas estaduais e municipais antes da adaptação de dois anos. Leitura direta da fonte primária bloqueada na varredura de 22/09; o dado veio de fonte secundária. (última checagem: 2026-09-22)
+
+> ⚠️ **ADI 7.587** — a confirmar: Conferir no portal do STF o placar final, a proclamação do resultado e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-23)
 
 **Ponto de ação.** Pareceres de dispensa de contestação da PGFN são fonte subutilizada e de altíssimo valor prático: sinalizam teses já ganhas.
 

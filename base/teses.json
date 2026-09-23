@@ -1,6 +1,6 @@
 {
-  "versao": "2026-09-22T20:28Z",
-  "corte": "2026-09-22",
+  "versao": "2026-09-23T10:06Z",
+  "corte": "2026-09-23",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -590,6 +590,38 @@
       "verificacao": "a_confirmar",
       "verificado_em": "2026-09-22",
       "pendencia": "Conferir no DOU o texto publicado, os vetos, a vigência de cada dispositivo e se o teto alcança multas estaduais e municipais antes da adaptação de dois anos. Leitura direta da fonte primária bloqueada na varredura de 22/09; o dado veio de fonte secundária."
+    },
+    {
+      "id": "t31",
+      "bloco": "pis-cofins",
+      "tribunal": "STJ",
+      "tema": "Tema 1.276",
+      "processo": "REsp 2.123.904/SP",
+      "titulo": "CPRB permanece na base do PIS/Cofins",
+      "resumo": "A 1ª Seção fixou em 09/09/2026, por unanimidade e sob o rito dos repetitivos, que a contribuição previdenciária sobre a receita bruta integra a base de cálculo do PIS e da Cofins. A tentativa de estender a lógica do Tema 69 foi rejeitada.",
+      "status": "fixada",
+      "placar": null,
+      "edai": "Tese perdida para o contribuinte, e com efeito vinculante. Ação em curso sobre a CPRB perde a perspectiva de êxito no STJ e a provisão deixa de ser remota; resta saber se a discussão sobe ao STF como matéria constitucional.",
+      "fonte": "https://www.contabeis.com.br/noticias/79365/stj-nega-exclusao-da-cprb-do-pis-e-da-cofins",
+      "verificacao": "a_confirmar",
+      "verificado_em": "2026-09-23",
+      "pendencia": "Conferir a redação da tese no portal de repetitivos do STJ e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "t32",
+      "bloco": "processo",
+      "tribunal": "STF",
+      "tema": "ADI 7.587",
+      "processo": "ADI 7.587",
+      "titulo": "Limite mensal de compensação de crédito judicial acima de R$ 10 milhões",
+      "resumo": "Maioria formada no Plenário Virtual encerrado em 14/09/2026, com o relator, Min. Cristiano Zanin, pela constitucionalidade da Lei 14.873/2024: crédito reconhecido em decisão definitiva acima de R$ 10 milhões só pode ser compensado dentro de um limite mensal.",
+      "status": "fixada",
+      "placar": null,
+      "edai": "Crédito judicial grande não vira caixa de uma vez: a compensação segue fracionada e o planejamento de fluxo precisa contar com o cronograma legal. Ação que discute o limite perde força.",
+      "fonte": "https://www.contabeis.com.br/noticias/79417/stf-valida-limite-para-compensacao-de-creditos-tributarios",
+      "verificacao": "a_confirmar",
+      "verificado_em": "2026-09-23",
+      "pendencia": "Conferir no portal do STF o placar final, a proclamação do resultado e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ],
   "boletins": [
