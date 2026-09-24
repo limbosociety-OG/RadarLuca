@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-09-23 · **versão:** 2026-09-23T10:06Z
+**Corte:** 2026-09-24 · **versão:** 2026-09-24T10:16Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -88,7 +88,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 | 🟢⚠️ | STF · **LC 214/2025** | Alíquota zero de IBS e CBS em veículos para PcD e autistas | A Corte declarou inconstitucionais as travas que limitavam o benefício aos casos severos ou profundos. Primeiro controle de constitucionalidade sobre a lei da reforma. |
 | 🟡⚠️ | Legislação · **LC 224/2025** | Corte linear de benefícios fiscais e direito a crédito | Corte de cerca de 10% em benefícios fiscais. Decisões de 1ª e 2ª instâncias vêm garantindo crédito de PIS/Cofins e IPI sobre a tributação residual, por violação à não cumulatividade. A Receita recuou quanto à ZFM na Nota Cosit 207/2026. |
 | 🟡⚠️ | CGIBS · **Resolução 14/2026** | Alíquota de referência estimada em 27,91% para 2033 | Resolução CGIBS nº 14, de 29/07/2026. Acima da projeção anterior de 26,5%. O valor não é definitivo e será revisto conforme as regras de calibragem. |
-| 🔴⚠️ | CGSN · **Res. CGSN 186/2026** | Simples Nacional pode apurar IBS e CBS pelo regime regular em 2027 | Janela de 1º a 30 de setembro de 2026 para a empresa do Simples optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples. |
+| 🔴⚠️ | CGSN · **Res. CGSN 186/2026** | Simples Nacional pode apurar IBS e CBS pelo regime regular em 2027 | Janela de 1º a 30 de setembro de 2026 para a empresa do Simples optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples. A opção é irretratável, mas admite cancelamento até 30/11/2026 (Res. CGSN 190/2026); IBS e CBS do regime regular não entram na receita bruta do Simples. |
 
 **Ato Conjunto 4/2026 — e daí?** Risco operacional imediato: nota rejeitada trava faturamento. E o descumprimento faz perder a dispensa de recolhimento do período de teste.
 
@@ -106,7 +106,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Resolução 14/2026** — a confirmar: Conferir o texto da Resolução 14/2026 no sítio do CGIBS. (última checagem: 2026-08-19)
 
-> ⚠️ **Res. CGSN 186/2026** — a confirmar: Conferir no texto da Resolução CGSN 186/2026 a janela, o prazo de cancelamento (fonte secundária fala em 30/11) e o período coberto. Leitura direta da fonte primária bloqueada na varredura de 22/09; o dado veio de fonte secundária. (última checagem: 2026-09-22)
+> ⚠️ **Res. CGSN 186/2026** — a confirmar: Conferir no texto das Resoluções CGSN 186 e 190/2026 a janela, o cancelamento até 30/11 e o período coberto. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-22)
 
 **Ponto de ação.** Frentes a vigiar: split payment, cashback, regimes específicos e diferenciados, creditamento e o desenho da não cumulatividade plena, contencioso administrativo do IBS (quem julga?), e a repartição federativa.
 

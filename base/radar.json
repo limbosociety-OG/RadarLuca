@@ -56,6 +56,32 @@
   },
   "itens": [
     {
+      "id": "n98",
+      "data": "2026-09-22",
+      "area": "civil",
+      "orgao": "STJ",
+      "titulo": "Prescrição da doação inoficiosa conta do registro do ato",
+      "resumo": "O Informativo 902 traz duas teses de sucessões: a ação de nulidade de doação inoficiosa prescreve a partir do registro do ato impugnado, e a redução de disposição testamentária não conta da lavratura do testamento, porque antes da morte não há lesão à legítima.",
+      "edai": "Planejamento sucessório com doação em vida tem o risco de questionamento correndo desde o registro, e não desde a abertura da sucessão. Holding familiar com doação de quotas precisa datar e registrar os atos pensando nesse prazo.",
+      "veiculo": "STJ",
+      "fonte": "https://scon.stj.jus.br/jurisprudencia/externo/informativo/?acao=pesquisar&livre=",
+      "pendencia": "Localizar os números dos recursos e o órgão julgador no Informativo 902. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificacao": "a_confirmar"
+    },
+    {
+      "id": "n97",
+      "data": "2026-09-24",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "Modulação do Difal conta da data do julgamento, não da ata",
+      "resumo": "Em decisão monocrática no RE 1.602.989, a Min. Cármen Lúcia afastou o entendimento do tribunal estadual e fixou o julgamento de mérito de 24/02/2021 como marco da modulação do ICMS-Difal, e não a publicação da ata.",
+      "edai": "Aritmética da janela: ação ajuizada entre o julgamento e a publicação da ata fica fora da ressalva da modulação. Quem ajuizou nesses dias perde a proteção. É decisão monocrática, não tese vinculante, mas segue a linha dos embargos do Tema 1.266.",
+      "veiculo": "Rota da Jurisprudência",
+      "fonte": "https://rotadajurisprudencia.com.br/2026/09/stf-afasta-data-da-publicacao-da-ata-e-fixa-julgamento-como-marco-para-modulacao-do-icms-difal/",
+      "pendencia": "Conferir a data da decisão, o número do RE e a data exata da publicação da ata que delimita a janela. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificacao": "a_confirmar"
+    },
+    {
       "id": "n96",
       "data": "2026-09-22",
       "area": "ia",

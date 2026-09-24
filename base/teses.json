@@ -1,6 +1,6 @@
 {
-  "versao": "2026-09-23T10:06Z",
-  "corte": "2026-09-23",
+  "versao": "2026-09-24T10:16Z",
+  "corte": "2026-09-24",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -561,14 +561,14 @@
       "tema": "Res. CGSN 186/2026",
       "processo": "",
       "titulo": "Simples Nacional pode apurar IBS e CBS pelo regime regular em 2027",
-      "resumo": "Janela de 1º a 30 de setembro de 2026 para a empresa do Simples optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples.",
+      "resumo": "Janela de 1º a 30 de setembro de 2026 para a empresa do Simples optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples. A opção é irretratável, mas admite cancelamento até 30/11/2026 (Res. CGSN 190/2026); IBS e CBS do regime regular não entram na receita bruta do Simples.",
       "status": "iminente",
       "placar": null,
       "edai": "Fornecedor do Simples que vende para contribuinte do regime regular só transfere crédito integral de IBS e CBS se optar. Quem não optar até 30/09 fica no DAS até junho de 2027 e perde competitividade na cadeia B2B.",
       "fonte": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/cgsn-define-prazos-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs-para-2027",
       "verificacao": "a_confirmar",
       "verificado_em": "2026-09-22",
-      "pendencia": "Conferir no texto da Resolução CGSN 186/2026 a janela, o prazo de cancelamento (fonte secundária fala em 30/11) e o período coberto. Leitura direta da fonte primária bloqueada na varredura de 22/09; o dado veio de fonte secundária.",
+      "pendencia": "Conferir no texto das Resoluções CGSN 186 e 190/2026 a janela, o cancelamento até 30/11 e o período coberto. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
       "prazo": {
         "tipo": "data_certa",
         "data": "2026-09-30",
