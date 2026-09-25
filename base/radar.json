@@ -56,6 +56,32 @@
   },
   "itens": [
     {
+      "id": "n100",
+      "data": "2026-09-24",
+      "area": "atualidade",
+      "orgao": "STF",
+      "titulo": "Licença-maternidade da adotante igualada à da mãe biológica",
+      "resumo": "O STF equiparou as regras de licença para mães biológicas e adotantes, celetistas ou estatutárias: 120 dias, prorrogáveis por mais 60, sem distinção pela idade da criança adotada.",
+      "edai": "Empregador que concedia licença menor à adotante, ou graduada pela idade da criança, precisa ajustar a política. Na prorrogação de 60 dias pelo Empresa Cidadã, o custo e a dedução fiscal passam a valer também nesses casos.",
+      "veiculo": "Migalhas",
+      "fonte": "https://www.migalhas.com.br/amanhecidas/465169/migalhas-n-6-441",
+      "pendencia": "Localizar o processo, o placar e se a decisão tem repercussão geral. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificacao": "a_confirmar"
+    },
+    {
+      "id": "n99",
+      "data": "2026-09-24",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "São Paulo não pode acabar sozinho com a isenção de ICMS das áreas de livre comércio",
+      "resumo": "Por 6 a 3, o Plenário julgou juntas as ADIs 7.822, 7.830, 7.844 e 7.848, de Rondônia, Acre, Amapá e Roraima, e invalidou a norma paulista que fixava prazo para o fim da isenção sobre remessas às Áreas de Livre Comércio do Norte. Relatora, Min. Cármen Lúcia: benefício concedido em convênio do Confaz só se revoga no Confaz.",
+      "edai": "Remessa de São Paulo para as áreas de livre comércio segue isenta. Quem recolheu ICMS por causa da norma derrubada tem, em tese, indébito a discutir, e aí a modulação decide tudo; ela ainda não foi confirmada.",
+      "veiculo": "Conjur",
+      "fonte": "https://conjur.com.br/2026-set-24/stf-derruba-prazo-de-sp-para-fim-de-isencao-de-icms-destinada-a-areas-de-livre-comercio/",
+      "pendencia": "Conferir no portal do STF o placar, a redação da tese e se houve modulação de efeitos. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificacao": "a_confirmar"
+    },
+    {
       "id": "n98",
       "data": "2026-09-22",
       "area": "civil",
