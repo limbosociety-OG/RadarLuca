@@ -537,8 +537,8 @@ button.pr-num{border-bottom:1px solid var(--regua)} button.pr-num:hover{color:va
 
 <script>
 /* GERADO:INICIO — não editar à mão. Fonte: base/teses.json (scripts/gerar.py) */
-const SEMENTE="2026-09-25T10:14Z";
-const CORTE="2026-09-25";
+const SEMENTE="2026-09-26T10:15Z";
+const CORTE="2026-09-26";
 const BLOCOS=[
  "PIS/Cofins, base de cálculo",
  "IRPJ e CSLL",
@@ -549,7 +549,7 @@ const BLOCOS=[
  "CARF"
 ];
 const PADRAO={
- "semente": "2026-09-25T10:14Z",
+ "semente": "2026-09-26T10:15Z",
  "teses": [
   {
    "id": "t1",
@@ -1214,6 +1214,30 @@ const PADRAO={
    "pendencia": "Conferir no portal do STF o placar final, a proclamação do resultado e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
    "verificadoEm": "2026-09-23",
    "atualizado": "set/2026"
+  },
+  {
+   "id": "t33",
+   "bloco": "Processo e cobrança",
+   "tribunal": "PGFN",
+   "tema": "Edital PGDAU 6/2026",
+   "processo": "",
+   "status": "iminente",
+   "titulo": "Transação na dívida ativa da União até R$ 45 milhões",
+   "resumo": "Editais PGDAU 6/2026 e 8/2026 (este ligado ao Desenrola Rural): transação para débitos inscritos, tributários ou não, de até R$ 45 milhões por contribuinte, com opção de pagamento à vista e desconto de até 100% sobre juros, multa e encargos. Inscrições até 03/03/2026 nas modalidades gerais; até 01/06/2025 na de pequeno valor.",
+   "fonte": "https://www.gov.br/pgfn/pt-br/assuntos/noticias/2026/novos-editais-de-transacao-da-pgfn-estao-disponiveis",
+   "placar": null,
+   "placarNota": "",
+   "edai": "Débito inscrito que cabe no teto tem janela de desconto que fecha em 30/09; depois, só o próximo edital, sem garantia de condições iguais. A escolha à vista contra parcelado é conta de caixa e de custo da discussão judicial, que o desconto pode tornar inútil.",
+   "verificacao": "a_confirmar",
+   "prazo": {
+    "tipo": "data_certa",
+    "data": "2026-09-30",
+    "oque": "Fim da adesão aos editais PGDAU 6 e 8/2026, transação na dívida ativa até R$ 45 milhões"
+   },
+   "modulacao": null,
+   "pendencia": "Conferir no texto dos editais PGDAU 6/2026 e 8/2026 a data final de adesão, os descontos por modalidade e as datas de corte de inscrição. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+   "verificadoEm": "2026-09-26",
+   "atualizado": "set/2026"
   }
  ],
  "boletins": [
@@ -1254,6 +1278,33 @@ const PADRAO={
   }
  ],
  "radar": [
+  {
+   "id": "n102",
+   "data": "2026-09-25",
+   "area": "tributario",
+   "orgao": "Senado",
+   "titulo": "PL 3.540/2026 corta CSLL e adicional de IRPJ do resseguro local",
+   "resumo": "Aprovado no Senado, o projeto reduz a CSLL dos resseguradores locais de 15% para 9%, afasta o adicional de 10% do IRPJ e libera parte dos prejuízos fiscais da trava de 30%. Segue para a Câmara.",
+   "edai": "É expectativa, não lei: nada muda na apuração de 2026 enquanto a Câmara não votar. Para seguradoras e cativas, o projeto mexe no preço do resseguro contratado localmente e na competição com ressegurador estrangeiro.",
+   "veiculo": "Conjur",
+   "fonte": "https://conjur.com.br/2026-set-25/o-pl-3-540-2026-e-a-concorrencia-no-resseguro/",
+   "pendencia": "Conferir no portal do Senado a redação aprovada e a tramitação na Câmara. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+   "verificacao": "a_confirmar"
+  },
+  {
+   "id": "n101",
+   "data": "2026-09-25",
+   "area": "tributario",
+   "orgao": "PGFN",
+   "tese": "t33",
+   "titulo": "Transação na dívida ativa até R$ 45 milhões fecha em 30 de setembro",
+   "resumo": "Os editais PGDAU 6/2026 e 8/2026 aceitam adesão até 30/09 no Regularize, com opção de pagamento à vista e desconto de até 100% sobre juros, multa e encargos, para débitos inscritos de até R$ 45 milhões por contribuinte.",
+   "edai": "Duas janelas fecham no mesmo dia: esta e a do Simples para o IBS e a CBS. Débito inscrito em discussão judicial precisa ser comparado agora com o desconto da transação, porque depois de 30/09 a conta muda.",
+   "veiculo": "Nexu",
+   "fonte": "https://www.nexuconsultoria.com.br/blog-transacao-tributaria-os-editais-da-pgfn-vao-ate-30-de-setembro.html",
+   "pendencia": "Conferir a data final no texto dos editais. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+   "verificacao": "a_confirmar"
+  },
   {
    "id": "n100",
    "data": "2026-09-24",

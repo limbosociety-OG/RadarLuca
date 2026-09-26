@@ -56,6 +56,33 @@
   },
   "itens": [
     {
+      "id": "n102",
+      "data": "2026-09-25",
+      "area": "tributario",
+      "orgao": "Senado",
+      "titulo": "PL 3.540/2026 corta CSLL e adicional de IRPJ do resseguro local",
+      "resumo": "Aprovado no Senado, o projeto reduz a CSLL dos resseguradores locais de 15% para 9%, afasta o adicional de 10% do IRPJ e libera parte dos prejuízos fiscais da trava de 30%. Segue para a Câmara.",
+      "edai": "É expectativa, não lei: nada muda na apuração de 2026 enquanto a Câmara não votar. Para seguradoras e cativas, o projeto mexe no preço do resseguro contratado localmente e na competição com ressegurador estrangeiro.",
+      "veiculo": "Conjur",
+      "fonte": "https://conjur.com.br/2026-set-25/o-pl-3-540-2026-e-a-concorrencia-no-resseguro/",
+      "pendencia": "Conferir no portal do Senado a redação aprovada e a tramitação na Câmara. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificacao": "a_confirmar"
+    },
+    {
+      "id": "n101",
+      "data": "2026-09-25",
+      "area": "tributario",
+      "orgao": "PGFN",
+      "tese": "t33",
+      "titulo": "Transação na dívida ativa até R$ 45 milhões fecha em 30 de setembro",
+      "resumo": "Os editais PGDAU 6/2026 e 8/2026 aceitam adesão até 30/09 no Regularize, com opção de pagamento à vista e desconto de até 100% sobre juros, multa e encargos, para débitos inscritos de até R$ 45 milhões por contribuinte.",
+      "edai": "Duas janelas fecham no mesmo dia: esta e a do Simples para o IBS e a CBS. Débito inscrito em discussão judicial precisa ser comparado agora com o desconto da transação, porque depois de 30/09 a conta muda.",
+      "veiculo": "Nexu",
+      "fonte": "https://www.nexuconsultoria.com.br/blog-transacao-tributaria-os-editais-da-pgfn-vao-ate-30-de-setembro.html",
+      "pendencia": "Conferir a data final no texto dos editais. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificacao": "a_confirmar"
+    },
+    {
       "id": "n100",
       "data": "2026-09-24",
       "area": "atualidade",

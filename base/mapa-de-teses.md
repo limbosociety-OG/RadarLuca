@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-09-25 · **versão:** 2026-09-25T10:14Z
+**Corte:** 2026-09-26 · **versão:** 2026-09-26T10:15Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -161,6 +161,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 | ⚪⚠️ | STF · **Selic em depósitos judiciais** | Termo inicial da Selic sobre depósitos judiciais | Repercussão geral reconhecida. Reflexos sobre garantias e créditos de valor elevado. |
 | 🔴⚠️ | Congresso · **LC 236/2026** | Teto de multa tributária no CTN e retroatividade benigna | Reforma do CTN sancionada em 04/09/2026: multa proporcional limitada a 75% do tributo, 100% em fraude, sonegação ou conluio e 150% na reincidência, além de capítulo de processo administrativo fiscal e incentivo a soluções consensuais. |
 | 🟢⚠️ | STF · **ADI 7.587** | Limite mensal de compensação de crédito judicial acima de R$ 10 milhões | Maioria formada no Plenário Virtual encerrado em 14/09/2026, com o relator, Min. Cristiano Zanin, pela constitucionalidade da Lei 14.873/2024: crédito reconhecido em decisão definitiva acima de R$ 10 milhões só pode ser compensado dentro de um limite mensal. |
+| 🔴⚠️ | PGFN · **Edital PGDAU 6/2026** | Transação na dívida ativa da União até R$ 45 milhões | Editais PGDAU 6/2026 e 8/2026 (este ligado ao Desenrola Rural): transação para débitos inscritos, tributários ou não, de até R$ 45 milhões por contribuinte, com opção de pagamento à vista e desconto de até 100% sobre juros, multa e encargos. Inscrições até 03/03/2026 nas modalidades gerais; até 01/06/2025 na de pequeno valor. |
 
 **Editais 9 e 10/2026 — e daí?** Prazo com data certa. A adesão implica desistência de impugnações, cotejar desconto contra probabilidade de êxito, processo a processo.
 
@@ -171,6 +172,8 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 **LC 236/2026 — e daí?** Multa em auto de infração ainda não definitivamente julgado pode ser reduzida ao novo teto pela retroatividade benigna do art. 106, II, "c", do CTN. Carteira com autuação acima de 75% sem qualificadora, ou com qualificada acima de 100% sem reincidência, deve ser revista agora.
 
 **ADI 7.587 — e daí?** Crédito judicial grande não vira caixa de uma vez: a compensação segue fracionada e o planejamento de fluxo precisa contar com o cronograma legal. Ação que discute o limite perde força.
+
+**Edital PGDAU 6/2026 — e daí?** Débito inscrito que cabe no teto tem janela de desconto que fecha em 30/09; depois, só o próximo edital, sem garantia de condições iguais. A escolha à vista contra parcelado é conta de caixa e de custo da discussão judicial, que o desconto pode tornar inútil.
 
 > ⚠️ **Editais 9 e 10/2026** — a confirmar: Prazo de 30/10/2026 e percentuais: conferir no texto dos editais no sítio da RFB. Prazo em peça exige fonte primária. (última checagem: 2026-08-19)
 
@@ -185,6 +188,8 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 > ⚠️ **LC 236/2026** — a confirmar: Conferir no DOU o texto publicado, os vetos, a vigência de cada dispositivo e se o teto alcança multas estaduais e municipais antes da adaptação de dois anos. Leitura direta da fonte primária bloqueada na varredura de 22/09; o dado veio de fonte secundária. (última checagem: 2026-09-22)
 
 > ⚠️ **ADI 7.587** — a confirmar: Conferir no portal do STF o placar final, a proclamação do resultado e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-23)
+
+> ⚠️ **Edital PGDAU 6/2026** — a confirmar: Conferir no texto dos editais PGDAU 6/2026 e 8/2026 a data final de adesão, os descontos por modalidade e as datas de corte de inscrição. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-26)
 
 **Ponto de ação.** Pareceres de dispensa de contestação da PGFN são fonte subutilizada e de altíssimo valor prático: sinalizam teses já ganhas.
 
