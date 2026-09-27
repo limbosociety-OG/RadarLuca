@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-09-26 · **versão:** 2026-09-26T10:15Z
+**Corte:** 2026-09-27 · **versão:** 2026-09-27T10:17Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -136,7 +136,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 **Tema 1.304 — e daí?** Derrota importante, serve de limite ao argumento de que toda tese filhote segue o Tema 69.
 
-**Tema 1.348 — e daí?** Crítico para holdings patrimoniais e planejamento sucessório.
+**Tema 1.348 — e daí?** Crítico para holdings patrimoniais e planejamento sucessório. Com maioria à vista, a pergunta passa a ser modulação: integralização já tributada abre repetição de indébito se a tese sair sem corte, e o quinquênio do art. 168 do CTN corre contra quem pagou ITBI em 2021.
 
 **Tema 1.455 — e daí?** Sem modulação de efeitos: a inconstitucionalidade alcança o passado, limitada pelo quinquênio do art. 168 do CTN, que corre a cada pagamento. Municípios ainda podem pedir modulação em embargos. Progressividade por valor venal e seletividade por localização e uso permanecem válidas, o que caiu foi a área como critério de alíquota. Abre frente de repetição de indébito contra municípios com legislação semelhante.
 
@@ -144,7 +144,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Tema 1.304** — a confirmar: Confirmar a redação da tese fixada nos repetitivos do STJ. (última checagem: 2026-08-19)
 
-> ⚠️ **Tema 1.348** — a confirmar: Julgamento presencial suspenso em 02/09/2026 após as sustentações orais, com placar virtual de 4 a 1 pelos contribuintes; sem nova data. Placar parcial vem de fonte secundária. Conferir no andamento antes de citar número de votos. (última checagem: 2026-08-19)
+> ⚠️ **Tema 1.348** — a confirmar: Conferir no andamento do STF o placar de 16/09 e se o voto virtual de Cármen Lúcia pela imunidade é computado depois do destaque — a imprensa fala em maioria, o que é disputado. Sem prazo de devolução da vista e sem debate de modulação ainda. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-27)
 
 > ⚠️ **Tema 1.244** — a confirmar: Resultado da sessão de 20/08/2026 não confirmado. Ver base/pendencias.md. (última checagem: 2026-08-19)
 

@@ -610,6 +610,20 @@
       "tese": "t21",
       "verificacao": "confirmado",
       "pendencia": ""
+    },
+    {
+      "id": "n103",
+      "data": "2026-09-16",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "ITBI na integralização de imobiliária: 5 a 2 pela imunidade, e Moraes pede vista",
+      "resumo": "No Tema 1.348, o Plenário presencial chegou a cinco votos pela imunidade incondicionada do art. 156, §2º, I, da CF, com Gilmar Mendes e Flávio Dino vencidos. Alexandre de Moraes pediu vista.",
+      "edai": "Não é tese fixada: o placar pode mudar e a modulação nem começou a ser discutida. Para holding patrimonial, o risco de não agir é temporal — ITBI pago em integralização há quase cinco anos sai do alcance do art. 168 do CTN antes de a vista voltar, e é aí que uma eventual modulação costuma poupar quem já tinha ação.",
+      "veiculo": "Migalhas",
+      "fonte": "https://www.migalhas.com.br/quentes/464254/stf-tem-5-votos-por-imunidade-de-itbi-a-imobiliaria-moraes-pede-vista",
+      "tese": "t19",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no portal do STF o placar de 16/09 e a situação do voto virtual de Cármen Lúcia. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }

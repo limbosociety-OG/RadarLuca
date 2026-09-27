@@ -1,6 +1,6 @@
 {
-  "versao": "2026-09-26T10:15Z",
-  "corte": "2026-09-26",
+  "versao": "2026-09-27T10:17Z",
+  "corte": "2026-09-27",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -380,16 +380,16 @@
       "resumo": "Discute se a imunidade do art. 156, §2º, I, da CF alcança a pessoa jurídica com atividade preponderantemente imobiliária.",
       "status": "curso",
       "placar": {
-        "c": 4,
-        "f": 0,
-        "p": 7
+        "c": 5,
+        "f": 2,
+        "p": 4
       },
-      "placarNota": "4 votos pela imunidade incondicionada. Retomada após pedido de destaque.",
-      "edai": "Crítico para holdings patrimoniais e planejamento sucessório.",
+      "placarNota": "5 a 2 pela imunidade incondicionada no presencial de 16/09 (Fachin, Mendonça, Nunes Marques, Fux, Zanin; vencidos Gilmar e Dino). Vista de Moraes.",
+      "edai": "Crítico para holdings patrimoniais e planejamento sucessório. Com maioria à vista, a pergunta passa a ser modulação: integralização já tributada abre repetição de indébito se a tese sair sem corte, e o quinquênio do art. 168 do CTN corre contra quem pagou ITBI em 2021.",
       "fonte": "@agenda",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-08-19",
-      "pendencia": "Julgamento presencial suspenso em 02/09/2026 após as sustentações orais, com placar virtual de 4 a 1 pelos contribuintes; sem nova data. Placar parcial vem de fonte secundária. Conferir no andamento antes de citar número de votos."
+      "verificado_em": "2026-09-27",
+      "pendencia": "Conferir no andamento do STF o placar de 16/09 e se o voto virtual de Cármen Lúcia pela imunidade é computado depois do destaque — a imprensa fala em maioria, o que é disputado. Sem prazo de devolução da vista e sem debate de modulação ainda. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {
       "id": "t20",
