@@ -1,6 +1,6 @@
 {
-  "versao": "2026-09-27T10:17Z",
-  "corte": "2026-09-27",
+  "versao": "2026-09-28T10:15Z",
+  "corte": "2026-09-28",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -646,6 +646,13 @@
     }
   ],
   "boletins": [
+    {
+      "id": "b2",
+      "data": "25 set 2026",
+      "titulo": "Semana de 21 a 25 de setembro",
+      "corpo": "Semana média, nada fixado em repetitivo ou repercussão geral. A CSRF cancelou a Súmula 147: multa isolada e de ofício juntas caem também no CARF. No Tema 1.348 (ITBI na integralização), 5 a 2 pela imunidade e vista de Moraes — ITBI pago no fim de 2021 sai do quinquênio antes de a vista voltar. O STF derrubou o prazo paulista para o fim da isenção de ICMS nas áreas de livre comércio, e uma monocrática fixou o julgamento, não a ata, como marco da modulação do Difal.\n\nJanela: 30/09 fecha a opção do Simples pelo regime regular de IBS/CBS e a transação na dívida ativa até R$ 45 milhões. 01/10, próxima fase do destaque de IBS/CBS no documento fiscal.\n\nPara estudar: sanções tributárias depois da LC 236 — Súmula 147, teto de 75% e retroatividade benigna no estoque do CARF.\n\nTudo de fonte secundária, a confirmar.",
+      "fonte": "https://rotadajurisprudencia.com.br/2026/09/camara-superior-do-carf-cancela-sumula-147-sobre-aplicacao-simultanea-de-multas/"
+    },
     {
       "id": "b1",
       "data": "19 ago 2026",
