@@ -1,6 +1,6 @@
 {
-  "versao": "2026-09-29T10:15Z",
-  "corte": "2026-09-29",
+  "versao": "2026-09-30T10:15Z",
+  "corte": "2026-09-30",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
