@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-09-30 · **versão:** 2026-09-30T10:15Z
+**Corte:** 2026-10-01 · **versão:** 2026-10-01T10:14Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -88,7 +88,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 | 🟢⚠️ | STF · **LC 214/2025** | Alíquota zero de IBS e CBS em veículos para PcD e autistas | A Corte declarou inconstitucionais as travas que limitavam o benefício aos casos severos ou profundos. Primeiro controle de constitucionalidade sobre a lei da reforma. |
 | 🟡⚠️ | Legislação · **LC 224/2025** | Corte linear de benefícios fiscais e direito a crédito | Corte de cerca de 10% em benefícios fiscais. Decisões de 1ª e 2ª instâncias vêm garantindo crédito de PIS/Cofins e IPI sobre a tributação residual, por violação à não cumulatividade. A Receita recuou quanto à ZFM na Nota Cosit 207/2026. |
 | 🟡⚠️ | CGIBS · **Resolução 14/2026** | Alíquota de referência estimada em 27,91% para 2033 | Resolução CGIBS nº 14, de 29/07/2026. Acima da projeção anterior de 26,5%. O valor não é definitivo e será revisto conforme as regras de calibragem. |
-| 🔴⚠️ | CGSN · **Res. CGSN 186/2026** | Simples Nacional pode apurar IBS e CBS pelo regime regular em 2027 | Janela de 1º a 30 de setembro de 2026 para a empresa do Simples optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples. A opção é irretratável, mas admite cancelamento até 30/11/2026 (Res. CGSN 190/2026); IBS e CBS do regime regular não entram na receita bruta do Simples. |
+| 🔴⚠️ | CGSN · **Res. CGSN 186/2026 e 194/2026** | Simples Nacional pode apurar IBS e CBS pelo regime regular em 2027 | A empresa do Simples pode optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples. A janela, aberta em 1º/09, foi prorrogada para 30/10/2026 pela Res. CGSN 194/2026, de 25/09; a opção pelo próprio Simples para 2027 foi até 15/10, e a regularização de pendências, até 30/10. A opção é irretratável, mas admitia cancelamento até 30/11/2026 (Res. CGSN 190/2026); IBS e CBS do regime regular não entram na receita bruta do Simples. |
 
 **Ato Conjunto 4/2026 — e daí?** Risco operacional imediato: nota rejeitada trava faturamento. E o descumprimento faz perder a dispensa de recolhimento do período de teste.
 
@@ -96,7 +96,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 **LC 224/2025 — e daí?** Frente jovem, com jurisprudência se formando em 1ª e 2ª instâncias, decisões não vinculantes. Bom momento para entrar, com a ressalva de que não há precedente obrigatório.
 
-**Res. CGSN 186/2026 — e daí?** Fornecedor do Simples que vende para contribuinte do regime regular só transfere crédito integral de IBS e CBS se optar. Quem não optar até 30/09 fica no DAS até junho de 2027 e perde competitividade na cadeia B2B.
+**Res. CGSN 186/2026 e 194/2026 — e daí?** Fornecedor do Simples que vende para contribuinte do regime regular só transfere crédito integral de IBS e CBS se optar. A prorrogação dá mais um mês para a conta de margem na cadeia B2B; quem não optar até 30/10 fica no DAS até junho de 2027.
 
 > ⚠️ **Ato Conjunto 4/2026** — a confirmar: Correção de prazo para 01/10/2026 noticiada. Conferir no texto do ato conjunto RFB/CGIBS. Ver base/pendencias.md. (última checagem: 2026-08-19)
 
@@ -106,7 +106,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Resolução 14/2026** — a confirmar: Conferir o texto da Resolução 14/2026 no sítio do CGIBS. (última checagem: 2026-08-19)
 
-> ⚠️ **Res. CGSN 186/2026** — a confirmar: Conferir no texto das Resoluções CGSN 186 e 190/2026 a janela, o cancelamento até 30/11 e o período coberto. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-22)
+> ⚠️ **Res. CGSN 186/2026 e 194/2026** — a confirmar: Conferir no DOU o texto da Res. CGSN 194/2026 e se o cancelamento até 30/11 da Res. CGSN 190/2026 foi mantido ou também mudou. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-01)
 
 **Ponto de ação.** Frentes a vigiar: split payment, cashback, regimes específicos e diferenciados, creditamento e o desenho da não cumulatividade plena, contencioso administrativo do IBS (quem julga?), e a repartição federativa.
 
@@ -131,12 +131,14 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 | 🟢⚠️ | STF · **Tema 1.367** | Modulação da ADC 49, transferência entre estabelecimentos | A não incidência de ICMS na transferência entre estabelecimentos do mesmo titular produz efeitos a partir do exercício de 2024, ressalvados os processos pendentes até 29/04/2021. |
 | 🟢⚠️ | STJ · **Tema 1.304** | ICMS, PIS e Cofins permanecem na base do IPI | A 1ª Seção recusou a extensão analógica do Tema 69 por materialidades distintas: os tributos são calculados por dentro e integram o valor da operação do art. 47, II, "a", do CTN. |
 | 🟡⚠️ | STF · **Tema 1.348** | Imunidade de ITBI na integralização de capital por empresa imobiliária | Discute se a imunidade do art. 156, §2º, I, da CF alcança a pessoa jurídica com atividade preponderantemente imobiliária. |
-| ⚪⚠️ | STJ · **Tema 1.244** | PIS/Cofins-Importação sobre mercadorias do GATT destinadas à ZFM | Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Pautado para a sessão de 20/08/2026; o resultado não foi confirmado. |
+| ⚪⚠️ | STJ · **Tema 1.244** | PIS/Cofins-Importação sobre mercadorias do GATT destinadas à ZFM | Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Não foi julgado em 20/08 e voltou à pauta da Primeira Seção para 14/10/2026. |
 | 🟢✅ | STF · **Tema 1.455** (ARE 1.593.784/SC) | Alíquota de IPTU fixada em razão da área do imóvel é inconstitucional | Rel. Min. Dias Toffoli, Plenário Virtual, sessão encerrada em 05/08/2026, unânime, negado provimento ao recurso do município de Chapecó (LC municipal 639/2018, alíquota de 1% a partir de 400 m² de área construída). Tese: é inconstitucional a fixação, por lei municipal posterior à EC 29/2000, de alíquota do IPTU em razão da área do imóvel. |
 
 **Tema 1.304 — e daí?** Derrota importante, serve de limite ao argumento de que toda tese filhote segue o Tema 69.
 
 **Tema 1.348 — e daí?** Crítico para holdings patrimoniais e planejamento sucessório. Com maioria à vista, a pergunta passa a ser modulação: integralização já tributada abre repetição de indébito se a tese sair sem corte, e o quinquênio do art. 168 do CTN corre contra quem pagou ITBI em 2021.
+
+**Tema 1.244 — e daí?** Importador que destina mercadoria do GATT à Zona Franca tem a cobrança suspensa até o julgamento; a tese decide se o PIS/Cofins-Importação recolhido nesses anos é indébito.
 
 **Tema 1.455 — e daí?** Sem modulação de efeitos: a inconstitucionalidade alcança o passado, limitada pelo quinquênio do art. 168 do CTN, que corre a cada pagamento. Municípios ainda podem pedir modulação em embargos. Progressividade por valor venal e seletividade por localização e uso permanecem válidas, o que caiu foi a área como critério de alíquota. Abre frente de repetição de indébito contra municípios com legislação semelhante.
 
@@ -146,7 +148,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Tema 1.348** — a confirmar: Conferir no andamento do STF o placar de 16/09 e se o voto virtual de Cármen Lúcia pela imunidade é computado depois do destaque — a imprensa fala em maioria, o que é disputado. Sem prazo de devolução da vista e sem debate de modulação ainda. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-27)
 
-> ⚠️ **Tema 1.244** — a confirmar: Resultado da sessão de 20/08/2026 não confirmado. Ver base/pendencias.md. (última checagem: 2026-08-19)
+> ⚠️ **Tema 1.244** — a confirmar: Confirmar no STJ a pauta de 14/10/2026 e o que houve em 20/08. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-01)
 
 ---
 
@@ -161,7 +163,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 | ⚪⚠️ | STF · **Selic em depósitos judiciais** | Termo inicial da Selic sobre depósitos judiciais | Repercussão geral reconhecida. Reflexos sobre garantias e créditos de valor elevado. |
 | 🔴⚠️ | Congresso · **LC 236/2026** | Teto de multa tributária no CTN e retroatividade benigna | Reforma do CTN sancionada em 04/09/2026: multa proporcional limitada a 75% do tributo, 100% em fraude, sonegação ou conluio e 150% na reincidência, além de capítulo de processo administrativo fiscal e incentivo a soluções consensuais. |
 | 🟢⚠️ | STF · **ADI 7.587** | Limite mensal de compensação de crédito judicial acima de R$ 10 milhões | Maioria formada no Plenário Virtual encerrado em 14/09/2026, com o relator, Min. Cristiano Zanin, pela constitucionalidade da Lei 14.873/2024: crédito reconhecido em decisão definitiva acima de R$ 10 milhões só pode ser compensado dentro de um limite mensal. |
-| 🔴⚠️ | PGFN · **Edital PGDAU 6/2026** | Transação na dívida ativa da União até R$ 45 milhões | Editais PGDAU 6/2026 e 8/2026 (este ligado ao Desenrola Rural): transação para débitos inscritos, tributários ou não, de até R$ 45 milhões por contribuinte, com opção de pagamento à vista e desconto de até 100% sobre juros, multa e encargos. Inscrições até 03/03/2026 nas modalidades gerais; até 01/06/2025 na de pequeno valor. |
+| 🟡⚠️ | PGFN · **Edital PGDAU 6/2026** | Transação na dívida ativa da União até R$ 45 milhões | Editais PGDAU 6/2026 e 8/2026 (este ligado ao Desenrola Rural): transação para débitos inscritos, tributários ou não, de até R$ 45 milhões por contribuinte, com opção de pagamento à vista e desconto de até 100% sobre juros, multa e encargos. Inscrições até 03/03/2026 nas modalidades gerais; até 01/06/2025 na de pequeno valor. |
 
 **Editais 9 e 10/2026 — e daí?** Prazo com data certa. A adesão implica desistência de impugnações, cotejar desconto contra probabilidade de êxito, processo a processo.
 
@@ -173,7 +175,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 **ADI 7.587 — e daí?** Crédito judicial grande não vira caixa de uma vez: a compensação segue fracionada e o planejamento de fluxo precisa contar com o cronograma legal. Ação que discute o limite perde força.
 
-**Edital PGDAU 6/2026 — e daí?** Débito inscrito que cabe no teto tem janela de desconto que fecha em 30/09; depois, só o próximo edital, sem garantia de condições iguais. A escolha à vista contra parcelado é conta de caixa e de custo da discussão judicial, que o desconto pode tornar inútil.
+**Edital PGDAU 6/2026 — e daí?** A janela dos Editais 6 e 8 fechou em 30/09, e não encontrei prorrogação. Débito inscrito que ficou de fora espera o próximo edital, sem garantia de condições iguais; a escolha entre transacionar e discutir volta a depender do custo da discussão judicial.
 
 > ⚠️ **Editais 9 e 10/2026** — a confirmar: Prazo de 30/10/2026 e percentuais: conferir no texto dos editais no sítio da RFB. Prazo em peça exige fonte primária. (última checagem: 2026-08-19)
 
@@ -189,7 +191,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **ADI 7.587** — a confirmar: Conferir no portal do STF o placar final, a proclamação do resultado e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-23)
 
-> ⚠️ **Edital PGDAU 6/2026** — a confirmar: Conferir no texto dos editais PGDAU 6/2026 e 8/2026 a data final de adesão, os descontos por modalidade e as datas de corte de inscrição. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-26)
+> ⚠️ **Edital PGDAU 6/2026** — a confirmar: Confirmar no portal da PGFN se houve prorrogação dos editais PGDAU 6, 8 e 9/2026 e quando sai o próximo. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-01)
 
 **Ponto de ação.** Pareceres de dispensa de contestação da PGFN são fonte subutilizada e de altíssimo valor prático: sinalizam teses já ganhas.
 

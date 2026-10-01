@@ -1,6 +1,6 @@
 {
-  "versao": "2026-09-30T10:15Z",
-  "corte": "2026-09-30",
+  "versao": "2026-10-01T10:14Z",
+  "corte": "2026-10-01",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -398,15 +398,15 @@
       "tema": "Tema 1.244",
       "processo": "",
       "titulo": "PIS/Cofins-Importação sobre mercadorias do GATT destinadas à ZFM",
-      "resumo": "Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Pautado para a sessão de 20/08/2026; o resultado não foi confirmado.",
+      "resumo": "Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Não foi julgado em 20/08 e voltou à pauta da Primeira Seção para 14/10/2026.",
       "status": "afetado",
       "placar": null,
       "placarNota": "",
-      "edai": "",
-      "fonte": "@agenda",
+      "edai": "Importador que destina mercadoria do GATT à Zona Franca tem a cobrança suspensa até o julgamento; a tese decide se o PIS/Cofins-Importação recolhido nesses anos é indébito.",
+      "fonte": "https://rotadajurisprudencia.com.br/2026/09/stj-pauta-para-outubro-cinco-temas-sobre-creditos-de-pis-cofins-stock-options-e-outras-questoes-tributarias/",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-08-19",
-      "pendencia": "Resultado da sessão de 20/08/2026 não confirmado. Ver base/pendencias.md."
+      "verificado_em": "2026-10-01",
+      "pendencia": "Confirmar no STJ a pauta de 14/10/2026 e o que houve em 20/08. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {
       "id": "t21",
@@ -558,21 +558,21 @@
       "id": "t29",
       "bloco": "reforma",
       "tribunal": "CGSN",
-      "tema": "Res. CGSN 186/2026",
+      "tema": "Res. CGSN 186/2026 e 194/2026",
       "processo": "",
       "titulo": "Simples Nacional pode apurar IBS e CBS pelo regime regular em 2027",
-      "resumo": "Janela de 1º a 30 de setembro de 2026 para a empresa do Simples optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples. A opção é irretratável, mas admite cancelamento até 30/11/2026 (Res. CGSN 190/2026); IBS e CBS do regime regular não entram na receita bruta do Simples.",
+      "resumo": "A empresa do Simples pode optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples. A janela, aberta em 1º/09, foi prorrogada para 30/10/2026 pela Res. CGSN 194/2026, de 25/09; a opção pelo próprio Simples para 2027 foi até 15/10, e a regularização de pendências, até 30/10. A opção é irretratável, mas admitia cancelamento até 30/11/2026 (Res. CGSN 190/2026); IBS e CBS do regime regular não entram na receita bruta do Simples.",
       "status": "iminente",
       "placar": null,
-      "edai": "Fornecedor do Simples que vende para contribuinte do regime regular só transfere crédito integral de IBS e CBS se optar. Quem não optar até 30/09 fica no DAS até junho de 2027 e perde competitividade na cadeia B2B.",
+      "edai": "Fornecedor do Simples que vende para contribuinte do regime regular só transfere crédito integral de IBS e CBS se optar. A prorrogação dá mais um mês para a conta de margem na cadeia B2B; quem não optar até 30/10 fica no DAS até junho de 2027.",
       "fonte": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/cgsn-define-prazos-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs-para-2027",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-09-22",
-      "pendencia": "Conferir no texto das Resoluções CGSN 186 e 190/2026 a janela, o cancelamento até 30/11 e o período coberto. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificado_em": "2026-10-01",
+      "pendencia": "Conferir no DOU o texto da Res. CGSN 194/2026 e se o cancelamento até 30/11 da Res. CGSN 190/2026 foi mantido ou também mudou. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
       "prazo": {
         "tipo": "data_certa",
-        "data": "2026-09-30",
-        "oque": "Fim da janela do Simples para optar pelo regime regular de IBS e CBS em 2027"
+        "data": "2026-10-30",
+        "oque": "Fim da janela do Simples para optar pelo regime regular de IBS e CBS em 2027 (prorrogada pela Res. CGSN 194/2026)"
       }
     },
     {
@@ -631,18 +631,13 @@
       "processo": "",
       "titulo": "Transação na dívida ativa da União até R$ 45 milhões",
       "resumo": "Editais PGDAU 6/2026 e 8/2026 (este ligado ao Desenrola Rural): transação para débitos inscritos, tributários ou não, de até R$ 45 milhões por contribuinte, com opção de pagamento à vista e desconto de até 100% sobre juros, multa e encargos. Inscrições até 03/03/2026 nas modalidades gerais; até 01/06/2025 na de pequeno valor.",
-      "status": "iminente",
+      "status": "curso",
       "placar": null,
-      "edai": "Débito inscrito que cabe no teto tem janela de desconto que fecha em 30/09; depois, só o próximo edital, sem garantia de condições iguais. A escolha à vista contra parcelado é conta de caixa e de custo da discussão judicial, que o desconto pode tornar inútil.",
+      "edai": "A janela dos Editais 6 e 8 fechou em 30/09, e não encontrei prorrogação. Débito inscrito que ficou de fora espera o próximo edital, sem garantia de condições iguais; a escolha entre transacionar e discutir volta a depender do custo da discussão judicial.",
       "fonte": "https://www.gov.br/pgfn/pt-br/assuntos/noticias/2026/novos-editais-de-transacao-da-pgfn-estao-disponiveis",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-09-26",
-      "pendencia": "Conferir no texto dos editais PGDAU 6/2026 e 8/2026 a data final de adesão, os descontos por modalidade e as datas de corte de inscrição. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
-      "prazo": {
-        "tipo": "data_certa",
-        "data": "2026-09-30",
-        "oque": "Fim da adesão aos editais PGDAU 6 e 8/2026, transação na dívida ativa até R$ 45 milhões"
-      }
+      "verificado_em": "2026-10-01",
+      "pendencia": "Confirmar no portal da PGFN se houve prorrogação dos editais PGDAU 6, 8 e 9/2026 e quando sai o próximo. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ],
   "boletins": [

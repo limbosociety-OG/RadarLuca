@@ -676,6 +676,34 @@
       "tese": "t33",
       "verificacao": "a_confirmar",
       "pendencia": "Conferir o texto do Edital PGDAU 9/2026 e eventual prorrogação no portal da PGFN. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n108",
+      "data": "2026-09-25",
+      "area": "tributario",
+      "orgao": "CGSN",
+      "titulo": "Opção do Simples pelo IBS e a CBS do regime regular vai até 30 de outubro",
+      "resumo": "A Res. CGSN 194/2026, de 25/09, prorrogou a opção pelo Simples para 2027 até 15/10 e a opção pelo regime regular de IBS e CBS no primeiro semestre de 2027, dentro do Simples, até 30/10, com regularização de pendências também até 30/10.",
+      "edai": "A data que o acervo dava como fechada em 30/09 continua aberta por mais um mês. Para fornecedor do Simples em cadeia B2B, há tempo de refazer a conta de crédito transferido contra o custo de apurar fora do DAS antes de se vincular até junho de 2027.",
+      "veiculo": "CNM",
+      "fonte": "https://cnm.org.br/comunicacao/noticias/prorrogado-o-prazo-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs",
+      "tese": "t29",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no DOU o texto da Res. CGSN 194/2026. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n109",
+      "data": "2026-09-30",
+      "area": "tributario",
+      "orgao": "STJ",
+      "titulo": "Primeira Seção pauta cinco repetitivos tributários para 14 de outubro",
+      "resumo": "Na pauta: PIS/Cofins-Importação na Zona Franca (Tema 1.244), crédito de PIS/Cofins sobre o ICMS das aquisições, contribuições sobre stock options, legitimidade dos terceiros destinatários nas ações sobre suas contribuições (Tema 1.275) e coeficientes de IRPJ e CSLL das transmissoras de energia.",
+      "edai": "São cinco teses com suspensão nacional ou potencial de indébito decididas no mesmo dia. Stock options mexe na folha de executivos; o crédito sobre ICMS da aquisição é a outra ponta do Tema 69 e afeta a apuração de toda empresa não cumulativa até a CBS substituir PIS/Cofins em 2027.",
+      "veiculo": "Rota da Jurisprudência",
+      "fonte": "https://rotadajurisprudencia.com.br/2026/09/stj-pauta-para-outubro-cinco-temas-sobre-creditos-de-pis-cofins-stock-options-e-outras-questoes-tributarias/",
+      "tese": "t20",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir na pauta da Primeira Seção os números dos temas de crédito sobre ICMS, stock options e transmissoras. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }
