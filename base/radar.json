@@ -704,6 +704,34 @@
       "tese": "t20",
       "verificacao": "a_confirmar",
       "pendencia": "Conferir na pauta da Primeira Seção os números dos temas de crédito sobre ICMS, stock options e transmissoras. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n110",
+      "data": "2026-09-28",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "ITBI na integralização volta ao virtual de 9 a 19 de outubro, com 5 a 2 pela imunidade",
+      "resumo": "Moraes devolveu a vista do Tema 1.348 (RE 1.495.108) em 28/09, e o caso entrou na sessão virtual de 09 a 19/10. A tese do relator, com ressalva de Zanin, fixa a imunidade incondicionada na integralização, salvo simulação ou evasão.",
+      "edai": "A janela agora tem data: até 19/10 o Plenário pode fechar a tese e, se modular, fixar o corte de quem fica protegido. Para holding patrimonial que pagou ITBI na integralização, o que pesa é estar com pedido em curso antes do corte, porque a ressalva costuma proteger só ação já ajuizada. A ressalva de simulação abre a frente de fiscalização sobre holding sem propósito negocial.",
+      "veiculo": "Tributário nos Bastidores",
+      "fonte": "https://tributarionosbastidores.com.br/2026/10/stf-forma-maioria-sobre-imunidade-de-itbi-na-integralizacao-de-imoveis-de-imobiliarias/",
+      "tese": "t19",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no portal do STF a inclusão do RE 1.495.108 na sessão virtual de 09 a 19/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n111",
+      "data": "2026-10-01",
+      "area": "tributario",
+      "orgao": "RFB/CGIBS",
+      "titulo": "NFS-e e NFCom passam a exigir IBS e CBS; plataformas digitais em dezembro",
+      "resumo": "A segunda onda do cronograma entrou em 01/10. No mesmo dia, o DOU extra trouxe o Ato Conjunto técnico RFB/Sufis/CGIBS 8/2026, assinado em 29/09, com a documentação técnica dos documentos fiscais de IBS e CBS.",
+      "edai": "Prestador de serviço do regime regular que emite NFS-e sem os campos passa a ter nota rejeitada, e quem descumpre perde a dispensa de recolhimento do ano-teste. A próxima onda, em 01/12, alcança plataformas digitais.",
+      "veiculo": "Atlas Público",
+      "fonte": "https://atlaspublico.com.br/noticias/receita-federal-e-cgibs-aprovam-especificacoes-fiscais-para-90429",
+      "tese": "t12",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no DOU de 01/10/2026 o Ato Conjunto técnico 8/2026 e o cronograma das ondas. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }

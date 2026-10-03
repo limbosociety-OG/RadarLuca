@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-01T10:14Z",
-  "corte": "2026-10-01",
+  "versao": "2026-10-03T10:14Z",
+  "corte": "2026-10-03",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -253,20 +253,20 @@
       "tema": "Ato Conjunto 4/2026",
       "processo": "",
       "titulo": "Destaque obrigatório de IBS e CBS nos documentos fiscais",
-      "resumo": "Desde 03/08/2026 a NF-e do regime regular é rejeitada sem os campos de IBS e CBS, com alíquota-teste de 1% (0,9% CBS e 0,1% IBS). Cronograma faseado: novas fases em outubro e dezembro de 2026, Simples Nacional em janeiro de 2027.",
+      "resumo": "Desde 03/08/2026 a NF-e do regime regular é rejeitada sem os campos de IBS e CBS, com alíquota-teste de 1% (0,9% CBS e 0,1% IBS). Em 01/10 entraram NFS-e e NFCom; plataformas digitais em 01/12/2026; Simples Nacional em 01/01/2027. O Ato Conjunto técnico RFB/Sufis/CGIBS 8/2026, no DOU extra de 01/10, aprovou a documentação técnica dos documentos fiscais.",
       "status": "iminente",
       "placar": null,
       "placarNota": "",
       "edai": "Risco operacional imediato: nota rejeitada trava faturamento. E o descumprimento faz perder a dispensa de recolhimento do período de teste.",
       "prazo": {
         "tipo": "data_certa",
-        "data": "2026-10-01",
-        "oque": "Próxima fase do cronograma de IBS/CBS no documento fiscal"
+        "data": "2026-12-01",
+        "oque": "Plataformas digitais passam a destacar IBS e CBS no documento fiscal"
       },
       "fonte": "https://news.fcrlaw.com.br/news/receita-federal-e-comite-gestor-publicam-cronograma-para-notas-com-ibs-e-cbs/",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-08-19",
-      "pendencia": "Correção de prazo para 01/10/2026 noticiada. Conferir no texto do ato conjunto RFB/CGIBS. Ver base/pendencias.md."
+      "verificado_em": "2026-10-03",
+      "pendencia": "Conferir no texto do ato conjunto RFB/CGIBS o cronograma de ondas e o Ato técnico 8/2026 no DOU de 01/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {
       "id": "t13",
@@ -377,19 +377,24 @@
       "tema": "Tema 1.348",
       "processo": "",
       "titulo": "Imunidade de ITBI na integralização de capital por empresa imobiliária",
-      "resumo": "Discute se a imunidade do art. 156, §2º, I, da CF alcança a pessoa jurídica com atividade preponderantemente imobiliária.",
+      "resumo": "Discute se a imunidade do art. 156, §2º, I, da CF alcança a pessoa jurídica com atividade preponderantemente imobiliária. Tese proposta pelo relator, com ressalva de Zanin: imunidade incondicionada na integralização, salvo simulação ou evasão para fruir dela indevidamente.",
       "status": "curso",
       "placar": {
         "c": 5,
         "f": 2,
         "p": 4
       },
-      "placarNota": "5 a 2 pela imunidade incondicionada no presencial de 16/09 (Fachin, Mendonça, Nunes Marques, Fux, Zanin; vencidos Gilmar e Dino). Vista de Moraes.",
+      "placarNota": "5 a 2 pela imunidade incondicionada no presencial de 16/09 (Fachin, Mendonça, Nunes Marques, Fux, Zanin; vencidos Gilmar e Dino). Moraes devolveu a vista em 28/09; segue no virtual de 09 a 19/10.",
       "edai": "Crítico para holdings patrimoniais e planejamento sucessório. Com maioria à vista, a pergunta passa a ser modulação: integralização já tributada abre repetição de indébito se a tese sair sem corte, e o quinquênio do art. 168 do CTN corre contra quem pagou ITBI em 2021.",
       "fonte": "@agenda",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-09-27",
-      "pendencia": "Conferir no andamento do STF o placar de 16/09 e se o voto virtual de Cármen Lúcia pela imunidade é computado depois do destaque — a imprensa fala em maioria, o que é disputado. Sem prazo de devolução da vista e sem debate de modulação ainda. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+      "verificado_em": "2026-10-03",
+      "pendencia": "Conferir no andamento do RE 1.495.108 a inclusão na sessão virtual de 09 a 19/10/2026, o voto de Moraes e se a modulação entra em debate. A ressalva de simulação vem de fonte secundária. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "prazo": {
+        "tipo": "data_certa",
+        "data": "2026-10-19",
+        "oque": "Fim da sessão virtual do Tema 1.348 (ITBI na integralização); modulação pode fixar corte"
+      }
     },
     {
       "id": "t20",

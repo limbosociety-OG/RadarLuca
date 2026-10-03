@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-01 · **versão:** 2026-10-01T10:14Z
+**Corte:** 2026-10-03 · **versão:** 2026-10-03T10:14Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -84,7 +84,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 | | Tema | Objeto | Situação |
 |---|---|---|---|
-| 🔴⚠️ | RFB/CGIBS · **Ato Conjunto 4/2026** | Destaque obrigatório de IBS e CBS nos documentos fiscais | Desde 03/08/2026 a NF-e do regime regular é rejeitada sem os campos de IBS e CBS, com alíquota-teste de 1% (0,9% CBS e 0,1% IBS). Cronograma faseado: novas fases em outubro e dezembro de 2026, Simples Nacional em janeiro de 2027. |
+| 🔴⚠️ | RFB/CGIBS · **Ato Conjunto 4/2026** | Destaque obrigatório de IBS e CBS nos documentos fiscais | Desde 03/08/2026 a NF-e do regime regular é rejeitada sem os campos de IBS e CBS, com alíquota-teste de 1% (0,9% CBS e 0,1% IBS). Em 01/10 entraram NFS-e e NFCom; plataformas digitais em 01/12/2026; Simples Nacional em 01/01/2027. O Ato Conjunto técnico RFB/Sufis/CGIBS 8/2026, no DOU extra de 01/10, aprovou a documentação técnica dos documentos fiscais. |
 | 🟢⚠️ | STF · **LC 214/2025** | Alíquota zero de IBS e CBS em veículos para PcD e autistas | A Corte declarou inconstitucionais as travas que limitavam o benefício aos casos severos ou profundos. Primeiro controle de constitucionalidade sobre a lei da reforma. |
 | 🟡⚠️ | Legislação · **LC 224/2025** | Corte linear de benefícios fiscais e direito a crédito | Corte de cerca de 10% em benefícios fiscais. Decisões de 1ª e 2ª instâncias vêm garantindo crédito de PIS/Cofins e IPI sobre a tributação residual, por violação à não cumulatividade. A Receita recuou quanto à ZFM na Nota Cosit 207/2026. |
 | 🟡⚠️ | CGIBS · **Resolução 14/2026** | Alíquota de referência estimada em 27,91% para 2033 | Resolução CGIBS nº 14, de 29/07/2026. Acima da projeção anterior de 26,5%. O valor não é definitivo e será revisto conforme as regras de calibragem. |
@@ -98,7 +98,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 **Res. CGSN 186/2026 e 194/2026 — e daí?** Fornecedor do Simples que vende para contribuinte do regime regular só transfere crédito integral de IBS e CBS se optar. A prorrogação dá mais um mês para a conta de margem na cadeia B2B; quem não optar até 30/10 fica no DAS até junho de 2027.
 
-> ⚠️ **Ato Conjunto 4/2026** — a confirmar: Correção de prazo para 01/10/2026 noticiada. Conferir no texto do ato conjunto RFB/CGIBS. Ver base/pendencias.md. (última checagem: 2026-08-19)
+> ⚠️ **Ato Conjunto 4/2026** — a confirmar: Conferir no texto do ato conjunto RFB/CGIBS o cronograma de ondas e o Ato técnico 8/2026 no DOU de 01/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-03)
 
 > ⚠️ **LC 214/2025** — a confirmar: Localizar a classe e o número da ação e conferir a existência de modulação. (última checagem: 2026-08-19)
 
@@ -130,7 +130,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 |---|---|---|---|
 | 🟢⚠️ | STF · **Tema 1.367** | Modulação da ADC 49, transferência entre estabelecimentos | A não incidência de ICMS na transferência entre estabelecimentos do mesmo titular produz efeitos a partir do exercício de 2024, ressalvados os processos pendentes até 29/04/2021. |
 | 🟢⚠️ | STJ · **Tema 1.304** | ICMS, PIS e Cofins permanecem na base do IPI | A 1ª Seção recusou a extensão analógica do Tema 69 por materialidades distintas: os tributos são calculados por dentro e integram o valor da operação do art. 47, II, "a", do CTN. |
-| 🟡⚠️ | STF · **Tema 1.348** | Imunidade de ITBI na integralização de capital por empresa imobiliária | Discute se a imunidade do art. 156, §2º, I, da CF alcança a pessoa jurídica com atividade preponderantemente imobiliária. |
+| 🟡⚠️ | STF · **Tema 1.348** | Imunidade de ITBI na integralização de capital por empresa imobiliária | Discute se a imunidade do art. 156, §2º, I, da CF alcança a pessoa jurídica com atividade preponderantemente imobiliária. Tese proposta pelo relator, com ressalva de Zanin: imunidade incondicionada na integralização, salvo simulação ou evasão para fruir dela indevidamente. |
 | ⚪⚠️ | STJ · **Tema 1.244** | PIS/Cofins-Importação sobre mercadorias do GATT destinadas à ZFM | Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Não foi julgado em 20/08 e voltou à pauta da Primeira Seção para 14/10/2026. |
 | 🟢✅ | STF · **Tema 1.455** (ARE 1.593.784/SC) | Alíquota de IPTU fixada em razão da área do imóvel é inconstitucional | Rel. Min. Dias Toffoli, Plenário Virtual, sessão encerrada em 05/08/2026, unânime, negado provimento ao recurso do município de Chapecó (LC municipal 639/2018, alíquota de 1% a partir de 400 m² de área construída). Tese: é inconstitucional a fixação, por lei municipal posterior à EC 29/2000, de alíquota do IPTU em razão da área do imóvel. |
 
@@ -146,7 +146,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Tema 1.304** — a confirmar: Confirmar a redação da tese fixada nos repetitivos do STJ. (última checagem: 2026-08-19)
 
-> ⚠️ **Tema 1.348** — a confirmar: Conferir no andamento do STF o placar de 16/09 e se o voto virtual de Cármen Lúcia pela imunidade é computado depois do destaque — a imprensa fala em maioria, o que é disputado. Sem prazo de devolução da vista e sem debate de modulação ainda. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-27)
+> ⚠️ **Tema 1.348** — a confirmar: Conferir no andamento do RE 1.495.108 a inclusão na sessão virtual de 09 a 19/10/2026, o voto de Moraes e se a modulação entra em debate. A ressalva de simulação vem de fonte secundária. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-03)
 
 > ⚠️ **Tema 1.244** — a confirmar: Confirmar no STJ a pauta de 14/10/2026 e o que houve em 20/08. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-01)
 
