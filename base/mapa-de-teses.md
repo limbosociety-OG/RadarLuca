@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-03 · **versão:** 2026-10-03T10:14Z
+**Corte:** 2026-10-04 · **versão:** 2026-10-04T10:13Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
