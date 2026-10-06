@@ -537,8 +537,8 @@ button.pr-num{border-bottom:1px solid var(--regua)} button.pr-num:hover{color:va
 
 <script>
 /* GERADO:INICIO — não editar à mão. Fonte: base/teses.json (scripts/gerar.py) */
-const SEMENTE="2026-10-05T10:14Z";
-const CORTE="2026-10-05";
+const SEMENTE="2026-10-06T10:14Z";
+const CORTE="2026-10-06";
 const BLOCOS=[
  "PIS/Cofins, base de cálculo",
  "IRPJ e CSLL",
@@ -549,7 +549,7 @@ const BLOCOS=[
  "CARF"
 ];
 const PADRAO={
- "semente": "2026-10-05T10:14Z",
+ "semente": "2026-10-06T10:14Z",
  "teses": [
   {
    "id": "t1",
@@ -583,17 +583,21 @@ const PADRAO={
    "processo": "RE 835.818",
    "status": "curso",
    "titulo": "Créditos presumidos de ICMS na base do PIS/Cofins",
-   "resumo": "Define os limites entre incentivo fiscal estadual e tributação federal. Impacto estimado de R$ 16,5 bi.",
-   "fonte": "https://news.fcrlaw.com.br/news/stf-e-stj-pautam-julgamentos-tributarios-de-alto-impacto-para-o-2o-semestre-de-2026/",
+   "resumo": "Define se o crédito presumido de ICMS concedido pelo estado é receita tributável pelo PIS e pela Cofins ou mera redução de custo. Impacto estimado de R$ 16,5 bi. Pautado para o Plenário presencial de 07 e 08/10/2026.",
+   "fonte": "https://www.migalhas.com.br/quentes/465881/stf-tem-buser-pis-cofins-e-reforma-da-previdencia-na-pauta-de-outubro",
    "placar": null,
    "placarNota": "",
-   "edai": "",
+   "edai": "Empresa com incentivo de ICMS em crédito presumido tem a exclusão da base do PIS/Cofins em jogo até a CBS substituir as duas contribuições em 2027. Tese favorável abre repetição de cinco anos, e é aí que a modulação, se vier, decide quem leva o passado. A decisão também pesa no Tema 1.416 do STJ, sobre o mesmo crédito no IRPJ e na CSLL.",
    "verificacao": "a_confirmar",
-   "prazo": null,
+   "prazo": {
+    "tipo": "data_certa",
+    "data": "2026-10-08",
+    "oque": "Tema 843 no Plenário presencial (créditos presumidos de ICMS na base do PIS/Cofins)"
+   },
    "modulacao": null,
-   "pendencia": "Impacto estimado vem de fonte secundária. Conferir previsão de pauta.",
-   "verificadoEm": "2026-08-19",
-   "atualizado": "ago/2026"
+   "pendencia": "Conferir no calendário do STF a inclusão do RE 835.818 em 07 e 08/10/2026 e o placar já existente. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+   "verificadoEm": "2026-10-06",
+   "atualizado": "out/2026"
   },
   {
    "id": "t3",
@@ -1969,6 +1973,33 @@ const PADRAO={
    "tese": "t12",
    "verificacao": "a_confirmar",
    "pendencia": "Conferir no DOU de 01/10/2026 o Ato Conjunto técnico 8/2026 e o cronograma das ondas. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+  },
+  {
+   "id": "n112",
+   "data": "2026-10-05",
+   "area": "tributario",
+   "orgao": "STF",
+   "titulo": "Crédito presumido de ICMS na base do PIS/Cofins vai ao Plenário em 7 e 8 de outubro",
+   "resumo": "A pauta de outubro do STF traz a retomada do Tema 843 (RE 835.818), que decide se o crédito presumido de ICMS é receita tributável pelo PIS e pela Cofins. Na mesma pauta, o caso Buser (RE 1.506.410), em 14 e 15/10.",
+   "edai": "Para empresa com incentivo de ICMS, a tese decide se a exclusão da base do PIS/Cofins vale para os cinco anos passados, e a modulação, se vier, decide quem leva esse passado. A janela é curta: o resultado sai antes de a CBS substituir as duas contribuições e repercute no Tema 1.416 do STJ, sobre o IRPJ e a CSLL.",
+   "veiculo": "Migalhas",
+   "fonte": "https://www.migalhas.com.br/quentes/465881/stf-tem-buser-pis-cofins-e-reforma-da-previdencia-na-pauta-de-outubro",
+   "tese": "t2",
+   "verificacao": "a_confirmar",
+   "pendencia": "Conferir no calendário do STF as datas e o placar anterior do RE 835.818. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+  },
+  {
+   "id": "n113",
+   "data": "2026-09-03",
+   "area": "tributario",
+   "orgao": "STJ",
+   "titulo": "Ganho de FII com cotas de outro FII paga IR, decide Primeira Turma por 3 a 2",
+   "resumo": "Na primeira vez que o STJ enfrentou o tema, a Primeira Turma decidiu que a isenção do art. 16 da Lei 8.668/1993 não alcança o ganho de capital do fundo imobiliário na venda de cotas de outro FII. Prevaleceu Gurgel de Faria, com Kukina e Herman Benjamin; vencidos Regina Helena, relatora, e Paulo Sérgio Domingues.",
+   "edai": "É precedente de Turma, por maioria apertada, não repetitivo: a Segunda Turma ainda não se manifestou e há espaço para divergência. Para fundo de fundos (FOF), a autuação retroativa passa a ter respaldo no STJ, e o custo de 20% sobre o ganho entra na conta da carteira.",
+   "veiculo": "Migalhas",
+   "fonte": "https://www.migalhas.com.br/quentes/463696/incide-ir-na-venda-de-cotas-entre-fundos-imobiliarios-decide-stj",
+   "verificacao": "a_confirmar",
+   "pendencia": "Conferir no STJ o número do REsp e a data do acórdão. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
   }
  ],
  "areas": [

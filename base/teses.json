@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-05T10:14Z",
-  "corte": "2026-10-05",
+  "versao": "2026-10-06T10:14Z",
+  "corte": "2026-10-06",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -83,15 +83,20 @@
       "tema": "Tema 843",
       "processo": "RE 835.818",
       "titulo": "Créditos presumidos de ICMS na base do PIS/Cofins",
-      "resumo": "Define os limites entre incentivo fiscal estadual e tributação federal. Impacto estimado de R$ 16,5 bi.",
+      "resumo": "Define se o crédito presumido de ICMS concedido pelo estado é receita tributável pelo PIS e pela Cofins ou mera redução de custo. Impacto estimado de R$ 16,5 bi. Pautado para o Plenário presencial de 07 e 08/10/2026.",
       "status": "curso",
       "placar": null,
       "placarNota": "",
-      "edai": "",
-      "fonte": "@agenda",
+      "edai": "Empresa com incentivo de ICMS em crédito presumido tem a exclusão da base do PIS/Cofins em jogo até a CBS substituir as duas contribuições em 2027. Tese favorável abre repetição de cinco anos, e é aí que a modulação, se vier, decide quem leva o passado. A decisão também pesa no Tema 1.416 do STJ, sobre o mesmo crédito no IRPJ e na CSLL.",
+      "fonte": "https://www.migalhas.com.br/quentes/465881/stf-tem-buser-pis-cofins-e-reforma-da-previdencia-na-pauta-de-outubro",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-08-19",
-      "pendencia": "Impacto estimado vem de fonte secundária. Conferir previsão de pauta."
+      "verificado_em": "2026-10-06",
+      "pendencia": "Conferir no calendário do STF a inclusão do RE 835.818 em 07 e 08/10/2026 e o placar já existente. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "prazo": {
+        "tipo": "data_certa",
+        "data": "2026-10-08",
+        "oque": "Tema 843 no Plenário presencial (créditos presumidos de ICMS na base do PIS/Cofins)"
+      }
     },
     {
       "id": "t3",
