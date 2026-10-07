@@ -759,6 +759,20 @@
       "fonte": "https://www.migalhas.com.br/quentes/463696/incide-ir-na-venda-de-cotas-entre-fundos-imobiliarios-decide-stj",
       "verificacao": "a_confirmar",
       "pendencia": "Conferir no STJ o número do REsp e a data do acórdão. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n114",
+      "data": "2026-10-01",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "Tema 843 ouve as partes em 1º de outubro e chega ao voto com 6 a 5 herdado do virtual",
+      "resumo": "Na sessão de 01/10, o Plenário ouviu partes e entidades no RE 835.818 sem votar o mérito. No virtual que o destaque anulou, a maioria de 6 a 5 seguia Marco Aurélio pela exclusão do crédito presumido de ICMS da base do PIS/Cofins; os votos de Marco Aurélio, Rosa Weber e Lewandowski, aposentados, ficam mantidos.",
+      "edai": "Com três votos favoráveis já travados, o contribuinte precisa de mais três entre os oito ministros que votam agora. Não há tese fixada nem debate de modulação; até o voto, a exclusão segue dependendo de ação própria, e é ação já ajuizada que costuma ficar protegida por eventual corte.",
+      "veiculo": "Migalhas",
+      "fonte": "https://www.migalhas.com.br/quentes/465724/stf-julga-creditos-presumidos-de-icms-na-base-do-pis-cofins",
+      "tese": "t2",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no portal do STF a ata de 01/10 e a data da votação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }

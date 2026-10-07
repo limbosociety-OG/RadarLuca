@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-06 · **versão:** 2026-10-06T10:14Z
+**Corte:** 2026-10-07 · **versão:** 2026-10-07T10:14Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -38,7 +38,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 
 > ⚠️ **Tema 118** — a confirmar: Confirmar no portal de RG se houve reinclusão em pauta depois de 25/02/2026. (última checagem: 2026-08-19)
 
-> ⚠️ **Tema 843** — a confirmar: Conferir no calendário do STF a inclusão do RE 835.818 em 07 e 08/10/2026 e o placar já existente. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-06)
+> ⚠️ **Tema 843** — a confirmar: Fontes divergem: uma diz que em 01/10 só houve sustentações, sem data de retomada; a pauta do STF divulgada em 05/10 traz 07 e 08/10. Conferir no calendário do STF e se o placar de 6 a 5 vale depois do destaque. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-07)
 
 > ⚠️ **Imposto por dentro** — a confirmar: Número do tema de RG não anotado. Localizar no portal do STF antes de qualquer uso. (última checagem: 2026-08-19)
 
