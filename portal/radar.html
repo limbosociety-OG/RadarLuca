@@ -537,8 +537,8 @@ button.pr-num{border-bottom:1px solid var(--regua)} button.pr-num:hover{color:va
 
 <script>
 /* GERADO:INICIO — não editar à mão. Fonte: base/teses.json (scripts/gerar.py) */
-const SEMENTE="2026-10-07T10:14Z";
-const CORTE="2026-10-07";
+const SEMENTE="2026-10-08T10:15Z";
+const CORTE="2026-10-08";
 const BLOCOS=[
  "PIS/Cofins, base de cálculo",
  "IRPJ e CSLL",
@@ -549,7 +549,7 @@ const BLOCOS=[
  "CARF"
 ];
 const PADRAO={
- "semente": "2026-10-07T10:14Z",
+ "semente": "2026-10-08T10:15Z",
  "teses": [
   {
    "id": "t1",
@@ -581,26 +581,22 @@ const PADRAO={
    "tribunal": "STF",
    "tema": "Tema 843",
    "processo": "RE 835.818",
-   "status": "curso",
+   "status": "fixada",
    "titulo": "Créditos presumidos de ICMS na base do PIS/Cofins",
-   "resumo": "Define se o crédito presumido de ICMS concedido pelo estado é receita tributável pelo PIS e pela Cofins ou mera redução de custo. Impacto estimado de R$ 16,5 bi. Pautado para o Plenário presencial de 07 e 08/10/2026.",
-   "fonte": "https://www.migalhas.com.br/quentes/465881/stf-tem-buser-pis-cofins-e-reforma-da-previdencia-na-pauta-de-outubro",
+   "resumo": "Tese fixada em 07/10/2026: é incompatível com a Constituição a inclusão, na base de cálculo da Cofins e da contribuição ao PIS, de créditos presumidos do ICMS. Fundamento: o crédito presumido reduz custo tributário, não é receita nova. Impacto estimado de R$ 16,5 bi.",
+   "fonte": "https://apet.org.br/noticia/stf-conclui-julgamento-do-tema-843-e-afasta-pis-cofins-sobre-creditos-presumidos-de-icms/",
    "placar": {
-    "c": 3,
-    "f": 0,
-    "p": 8
+    "c": 7,
+    "f": 4,
+    "p": 0
    },
-   "placarNota": "No virtual anterior, 6 a 5 com o relator Marco Aurélio, pela exclusão; destaque levou ao presencial. Votos de Marco Aurélio, Rosa Weber e Lewandowski, aposentados e favoráveis ao contribuinte, ficam mantidos. Sustentações em 01/10/2026; votação pautada para 07 e 08/10.",
-   "edai": "Empresa com incentivo de ICMS em crédito presumido tem a exclusão da base do PIS/Cofins em jogo até a CBS substituir as duas contribuições em 2027. Tese favorável abre repetição de cinco anos, e é aí que a modulação, se vier, decide quem leva o passado. A decisão também pesa no Tema 1.416 do STJ, sobre o mesmo crédito no IRPJ e na CSLL.",
+   "placarNota": "Julgado em 07/10/2026, com a tese do relator original, Marco Aurélio. Fontes divergem no placar: 7 a 4 (Agência STF citada pela APET e maioria da imprensa), 6 a 5 (Migalhas), 6 a 4 (Gazeta Brasil). Dino, Zanin e Mendonça não votaram, porque sucederam ministros que já tinham votado.",
+   "edai": "Empresa com crédito presumido de ICMS tem tese vinculante para excluí-lo da base do PIS/Cofins até a CBS substituir as duas contribuições em 2027, e repetição de indébito dos cinco anos anteriores ao pedido. A pergunta que decide o valor é a modulação, que nenhuma fonte noticiou: sem ela, quem não tem ação recupera o quinquênio; com ela, a ressalva costuma proteger só ação ajuizada até o julgamento, e a União pode pedir isso em embargos. Repercute no Tema 1.416 do STJ (IRPJ e CSLL).",
    "verificacao": "a_confirmar",
-   "prazo": {
-    "tipo": "data_certa",
-    "data": "2026-10-08",
-    "oque": "Tema 843 no Plenário presencial (créditos presumidos de ICMS na base do PIS/Cofins)"
-   },
+   "prazo": null,
    "modulacao": null,
-   "pendencia": "Fontes divergem: uma diz que em 01/10 só houve sustentações, sem data de retomada; a pauta do STF divulgada em 05/10 traz 07 e 08/10. Conferir no calendário do STF e se o placar de 6 a 5 vale depois do destaque. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
-   "verificadoEm": "2026-10-07",
+   "pendencia": "Conferir na ata do STF o placar exato, o texto literal da tese e se houve modulação — nenhuma fonte a noticiou, o que não equivale a ausência confirmada. Acompanhar embargos da União. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+   "verificadoEm": "2026-10-08",
    "atualizado": "out/2026"
   },
   {
@@ -2018,6 +2014,33 @@ const PADRAO={
    "tese": "t2",
    "verificacao": "a_confirmar",
    "pendencia": "Conferir no portal do STF a ata de 01/10 e a data da votação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+  },
+  {
+   "id": "n115",
+   "data": "2026-10-07",
+   "area": "tributario",
+   "orgao": "STF",
+   "titulo": "STF tira o crédito presumido de ICMS da base do PIS e da Cofins",
+   "resumo": "No Tema 843 (RE 835.818), o Plenário fixou a tese do relator original, Marco Aurélio: é incompatível com a Constituição incluir créditos presumidos de ICMS na base da Cofins e do PIS. O placar noticiado é 7 a 4, com divergência entre veículos. Impacto estimado de R$ 16,5 bi.",
+   "edai": "Tese vinculante: quem tem crédito presumido de ICMS passa a ter base para excluí-lo e para repetir o quinquênio anterior ao pedido. Nenhuma fonte noticiou modulação, e isso não é o mesmo que ausência confirmada — se a União obtiver corte em embargos, a ressalva costuma proteger só quem já tinha ação. O efeito vale até a CBS substituir PIS e Cofins em 2027 e pesa no Tema 1.416 do STJ.",
+   "veiculo": "APET",
+   "fonte": "https://apet.org.br/noticia/stf-conclui-julgamento-do-tema-843-e-afasta-pis-cofins-sobre-creditos-presumidos-de-icms/",
+   "tese": "t2",
+   "verificacao": "a_confirmar",
+   "pendencia": "Conferir a ata do STF: placar, texto da tese e modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+  },
+  {
+   "id": "n116",
+   "data": "2026-09-22",
+   "area": "tributario",
+   "orgao": "CARF",
+   "titulo": "CARF aprova oito súmulas, entre elas a que valida a Cide sobre royalties ao exterior",
+   "resumo": "O Pleno e as Turmas da Câmara Superior aprovaram oito novos enunciados em 22/09, com matérias de Cide, IOF e outras seis.",
+   "edai": "Súmula do CARF vincula os conselheiros: processo administrativo que discute a Cide sobre remessa de royalties perde a via do CARF, e a discussão passa a depender do Judiciário. Vale levantar quais teses do acervo administrativo ficaram fechadas por enunciado.",
+   "veiculo": "Jorge Gomes",
+   "fonte": "https://jorgegomes.com.br/carf-aprova-sumulas-sobre-cide-iof-e-outras-seis-materias-22-09-2026/",
+   "verificacao": "a_confirmar",
+   "pendencia": "Conferir no portal do CARF o texto e o número das oito súmulas. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
   }
  ],
  "areas": [

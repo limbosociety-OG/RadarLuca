@@ -773,6 +773,33 @@
       "tese": "t2",
       "verificacao": "a_confirmar",
       "pendencia": "Conferir no portal do STF a ata de 01/10 e a data da votação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n115",
+      "data": "2026-10-07",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "STF tira o crédito presumido de ICMS da base do PIS e da Cofins",
+      "resumo": "No Tema 843 (RE 835.818), o Plenário fixou a tese do relator original, Marco Aurélio: é incompatível com a Constituição incluir créditos presumidos de ICMS na base da Cofins e do PIS. O placar noticiado é 7 a 4, com divergência entre veículos. Impacto estimado de R$ 16,5 bi.",
+      "edai": "Tese vinculante: quem tem crédito presumido de ICMS passa a ter base para excluí-lo e para repetir o quinquênio anterior ao pedido. Nenhuma fonte noticiou modulação, e isso não é o mesmo que ausência confirmada — se a União obtiver corte em embargos, a ressalva costuma proteger só quem já tinha ação. O efeito vale até a CBS substituir PIS e Cofins em 2027 e pesa no Tema 1.416 do STJ.",
+      "veiculo": "APET",
+      "fonte": "https://apet.org.br/noticia/stf-conclui-julgamento-do-tema-843-e-afasta-pis-cofins-sobre-creditos-presumidos-de-icms/",
+      "tese": "t2",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir a ata do STF: placar, texto da tese e modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n116",
+      "data": "2026-09-22",
+      "area": "tributario",
+      "orgao": "CARF",
+      "titulo": "CARF aprova oito súmulas, entre elas a que valida a Cide sobre royalties ao exterior",
+      "resumo": "O Pleno e as Turmas da Câmara Superior aprovaram oito novos enunciados em 22/09, com matérias de Cide, IOF e outras seis.",
+      "edai": "Súmula do CARF vincula os conselheiros: processo administrativo que discute a Cide sobre remessa de royalties perde a via do CARF, e a discussão passa a depender do Judiciário. Vale levantar quais teses do acervo administrativo ficaram fechadas por enunciado.",
+      "veiculo": "Jorge Gomes",
+      "fonte": "https://jorgegomes.com.br/carf-aprova-sumulas-sobre-cide-iof-e-outras-seis-materias-22-09-2026/",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no portal do CARF o texto e o número das oito súmulas. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }
