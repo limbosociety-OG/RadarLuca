@@ -800,6 +800,34 @@
       "fonte": "https://jorgegomes.com.br/carf-aprova-sumulas-sobre-cide-iof-e-outras-seis-materias-22-09-2026/",
       "verificacao": "a_confirmar",
       "pendencia": "Conferir no portal do CARF o texto e o número das oito súmulas. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n117",
+      "data": "2026-10-08",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "Tema 843 sai sem modulação, mas o alcance temporal fica para os embargos",
+      "resumo": "O julgamento de 07/10 não modulou efeitos. Moraes, vencido, indicou que o resultado pode ser revisto em embargos de declaração, nos quais votariam os ministros que não votaram no mérito; a PGFN aguarda o acórdão para recorrer.",
+      "edai": "Hoje a tese vale sem corte, com repetição do quinquênio anterior ao pedido. A janela está aberta até os embargos: se a União obtiver modulação, a ressalva costuma proteger só ação ajuizada até o julgamento ou a ata, e quem pedir depois pode ficar só com o futuro — que acaba em 2027, quando a CBS substitui PIS e Cofins.",
+      "veiculo": "Jornal do Comércio",
+      "fonte": "https://www.jornaldocomercio.com/cadernos/jc-contabilidade/2026/10/1266230-stf-ainda-deve-definir-alcance-de-decisao-contra-tributacao-de-credito-de-icms-dizem-advogados.html",
+      "tese": "t2",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no STF a ata e, depois, os embargos da União. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n118",
+      "data": "2026-10-07",
+      "area": "tributario",
+      "orgao": "STJ",
+      "titulo": "Monocrática do STJ diz que a Lei das Subvenções não tributa crédito presumido de ICMS no IRPJ e na CSLL",
+      "resumo": "No REsp 2.284.436, decisão monocrática afirmou que a Lei 14.789/2023 não autoriza a incidência de IRPJ e CSLL sobre créditos presumidos de ICMS, antecipando a linha do repetitivo do Tema 1.416.",
+      "edai": "É decisão de um ministro, revisável pela Turma, e o repetitivo segue com suspensão nacional. Junto com o Tema 843, sinaliza que o crédito presumido tende a ficar fora das bases federais também depois de 2024, o que pesa no cálculo de quem apura pela Lei 14.789.",
+      "veiculo": "Rota da Jurisprudência",
+      "fonte": "https://rotadajurisprudencia.com.br/",
+      "tese": "t8",
+      "verificacao": "a_confirmar",
+      "pendencia": "Localizar a notícia específica e conferir no STJ o REsp 2.284.436. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }

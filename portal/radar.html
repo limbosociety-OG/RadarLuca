@@ -537,8 +537,8 @@ button.pr-num{border-bottom:1px solid var(--regua)} button.pr-num:hover{color:va
 
 <script>
 /* GERADO:INICIO — não editar à mão. Fonte: base/teses.json (scripts/gerar.py) */
-const SEMENTE="2026-10-08T10:15Z";
-const CORTE="2026-10-08";
+const SEMENTE="2026-10-09T10:14Z";
+const CORTE="2026-10-09";
 const BLOCOS=[
  "PIS/Cofins, base de cálculo",
  "IRPJ e CSLL",
@@ -549,7 +549,7 @@ const BLOCOS=[
  "CARF"
 ];
 const PADRAO={
- "semente": "2026-10-08T10:15Z",
+ "semente": "2026-10-09T10:14Z",
  "teses": [
   {
    "id": "t1",
@@ -590,13 +590,17 @@ const PADRAO={
     "f": 4,
     "p": 0
    },
-   "placarNota": "Julgado em 07/10/2026, com a tese do relator original, Marco Aurélio. Fontes divergem no placar: 7 a 4 (Agência STF citada pela APET e maioria da imprensa), 6 a 5 (Migalhas), 6 a 4 (Gazeta Brasil). Dino, Zanin e Mendonça não votaram, porque sucederam ministros que já tinham votado.",
+   "placarNota": "Julgado em 07/10/2026, com a tese do relator original, Marco Aurélio. Vencidos Moraes, Gilmar, Fux e Nunes Marques. Placar noticiado: 7 a 4 na maioria dos veículos, 6 a 4 no Poder360; o 6 a 5 era o do virtual de 2021. Dino, Zanin e Mendonça não votaram, porque sucederam ministros que já tinham votado.",
    "edai": "Empresa com crédito presumido de ICMS tem tese vinculante para excluí-lo da base do PIS/Cofins até a CBS substituir as duas contribuições em 2027, e repetição de indébito dos cinco anos anteriores ao pedido. A pergunta que decide o valor é a modulação, que nenhuma fonte noticiou: sem ela, quem não tem ação recupera o quinquênio; com ela, a ressalva costuma proteger só ação ajuizada até o julgamento, e a União pode pedir isso em embargos. Repercute no Tema 1.416 do STJ (IRPJ e CSLL).",
    "verificacao": "a_confirmar",
    "prazo": null,
-   "modulacao": null,
-   "pendencia": "Conferir na ata do STF o placar exato, o texto literal da tese e se houve modulação — nenhuma fonte a noticiou, o que não equivale a ausência confirmada. Acompanhar embargos da União. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
-   "verificadoEm": "2026-10-08",
+   "modulacao": {
+    "estado": "pendente",
+    "nota": "O julgamento de 07/10 não modulou. Moraes indicou que o alcance temporal pode ser revisto em embargos de declaração, em que votariam os ministros que não votaram no mérito; a PGFN aguarda o acórdão para recorrer.",
+    "fonte": "https://www.jornaldocomercio.com/cadernos/jc-contabilidade/2026/10/1266230-stf-ainda-deve-definir-alcance-de-decisao-contra-tributacao-de-credito-de-icms-dizem-advogados.html"
+   },
+   "pendencia": "Conferir na ata do STF o placar exato e o texto literal da tese; acompanhar a publicação do acórdão e os embargos da União, onde a modulação pode entrar. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+   "verificadoEm": "2026-10-09",
    "atualizado": "out/2026"
   },
   {
@@ -707,17 +711,17 @@ const PADRAO={
    "processo": "",
    "status": "afetado",
    "titulo": "Créditos presumidos de ICMS nas bases de IRPJ e CSLL",
-   "resumo": "Antes e depois da Lei 14.789/2023. Repetitivo com suspensão nacional. Testa a sobrevivência do EREsp 1.517.492 sob o novo regime legal.",
+   "resumo": "Antes e depois da Lei 14.789/2023. Repetitivo com suspensão nacional. Testa a sobrevivência do EREsp 1.517.492 sob o novo regime legal. Em 07/10/2026, decisão monocrática no REsp 2.284.436 afirmou que a Lei 14.789/2023 não autoriza tributar o crédito presumido de ICMS pelo IRPJ e pela CSLL.",
    "fonte": "https://news.fcrlaw.com.br/news/stf-e-stj-pautam-julgamentos-tributarios-de-alto-impacto-para-o-2o-semestre-de-2026/",
    "placar": null,
    "placarNota": "",
-   "edai": "",
+   "edai": "Com o Tema 843 fixado no STF para PIS/Cofins, o argumento de que crédito presumido não é receita nem renda nova ganha força no IRPJ e na CSLL. A monocrática antecipa a linha, mas o repetitivo segue aberto e decide se a Lei 14.789 mudou o jogo a partir de 2024.",
    "verificacao": "a_confirmar",
    "prazo": null,
    "modulacao": null,
-   "pendencia": "Confirmar alcance da suspensão e previsão de julgamento.",
-   "verificadoEm": "2026-08-19",
-   "atualizado": "ago/2026"
+   "pendencia": "Conferir no STJ o REsp 2.284.436 e o andamento do Tema 1.416. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+   "verificadoEm": "2026-10-09",
+   "atualizado": "out/2026"
   },
   {
    "id": "t9",
@@ -2041,6 +2045,34 @@ const PADRAO={
    "fonte": "https://jorgegomes.com.br/carf-aprova-sumulas-sobre-cide-iof-e-outras-seis-materias-22-09-2026/",
    "verificacao": "a_confirmar",
    "pendencia": "Conferir no portal do CARF o texto e o número das oito súmulas. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+  },
+  {
+   "id": "n117",
+   "data": "2026-10-08",
+   "area": "tributario",
+   "orgao": "STF",
+   "titulo": "Tema 843 sai sem modulação, mas o alcance temporal fica para os embargos",
+   "resumo": "O julgamento de 07/10 não modulou efeitos. Moraes, vencido, indicou que o resultado pode ser revisto em embargos de declaração, nos quais votariam os ministros que não votaram no mérito; a PGFN aguarda o acórdão para recorrer.",
+   "edai": "Hoje a tese vale sem corte, com repetição do quinquênio anterior ao pedido. A janela está aberta até os embargos: se a União obtiver modulação, a ressalva costuma proteger só ação ajuizada até o julgamento ou a ata, e quem pedir depois pode ficar só com o futuro — que acaba em 2027, quando a CBS substitui PIS e Cofins.",
+   "veiculo": "Jornal do Comércio",
+   "fonte": "https://www.jornaldocomercio.com/cadernos/jc-contabilidade/2026/10/1266230-stf-ainda-deve-definir-alcance-de-decisao-contra-tributacao-de-credito-de-icms-dizem-advogados.html",
+   "tese": "t2",
+   "verificacao": "a_confirmar",
+   "pendencia": "Conferir no STF a ata e, depois, os embargos da União. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+  },
+  {
+   "id": "n118",
+   "data": "2026-10-07",
+   "area": "tributario",
+   "orgao": "STJ",
+   "titulo": "Monocrática do STJ diz que a Lei das Subvenções não tributa crédito presumido de ICMS no IRPJ e na CSLL",
+   "resumo": "No REsp 2.284.436, decisão monocrática afirmou que a Lei 14.789/2023 não autoriza a incidência de IRPJ e CSLL sobre créditos presumidos de ICMS, antecipando a linha do repetitivo do Tema 1.416.",
+   "edai": "É decisão de um ministro, revisável pela Turma, e o repetitivo segue com suspensão nacional. Junto com o Tema 843, sinaliza que o crédito presumido tende a ficar fora das bases federais também depois de 2024, o que pesa no cálculo de quem apura pela Lei 14.789.",
+   "veiculo": "Rota da Jurisprudência",
+   "fonte": "https://rotadajurisprudencia.com.br/",
+   "tese": "t8",
+   "verificacao": "a_confirmar",
+   "pendencia": "Localizar a notícia específica e conferir no STJ o REsp 2.284.436. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
   }
  ],
  "areas": [

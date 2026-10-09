@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-08 · **versão:** 2026-10-08T10:15Z
+**Corte:** 2026-10-09 · **versão:** 2026-10-09T10:14Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -38,7 +38,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 
 > ⚠️ **Tema 118** — a confirmar: Confirmar no portal de RG se houve reinclusão em pauta depois de 25/02/2026. (última checagem: 2026-08-19)
 
-> ⚠️ **Tema 843** — a confirmar: Conferir na ata do STF o placar exato, o texto literal da tese e se houve modulação — nenhuma fonte a noticiou, o que não equivale a ausência confirmada. Acompanhar embargos da União. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-08)
+> ⚠️ **Tema 843** — a confirmar: Conferir na ata do STF o placar exato e o texto literal da tese; acompanhar a publicação do acórdão e os embargos da União, onde a modulação pode entrar. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-09)
 
 > ⚠️ **Imposto por dentro** — a confirmar: Número do tema de RG não anotado. Localizar no portal do STF antes de qualquer uso. (última checagem: 2026-08-19)
 
@@ -59,18 +59,20 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 | | Tema | Objeto | Situação |
 |---|---|---|---|
 | 🟡⚠️ | STF · **Tema 1.401** | Trava dos 30% na extinção da pessoa jurídica | O STF já validou a limitação anual. Aqui a particularidade é a extinção: o saldo não aproveitado se perde em definitivo, sem exercício futuro. |
-| ⚪⚠️ | STJ · **Tema 1.416** | Créditos presumidos de ICMS nas bases de IRPJ e CSLL | Antes e depois da Lei 14.789/2023. Repetitivo com suspensão nacional. Testa a sobrevivência do EREsp 1.517.492 sob o novo regime legal. |
+| ⚪⚠️ | STJ · **Tema 1.416** | Créditos presumidos de ICMS nas bases de IRPJ e CSLL | Antes e depois da Lei 14.789/2023. Repetitivo com suspensão nacional. Testa a sobrevivência do EREsp 1.517.492 sob o novo regime legal. Em 07/10/2026, decisão monocrática no REsp 2.284.436 afirmou que a Lei 14.789/2023 não autoriza tributar o crédito presumido de ICMS pelo IRPJ e pela CSLL. |
 | 🟡⚠️ | STF · **RE 870.214** | Lucros de controladas em países com tratado de dupla tributação | Julgamento dividido, aguardando retomada após pedido de vista. Afeta estruturas de investimento no exterior de grupos brasileiros. |
 | 🟢⚠️ | STJ · **Tema 1.319** | JCP extemporâneo é dedutível | Tese firmada e já acatada pela PGFN no Parecer SEI 1.391/2026, que dispensou a contestação. |
 | ⚪⚠️ | STJ · **Tema 1.312** | PIS/Cofins na base do IRPJ e da CSLL no lucro presumido | Acompanhar a definição da 1ª Seção. |
 
 **Tema 1.401 — e daí?** Relevante em liquidações, incorporações e reorganizações com ativo fiscal acumulado.
 
+**Tema 1.416 — e daí?** Com o Tema 843 fixado no STF para PIS/Cofins, o argumento de que crédito presumido não é receita nem renda nova ganha força no IRPJ e na CSLL. A monocrática antecipa a linha, mas o repetitivo segue aberto e decide se a Lei 14.789 mudou o jogo a partir de 2024.
+
 **Tema 1.319 — e daí?** Tese madura. Não há mais litígio: é revisão de apuração de exercícios anteriores.
 
 > ⚠️ **Tema 1.401** — a confirmar: Confirmar número do RE e previsão de pauta. (última checagem: 2026-08-19)
 
-> ⚠️ **Tema 1.416** — a confirmar: Confirmar alcance da suspensão e previsão de julgamento. (última checagem: 2026-08-19)
+> ⚠️ **Tema 1.416** — a confirmar: Conferir no STJ o REsp 2.284.436 e o andamento do Tema 1.416. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-09)
 
 > ⚠️ **RE 870.214** — a confirmar: Confirmar se a vista foi devolvida e qual o placar parcial. (última checagem: 2026-08-19)
 
