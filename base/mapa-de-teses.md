@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-09 · **versão:** 2026-10-09T10:14Z
+**Corte:** 2026-10-10 · **versão:** 2026-10-10T10:13Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -150,7 +150,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Tema 1.304** — a confirmar: Confirmar a redação da tese fixada nos repetitivos do STJ. (última checagem: 2026-08-19)
 
-> ⚠️ **Tema 1.348** — a confirmar: Conferir no andamento do RE 1.495.108 a inclusão na sessão virtual de 09 a 19/10/2026, o voto de Moraes e se a modulação entra em debate. A ressalva de simulação vem de fonte secundária. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-03)
+> ⚠️ **Tema 1.348** — a confirmar: Há maioria, mas sem tese proclamada nem decisão sobre modulação. Conferir no andamento do RE 1.495.108 o resultado da sessão de 09 a 19/10 e o texto da ressalva sobre simulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-10)
 
 > ⚠️ **Tema 1.244** — a confirmar: Confirmar no STJ a pauta de 14/10/2026 e o que houve em 20/08. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-01)
 

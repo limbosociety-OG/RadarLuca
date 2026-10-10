@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-09T10:14Z",
-  "corte": "2026-10-09",
+  "versao": "2026-10-10T10:13Z",
+  "corte": "2026-10-10",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -389,16 +389,16 @@
       "resumo": "Discute se a imunidade do art. 156, §2º, I, da CF alcança a pessoa jurídica com atividade preponderantemente imobiliária. Tese proposta pelo relator, com ressalva de Zanin: imunidade incondicionada na integralização, salvo simulação ou evasão para fruir dela indevidamente.",
       "status": "curso",
       "placar": {
-        "c": 5,
+        "c": 6,
         "f": 2,
-        "p": 4
+        "p": 3
       },
-      "placarNota": "5 a 2 pela imunidade incondicionada no presencial de 16/09 (Fachin, Mendonça, Nunes Marques, Fux, Zanin; vencidos Gilmar e Dino). Moraes devolveu a vista em 28/09; segue no virtual de 09 a 19/10.",
+      "placarNota": "6 a 2 pela imunidade incondicionada: Fachin, Zanin, Mendonça, Nunes Marques, Fux e Moraes, que devolveu a vista acompanhando o relator e aderindo à ressalva de Zanin; vencidos Gilmar e Dino. Faltavam Cármen Lúcia e Toffoli no presencial. Virtual de 09 a 19/10 colhe os votos restantes.",
       "edai": "Crítico para holdings patrimoniais e planejamento sucessório. Com maioria à vista, a pergunta passa a ser modulação: integralização já tributada abre repetição de indébito se a tese sair sem corte, e o quinquênio do art. 168 do CTN corre contra quem pagou ITBI em 2021.",
       "fonte": "@agenda",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-10-03",
-      "pendencia": "Conferir no andamento do RE 1.495.108 a inclusão na sessão virtual de 09 a 19/10/2026, o voto de Moraes e se a modulação entra em debate. A ressalva de simulação vem de fonte secundária. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificado_em": "2026-10-10",
+      "pendencia": "Há maioria, mas sem tese proclamada nem decisão sobre modulação. Conferir no andamento do RE 1.495.108 o resultado da sessão de 09 a 19/10 e o texto da ressalva sobre simulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
       "prazo": {
         "tipo": "data_certa",
         "data": "2026-10-19",

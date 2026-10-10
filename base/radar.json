@@ -828,6 +828,20 @@
       "tese": "t8",
       "verificacao": "a_confirmar",
       "pendencia": "Localizar a notícia específica e conferir no STJ o REsp 2.284.436. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n119",
+      "data": "2026-09-29",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "Moraes acompanha o relator e o ITBI na integralização tem maioria: 6 a 2",
+      "resumo": "Ao devolver a vista do Tema 1.348, Moraes acompanhou Fachin pela imunidade incondicionada, com a ressalva de Zanin de que o município pode provar simulação ou fraude à lei no caso concreto. Vencidos Gilmar e Dino; Cármen Lúcia e Toffoli votam no virtual de 09 a 19/10.",
+      "edai": "A maioria está formada, mas a tese só existe depois da proclamação e a modulação ainda não foi decidida. Até 19/10, a pergunta que define o valor para holding patrimonial é se haverá corte — e quem não tiver pedido até ele pode ficar sem o passado. A ressalva de simulação vira o novo campo de autuação municipal.",
+      "veiculo": "Migalhas",
+      "fonte": "https://www.migalhas.com.br/depeso/465969/tema-1-348-do-stf-maioria-pela-imunidade-do-itbi-e-risco-de-modulacao",
+      "tese": "t19",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no STF o voto de Moraes e o resultado do virtual de 09 a 19/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }
