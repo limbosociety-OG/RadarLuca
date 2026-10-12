@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-11 · **versão:** 2026-10-11T10:13Z
+**Corte:** 2026-10-12 · **versão:** 2026-10-12T10:15Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -135,7 +135,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 | 🟢⚠️ | STF · **Tema 1.367** | Modulação da ADC 49, transferência entre estabelecimentos | A não incidência de ICMS na transferência entre estabelecimentos do mesmo titular produz efeitos a partir do exercício de 2024, ressalvados os processos pendentes até 29/04/2021. |
 | 🟢⚠️ | STJ · **Tema 1.304** | ICMS, PIS e Cofins permanecem na base do IPI | A 1ª Seção recusou a extensão analógica do Tema 69 por materialidades distintas: os tributos são calculados por dentro e integram o valor da operação do art. 47, II, "a", do CTN. |
 | 🟡⚠️ | STF · **Tema 1.348** | Imunidade de ITBI na integralização de capital por empresa imobiliária | Discute se a imunidade do art. 156, §2º, I, da CF alcança a pessoa jurídica com atividade preponderantemente imobiliária. Tese proposta pelo relator, com ressalva de Zanin: imunidade incondicionada na integralização, salvo simulação ou evasão para fruir dela indevidamente. |
-| ⚪⚠️ | STJ · **Tema 1.244** | PIS/Cofins-Importação sobre mercadorias do GATT destinadas à ZFM | Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Não foi julgado em 20/08 e voltou à pauta da Primeira Seção para 14/10/2026. |
+| ⚪⚠️ | STJ · **Tema 1.244** (REsp 2.046.893, 2.053.569 e 2.053.647) | PIS/Cofins-Importação sobre mercadorias do GATT destinadas à ZFM | Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Não foi julgado em 20/08 e voltou à pauta da Primeira Seção para 14/10/2026. Relator, Min. Marco Aurélio Bellizze. |
 | 🟢✅ | STF · **Tema 1.455** (ARE 1.593.784/SC) | Alíquota de IPTU fixada em razão da área do imóvel é inconstitucional | Rel. Min. Dias Toffoli, Plenário Virtual, sessão encerrada em 05/08/2026, unânime, negado provimento ao recurso do município de Chapecó (LC municipal 639/2018, alíquota de 1% a partir de 400 m² de área construída). Tese: é inconstitucional a fixação, por lei municipal posterior à EC 29/2000, de alíquota do IPTU em razão da área do imóvel. |
 
 **Tema 1.304 — e daí?** Derrota importante, serve de limite ao argumento de que toda tese filhote segue o Tema 69.
@@ -152,7 +152,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Tema 1.348** — a confirmar: Há maioria, mas sem tese proclamada nem decisão sobre modulação. Conferir no andamento do RE 1.495.108 o resultado da sessão de 09 a 19/10 e o texto da ressalva sobre simulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-10)
 
-> ⚠️ **Tema 1.244** — a confirmar: Confirmar no STJ a pauta de 14/10/2026 e o que houve em 20/08. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-01)
+> ⚠️ **Tema 1.244** — a confirmar: Confirmar no STJ a pauta de 14/10/2026 e o que houve em 20/08. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-12)
 
 ---
 

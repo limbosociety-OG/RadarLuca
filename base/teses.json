@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-11T10:13Z",
-  "corte": "2026-10-11",
+  "versao": "2026-10-12T10:15Z",
+  "corte": "2026-10-12",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -410,17 +410,22 @@
       "bloco": "indiretos",
       "tribunal": "STJ",
       "tema": "Tema 1.244",
-      "processo": "",
+      "processo": "REsp 2.046.893, 2.053.569 e 2.053.647",
       "titulo": "PIS/Cofins-Importação sobre mercadorias do GATT destinadas à ZFM",
-      "resumo": "Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Não foi julgado em 20/08 e voltou à pauta da Primeira Seção para 14/10/2026.",
+      "resumo": "Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Não foi julgado em 20/08 e voltou à pauta da Primeira Seção para 14/10/2026. Relator, Min. Marco Aurélio Bellizze.",
       "status": "afetado",
       "placar": null,
       "placarNota": "",
       "edai": "Importador que destina mercadoria do GATT à Zona Franca tem a cobrança suspensa até o julgamento; a tese decide se o PIS/Cofins-Importação recolhido nesses anos é indébito.",
       "fonte": "https://rotadajurisprudencia.com.br/2026/09/stj-pauta-para-outubro-cinco-temas-sobre-creditos-de-pis-cofins-stock-options-e-outras-questoes-tributarias/",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-10-01",
-      "pendencia": "Confirmar no STJ a pauta de 14/10/2026 e o que houve em 20/08. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+      "verificado_em": "2026-10-12",
+      "pendencia": "Confirmar no STJ a pauta de 14/10/2026 e o que houve em 20/08. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "prazo": {
+        "tipo": "data_certa",
+        "data": "2026-10-14",
+        "oque": "Primeira Seção julga cinco repetitivos tributários, entre eles o Tema 1.244"
+      }
     },
     {
       "id": "t21",
@@ -655,6 +660,13 @@
     }
   ],
   "boletins": [
+    {
+      "id": "b4",
+      "data": "09 out 2026",
+      "titulo": "Semana de 05 a 09/10",
+      "corpo": "Semana forte. O STF fixou o Tema 843: crédito presumido de ICMS fora da base do PIS e da Cofins, 7 a 4 noticiado, sem modulação no mérito — o alcance temporal pode voltar nos embargos. O Tema 1.348 tem maioria de 6 a 2 pela imunidade do ITBI na integralização, com Moraes acompanhando o relator; o virtual vai até 19/10. No STJ, monocrática antecipa o Tema 1.416 no IRPJ e na CSLL. Recuperados: IR sobre FII de FIIs (1ª Turma, 3 a 2) e oito súmulas do CARF.\n\nJanela: Tema 843 até os embargos; 15/10 Simples; 19/10 Tema 1.348; 30/10 IBS/CBS no Simples e transação da RFB.\n\nPróxima semana: 14/10, cinco repetitivos na Primeira Seção.\n\nPara estudar: modulação em embargos de declaração.\n\nTudo de fonte secundária, a confirmar.",
+      "fonte": "https://apet.org.br/noticia/stf-conclui-julgamento-do-tema-843-e-afasta-pis-cofins-sobre-creditos-presumidos-de-icms/"
+    },
     {
       "id": "b3",
       "data": "02 out 2026",
