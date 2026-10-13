@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-12 · **versão:** 2026-10-12T10:15Z
+**Corte:** 2026-10-13 · **versão:** 2026-10-13T10:14Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -167,7 +167,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 | ⚪⚠️ | STF · **Selic em depósitos judiciais** | Termo inicial da Selic sobre depósitos judiciais | Repercussão geral reconhecida. Reflexos sobre garantias e créditos de valor elevado. |
 | 🔴⚠️ | Congresso · **LC 236/2026** | Teto de multa tributária no CTN e retroatividade benigna | Reforma do CTN sancionada em 04/09/2026: multa proporcional limitada a 75% do tributo, 100% em fraude, sonegação ou conluio e 150% na reincidência, além de capítulo de processo administrativo fiscal e incentivo a soluções consensuais. |
 | 🟢⚠️ | STF · **ADI 7.587** | Limite mensal de compensação de crédito judicial acima de R$ 10 milhões | Maioria formada no Plenário Virtual encerrado em 14/09/2026, com o relator, Min. Cristiano Zanin, pela constitucionalidade da Lei 14.873/2024: crédito reconhecido em decisão definitiva acima de R$ 10 milhões só pode ser compensado dentro de um limite mensal. |
-| 🟡⚠️ | PGFN · **Edital PGDAU 6/2026** | Transação na dívida ativa da União até R$ 45 milhões | Editais PGDAU 6/2026 e 8/2026 (este ligado ao Desenrola Rural): transação para débitos inscritos, tributários ou não, de até R$ 45 milhões por contribuinte, com opção de pagamento à vista e desconto de até 100% sobre juros, multa e encargos. Inscrições até 03/03/2026 nas modalidades gerais; até 01/06/2025 na de pequeno valor. |
+| 🔴⚠️ | PGFN · **Editais PGDAU 6, 8, 9 e 10/2026** | Transação na dívida ativa da União até R$ 45 milhões | Editais PGDAU 6/2026 e 8/2026 (este ligado ao Desenrola Rural) e 9/2026 (MEI): transação para débitos inscritos de até R$ 45 milhões por contribuinte, com desconto de até 100% sobre juros, multa e encargos. O Edital 10/2026, de 30/09 (DOU de 01/10), prorrogou a adesão até as 19h de 29/01/2027 e ampliou o corte de inscrição para 03/07/2026 (01/10/2025 no pequeno valor, cuja adesão vai até 29/07/2027). |
 
 **Editais 9 e 10/2026 — e daí?** Prazo com data certa. A adesão implica desistência de impugnações, cotejar desconto contra probabilidade de êxito, processo a processo.
 
@@ -179,7 +179,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 **ADI 7.587 — e daí?** Crédito judicial grande não vira caixa de uma vez: a compensação segue fracionada e o planejamento de fluxo precisa contar com o cronograma legal. Ação que discute o limite perde força.
 
-**Edital PGDAU 6/2026 — e daí?** A janela dos Editais 6 e 8 fechou em 30/09, e não encontrei prorrogação. Débito inscrito que ficou de fora espera o próximo edital, sem garantia de condições iguais; a escolha entre transacionar e discutir volta a depender do custo da discussão judicial.
+**Editais PGDAU 6, 8, 9 e 10/2026 — e daí?** A janela que parecia fechada em 30/09 segue aberta por quatro meses e passa a alcançar débito inscrito até julho de 2026. Débito inscrito em discussão judicial volta a ter a comparação entre desconto e custo da discussão; com o Tema 843 fixado, o crédito presumido de ICMS discutido em execução muda essa conta.
 
 > ⚠️ **Editais 9 e 10/2026** — a confirmar: Prazo de 30/10/2026 e percentuais: conferir no texto dos editais no sítio da RFB. Prazo em peça exige fonte primária. (última checagem: 2026-08-19)
 
@@ -195,7 +195,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **ADI 7.587** — a confirmar: Conferir no portal do STF o placar final, a proclamação do resultado e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-09-23)
 
-> ⚠️ **Edital PGDAU 6/2026** — a confirmar: Confirmar no portal da PGFN se houve prorrogação dos editais PGDAU 6, 8 e 9/2026 e quando sai o próximo. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-01)
+> ⚠️ **Editais PGDAU 6, 8, 9 e 10/2026** — a confirmar: Conferir no portal da PGFN o texto do Edital 10/2026: há nota do Ministério da Fazenda citando prazo de 09/10, em conflito com as demais fontes. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-13)
 
 **Ponto de ação.** Pareceres de dispensa de contestação da PGFN são fonte subutilizada e de altíssimo valor prático: sinalizam teses já ganhas.
 

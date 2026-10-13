@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-12T10:15Z",
-  "corte": "2026-10-12",
+  "versao": "2026-10-13T10:14Z",
+  "corte": "2026-10-13",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -646,17 +646,22 @@
       "id": "t33",
       "bloco": "processo",
       "tribunal": "PGFN",
-      "tema": "Edital PGDAU 6/2026",
+      "tema": "Editais PGDAU 6, 8, 9 e 10/2026",
       "processo": "",
       "titulo": "Transação na dívida ativa da União até R$ 45 milhões",
-      "resumo": "Editais PGDAU 6/2026 e 8/2026 (este ligado ao Desenrola Rural): transação para débitos inscritos, tributários ou não, de até R$ 45 milhões por contribuinte, com opção de pagamento à vista e desconto de até 100% sobre juros, multa e encargos. Inscrições até 03/03/2026 nas modalidades gerais; até 01/06/2025 na de pequeno valor.",
-      "status": "curso",
+      "resumo": "Editais PGDAU 6/2026 e 8/2026 (este ligado ao Desenrola Rural) e 9/2026 (MEI): transação para débitos inscritos de até R$ 45 milhões por contribuinte, com desconto de até 100% sobre juros, multa e encargos. O Edital 10/2026, de 30/09 (DOU de 01/10), prorrogou a adesão até as 19h de 29/01/2027 e ampliou o corte de inscrição para 03/07/2026 (01/10/2025 no pequeno valor, cuja adesão vai até 29/07/2027).",
+      "status": "iminente",
       "placar": null,
-      "edai": "A janela dos Editais 6 e 8 fechou em 30/09, e não encontrei prorrogação. Débito inscrito que ficou de fora espera o próximo edital, sem garantia de condições iguais; a escolha entre transacionar e discutir volta a depender do custo da discussão judicial.",
-      "fonte": "https://www.gov.br/pgfn/pt-br/assuntos/noticias/2026/novos-editais-de-transacao-da-pgfn-estao-disponiveis",
+      "edai": "A janela que parecia fechada em 30/09 segue aberta por quatro meses e passa a alcançar débito inscrito até julho de 2026. Débito inscrito em discussão judicial volta a ter a comparação entre desconto e custo da discussão; com o Tema 843 fixado, o crédito presumido de ICMS discutido em execução muda essa conta.",
+      "fonte": "https://www.gov.br/pgfn/pt-br/servicos/orientacoes-contribuintes/acordo-de-transacao/edital-no-6-2026",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-10-01",
-      "pendencia": "Confirmar no portal da PGFN se houve prorrogação dos editais PGDAU 6, 8 e 9/2026 e quando sai o próximo. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+      "verificado_em": "2026-10-13",
+      "pendencia": "Conferir no portal da PGFN o texto do Edital 10/2026: há nota do Ministério da Fazenda citando prazo de 09/10, em conflito com as demais fontes. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "prazo": {
+        "tipo": "data_certa",
+        "data": "2027-01-29",
+        "oque": "Fim da adesão aos editais PGDAU 6, 8 e 9/2026, prorrogados pelo Edital 10/2026"
+      }
     }
   ],
   "boletins": [

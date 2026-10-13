@@ -842,6 +842,33 @@
       "tese": "t19",
       "verificacao": "a_confirmar",
       "pendencia": "Conferir no STF o voto de Moraes e o resultado do virtual de 09 a 19/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n120",
+      "data": "2026-10-01",
+      "area": "tributario",
+      "orgao": "PGFN",
+      "titulo": "PGFN prorroga a transação na dívida ativa até 29 de janeiro de 2027",
+      "resumo": "O Edital PGDAU 10/2026, publicado no DOU de 01/10, prorrogou os Editais 6, 8 e 9/2026 até as 19h de 29/01/2027 e passou a admitir débitos inscritos até 03/07/2026; na modalidade de pequeno valor, inscrições até 01/10/2025 e adesão até 29/07/2027.",
+      "edai": "Corrige o que o acervo registrava: a janela de 30/09 não fechou. Débito inscrito entre março e julho de 2026 entra na transação pela primeira vez, e a comparação entre desconto e discussão judicial volta à mesa até janeiro.",
+      "veiculo": "PGFN",
+      "fonte": "https://www.gov.br/pgfn/pt-br/servicos/orientacoes-contribuintes/acordo-de-transacao/edital-no-6-2026",
+      "tese": "t33",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir o texto do Edital 10/2026; uma nota do Ministério da Fazenda cita prazo de 09/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n121",
+      "data": "2026-10-13",
+      "area": "tributario",
+      "orgao": "PGFN",
+      "titulo": "Edital PGDAU 12/2026 abre transação para débitos de FGTS inscritos em dívida ativa",
+      "resumo": "A adesão vai de 15/10/2026 a 29/01/2027, pelo Regularize, para débitos de FGTS inscritos em dívida ativa.",
+      "edai": "Débito de FGTS inscrito trava certidão e tem regime próprio de cobrança; a transação abre a primeira via negociada no mesmo calendário dos editais tributários, até janeiro.",
+      "veiculo": "Martinelli",
+      "fonte": "https://www.martinelli.adv.br/pgfn-abre-edital-para-regularizacao-de-debitos-de-fgts-inscritos-em-divida-ativa/",
+      "verificacao": "a_confirmar",
+      "pendencia": "A data do item é a da varredura. Conferir no portal da PGFN o texto do Edital 12/2026, descontos e modalidades. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }
