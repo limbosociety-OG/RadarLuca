@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-13T10:14Z",
-  "corte": "2026-10-13",
+  "versao": "2026-10-14T10:14Z",
+  "corte": "2026-10-14",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -94,8 +94,8 @@
       "edai": "Empresa com crédito presumido de ICMS tem tese vinculante para excluí-lo da base do PIS/Cofins até a CBS substituir as duas contribuições em 2027, e repetição de indébito dos cinco anos anteriores ao pedido. A pergunta que decide o valor é a modulação, que nenhuma fonte noticiou: sem ela, quem não tem ação recupera o quinquênio; com ela, a ressalva costuma proteger só ação ajuizada até o julgamento, e a União pode pedir isso em embargos. Repercute no Tema 1.416 do STJ (IRPJ e CSLL).",
       "fonte": "https://apet.org.br/noticia/stf-conclui-julgamento-do-tema-843-e-afasta-pis-cofins-sobre-creditos-presumidos-de-icms/",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-10-09",
-      "pendencia": "Conferir na ata do STF o placar exato e o texto literal da tese; acompanhar a publicação do acórdão e os embargos da União, onde a modulação pode entrar. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificado_em": "2026-10-14",
+      "pendencia": "Conferir na ata do STF o placar exato e o texto literal da tese; acompanhar o acórdão e os embargos da União, onde a modulação pode entrar. Para fatos de 2024 em diante, a Lei 14.789/2023 e a Solução de Consulta Cosit 181/2026 mantêm a discussão aberta: a tese julgou o regime anterior. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
       "modulacao": {
         "estado": "pendente",
         "nota": "O julgamento de 07/10 não modulou. Moraes indicou que o alcance temporal pode ser revisto em embargos de declaração, em que votariam os ministros que não votaram no mérito; a PGFN aguarda o acórdão para recorrer.",

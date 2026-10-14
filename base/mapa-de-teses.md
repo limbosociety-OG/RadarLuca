@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-13 · **versão:** 2026-10-13T10:14Z
+**Corte:** 2026-10-14 · **versão:** 2026-10-14T10:14Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -38,7 +38,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 
 > ⚠️ **Tema 118** — a confirmar: Confirmar no portal de RG se houve reinclusão em pauta depois de 25/02/2026. (última checagem: 2026-08-19)
 
-> ⚠️ **Tema 843** — a confirmar: Conferir na ata do STF o placar exato e o texto literal da tese; acompanhar a publicação do acórdão e os embargos da União, onde a modulação pode entrar. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-09)
+> ⚠️ **Tema 843** — a confirmar: Conferir na ata do STF o placar exato e o texto literal da tese; acompanhar o acórdão e os embargos da União, onde a modulação pode entrar. Para fatos de 2024 em diante, a Lei 14.789/2023 e a Solução de Consulta Cosit 181/2026 mantêm a discussão aberta: a tese julgou o regime anterior. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-14)
 
 > ⚠️ **Imposto por dentro** — a confirmar: Número do tema de RG não anotado. Localizar no portal do STF antes de qualquer uso. (última checagem: 2026-08-19)
 
