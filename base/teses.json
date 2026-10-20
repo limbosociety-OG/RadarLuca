@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-14T10:14Z",
-  "corte": "2026-10-14",
+  "versao": "2026-10-20T10:15Z",
+  "corte": "2026-10-20",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -126,15 +126,21 @@
       "tema": "Tema 1.372",
       "processo": "",
       "titulo": "ICMS-DIFAL na base do PIS/Cofins",
-      "resumo": "Repetitivo com suspensão nacional, julgado pela 1ª Seção na sessão de 20/08/2026. O resultado e a redação da modulação ainda não foram conferidos no acórdão.",
-      "status": "afetado",
+      "resumo": "Repetitivo julgado em 20/08/2026, unânime, rel. Gurgel de Faria (REsp 2.174.178/SC, 2.181.166/SP e 2.191.532/ES): o ICMS-Difal não integra a base do PIS e da Cofins, pela mesma lógica do Tema 69.",
+      "status": "fixada",
       "placar": null,
       "placarNota": "",
-      "edai": "Se a tese foi mesmo fixada com modulação a partir de 15/03/2017, o corte é praticamente inerte para quem ajuíza hoje: o quinquênio do art. 168 do CTN já ultrapassou a data. A aritmética precisa ser refeita contra o acórdão antes de virar peça.",
-      "fonte": "@agenda",
+      "edai": "O corte em 15/03/2017 é praticamente inerte para quem ajuíza hoje: o quinquênio do art. 168 do CTN já alcança só fatos de 2021 em diante, todos posteriores ao corte. Na prática, a tese vale cheia para quem pede agora, até a CBS substituir PIS e Cofins em 2027; a modulação só restringe quem queria o período anterior a 2017.",
+      "fonte": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01102026-ICMS-Difal-nao-integra-base-de-calculo-do-PIS-e-da-Cofins--confirma-Primeira-Secao--colegiado-modula-efeitos-do.aspx",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-08-19",
-      "pendencia": "Sessão de 20/08/2026 realizada. Confirmar tese fixada, redação exata da modulação e alcance da suspensão no inteiro teor. Ver base/pendencias.md."
+      "verificado_em": "2026-10-20",
+      "pendencia": "Notícia do STJ de 01/10/2026 confirma tese e modulação; conferir o acórdão publicado e eventuais embargos. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "modulacao": {
+        "estado": "com",
+        "corte": "2017-03-15",
+        "nota": "Efeitos a partir de 15/03/2017, data do mérito do Tema 69, ressalvadas as ações judiciais e os processos administrativos em curso nessa data.",
+        "fonte": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01102026-ICMS-Difal-nao-integra-base-de-calculo-do-PIS-e-da-Cofins--confirma-Primeira-Secao--colegiado-modula-efeitos-do.aspx"
+      }
     },
     {
       "id": "t5",
@@ -386,24 +392,19 @@
       "tema": "Tema 1.348",
       "processo": "",
       "titulo": "Imunidade de ITBI na integralização de capital por empresa imobiliária",
-      "resumo": "Discute se a imunidade do art. 156, §2º, I, da CF alcança a pessoa jurídica com atividade preponderantemente imobiliária. Tese proposta pelo relator, com ressalva de Zanin: imunidade incondicionada na integralização, salvo simulação ou evasão para fruir dela indevidamente.",
-      "status": "curso",
+      "resumo": "Fixado em 19/10/2026: a imunidade do ITBI na integralização de capital (art. 156, §2º, I, da CF) vale também para empresa de atividade preponderantemente imobiliária, ressalvada fraude ou simulação, e no limite do capital integralizado (Tema 796).",
+      "status": "fixada",
       "placar": {
-        "c": 6,
+        "c": 9,
         "f": 2,
-        "p": 3
+        "p": 0
       },
-      "placarNota": "6 a 2 pela imunidade incondicionada: Fachin, Zanin, Mendonça, Nunes Marques, Fux e Moraes, que devolveu a vista acompanhando o relator e aderindo à ressalva de Zanin; vencidos Gilmar e Dino. Faltavam Cármen Lúcia e Toffoli no presencial. Virtual de 09 a 19/10 colhe os votos restantes.",
-      "edai": "Crítico para holdings patrimoniais e planejamento sucessório. Com maioria à vista, a pergunta passa a ser modulação: integralização já tributada abre repetição de indébito se a tese sair sem corte, e o quinquênio do art. 168 do CTN corre contra quem pagou ITBI em 2021.",
-      "fonte": "@agenda",
+      "placarNota": "Concluído no virtual encerrado em 19/10/2026, 9 a 2 (vencidos Gilmar e Dino), com a ressalva de Zanin sobre fraude ou simulação. A imunidade segue limitada ao valor destinado ao capital (Tema 796).",
+      "edai": "Holding patrimonial e incorporadora passam a ter tese vinculante contra a cobrança de ITBI na integralização. Quem pagou nos últimos cinco anos tem indébito, e nenhuma fonte noticiou modulação — o que não equivale a ausência confirmada; se ela vier em embargos, a ressalva costuma proteger só ação já ajuizada. A frente municipal muda para a prova de simulação e para o excesso sobre o capital.",
+      "fonte": "https://www.migalhas.com.br/quentes/466801/stf-empresa-imobiliaria-tem-imunidade-de-itbi-ao-integralizar-capital",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-10-10",
-      "pendencia": "Há maioria, mas sem tese proclamada nem decisão sobre modulação. Conferir no andamento do RE 1.495.108 o resultado da sessão de 09 a 19/10 e o texto da ressalva sobre simulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
-      "prazo": {
-        "tipo": "data_certa",
-        "data": "2026-10-19",
-        "oque": "Fim da sessão virtual do Tema 1.348 (ITBI na integralização); modulação pode fixar corte"
-      }
+      "verificado_em": "2026-10-20",
+      "pendencia": "Conferir na ata do RE 1.495.108 o placar, o texto literal da tese e se houve modulação; acompanhar embargos dos municípios. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {
       "id": "t20",
@@ -419,13 +420,8 @@
       "edai": "Importador que destina mercadoria do GATT à Zona Franca tem a cobrança suspensa até o julgamento; a tese decide se o PIS/Cofins-Importação recolhido nesses anos é indébito.",
       "fonte": "https://rotadajurisprudencia.com.br/2026/09/stj-pauta-para-outubro-cinco-temas-sobre-creditos-de-pis-cofins-stock-options-e-outras-questoes-tributarias/",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-10-12",
-      "pendencia": "Confirmar no STJ a pauta de 14/10/2026 e o que houve em 20/08. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
-      "prazo": {
-        "tipo": "data_certa",
-        "data": "2026-10-14",
-        "oque": "Primeira Seção julga cinco repetitivos tributários, entre eles o Tema 1.244"
-      }
+      "verificado_em": "2026-10-20",
+      "pendencia": "Estava na pauta de 14/10/2026 da Primeira Seção, mas nenhuma fonte noticiou resultado nem adiamento. Conferir no STJ. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {
       "id": "t21",
@@ -662,9 +658,33 @@
         "data": "2027-01-29",
         "oque": "Fim da adesão aos editais PGDAU 6, 8 e 9/2026, prorrogados pelo Edital 10/2026"
       }
+    },
+    {
+      "id": "t34",
+      "bloco": "irpf",
+      "tribunal": "STJ",
+      "tema": "Tema 1.379",
+      "processo": "",
+      "titulo": "Contribuição previdenciária sobre stock options",
+      "resumo": "Repetitivo julgado em 14/10/2026, unânime, rel. Sérgio Kukina: não incidem contribuição previdenciária patronal nem contribuições de terceiros sobre o ganho no exercício de stock options, que têm natureza mercantil (linha do Tema 1.226, do IR).",
+      "status": "fixada",
+      "placar": null,
+      "placarNota": "Unânime na Primeira Seção.",
+      "edai": "Empresa com plano de opção de compra de ações tem tese vinculante contra o INSS patronal e os terceiros sobre o ganho do exercício; os processos suspensos desde 2025 voltam a andar, e o recolhido nos últimos cinco anos vira indébito. Autos de infração do CARF que tratavam o plano como remuneração perdem base.",
+      "fonte": "https://www.mixvale.com.br/2026/10/15/stj-proibe-cobranca-de-inss-sobre-planos-de-stock-options-no-pais/",
+      "verificacao": "a_confirmar",
+      "verificado_em": "2026-10-20",
+      "pendencia": "Conferir no STJ o texto da tese, os REsps paradigma e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ],
   "boletins": [
+    {
+      "id": "b5",
+      "data": "16 out 2026",
+      "titulo": "Semana de 12 a 16/10",
+      "corpo": "Semana forte. STJ fixou o Tema 1.379 (stock options fora do INSS patronal e dos terceiros) e o Tema 1.364 (ICMS da aquisição não gera crédito de PIS/Cofins, vitória da Fazenda). O STF concluiu o Tema 1.348 em 19/10, 9 a 2 pela imunidade do ITBI na integralização. O STJ confirmou a modulação do Difal (Tema 1.372) em 15/03/2017, corte inerte para quem ajuíza hoje.\n\nCorreção: a transação da PGFN foi prorrogada até 29/01/2027 (Edital 10/2026); os boletins de 25/09 e 02/10 a davam por fechada.\n\nJanela: Temas 1.348 e 843 até os embargos; 30/10 IBS/CBS no Simples e transação da RFB; 29/01/2027 transação da PGFN.\n\nPara estudar: não cumulatividade depois do Tema 1.364.\n\nTudo de fonte secundária, salvo a notícia do STJ sobre o Difal.",
+      "fonte": "https://conjur.com.br/2026-out-15/icms-em-aquisicoes-nao-gera-credito-de-pis-e-cofins-fixa-stj/"
+    },
     {
       "id": "b4",
       "data": "09 out 2026",

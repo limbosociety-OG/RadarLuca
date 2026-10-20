@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-14 · **versão:** 2026-10-14T10:14Z
+**Corte:** 2026-10-20 · **versão:** 2026-10-20T10:15Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -21,7 +21,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 | 🔴⚠️ | STF · **Tema 118** (RE 592.616) | ISS na base de cálculo do PIS/Cofins | Desdobramento direto do Tema 69: se o ISS é mero ingresso transitório destinado ao município, não é faturamento. |
 | 🟢⚠️ | STF · **Tema 843** (RE 835.818) | Créditos presumidos de ICMS na base do PIS/Cofins | Tese fixada em 07/10/2026: é incompatível com a Constituição a inclusão, na base de cálculo da Cofins e da contribuição ao PIS, de créditos presumidos do ICMS. Fundamento: o crédito presumido reduz custo tributário, não é receita nova. Impacto estimado de R$ 16,5 bi. |
 | 🟡⚠️ | STF · **Imposto por dentro** | Exclusão do PIS/Cofins de suas próprias bases | Repercussão geral reconhecida desde 2019, sem previsão de pauta. Impacto estimado de R$ 65,7 bi. |
-| ⚪⚠️ | STJ · **Tema 1.372** | ICMS-DIFAL na base do PIS/Cofins | Repetitivo com suspensão nacional, julgado pela 1ª Seção na sessão de 20/08/2026. O resultado e a redação da modulação ainda não foram conferidos no acórdão. |
+| 🟢⚠️ | STJ · **Tema 1.372** | ICMS-DIFAL na base do PIS/Cofins | Repetitivo julgado em 20/08/2026, unânime, rel. Gurgel de Faria (REsp 2.174.178/SC, 2.181.166/SP e 2.191.532/ES): o ICMS-Difal não integra a base do PIS e da Cofins, pela mesma lógica do Tema 69. |
 | ⚪⚠️ | STJ · **Tema 1.412** | Bonificações e descontos comerciais na base do PIS/Cofins | Repetitivo afetado em 2026, com suspensão nacional ativa. Alcança varejo, atacado, indústria e distribuição, setores que negociam preço por bonificação de forma estrutural. Julgamento adiado. |
 | 🔴⚠️ | STF · **ADC 98** | Tese ampla da União: todos os tributos integrariam a base do PIS/Cofins | Movimento estratégico da AGU capaz de esvaziar o Tema 118 e as demais filhotes de uma só vez, independentemente do placar no RE. |
 | 🟢⚠️ | STJ · **Tema 1.276** (REsp 2.123.904/SP) | CPRB permanece na base do PIS/Cofins | A 1ª Seção fixou em 09/09/2026, por unanimidade e sob o rito dos repetitivos, que a contribuição previdenciária sobre a receita bruta integra a base de cálculo do PIS e da Cofins. A tentativa de estender a lógica do Tema 69 foi rejeitada. |
@@ -30,7 +30,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 
 **Tema 843 — e daí?** Empresa com crédito presumido de ICMS tem tese vinculante para excluí-lo da base do PIS/Cofins até a CBS substituir as duas contribuições em 2027, e repetição de indébito dos cinco anos anteriores ao pedido. A pergunta que decide o valor é a modulação, que nenhuma fonte noticiou: sem ela, quem não tem ação recupera o quinquênio; com ela, a ressalva costuma proteger só ação ajuizada até o julgamento, e a União pode pedir isso em embargos. Repercute no Tema 1.416 do STJ (IRPJ e CSLL).
 
-**Tema 1.372 — e daí?** Se a tese foi mesmo fixada com modulação a partir de 15/03/2017, o corte é praticamente inerte para quem ajuíza hoje: o quinquênio do art. 168 do CTN já ultrapassou a data. A aritmética precisa ser refeita contra o acórdão antes de virar peça.
+**Tema 1.372 — e daí?** O corte em 15/03/2017 é praticamente inerte para quem ajuíza hoje: o quinquênio do art. 168 do CTN já alcança só fatos de 2021 em diante, todos posteriores ao corte. Na prática, a tese vale cheia para quem pede agora, até a CBS substituir PIS e Cofins em 2027; a modulação só restringe quem queria o período anterior a 2017.
 
 **ADC 98 — e daí?** É o maior risco sistêmico do bloco. Acompanhar semanalmente.
 
@@ -42,7 +42,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 
 > ⚠️ **Imposto por dentro** — a confirmar: Número do tema de RG não anotado. Localizar no portal do STF antes de qualquer uso. (última checagem: 2026-08-19)
 
-> ⚠️ **Tema 1.372** — a confirmar: Sessão de 20/08/2026 realizada. Confirmar tese fixada, redação exata da modulação e alcance da suspensão no inteiro teor. Ver base/pendencias.md. (última checagem: 2026-08-19)
+> ⚠️ **Tema 1.372** — a confirmar: Notícia do STJ de 01/10/2026 confirma tese e modulação; conferir o acórdão publicado e eventuais embargos. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-20)
 
 > ⚠️ **Tema 1.412** — a confirmar: Adiado. Confirmar nova data de julgamento e se a suspensão nacional segue ativa. (última checagem: 2026-08-19)
 
@@ -121,10 +121,15 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 | | Tema | Objeto | Situação |
 |---|---|---|---|
 | 🟡⚠️ | TRF-4 · **Lei 15.270/2025** | Proporcionalidade da retenção mensal de 10% sobre dividendos | Retenção de 10% sobre lucros e dividendos acima de R$ 50 mil/mês, com ajuste anual progressivo de 0% a 10% entre R$ 600 mil e R$ 1,2 mi. Liminar do TRF-4 limitou a retenção mensal à alíquota anual projetada, por antecipação excessiva. Monocrática, provisória, inter partes. |
+| 🟢⚠️ | STJ · **Tema 1.379** | Contribuição previdenciária sobre stock options | Repetitivo julgado em 14/10/2026, unânime, rel. Sérgio Kukina: não incidem contribuição previdenciária patronal nem contribuições de terceiros sobre o ganho no exercício de stock options, que têm natureza mercantil (linha do Tema 1.226, do IR). |
 
 **Lei 15.270/2025 — e daí?** A discussão migrou da existência da tributação para a proporcionalidade da antecipação. Tese nova, pouco povoada, e sem qualquer efeito vinculante.
 
+**Tema 1.379 — e daí?** Empresa com plano de opção de compra de ações tem tese vinculante contra o INSS patronal e os terceiros sobre o ganho do exercício; os processos suspensos desde 2025 voltam a andar, e o recolhido nos últimos cinco anos vira indébito. Autos de infração do CARF que tratavam o plano como remuneração perdem base.
+
 > ⚠️ **Lei 15.270/2025** — a confirmar: Status do recurso da PGFN e existência de decisões no mesmo sentido em outros tribunais. Pauta de alto apelo para sócios: não publicar sem o mapa de litigância atualizado. Ver base/pendencias.md. (última checagem: 2026-08-19)
+
+> ⚠️ **Tema 1.379** — a confirmar: Conferir no STJ o texto da tese, os REsps paradigma e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-20)
 
 ---
 
@@ -134,13 +139,13 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 |---|---|---|---|
 | 🟢⚠️ | STF · **Tema 1.367** | Modulação da ADC 49, transferência entre estabelecimentos | A não incidência de ICMS na transferência entre estabelecimentos do mesmo titular produz efeitos a partir do exercício de 2024, ressalvados os processos pendentes até 29/04/2021. |
 | 🟢⚠️ | STJ · **Tema 1.304** | ICMS, PIS e Cofins permanecem na base do IPI | A 1ª Seção recusou a extensão analógica do Tema 69 por materialidades distintas: os tributos são calculados por dentro e integram o valor da operação do art. 47, II, "a", do CTN. |
-| 🟡⚠️ | STF · **Tema 1.348** | Imunidade de ITBI na integralização de capital por empresa imobiliária | Discute se a imunidade do art. 156, §2º, I, da CF alcança a pessoa jurídica com atividade preponderantemente imobiliária. Tese proposta pelo relator, com ressalva de Zanin: imunidade incondicionada na integralização, salvo simulação ou evasão para fruir dela indevidamente. |
+| 🟢⚠️ | STF · **Tema 1.348** | Imunidade de ITBI na integralização de capital por empresa imobiliária | Fixado em 19/10/2026: a imunidade do ITBI na integralização de capital (art. 156, §2º, I, da CF) vale também para empresa de atividade preponderantemente imobiliária, ressalvada fraude ou simulação, e no limite do capital integralizado (Tema 796). |
 | ⚪⚠️ | STJ · **Tema 1.244** (REsp 2.046.893, 2.053.569 e 2.053.647) | PIS/Cofins-Importação sobre mercadorias do GATT destinadas à ZFM | Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Não foi julgado em 20/08 e voltou à pauta da Primeira Seção para 14/10/2026. Relator, Min. Marco Aurélio Bellizze. |
 | 🟢✅ | STF · **Tema 1.455** (ARE 1.593.784/SC) | Alíquota de IPTU fixada em razão da área do imóvel é inconstitucional | Rel. Min. Dias Toffoli, Plenário Virtual, sessão encerrada em 05/08/2026, unânime, negado provimento ao recurso do município de Chapecó (LC municipal 639/2018, alíquota de 1% a partir de 400 m² de área construída). Tese: é inconstitucional a fixação, por lei municipal posterior à EC 29/2000, de alíquota do IPTU em razão da área do imóvel. |
 
 **Tema 1.304 — e daí?** Derrota importante, serve de limite ao argumento de que toda tese filhote segue o Tema 69.
 
-**Tema 1.348 — e daí?** Crítico para holdings patrimoniais e planejamento sucessório. Com maioria à vista, a pergunta passa a ser modulação: integralização já tributada abre repetição de indébito se a tese sair sem corte, e o quinquênio do art. 168 do CTN corre contra quem pagou ITBI em 2021.
+**Tema 1.348 — e daí?** Holding patrimonial e incorporadora passam a ter tese vinculante contra a cobrança de ITBI na integralização. Quem pagou nos últimos cinco anos tem indébito, e nenhuma fonte noticiou modulação — o que não equivale a ausência confirmada; se ela vier em embargos, a ressalva costuma proteger só ação já ajuizada. A frente municipal muda para a prova de simulação e para o excesso sobre o capital.
 
 **Tema 1.244 — e daí?** Importador que destina mercadoria do GATT à Zona Franca tem a cobrança suspensa até o julgamento; a tese decide se o PIS/Cofins-Importação recolhido nesses anos é indébito.
 
@@ -150,9 +155,9 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Tema 1.304** — a confirmar: Confirmar a redação da tese fixada nos repetitivos do STJ. (última checagem: 2026-08-19)
 
-> ⚠️ **Tema 1.348** — a confirmar: Há maioria, mas sem tese proclamada nem decisão sobre modulação. Conferir no andamento do RE 1.495.108 o resultado da sessão de 09 a 19/10 e o texto da ressalva sobre simulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-10)
+> ⚠️ **Tema 1.348** — a confirmar: Conferir na ata do RE 1.495.108 o placar, o texto literal da tese e se houve modulação; acompanhar embargos dos municípios. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-20)
 
-> ⚠️ **Tema 1.244** — a confirmar: Confirmar no STJ a pauta de 14/10/2026 e o que houve em 20/08. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-12)
+> ⚠️ **Tema 1.244** — a confirmar: Estava na pauta de 14/10/2026 da Primeira Seção, mas nenhuma fonte noticiou resultado nem adiamento. Conferir no STJ. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-20)
 
 ---
 

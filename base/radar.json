@@ -896,6 +896,74 @@
       "tese": "t2",
       "verificacao": "a_confirmar",
       "pendencia": "Conferir o texto da Solução de Consulta Cosit 181/2026 e o alcance temporal da tese no acórdão. A data do item é a da varredura. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n124",
+      "data": "2026-10-19",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "STF fixa o Tema 1.348: imobiliária tem imunidade de ITBI ao integralizar capital",
+      "resumo": "Por 9 a 2, vencidos Gilmar e Dino, o Plenário Virtual concluiu que a imunidade do art. 156, §2º, I, vale independentemente da atividade preponderante da empresa, ressalvadas fraude ou simulação, e no limite do capital integralizado (Tema 796).",
+      "edai": "Tese vinculante para holding patrimonial: ITBI pago em integralização nos últimos cinco anos é indébito. Nenhuma fonte noticiou modulação, o que não confirma que ela não houve; se vier em embargos, costuma proteger só quem já tinha ação. A disputa municipal migra para a prova de simulação.",
+      "veiculo": "Migalhas",
+      "fonte": "https://www.migalhas.com.br/quentes/466801/stf-empresa-imobiliaria-tem-imunidade-de-itbi-ao-integralizar-capital",
+      "tese": "t19",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir a ata do STF: placar, tese e modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n125",
+      "data": "2026-10-14",
+      "area": "tributario",
+      "orgao": "STJ",
+      "titulo": "Stock options ficam fora do INSS patronal e dos terceiros, fixa o STJ no Tema 1.379",
+      "resumo": "Por unanimidade, a Primeira Seção, com o Min. Sérgio Kukina relator, decidiu que o ganho do beneficiário no exercício da opção de compra de ações não é base de contribuição previdenciária patronal nem de terceiros, por ter natureza mercantil.",
+      "edai": "Fecha o par com o Tema 1.226, que já tratava o plano como mercantil no IR. Empresa com plano de opções deixa de recolher sobre o exercício e tem o quinquênio para repetir; modulação não foi noticiada.",
+      "veiculo": "Mix Vale",
+      "fonte": "https://www.mixvale.com.br/2026/10/15/stj-proibe-cobranca-de-inss-sobre-planos-de-stock-options-no-pais/",
+      "tese": "t34",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no STJ a tese e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n126",
+      "data": "2026-10-14",
+      "area": "tributario",
+      "orgao": "STJ",
+      "titulo": "ICMS pago na aquisição não gera crédito de PIS e Cofins, fixa o STJ no Tema 1.364",
+      "resumo": "Unânime, com o Min. Paulo Sérgio Domingues relator, a Primeira Seção validou a vedação da Lei 14.592/2023 (vinda da MP 1.159/2023, em vigor desde 01/05/2023): a lei ordinária pode disciplinar a não cumulatividade, na linha do Tema 756 do STF.",
+      "edai": "Vitória da Fazenda: quem exclui o ICMS da base pelo Tema 69 não pode, desde maio de 2023, também tomar crédito sobre o ICMS das compras. Crédito tomado depois dessa data sem o expurgo é exposição, e pedido de restituição nessa linha perde base. O efeito vai até a CBS substituir PIS e Cofins em 2027.",
+      "veiculo": "Conjur",
+      "fonte": "https://conjur.com.br/2026-out-15/icms-em-aquisicoes-nao-gera-credito-de-pis-e-cofins-fixa-stj/",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no STJ o texto da tese do Tema 1.364. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n127",
+      "data": "2026-10-14",
+      "area": "tributario",
+      "orgao": "STJ",
+      "titulo": "Tema 1.275, legitimidade dos terceiros, sai da pauta de 14/10",
+      "resumo": "A Primeira Seção adiou o repetitivo que decide se as entidades destinatárias de contribuições (Sistema S) devem integrar o polo passivo das ações sobre essas contribuições. O resultado do Tema 1.244 e do caso das transmissoras não foi noticiado.",
+      "edai": "Enquanto o tema não sai, ações sobre contribuições a terceiros seguem com a dúvida de quem é parte, o que afeta repetição e cumprimento de sentença.",
+      "veiculo": "LinkedIn (advogada)",
+      "fonte": "https://www.linkedin.com/in/cristiane-ianagui-matsumoto-8729b2146/",
+      "verificacao": "a_confirmar",
+      "pendencia": "Fonte frágil. Conferir no STJ o adiamento e a situação do Tema 1.244 e do caso das transmissoras. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n128",
+      "data": "2026-10-01",
+      "area": "tributario",
+      "orgao": "STJ",
+      "titulo": "STJ confirma Difal fora da base do PIS e da Cofins e modula a partir de 15/03/2017",
+      "resumo": "No Tema 1.372, julgado em 20/08, a Primeira Seção fixou que o ICMS-Difal não integra a base das contribuições e modulou os efeitos à data do mérito do Tema 69, ressalvadas ações e processos administrativos em curso.",
+      "edai": "Aritmética do corte: para quem ajuíza hoje, o quinquênio só alcança fatos de 2021 em diante, todos depois de 15/03/2017 — a modulação é inerte e a tese vale cheia até a CBS em 2027.",
+      "veiculo": "STJ",
+      "fonte": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01102026-ICMS-Difal-nao-integra-base-de-calculo-do-PIS-e-da-Cofins--confirma-Primeira-Secao--colegiado-modula-efeitos-do.aspx",
+      "tese": "t4",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir o acórdão publicado. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }
