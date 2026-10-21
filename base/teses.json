@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-20T10:15Z",
-  "corte": "2026-10-20",
+  "versao": "2026-10-21T10:15Z",
+  "corte": "2026-10-21",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -399,11 +399,11 @@
         "f": 2,
         "p": 0
       },
-      "placarNota": "Concluído no virtual encerrado em 19/10/2026, 9 a 2 (vencidos Gilmar e Dino), com a ressalva de Zanin sobre fraude ou simulação. A imunidade segue limitada ao valor destinado ao capital (Tema 796).",
+      "placarNota": "Concluído no virtual encerrado em 19/10/2026, 9 a 2 segundo o Migalhas (8 a 2 em outra fonte) (vencidos Gilmar e Dino), com a ressalva de Zanin sobre fraude ou simulação. A imunidade segue limitada ao valor destinado ao capital (Tema 796).",
       "edai": "Holding patrimonial e incorporadora passam a ter tese vinculante contra a cobrança de ITBI na integralização. Quem pagou nos últimos cinco anos tem indébito, e nenhuma fonte noticiou modulação — o que não equivale a ausência confirmada; se ela vier em embargos, a ressalva costuma proteger só ação já ajuizada. A frente municipal muda para a prova de simulação e para o excesso sobre o capital.",
       "fonte": "https://www.migalhas.com.br/quentes/466801/stf-empresa-imobiliaria-tem-imunidade-de-itbi-ao-integralizar-capital",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-10-20",
+      "verificado_em": "2026-10-21",
       "pendencia": "Conferir na ata do RE 1.495.108 o placar, o texto literal da tese e se houve modulação; acompanhar embargos dos municípios. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {

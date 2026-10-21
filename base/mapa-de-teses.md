@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-20 · **versão:** 2026-10-20T10:15Z
+**Corte:** 2026-10-21 · **versão:** 2026-10-21T10:15Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -155,7 +155,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Tema 1.304** — a confirmar: Confirmar a redação da tese fixada nos repetitivos do STJ. (última checagem: 2026-08-19)
 
-> ⚠️ **Tema 1.348** — a confirmar: Conferir na ata do RE 1.495.108 o placar, o texto literal da tese e se houve modulação; acompanhar embargos dos municípios. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-20)
+> ⚠️ **Tema 1.348** — a confirmar: Conferir na ata do RE 1.495.108 o placar, o texto literal da tese e se houve modulação; acompanhar embargos dos municípios. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-21)
 
 > ⚠️ **Tema 1.244** — a confirmar: Estava na pauta de 14/10/2026 da Primeira Seção, mas nenhuma fonte noticiou resultado nem adiamento. Conferir no STJ. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-20)
 
