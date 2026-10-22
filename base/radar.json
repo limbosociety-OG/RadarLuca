@@ -977,6 +977,20 @@
       "fonte": "https://www.lacerdagama.com.br/post/stf-afasta-cobran%C3%A7a-do-funrural-de-produtores-rurais-pessoas-f%C3%ADsicas-antes-de-2018",
       "verificacao": "a_confirmar",
       "pendencia": "Conferir no STF a ata de 15/10/2026, o placar e o texto proclamado; fontes não dão o placar final. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n130",
+      "data": "2026-10-09",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "STF modula o Tema 1.455: IPTU por área só é inconstitucional a partir de 12/08/2026",
+      "resumo": "Em embargos de declaração julgados no Plenário Virtual encerrado em 09/10, o STF, por unanimidade, acolheu o recurso apenas para modular: a tese que veda alíquota de IPTU em razão da área do imóvel produz efeitos a partir de 12/08/2026, data da ata do mérito. Cobranças e pagamentos anteriores ficam preservados.",
+      "edai": "Muda o essencial: o IPTU pago antes de agosto de 2026 com alíquota por área deixa de ser indébito para quem não tinha ação. Se houver ressalva para ações já ajuizadas, ela ainda não foi confirmada. Para frente, municípios com lei semelhante precisam de nova lei para lançar 2027.",
+      "veiculo": "COAD",
+      "fonte": "https://www.coad.com.br/home/noticias-detalhe/140213/stf-define-alcance-de-decisao-sobre-aliquota-de-iptu-com-base-na-area-do-imovel",
+      "tese": "t21",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no STF a ata dos embargos e a existência de ressalva para ações em curso. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }

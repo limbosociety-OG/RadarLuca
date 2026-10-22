@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-21T10:15Z",
-  "corte": "2026-10-21",
+  "versao": "2026-10-22T10:14Z",
+  "corte": "2026-10-22",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -434,16 +434,17 @@
       "status": "fixada",
       "placar": null,
       "placarNota": "",
-      "edai": "Sem modulação de efeitos: a inconstitucionalidade alcança o passado, limitada pelo quinquênio do art. 168 do CTN, que corre a cada pagamento. Municípios ainda podem pedir modulação em embargos. Progressividade por valor venal e seletividade por localização e uso permanecem válidas, o que caiu foi a área como critério de alíquota. Abre frente de repetição de indébito contra municípios com legislação semelhante.",
-      "prazo": {
-        "tipo": "rolante",
-        "data": null,
-        "oque": "Prescrição do art. 168 do CTN: a cada mês a parcela mais antiga de IPTU sai da janela dos cinco anos"
-      },
+      "edai": "A modulação, em embargos julgados no virtual encerrado em 09/10/2026, inverteu a leitura: a inconstitucionalidade vale de 12/08/2026 em diante, e o IPTU pago antes disso fica preservado. A repetição do passado, que era o ponto central, deixa de existir para quem não tinha ação — e a ressalva para ações em curso não foi confirmada. Para frente, o município não pode lançar alíquota por área; a progressividade por valor venal e a seletividade por localização e uso continuam válidas.",
       "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1455",
-      "verificacao": "confirmado",
-      "verificado_em": "2026-09-01",
-      "pendencia": "Número correto é ARE 1.593.784 (não 1.593.384). Confirmado no portal de RG do STF, incidente 7524215, e no comunicado oficial da Corte."
+      "verificacao": "a_confirmar",
+      "verificado_em": "2026-10-22",
+      "pendencia": "Mérito confirmado em 01/09/2026 no portal de RG (ARE 1.593.784, incidente 7524215). A modulação em embargos, de 09/10/2026, veio de fonte secundária: conferir no STF a ata dos embargos e se há ressalva para ações ajuizadas até 12/08/2026. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "modulacao": {
+        "estado": "com",
+        "corte": "2026-08-12",
+        "nota": "Embargos de declaração acolhidos, por unanimidade, apenas para modular: a tese produz efeitos a partir de 12/08/2026, data da publicação da ata do mérito. Cobranças e pagamentos anteriores ficam preservados; não confirmado se há ressalva para ações já ajuizadas.",
+        "fonte": "https://www.coad.com.br/home/noticias-detalhe/140213/stf-define-alcance-de-decisao-sobre-aliquota-de-iptu-com-base-na-area-do-imovel"
+      }
     },
     {
       "id": "t22",

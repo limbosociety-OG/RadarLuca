@@ -28,6 +28,13 @@ peça, o que fecha a porta por onde esse erro entrou.
 
 ## Aberto
 
+- **Tema 1.455 (IPTU por área) — modulação em embargos, 09/10/2026.** Fonte secundária
+  informa que o STF acolheu embargos só para modular: efeitos a partir de 12/08/2026,
+  pagamentos anteriores preservados. **A peça publicada em `pecas/2026-08-05-iptu-tema-1455/`
+  foi construída sobre a ausência de modulação** ("e o que eu já paguei?") e está superada
+  nesse ponto, embora a legenda já registrasse que os municípios podiam pedi-la. Conferir a
+  ata dos embargos e se há ressalva para ações ajuizadas antes de decidir sobre nota de
+  atualização da peça — decisão editorial, não automática.
 - **STJ Tema 1.372** — ICMS-DIFAL fora da base do PIS/Cofins. Notícia de tese fixada em
   20/08/2026 com modulação a partir de 15/03/2017. **Nada disso está confirmado.** Conferir
   o acórdão e a redação exata da modulação, e refazer a aritmética do corte contra o

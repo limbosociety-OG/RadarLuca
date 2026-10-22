@@ -537,8 +537,8 @@ button.pr-num{border-bottom:1px solid var(--regua)} button.pr-num:hover{color:va
 
 <script>
 /* GERADO:INICIO — não editar à mão. Fonte: base/teses.json (scripts/gerar.py) */
-const SEMENTE="2026-10-21T10:15Z";
-const CORTE="2026-10-21";
+const SEMENTE="2026-10-22T10:14Z";
+const CORTE="2026-10-22";
 const BLOCOS=[
  "PIS/Cofins, base de cálculo",
  "IRPJ e CSLL",
@@ -549,7 +549,7 @@ const BLOCOS=[
  "CARF"
 ];
 const PADRAO={
- "semente": "2026-10-21T10:15Z",
+ "semente": "2026-10-22T10:14Z",
  "teses": [
   {
    "id": "t1",
@@ -988,17 +988,18 @@ const PADRAO={
    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1455",
    "placar": null,
    "placarNota": "",
-   "edai": "Sem modulação de efeitos: a inconstitucionalidade alcança o passado, limitada pelo quinquênio do art. 168 do CTN, que corre a cada pagamento. Municípios ainda podem pedir modulação em embargos. Progressividade por valor venal e seletividade por localização e uso permanecem válidas, o que caiu foi a área como critério de alíquota. Abre frente de repetição de indébito contra municípios com legislação semelhante.",
-   "verificacao": "confirmado",
-   "prazo": {
-    "tipo": "rolante",
-    "data": null,
-    "oque": "Prescrição do art. 168 do CTN: a cada mês a parcela mais antiga de IPTU sai da janela dos cinco anos"
+   "edai": "A modulação, em embargos julgados no virtual encerrado em 09/10/2026, inverteu a leitura: a inconstitucionalidade vale de 12/08/2026 em diante, e o IPTU pago antes disso fica preservado. A repetição do passado, que era o ponto central, deixa de existir para quem não tinha ação — e a ressalva para ações em curso não foi confirmada. Para frente, o município não pode lançar alíquota por área; a progressividade por valor venal e a seletividade por localização e uso continuam válidas.",
+   "verificacao": "a_confirmar",
+   "prazo": null,
+   "modulacao": {
+    "estado": "com",
+    "corte": "2026-08-12",
+    "nota": "Embargos de declaração acolhidos, por unanimidade, apenas para modular: a tese produz efeitos a partir de 12/08/2026, data da publicação da ata do mérito. Cobranças e pagamentos anteriores ficam preservados; não confirmado se há ressalva para ações já ajuizadas.",
+    "fonte": "https://www.coad.com.br/home/noticias-detalhe/140213/stf-define-alcance-de-decisao-sobre-aliquota-de-iptu-com-base-na-area-do-imovel"
    },
-   "modulacao": null,
-   "pendencia": "Número correto é ARE 1.593.784 (não 1.593.384). Confirmado no portal de RG do STF, incidente 7524215, e no comunicado oficial da Corte.",
-   "verificadoEm": "2026-09-01",
-   "atualizado": "set/2026"
+   "pendencia": "Mérito confirmado em 01/09/2026 no portal de RG (ARE 1.593.784, incidente 7524215). A modulação em embargos, de 09/10/2026, veio de fonte secundária: conferir no STF a ata dos embargos e se há ressalva para ações ajuizadas até 12/08/2026. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+   "verificadoEm": "2026-10-22",
+   "atualizado": "out/2026"
   },
   {
    "id": "t22",
@@ -2261,6 +2262,20 @@ const PADRAO={
    "fonte": "https://www.lacerdagama.com.br/post/stf-afasta-cobran%C3%A7a-do-funrural-de-produtores-rurais-pessoas-f%C3%ADsicas-antes-de-2018",
    "verificacao": "a_confirmar",
    "pendencia": "Conferir no STF a ata de 15/10/2026, o placar e o texto proclamado; fontes não dão o placar final. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+  },
+  {
+   "id": "n130",
+   "data": "2026-10-09",
+   "area": "tributario",
+   "orgao": "STF",
+   "titulo": "STF modula o Tema 1.455: IPTU por área só é inconstitucional a partir de 12/08/2026",
+   "resumo": "Em embargos de declaração julgados no Plenário Virtual encerrado em 09/10, o STF, por unanimidade, acolheu o recurso apenas para modular: a tese que veda alíquota de IPTU em razão da área do imóvel produz efeitos a partir de 12/08/2026, data da ata do mérito. Cobranças e pagamentos anteriores ficam preservados.",
+   "edai": "Muda o essencial: o IPTU pago antes de agosto de 2026 com alíquota por área deixa de ser indébito para quem não tinha ação. Se houver ressalva para ações já ajuizadas, ela ainda não foi confirmada. Para frente, municípios com lei semelhante precisam de nova lei para lançar 2027.",
+   "veiculo": "COAD",
+   "fonte": "https://www.coad.com.br/home/noticias-detalhe/140213/stf-define-alcance-de-decisao-sobre-aliquota-de-iptu-com-base-na-area-do-imovel",
+   "tese": "t21",
+   "verificacao": "a_confirmar",
+   "pendencia": "Conferir no STF a ata dos embargos e a existência de ressalva para ações em curso. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
   }
  ],
  "areas": [

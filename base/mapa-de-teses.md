@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-21 · **versão:** 2026-10-21T10:15Z
+**Corte:** 2026-10-22 · **versão:** 2026-10-22T10:14Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -141,7 +141,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 | 🟢⚠️ | STJ · **Tema 1.304** | ICMS, PIS e Cofins permanecem na base do IPI | A 1ª Seção recusou a extensão analógica do Tema 69 por materialidades distintas: os tributos são calculados por dentro e integram o valor da operação do art. 47, II, "a", do CTN. |
 | 🟢⚠️ | STF · **Tema 1.348** | Imunidade de ITBI na integralização de capital por empresa imobiliária | Fixado em 19/10/2026: a imunidade do ITBI na integralização de capital (art. 156, §2º, I, da CF) vale também para empresa de atividade preponderantemente imobiliária, ressalvada fraude ou simulação, e no limite do capital integralizado (Tema 796). |
 | ⚪⚠️ | STJ · **Tema 1.244** (REsp 2.046.893, 2.053.569 e 2.053.647) | PIS/Cofins-Importação sobre mercadorias do GATT destinadas à ZFM | Repetitivo com suspensão. Define o alcance da equiparação das operações para a Zona Franca às exportações. Não foi julgado em 20/08 e voltou à pauta da Primeira Seção para 14/10/2026. Relator, Min. Marco Aurélio Bellizze. |
-| 🟢✅ | STF · **Tema 1.455** (ARE 1.593.784/SC) | Alíquota de IPTU fixada em razão da área do imóvel é inconstitucional | Rel. Min. Dias Toffoli, Plenário Virtual, sessão encerrada em 05/08/2026, unânime, negado provimento ao recurso do município de Chapecó (LC municipal 639/2018, alíquota de 1% a partir de 400 m² de área construída). Tese: é inconstitucional a fixação, por lei municipal posterior à EC 29/2000, de alíquota do IPTU em razão da área do imóvel. |
+| 🟢⚠️ | STF · **Tema 1.455** (ARE 1.593.784/SC) | Alíquota de IPTU fixada em razão da área do imóvel é inconstitucional | Rel. Min. Dias Toffoli, Plenário Virtual, sessão encerrada em 05/08/2026, unânime, negado provimento ao recurso do município de Chapecó (LC municipal 639/2018, alíquota de 1% a partir de 400 m² de área construída). Tese: é inconstitucional a fixação, por lei municipal posterior à EC 29/2000, de alíquota do IPTU em razão da área do imóvel. |
 
 **Tema 1.304 — e daí?** Derrota importante, serve de limite ao argumento de que toda tese filhote segue o Tema 69.
 
@@ -149,7 +149,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 **Tema 1.244 — e daí?** Importador que destina mercadoria do GATT à Zona Franca tem a cobrança suspensa até o julgamento; a tese decide se o PIS/Cofins-Importação recolhido nesses anos é indébito.
 
-**Tema 1.455 — e daí?** Sem modulação de efeitos: a inconstitucionalidade alcança o passado, limitada pelo quinquênio do art. 168 do CTN, que corre a cada pagamento. Municípios ainda podem pedir modulação em embargos. Progressividade por valor venal e seletividade por localização e uso permanecem válidas, o que caiu foi a área como critério de alíquota. Abre frente de repetição de indébito contra municípios com legislação semelhante.
+**Tema 1.455 — e daí?** A modulação, em embargos julgados no virtual encerrado em 09/10/2026, inverteu a leitura: a inconstitucionalidade vale de 12/08/2026 em diante, e o IPTU pago antes disso fica preservado. A repetição do passado, que era o ponto central, deixa de existir para quem não tinha ação — e a ressalva para ações em curso não foi confirmada. Para frente, o município não pode lançar alíquota por área; a progressividade por valor venal e a seletividade por localização e uso continuam válidas.
 
 > ⚠️ **Tema 1.367** — a confirmar: Modulação: conferir a redação exata do dispositivo e o rol de ressalvas no inteiro teor. (última checagem: 2026-08-19)
 
@@ -158,6 +158,8 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 > ⚠️ **Tema 1.348** — a confirmar: Conferir na ata do RE 1.495.108 o placar, o texto literal da tese e se houve modulação; acompanhar embargos dos municípios. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-21)
 
 > ⚠️ **Tema 1.244** — a confirmar: Estava na pauta de 14/10/2026 da Primeira Seção, mas nenhuma fonte noticiou resultado nem adiamento. Conferir no STJ. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-20)
+
+> ⚠️ **Tema 1.455** — a confirmar: Mérito confirmado em 01/09/2026 no portal de RG (ARE 1.593.784, incidente 7524215). A modulação em embargos, de 09/10/2026, veio de fonte secundária: conferir no STF a ata dos embargos e se há ressalva para ações ajuizadas até 12/08/2026. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-22)
 
 ---
 
