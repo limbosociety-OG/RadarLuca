@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-22 · **versão:** 2026-10-22T10:14Z
+**Corte:** 2026-10-22 · **versão:** 2026-10-22T19:25Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -18,7 +18,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 
 | | Tema | Objeto | Situação |
 |---|---|---|---|
-| 🔴⚠️ | STF · **Tema 118** (RE 592.616) | ISS na base de cálculo do PIS/Cofins | Desdobramento direto do Tema 69: se o ISS é mero ingresso transitório destinado ao município, não é faturamento. |
+| 🟢⚠️ | STF · **Tema 118** (RE 592.616) | ISS na base de cálculo do PIS/Cofins | Tese fixada em 21/10/2026: o ISS não integra a base de cálculo do PIS e da Cofins, desdobramento do Tema 69. Fica em aberto qual ISS se exclui (o destacado ou o recolhido). |
 | 🟢⚠️ | STF · **Tema 843** (RE 835.818) | Créditos presumidos de ICMS na base do PIS/Cofins | Tese fixada em 07/10/2026: é incompatível com a Constituição a inclusão, na base de cálculo da Cofins e da contribuição ao PIS, de créditos presumidos do ICMS. Fundamento: o crédito presumido reduz custo tributário, não é receita nova. Impacto estimado de R$ 16,5 bi. |
 | 🟡⚠️ | STF · **Imposto por dentro** | Exclusão do PIS/Cofins de suas próprias bases | Repercussão geral reconhecida desde 2019, sem previsão de pauta. Impacto estimado de R$ 65,7 bi. |
 | 🟢⚠️ | STJ · **Tema 1.372** | ICMS-DIFAL na base do PIS/Cofins | Repetitivo julgado em 20/08/2026, unânime, rel. Gurgel de Faria (REsp 2.174.178/SC, 2.181.166/SP e 2.191.532/ES): o ICMS-Difal não integra a base do PIS e da Cofins, pela mesma lógica do Tema 69. |
@@ -26,7 +26,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 | 🔴⚠️ | STF · **ADC 98** | Tese ampla da União: todos os tributos integrariam a base do PIS/Cofins | Movimento estratégico da AGU capaz de esvaziar o Tema 118 e as demais filhotes de uma só vez, independentemente do placar no RE. |
 | 🟢⚠️ | STJ · **Tema 1.276** (REsp 2.123.904/SP) | CPRB permanece na base do PIS/Cofins | A 1ª Seção fixou em 09/09/2026, por unanimidade e sob o rito dos repetitivos, que a contribuição previdenciária sobre a receita bruta integra a base de cálculo do PIS e da Cofins. A tentativa de estender a lógica do Tema 69 foi rejeitada. |
 
-**Tema 118 — e daí?** Janela aberta. Se houver modulação nos moldes do Tema 69, só recupera os cinco anos anteriores quem já tiver ação ajuizada. Levantar carteira de prestadores de serviço no lucro real e presumido.
+**Tema 118 — e daí?** Tese vinculante, mas a modulação proposta por Fux tem cara de Tema 69: se prevalecer, só recupera o quinquênio quem tiver ação ou processo administrativo pendente na data da publicação da ata. A data que importa, portanto, é a da ata, e ela ainda não saiu. O efeito se concentra no passado, porque a CBS substitui PIS e Cofins em 2027; prestador de serviço no lucro real ou presumido sem ação está, hoje, fora da ressalva proposta.
 
 **Tema 843 — e daí?** Empresa com crédito presumido de ICMS tem tese vinculante para excluí-lo da base do PIS/Cofins até a CBS substituir as duas contribuições em 2027, e repetição de indébito dos cinco anos anteriores ao pedido. A pergunta que decide o valor é a modulação, que nenhuma fonte noticiou: sem ela, quem não tem ação recupera o quinquênio; com ela, a ressalva costuma proteger só ação ajuizada até o julgamento, e a União pode pedir isso em embargos. Repercute no Tema 1.416 do STJ (IRPJ e CSLL).
 
@@ -36,7 +36,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 
 **Tema 1.276 — e daí?** Tese perdida para o contribuinte, e com efeito vinculante. Ação em curso sobre a CPRB perde a perspectiva de êxito no STJ e a provisão deixa de ser remota; resta saber se a discussão sobe ao STF como matéria constitucional.
 
-> ⚠️ **Tema 118** — a confirmar: Confirmar no portal de RG se houve reinclusão em pauta depois de 25/02/2026. (última checagem: 2026-08-19)
+> ⚠️ **Tema 118** — a confirmar: Conferir no STF a ata de 21/10/2026 e sua data de publicação, que é o marco da modulação proposta; acompanhar os embargos. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-22)
 
 > ⚠️ **Tema 843** — a confirmar: Conferir na ata do STF o placar exato e o texto literal da tese; acompanhar o acórdão e os embargos da União, onde a modulação pode entrar. Para fatos de 2024 em diante, a Lei 14.789/2023 e a Solução de Consulta Cosit 181/2026 mantêm a discussão aberta: a tese julgou o regime anterior. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-14)
 

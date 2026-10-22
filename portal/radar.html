@@ -537,7 +537,7 @@ button.pr-num{border-bottom:1px solid var(--regua)} button.pr-num:hover{color:va
 
 <script>
 /* GERADO:INICIO — não editar à mão. Fonte: base/teses.json (scripts/gerar.py) */
-const SEMENTE="2026-10-22T10:14Z";
+const SEMENTE="2026-10-22T19:25Z";
 const CORTE="2026-10-22";
 const BLOCOS=[
  "PIS/Cofins, base de cálculo",
@@ -549,7 +549,7 @@ const BLOCOS=[
  "CARF"
 ];
 const PADRAO={
- "semente": "2026-10-22T10:14Z",
+ "semente": "2026-10-22T19:25Z",
  "teses": [
   {
    "id": "t1",
@@ -557,23 +557,27 @@ const PADRAO={
    "tribunal": "STF",
    "tema": "Tema 118",
    "processo": "RE 592.616",
-   "status": "iminente",
+   "status": "fixada",
    "titulo": "ISS na base de cálculo do PIS/Cofins",
-   "resumo": "Desdobramento direto do Tema 69: se o ISS é mero ingresso transitório destinado ao município, não é faturamento.",
-   "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=118",
+   "resumo": "Tese fixada em 21/10/2026: o ISS não integra a base de cálculo do PIS e da Cofins, desdobramento do Tema 69. Fica em aberto qual ISS se exclui (o destacado ou o recolhido).",
+   "fonte": "https://www.urbanovitalino.com.br/stf-conclui-o-julgamento-do-tema-118-e-exclui-o-iss-da-base-de-calculo-do-pis-e-da-cofins/",
    "placar": {
-    "c": 5,
+    "c": 6,
     "f": 5,
-    "p": 1
+    "p": 0
    },
-   "placarNota": "5×5. Pendente o voto de desempate do Min. Fux. Retirado da pauta de 25/02/2026, sem nova data.",
-   "edai": "Janela aberta. Se houver modulação nos moldes do Tema 69, só recupera os cinco anos anteriores quem já tiver ação ajuizada. Levantar carteira de prestadores de serviço no lucro real e presumido.",
+   "placarNota": "Julgado em 21/10/2026, 6 a 5, com o desempate de Fux pela exclusão do ISS.",
+   "edai": "Tese vinculante, mas a modulação proposta por Fux tem cara de Tema 69: se prevalecer, só recupera o quinquênio quem tiver ação ou processo administrativo pendente na data da publicação da ata. A data que importa, portanto, é a da ata, e ela ainda não saiu. O efeito se concentra no passado, porque a CBS substitui PIS e Cofins em 2027; prestador de serviço no lucro real ou presumido sem ação está, hoje, fora da ressalva proposta.",
    "verificacao": "a_confirmar",
    "prazo": null,
-   "modulacao": null,
-   "pendencia": "Confirmar no portal de RG se houve reinclusão em pauta depois de 25/02/2026.",
-   "verificadoEm": "2026-08-19",
-   "atualizado": "ago/2026"
+   "modulacao": {
+    "estado": "pendente",
+    "nota": "Fux propôs efeitos a partir da publicação da ata, ressalvadas as ações e os processos administrativos pendentes nessa data e os fatos geradores anteriores ainda não recolhidos; Mendonça aderiu. A Presidência deixou a modulação para os embargos de declaração.",
+    "fonte": "https://www.urbanovitalino.com.br/stf-conclui-o-julgamento-do-tema-118-e-exclui-o-iss-da-base-de-calculo-do-pis-e-da-cofins/"
+   },
+   "pendencia": "Conferir no STF a ata de 21/10/2026 e sua data de publicação, que é o marco da modulação proposta; acompanhar os embargos. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+   "verificadoEm": "2026-10-22",
+   "atualizado": "out/2026"
   },
   {
    "id": "t2",
@@ -2276,6 +2280,20 @@ const PADRAO={
    "tese": "t21",
    "verificacao": "a_confirmar",
    "pendencia": "Conferir no STF a ata dos embargos e a existência de ressalva para ações em curso. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+  },
+  {
+   "id": "n131",
+   "data": "2026-10-21",
+   "area": "tributario",
+   "orgao": "STF",
+   "titulo": "STF tira o ISS da base do PIS e da Cofins por 6 a 5; modulação fica para os embargos",
+   "resumo": "No Tema 118 (RE 592.616), Fux desempatou pela exclusão do ISS. Ele propôs efeitos a partir da publicação da ata, ressalvadas as ações e processos administrativos pendentes nessa data, com adesão de Mendonça, mas a Presidência deixou a modulação para os embargos de declaração.",
+   "edai": "A tese vale, mas o alcance temporal está em aberto e a proposta na mesa é a do Tema 69: quem não tiver ação ou processo pendente quando a ata for publicada pode ficar só com o futuro, que termina em 2027 com a CBS. É a janela mais curta do acervo — sem data certa, porque depende da publicação da ata.",
+   "veiculo": "Urbano Vitalino",
+   "fonte": "https://www.urbanovitalino.com.br/stf-conclui-o-julgamento-do-tema-118-e-exclui-o-iss-da-base-de-calculo-do-pis-e-da-cofins/",
+   "tese": "t1",
+   "verificacao": "a_confirmar",
+   "pendencia": "Conferir no STF a ata e a data de publicação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
   }
  ],
  "areas": [

@@ -991,6 +991,20 @@
       "tese": "t21",
       "verificacao": "a_confirmar",
       "pendencia": "Conferir no STF a ata dos embargos e a existência de ressalva para ações em curso. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n131",
+      "data": "2026-10-21",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "STF tira o ISS da base do PIS e da Cofins por 6 a 5; modulação fica para os embargos",
+      "resumo": "No Tema 118 (RE 592.616), Fux desempatou pela exclusão do ISS. Ele propôs efeitos a partir da publicação da ata, ressalvadas as ações e processos administrativos pendentes nessa data, com adesão de Mendonça, mas a Presidência deixou a modulação para os embargos de declaração.",
+      "edai": "A tese vale, mas o alcance temporal está em aberto e a proposta na mesa é a do Tema 69: quem não tiver ação ou processo pendente quando a ata for publicada pode ficar só com o futuro, que termina em 2027 com a CBS. É a janela mais curta do acervo — sem data certa, porque depende da publicação da ata.",
+      "veiculo": "Urbano Vitalino",
+      "fonte": "https://www.urbanovitalino.com.br/stf-conclui-o-julgamento-do-tema-118-e-exclui-o-iss-da-base-de-calculo-do-pis-e-da-cofins/",
+      "tese": "t1",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no STF a ata e a data de publicação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }
