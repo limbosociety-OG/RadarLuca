@@ -1005,6 +1005,20 @@
       "tese": "t1",
       "verificacao": "a_confirmar",
       "pendencia": "Conferir no STF a ata e a data de publicação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n132",
+      "data": "2026-10-05",
+      "area": "tributario",
+      "orgao": "STJ",
+      "titulo": "Atraso pontual não justifica rescindir transação tributária, diz monocrática do STJ",
+      "resumo": "No REsp 2.298.668/RS, decisão monocrática considerou desproporcional a rescisão de transação tributária por atraso pontual no pagamento de parcela.",
+      "edai": "Com as transações da PGFN abertas até janeiro e a da RFB até 30/10, o risco de perder os descontos por um atraso isolado ganha um precedente de proporcionalidade. É decisão de um ministro, não tese: o edital continua prevendo a rescisão.",
+      "veiculo": "Rota da Jurisprudência",
+      "fonte": "https://rotadajurisprudencia.com.br/",
+      "tese": "t33",
+      "verificacao": "a_confirmar",
+      "pendencia": "Localizar a notícia específica e conferir no STJ o REsp 2.298.668/RS. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }
