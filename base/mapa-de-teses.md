@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-24 · **versão:** 2026-10-24T10:14Z
+**Corte:** 2026-10-25 · **versão:** 2026-10-25T10:14Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -38,7 +38,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 
 > ⚠️ **Tema 118** — a confirmar: Conferir no STF a ata de 21/10/2026 e sua data de publicação, que é o marco da modulação proposta; acompanhar os embargos. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-22)
 
-> ⚠️ **Tema 843** — a confirmar: Conferir na ata do STF o placar exato e o texto literal da tese; acompanhar o acórdão e os embargos da União, onde a modulação pode entrar. Para fatos de 2024 em diante, a Lei 14.789/2023 e a Solução de Consulta Cosit 181/2026 mantêm a discussão aberta: a tese julgou o regime anterior. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-14)
+> ⚠️ **Tema 843** — a confirmar: O Informativo STF 1233, de 19/10/2026, registra a tese do Tema 843 (citado em busca; o PDF não foi lido diretamente). Falta o placar exato e o acompanhamento dos embargos. Para fatos de 2024 em diante, a Lei 14.789/2023 e a Cosit 181/2026 mantêm a disputa. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-25)
 
 > ⚠️ **Imposto por dentro** — a confirmar: Número do tema de RG não anotado. Localizar no portal do STF antes de qualquer uso. (última checagem: 2026-08-19)
 
@@ -159,7 +159,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Tema 1.244** — a confirmar: Estava na pauta de 14/10/2026 da Primeira Seção, mas nenhuma fonte noticiou resultado nem adiamento. Conferir no STJ. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-20)
 
-> ⚠️ **Tema 1.455** — a confirmar: Mérito confirmado em 01/09/2026 no portal de RG (ARE 1.593.784, incidente 7524215). A modulação em embargos, de 09/10/2026, veio de fonte secundária: conferir no STF a ata dos embargos e se há ressalva para ações ajuizadas até 12/08/2026. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-22)
+> ⚠️ **Tema 1.455** — a confirmar: Mérito confirmado em 01/09/2026 no portal de RG. O Informativo STF 1233, de 19/10/2026, trata da modulação em embargos (citado em busca; o PDF não foi lido diretamente). Falta conferir se há ressalva para ações ajuizadas até 12/08/2026. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-25)
 
 ---
 

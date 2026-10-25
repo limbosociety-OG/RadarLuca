@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-24T10:14Z",
-  "corte": "2026-10-24",
+  "versao": "2026-10-25T10:14Z",
+  "corte": "2026-10-25",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -99,8 +99,8 @@
       "edai": "Empresa com crédito presumido de ICMS tem tese vinculante para excluí-lo da base do PIS/Cofins até a CBS substituir as duas contribuições em 2027, e repetição de indébito dos cinco anos anteriores ao pedido. A pergunta que decide o valor é a modulação, que nenhuma fonte noticiou: sem ela, quem não tem ação recupera o quinquênio; com ela, a ressalva costuma proteger só ação ajuizada até o julgamento, e a União pode pedir isso em embargos. Repercute no Tema 1.416 do STJ (IRPJ e CSLL).",
       "fonte": "https://apet.org.br/noticia/stf-conclui-julgamento-do-tema-843-e-afasta-pis-cofins-sobre-creditos-presumidos-de-icms/",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-10-14",
-      "pendencia": "Conferir na ata do STF o placar exato e o texto literal da tese; acompanhar o acórdão e os embargos da União, onde a modulação pode entrar. Para fatos de 2024 em diante, a Lei 14.789/2023 e a Solução de Consulta Cosit 181/2026 mantêm a discussão aberta: a tese julgou o regime anterior. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificado_em": "2026-10-25",
+      "pendencia": "O Informativo STF 1233, de 19/10/2026, registra a tese do Tema 843 (citado em busca; o PDF não foi lido diretamente). Falta o placar exato e o acompanhamento dos embargos. Para fatos de 2024 em diante, a Lei 14.789/2023 e a Cosit 181/2026 mantêm a disputa. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
       "modulacao": {
         "estado": "pendente",
         "nota": "O julgamento de 07/10 não modulou. Moraes indicou que o alcance temporal pode ser revisto em embargos de declaração, em que votariam os ministros que não votaram no mérito; a PGFN aguarda o acórdão para recorrer.",
@@ -442,8 +442,8 @@
       "edai": "A modulação, em embargos julgados no virtual encerrado em 09/10/2026, inverteu a leitura: a inconstitucionalidade vale de 12/08/2026 em diante, e o IPTU pago antes disso fica preservado. A repetição do passado, que era o ponto central, deixa de existir para quem não tinha ação — e a ressalva para ações em curso não foi confirmada. Para frente, o município não pode lançar alíquota por área; a progressividade por valor venal e a seletividade por localização e uso continuam válidas.",
       "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1455",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-10-22",
-      "pendencia": "Mérito confirmado em 01/09/2026 no portal de RG (ARE 1.593.784, incidente 7524215). A modulação em embargos, de 09/10/2026, veio de fonte secundária: conferir no STF a ata dos embargos e se há ressalva para ações ajuizadas até 12/08/2026. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificado_em": "2026-10-25",
+      "pendencia": "Mérito confirmado em 01/09/2026 no portal de RG. O Informativo STF 1233, de 19/10/2026, trata da modulação em embargos (citado em busca; o PDF não foi lido diretamente). Falta conferir se há ressalva para ações ajuizadas até 12/08/2026. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
       "modulacao": {
         "estado": "com",
         "corte": "2026-08-12",

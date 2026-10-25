@@ -1019,6 +1019,45 @@
       "tese": "t33",
       "verificacao": "a_confirmar",
       "pendencia": "Localizar a notícia específica e conferir no STJ o REsp 2.298.668/RS. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n133",
+      "data": "2026-10-23",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "STF suspende a análise da tese do STJ sobre o prazo para repetir tributo declarado inconstitucional",
+      "resumo": "O Plenário Virtual, com o caso de volta à pauta em 16/10, suspendeu o exame da tese do STJ sobre o marco inicial da prescrição para pedir a devolução de tributo declarado inconstitucional. Gilmar Mendes, divergindo, lembrou que o CTN não prevê a decisão da corte constitucional como marco.",
+      "edai": "Se a decisão do STF virasse marco inicial, o quinquênio do art. 168 do CTN recomeçaria a cada tese fixada — o que mudaria a conta dos Temas 843, 118 e 1.348. A divergência de Gilmar aponta para o pagamento como marco, que é a regra hoje. Até o julgamento acabar, a contagem segura continua sendo a do pagamento.",
+      "veiculo": "Conjur",
+      "fonte": "https://conjur.com.br/2026-out-23/stf-suspende-analise-de-prescricao-da-devolucao-de-tributos-inconstitucionais",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no STF o número do processo, o placar e o motivo da suspensão. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n134",
+      "data": "2026-10-22",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "Prazo de dez anos para distribuidora devolver na conta de luz o PIS/Cofins recuperado conta do recebimento",
+      "resumo": "Em embargos, o STF manteve os critérios de agosto de 2025: o prazo de dez anos para repassar aos consumidores os tributos recuperados (exclusão do ICMS da base do PIS/Cofins) conta do recebimento pela distribuidora ou da homologação definitiva da compensação, sem nova contagem.",
+      "edai": "Fecha a discussão sobre o termo inicial do repasse e afasta a tese de que o julgamento reabriria prazo. Para distribuidoras, o passivo regulatório fica datado pelo crédito efetivo; para o consumidor, a devolução vem pela tarifa, não por ação própria.",
+      "veiculo": "Conjur",
+      "fonte": "https://conjur.com.br/2026-out-22/stf-reafirma-prazo-para-devolucao-de-tributos-na-conta-de-luz",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no STF o processo e o acórdão dos embargos. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n135",
+      "data": "2026-10-06",
+      "area": "tributario",
+      "orgao": "STJ",
+      "titulo": "JCP pagos não reduzem a base do PIS e da Cofins cumulativos, decide a Segunda Turma",
+      "resumo": "A Segunda Turma do STJ vedou a dedução dos juros sobre capital próprio pagos aos acionistas das bases do PIS e da Cofins no regime cumulativo.",
+      "edai": "Precedente de Turma, não repetitivo, mas contrário ao contribuinte do lucro presumido que tentava abater o JCP pago. A discussão tem prazo de validade: some com a CBS em 2027.",
+      "veiculo": "Andrade Maia",
+      "fonte": "https://www.andrademaia.com.br/en/conteudos/atualizacao-de-julgamentos-stf-stj-e-carf-outubro-de-2026",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no STJ o número do recurso e o acórdão. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     }
   ]
 }
