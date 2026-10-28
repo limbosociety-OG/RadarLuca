@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-27T10:15Z",
-  "corte": "2026-10-27",
+  "versao": "2026-10-28T10:15Z",
+  "corte": "2026-10-28",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -588,8 +588,8 @@
       "edai": "Fornecedor do Simples que vende para contribuinte do regime regular só transfere crédito integral de IBS e CBS se optar. A prorrogação dá mais um mês para a conta de margem na cadeia B2B; quem não optar até 30/10 fica no DAS até junho de 2027.",
       "fonte": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/cgsn-define-prazos-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs-para-2027",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-10-01",
-      "pendencia": "Conferir no DOU o texto da Res. CGSN 194/2026 e se o cancelamento até 30/11 da Res. CGSN 190/2026 foi mantido ou também mudou. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificado_em": "2026-10-28",
+      "pendencia": "Conferir no DOU o texto da Res. CGSN 194/2026 e a janela de cancelamento: a Res. CGSN 190/2026 admitia cancelamento até 30/11/2026, e fonte secundária de outubro fala em cancelamento entre 03/11 e 20/12/2026, sem deixar claro se trata da mesma opção. Nenhuma nova prorrogação do prazo de 30/10 foi noticiada até 28/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
       "prazo": {
         "tipo": "data_certa",
         "data": "2026-10-30",

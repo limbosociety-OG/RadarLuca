@@ -56,6 +56,20 @@
   },
   "itens": [
     {
+      "id": "n136",
+      "data": "2026-10-27",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "Tema 1.348 do ITBI alcança cerca de 6 mil ações nos tribunais estaduais, estima levantamento",
+      "resumo": "Levantamento da Juit citado pelo JOTA estima em cerca de 6 mil os processos em tribunais estaduais afetados pela tese do Tema 1.348, fixada em 19/10: a imunidade do ITBI na integralização de capital não depende de a empresa ter atividade preponderantemente imobiliária, ressalvadas simulação ou fraude à lei.",
+      "edai": "O número mede o estoque que a tese destrava: ações sobrestadas ou em curso devem ser decididas pela imunidade, e o município passa a depender da prova de simulação ou do excesso sobre o capital. Para quem ainda não litiga, a conta continua a do quinquênio, e a modulação segue não noticiada — a ata e eventuais embargos dos municípios dizem se ela vem.",
+      "veiculo": "JOTA (via CNB/SP)",
+      "fonte": "https://cnbsp.org.br/2026/10/27/jota-decisao-do-stf-sobre-itbi-pode-impactar-mais-de-6-mil-acoes-em-tribunais-estaduais/",
+      "tese": "t19",
+      "verificacao": "a_confirmar",
+      "pendencia": "A estimativa é de levantamento privado (Juit), não de dado do STF ou do CNJ. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
       "id": "n102",
       "data": "2026-09-25",
       "area": "tributario",

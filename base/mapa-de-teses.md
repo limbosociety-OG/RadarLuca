@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-27 · **versão:** 2026-10-27T10:15Z
+**Corte:** 2026-10-28 · **versão:** 2026-10-28T10:15Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -110,7 +110,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Resolução 14/2026** — a confirmar: Conferir o texto da Resolução 14/2026 no sítio do CGIBS. (última checagem: 2026-08-19)
 
-> ⚠️ **Res. CGSN 186/2026 e 194/2026** — a confirmar: Conferir no DOU o texto da Res. CGSN 194/2026 e se o cancelamento até 30/11 da Res. CGSN 190/2026 foi mantido ou também mudou. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-01)
+> ⚠️ **Res. CGSN 186/2026 e 194/2026** — a confirmar: Conferir no DOU o texto da Res. CGSN 194/2026 e a janela de cancelamento: a Res. CGSN 190/2026 admitia cancelamento até 30/11/2026, e fonte secundária de outubro fala em cancelamento entre 03/11 e 20/12/2026, sem deixar claro se trata da mesma opção. Nenhuma nova prorrogação do prazo de 30/10 foi noticiada até 28/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-28)
 
 **Ponto de ação.** Frentes a vigiar: split payment, cashback, regimes específicos e diferenciados, creditamento e o desenho da não cumulatividade plena, contencioso administrativo do IBS (quem julga?), e a repartição federativa.
 
