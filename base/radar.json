@@ -56,6 +56,19 @@
   },
   "itens": [
     {
+      "id": "n137",
+      "data": "2026-10-14",
+      "area": "imobiliario",
+      "orgao": "STJ",
+      "titulo": "STJ leva a repetitivo a retenção no distrato imobiliário, antes e depois da Lei do Distrato",
+      "resumo": "A Segunda Seção afetou os Temas 1.464 (lote ou terreno vendido depois da Lei 13.786/2018) e 1.465 (percentual e base da retenção em contratos anteriores à lei) e suspendeu os processos com recurso especial ou agravo sobre a matéria. A divergência é entre a Terceira Turma, que aplica o CDC e limita a retenção a 25% das parcelas pagas, e a Quarta, que admite até 10% do valor atualizado do contrato.",
+      "edai": "Até o julgamento, o percentual de retenção em loteamento depende da Turma que julgar o caso, e o recurso fica parado. A diferença entre as bases (parcelas pagas ou valor do contrato) é o que decide o valor devolvido.",
+      "veiculo": "Fortes Advogados",
+      "fonte": "https://www.fortes.adv.br/2026/10/14/stj-definira-criterios-para-retencao-de-valores-em-distratos-imobiliarios/",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir a data da afetação (as notícias são de outubro, mas página do TJMG indica sessão eletrônica encerrada em 30/06/2026) e os recursos afetados. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
       "id": "n136",
       "data": "2026-10-27",
       "area": "tributario",
@@ -985,12 +998,12 @@
       "area": "tributario",
       "orgao": "STF",
       "titulo": "STF conclui a ADI 4.395: Funrural do produtor pessoa física é inconstitucional até 2017",
-      "resumo": "O Plenário proclamou o resultado da ADI 4.395, votada em 2022, pelo voto médio de Toffoli, redator: a contribuição do empregador rural pessoa física sobre a receita da comercialização e a sub-rogação no adquirente são inconstitucionais antes de 01/01/2018 e válidas a partir daí (Lei 13.606/2018). Sem modulação na sessão; Toffoli e Fachin votaram por modulação imediata.",
-      "edai": "Adquirente que reteve Funrural por sub-rogação antes de 2018 e produtor que recolheu nesse período têm base de indébito — mas o quinquênio do art. 168 do CTN já consumiu quase tudo: um pedido feito hoje alcança outubro de 2021 em diante, depois do corte. O valor real está em ações já ajuizadas e em autuações pendentes sobre o período antigo, que perdem fundamento. Modulação pode voltar em embargos.",
+      "resumo": "O Plenário proclamou o resultado da ADI 4.395, votada em 2022, pelo voto médio de Toffoli, redator: a contribuição do empregador rural pessoa física sobre a receita da comercialização e a sub-rogação no adquirente são inconstitucionais antes de 01/01/2018 e válidas a partir daí (Lei 13.606/2018). A modulação foi reservada para momento oportuno, vencidos Toffoli e Fachin, que a propunham desde logo; boletins de 28/10 dão a ata por publicada em 22/10.",
+      "edai": "Adquirente que reteve Funrural por sub-rogação antes de 2018 e produtor que recolheu nesse período têm base de indébito — mas o quinquênio do art. 168 do CTN já consumiu quase tudo: um pedido feito hoje alcança outubro de 2021 em diante, depois do corte. O valor real está em ações já ajuizadas e em autuações pendentes sobre o período antigo, que perdem fundamento. A modulação não foi negada, foi adiada: ainda pode cortar o indébito de quem não tinha ação.",
       "veiculo": "Lacerda Gama",
       "fonte": "https://www.lacerdagama.com.br/post/stf-afasta-cobran%C3%A7a-do-funrural-de-produtores-rurais-pessoas-f%C3%ADsicas-antes-de-2018",
       "verificacao": "a_confirmar",
-      "pendencia": "Conferir no STF a ata de 15/10/2026, o placar e o texto proclamado; fontes não dão o placar final. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+      "pendencia": "Conferir no STF a ata (dada por publicada em 22/10/2026 por boletins de escritório), o placar e o texto proclamado; fontes divergem na descrição (inconstitucionalidade formal do empregador rural pessoa física, segundo a APET) e confirmam que a modulação ficou reservada para momento oportuno. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {
       "id": "n130",
