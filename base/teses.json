@@ -1,6 +1,6 @@
 {
-  "versao": "2026-10-29T10:14Z",
-  "corte": "2026-10-29",
+  "versao": "2026-10-30T10:15Z",
+  "corte": "2026-10-30",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -582,14 +582,14 @@
       "tema": "Res. CGSN 186/2026 e 194/2026",
       "processo": "",
       "titulo": "Simples Nacional pode apurar IBS e CBS pelo regime regular em 2027",
-      "resumo": "A empresa do Simples pode optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples. A janela, aberta em 1º/09, foi prorrogada para 30/10/2026 pela Res. CGSN 194/2026, de 25/09; a opção pelo próprio Simples para 2027 foi até 15/10, e a regularização de pendências, até 30/10. A opção é irretratável, mas admitia cancelamento até 30/11/2026 (Res. CGSN 190/2026); IBS e CBS do regime regular não entram na receita bruta do Simples.",
+      "resumo": "A empresa do Simples pode optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples. A janela, aberta em 1º/09, foi prorrogada para 30/10/2026 pela Res. CGSN 194/2026, de 25/09; a opção pelo próprio Simples para 2027 foi até 15/10, e a regularização de pendências, até 30/10. A opção pelo Simples e a escolha do regime regular podem ser canceladas, em caráter irretratável, entre 03/11 e 20/12/2026, segundo o CFC (a Res. CGSN 190/2026 falava em cancelamento até 30/11); IBS e CBS do regime regular não entram na receita bruta do Simples.",
       "status": "iminente",
       "placar": null,
       "edai": "Fornecedor do Simples que vende para contribuinte do regime regular só transfere crédito integral de IBS e CBS se optar. A prorrogação dá mais um mês para a conta de margem na cadeia B2B; quem não optar até 30/10 fica no DAS até junho de 2027.",
       "fonte": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/cgsn-define-prazos-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs-para-2027",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-10-28",
-      "pendencia": "Conferir no DOU o texto da Res. CGSN 194/2026 e a janela de cancelamento: a Res. CGSN 190/2026 admitia cancelamento até 30/11/2026, e fonte secundária de outubro fala em cancelamento entre 03/11 e 20/12/2026, sem deixar claro se trata da mesma opção. Nenhuma nova prorrogação do prazo de 30/10 foi noticiada até 28/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
+      "verificado_em": "2026-10-30",
+      "pendencia": "Conferir no DOU o texto da Res. CGSN 194/2026 e a janela de cancelamento de 03/11 a 20/12/2026, noticiada pelo CFC e por outras fontes secundárias. Nenhuma nova prorrogação do prazo de 30/10 foi noticiada até a manhã de 30/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária.",
       "prazo": {
         "tipo": "data_certa",
         "data": "2026-10-30",

@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-10-29 · **versão:** 2026-10-29T10:14Z
+**Corte:** 2026-10-30 · **versão:** 2026-10-30T10:15Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -92,7 +92,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 | 🟢⚠️ | STF · **LC 214/2025** | Alíquota zero de IBS e CBS em veículos para PcD e autistas | A Corte declarou inconstitucionais as travas que limitavam o benefício aos casos severos ou profundos. Primeiro controle de constitucionalidade sobre a lei da reforma. |
 | 🟡⚠️ | Legislação · **LC 224/2025** | Corte linear de benefícios fiscais e direito a crédito | Corte de cerca de 10% em benefícios fiscais. Decisões de 1ª e 2ª instâncias vêm garantindo crédito de PIS/Cofins e IPI sobre a tributação residual, por violação à não cumulatividade. A Receita recuou quanto à ZFM na Nota Cosit 207/2026. |
 | 🟡⚠️ | CGIBS · **Resolução 14/2026** | Alíquota de referência estimada em 27,91% para 2033 | Resolução CGIBS nº 14, de 29/07/2026. Acima da projeção anterior de 26,5%. O valor não é definitivo e será revisto conforme as regras de calibragem. |
-| 🔴⚠️ | CGSN · **Res. CGSN 186/2026 e 194/2026** | Simples Nacional pode apurar IBS e CBS pelo regime regular em 2027 | A empresa do Simples pode optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples. A janela, aberta em 1º/09, foi prorrogada para 30/10/2026 pela Res. CGSN 194/2026, de 25/09; a opção pelo próprio Simples para 2027 foi até 15/10, e a regularização de pendências, até 30/10. A opção é irretratável, mas admitia cancelamento até 30/11/2026 (Res. CGSN 190/2026); IBS e CBS do regime regular não entram na receita bruta do Simples. |
+| 🔴⚠️ | CGSN · **Res. CGSN 186/2026 e 194/2026** | Simples Nacional pode apurar IBS e CBS pelo regime regular em 2027 | A empresa do Simples pode optar por recolher IBS e CBS fora do DAS no primeiro semestre de 2027, sem sair do Simples. A janela, aberta em 1º/09, foi prorrogada para 30/10/2026 pela Res. CGSN 194/2026, de 25/09; a opção pelo próprio Simples para 2027 foi até 15/10, e a regularização de pendências, até 30/10. A opção pelo Simples e a escolha do regime regular podem ser canceladas, em caráter irretratável, entre 03/11 e 20/12/2026, segundo o CFC (a Res. CGSN 190/2026 falava em cancelamento até 30/11); IBS e CBS do regime regular não entram na receita bruta do Simples. |
 
 **Ato Conjunto 4/2026 — e daí?** Risco operacional imediato: nota rejeitada trava faturamento. E o descumprimento faz perder a dispensa de recolhimento do período de teste.
 
@@ -110,7 +110,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Resolução 14/2026** — a confirmar: Conferir o texto da Resolução 14/2026 no sítio do CGIBS. (última checagem: 2026-08-19)
 
-> ⚠️ **Res. CGSN 186/2026 e 194/2026** — a confirmar: Conferir no DOU o texto da Res. CGSN 194/2026 e a janela de cancelamento: a Res. CGSN 190/2026 admitia cancelamento até 30/11/2026, e fonte secundária de outubro fala em cancelamento entre 03/11 e 20/12/2026, sem deixar claro se trata da mesma opção. Nenhuma nova prorrogação do prazo de 30/10 foi noticiada até 28/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-28)
+> ⚠️ **Res. CGSN 186/2026 e 194/2026** — a confirmar: Conferir no DOU o texto da Res. CGSN 194/2026 e a janela de cancelamento de 03/11 a 20/12/2026, noticiada pelo CFC e por outras fontes secundárias. Nenhuma nova prorrogação do prazo de 30/10 foi noticiada até a manhã de 30/10. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-30)
 
 **Ponto de ação.** Frentes a vigiar: split payment, cashback, regimes específicos e diferenciados, creditamento e o desenho da não cumulatividade plena, contencioso administrativo do IBS (quem julga?), e a repartição federativa.
 
