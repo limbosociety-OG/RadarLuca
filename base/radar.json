@@ -66,7 +66,7 @@
       "veiculo": "STF (portal de notícias, via busca)",
       "fonte": "https://noticias.stf.jus.br/",
       "verificacao": "a_confirmar",
-      "pendencia": "Identificar o processo (provavelmente a ADI 6.336, suspensa por vista de Fux), o placar e se houve modulação; a manchete do portal do STF foi lida só no resultado de busca. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+      "pendencia": "Só a manchete do portal do STF, lida no resultado de busca, dá o julgamento por concluído em 29/10; nenhuma outra fonte confirmou até 31/10. A última notícia localizada (dez/2025) registrava 5 a 2 pela validade da revogação na ADI 6.336, suspensa por vista de Fux. Conferir processo, placar e modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {
       "id": "n137",
@@ -1010,13 +1010,13 @@
       "data": "2026-10-15",
       "area": "tributario",
       "orgao": "STF",
-      "titulo": "STF conclui a ADI 4.395: Funrural do produtor pessoa física é inconstitucional até 2017",
+      "titulo": "STF conclui a ADI 4.395: Funrural do empregador rural pessoa física é inconstitucional até 2017",
       "resumo": "O Plenário proclamou o resultado da ADI 4.395, votada em 2022, pelo voto médio de Toffoli, redator: a contribuição do empregador rural pessoa física sobre a receita da comercialização e a sub-rogação no adquirente são inconstitucionais antes de 01/01/2018 e válidas a partir daí (Lei 13.606/2018). A modulação foi reservada para momento oportuno, vencidos Toffoli e Fachin, que a propunham desde logo; boletins de 28/10 dão a ata por publicada em 22/10.",
       "edai": "Adquirente que reteve Funrural por sub-rogação antes de 2018 e produtor que recolheu nesse período têm base de indébito — mas o quinquênio do art. 168 do CTN já consumiu quase tudo: um pedido feito hoje alcança outubro de 2021 em diante, depois do corte. O valor real está em ações já ajuizadas e em autuações pendentes sobre o período antigo, que perdem fundamento. A modulação não foi negada, foi adiada: ainda pode cortar o indébito de quem não tinha ação.",
       "veiculo": "Lacerda Gama",
       "fonte": "https://www.lacerdagama.com.br/post/stf-afasta-cobran%C3%A7a-do-funrural-de-produtores-rurais-pessoas-f%C3%ADsicas-antes-de-2018",
       "verificacao": "a_confirmar",
-      "pendencia": "Conferir no STF a ata (dada por publicada em 22/10/2026 por boletins de escritório), o placar e o texto proclamado; fontes divergem na descrição (inconstitucionalidade formal do empregador rural pessoa física, segundo a APET) e confirmam que a modulação ficou reservada para momento oportuno. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+      "pendencia": "Conferir no STF a ata (dada por publicada em 22/10/2026 por boletins de escritório), o placar e o texto proclamado; boletins de 28 e 30/10 distinguem: a contribuição do produtor rural pessoa física (segurado especial) foi mantida, e a do empregador rural pessoa física teve inconstitucionalidade formal reconhecida e confirmam que a modulação ficou reservada para momento oportuno. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {
       "id": "n130",
