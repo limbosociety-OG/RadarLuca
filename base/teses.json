@@ -1,6 +1,6 @@
 {
-  "versao": "2026-11-01T10:13Z",
-  "corte": "2026-11-01",
+  "versao": "2026-11-02T10:17Z",
+  "corte": "2026-11-02",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -684,6 +684,13 @@
     }
   ],
   "boletins": [
+    {
+      "id": "b7",
+      "data": "30 out 2026",
+      "titulo": "Semana de 26 a 30/10",
+      "corpo": "Semana sem tese nova, com ajustes de alcance. Funrural: modulação reservada para momento oportuno, não negada; a inconstitucionalidade atinge o empregador rural pessoa física até 2017. A 1ª Turma do STJ manteve o ICMS no PIS/Cofins por volume (AREsp 2.683.537). No Tema 118, o STF não conheceu do pedido de compensação; a modulação segue aberta. O Tema 1.348 alcança cerca de 6 mil ações, segundo a Juit. Resultado sobre a isenção do servidor incapacitado ainda sem confirmação. Fechou em 30/10 a opção do Simples pelo regime regular e a transação da RFB; cancelamento das opções do Simples de 03/11 a 20/12. Para estudar: até onde vai o Tema 69.",
+      "fonte": "https://www.andrademaia.com.br/en/conteudos/atualizacao-de-julgamentos-stf-stj-e-carf-outubro-de-2026"
+    },
     {
       "id": "b6",
       "data": "23 out 2026",
