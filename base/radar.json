@@ -56,6 +56,19 @@
   },
   "itens": [
     {
+      "id": "n140",
+      "data": "2026-11-03",
+      "area": "tributario",
+      "orgao": "STJ",
+      "titulo": "Informativo 908 reafirma o Tema 122: promitente comprador e proprietário registral respondem pelo IPTU",
+      "resumo": "O Informativo de Jurisprudência do STJ n. 908, de 03/11/2026, traz o REsp 2.294.977-SC, julgado pela Segunda Turma em 20/10/2026: na execução fiscal de IPTU, o promitente comprador e o proprietário com registro podem ser cobrados, cabendo à lei municipal eleger o sujeito passivo, na linha do Tema 122.",
+      "edai": "Para quem vendeu imóvel por compromisso sem levar a escritura a registro, o IPTU posterior à venda continua sendo cobrável dele: o contrato particular não opõe a responsabilidade ao município. A defesa fica na ação de regresso contra o comprador, não na execução fiscal.",
+      "veiculo": "STJ (Informativo de Jurisprudência)",
+      "fonte": "https://scon.stj.jus.br/jurisprudencia/externo/informativo/?acao=pesquisar",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no Informativo 908 o texto do julgado e o relator do REsp 2.294.977-SC; o conteúdo foi lido só no resultado de busca. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
       "id": "n139",
       "data": "2026-10-13",
       "area": "tributario",
