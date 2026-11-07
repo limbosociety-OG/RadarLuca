@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-11-06 · **versão:** 2026-11-06T10:13Z
+**Corte:** 2026-11-07 · **versão:** 2026-11-07T10:13Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -155,7 +155,7 @@ O bloco mais importante para os próximos cinco anos. Ainda produz pouca jurispr
 
 > ⚠️ **Tema 1.304** — a confirmar: Confirmar a redação da tese fixada nos repetitivos do STJ. (última checagem: 2026-08-19)
 
-> ⚠️ **Tema 1.348** — a confirmar: O Informativo STF 1235 (04/11/2026), lido só em extrações de busca, registra julgamento virtual encerrado em 19/10/2026 com a tese de que a imunidade do ITBI na integralização é incondicionada, ressalvada simulação ou fraude à lei — o que corrobora o Tema 1.348. As extrações divergem sobre o processo: uma atribui a tese às ADIs 7.115 e 7.635/MA, outra à ADI 6.251/SP (e as ADIs do Maranhão a alíquotas de ICMS); conferir no PDF do Informativo. Falta conferir na ata do RE 1.495.108 o placar (9 a 2 ou 8 a 2) e se houve modulação; acompanhar embargos dos municípios. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-11-06)
+> ⚠️ **Tema 1.348** — a confirmar: O Informativo STF 1235 (04/11/2026), lido só em extrações de busca, registra julgamento virtual encerrado em 19/10/2026 (ADI 6.251/SP, rel. André Mendonça, segundo a extração mais consistente) com a tese de que a imunidade do ITBI na integralização é incondicionada, ressalvada simulação ou fraude à lei — o que corrobora o Tema 1.348. As ADIs 7.115 e 7.635/MA, do mesmo Informativo, tratam de ICMS sobre energia e comunicação, não de ITBI. Falta conferir na ata do RE 1.495.108 o placar (9 a 2 ou 8 a 2) e se houve modulação; acompanhar embargos dos municípios. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-11-07)
 
 > ⚠️ **Tema 1.244** — a confirmar: Estava na pauta de 14/10/2026 da Primeira Seção, mas nenhuma fonte noticiou resultado nem adiamento. Conferir no STJ. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-20)
 
