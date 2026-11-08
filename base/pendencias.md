@@ -28,6 +28,8 @@ peça, o que fecha a porta por onde esse erro entrou.
 
 ## Aberto
 
+- **Voto de qualidade no CARF (ADIs 6.399, 6.403 e 6.415), fora do acervo.** O STF pautou o julgamento para 26/08/2026; até 08/11 nenhuma fonte noticiou o desfecho. Placar parcial divergente entre fontes (5 a 1 ou 6 a 1 pela constitucionalidade do desempate pró-contribuinte do art. 19-E da Lei 10.522), com várias suspensões por vista. A Lei 14.689/2023 restabeleceu o voto de qualidade, o que pode ter esvaziado parte do objeto. Entra em `teses.json` quando houver fonte com data sobre o resultado.
+
 - **Tema 1.455 (IPTU por área) — modulação em embargos, 09/10/2026.** Fonte secundária
   informa que o STF acolheu embargos só para modular: efeitos a partir de 12/08/2026,
   pagamentos anteriores preservados. **A peça publicada em `pecas/2026-08-05-iptu-tema-1455/`
