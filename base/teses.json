@@ -1,6 +1,6 @@
 {
-  "versao": "2026-11-08T10:13Z",
-  "corte": "2026-11-08",
+  "versao": "2026-11-09T10:14Z",
+  "corte": "2026-11-09",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -154,15 +154,15 @@
       "tema": "Tema 1.412",
       "processo": "",
       "titulo": "Bonificações e descontos comerciais na base do PIS/Cofins",
-      "resumo": "Repetitivo afetado em 2026, com suspensão nacional ativa. Alcança varejo, atacado, indústria e distribuição, setores que negociam preço por bonificação de forma estrutural. Julgamento adiado.",
+      "resumo": "Repetitivo afetado em 2026, com suspensão nacional dos processos. Discute se bonificações em mercadorias e descontos comerciais condicionados concedidos por fornecedores integram a base do PIS e da Cofins não cumulativos. Divergência entre Turmas: a 1ª tem decidido a favor do contribuinte, a 2ª contra. Pautado para 20/08 e adiado em 14/09; fonte única dá nova pauta na 1ª Seção em 11/11/2026, rel. Afrânio Vilela.",
       "status": "afetado",
       "placar": null,
       "placarNota": "",
-      "edai": "",
-      "fonte": "@agenda",
+      "edai": "Varejo, atacado e distribuição negociam preço por bonificação de forma estrutural: se a tese sair pró-contribuinte, o PIS/Cofins recolhido sobre bonificações nos últimos cinco anos vira indébito; se sair pró-Fazenda, quem excluiu sem ação tem exposição. Em qualquer caso, a discussão perde objeto para fatos a partir de 2027, com a CBS.",
+      "fonte": "https://rotadajurisprudencia.com.br/?p=80650",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-08-19",
-      "pendencia": "Adiado. Confirmar nova data de julgamento e se a suspensão nacional segue ativa."
+      "verificado_em": "2026-11-09",
+      "pendencia": "Confirmar na pauta da 1ª Seção do STJ o julgamento em 11/11/2026 (fonte única) e se a suspensão nacional segue ativa. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {
       "id": "t6",
@@ -684,6 +684,13 @@
     }
   ],
   "boletins": [
+    {
+      "id": "b8",
+      "data": "06 nov 2026",
+      "titulo": "Semana de 02 a 06/11",
+      "corpo": "Semana de informativos. O STF 1235 registra a tese do ITBI na integralização (imunidade incondicionada, ressalvada simulação ou fraude) e derruba a alíquota de 27% de ICMS do Maranhão sobre energia e comunicação, com a modulação do Tema 745 (efeitos a partir de 2024, ressalvadas ações até 05/02/2021). O STJ 908 reafirma que o proprietário registral responde pelo IPTU mesmo havendo compromissário comprador (REsp 2.294.977). Próxima semana: Tema 1.412 (bonificações no PIS/Cofins) pautado na 1ª Seção em 11/11, segundo fonte única. Voto de qualidade no CARF segue sem desfecho noticiado. Para estudar: a modulação do Tema 745 replicada estado por estado.",
+      "fonte": "https://www.stf.jus.br/arquivo/cms/informativoSTF/anexo/Informativo_PDF/Informativo_stf_1235.pdf"
+    },
     {
       "id": "b7",
       "data": "30 out 2026",

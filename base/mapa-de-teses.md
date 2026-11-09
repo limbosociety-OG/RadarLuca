@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-11-08 · **versão:** 2026-11-08T10:13Z
+**Corte:** 2026-11-09 · **versão:** 2026-11-09T10:14Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -22,7 +22,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 | 🟢⚠️ | STF · **Tema 843** (RE 835.818) | Créditos presumidos de ICMS na base do PIS/Cofins | Tese fixada em 07/10/2026: é incompatível com a Constituição a inclusão, na base de cálculo da Cofins e da contribuição ao PIS, de créditos presumidos do ICMS. Fundamento: o crédito presumido reduz custo tributário, não é receita nova. Impacto estimado de R$ 16,5 bi. |
 | 🟡⚠️ | STF · **Imposto por dentro** | Exclusão do PIS/Cofins de suas próprias bases | Repercussão geral reconhecida desde 2019, sem previsão de pauta. Impacto estimado de R$ 65,7 bi. |
 | 🟢⚠️ | STJ · **Tema 1.372** | ICMS-DIFAL na base do PIS/Cofins | Repetitivo julgado em 20/08/2026, unânime, rel. Gurgel de Faria (REsp 2.174.178/SC, 2.181.166/SP e 2.191.532/ES): o ICMS-Difal não integra a base do PIS e da Cofins, pela mesma lógica do Tema 69. |
-| ⚪⚠️ | STJ · **Tema 1.412** | Bonificações e descontos comerciais na base do PIS/Cofins | Repetitivo afetado em 2026, com suspensão nacional ativa. Alcança varejo, atacado, indústria e distribuição, setores que negociam preço por bonificação de forma estrutural. Julgamento adiado. |
+| ⚪⚠️ | STJ · **Tema 1.412** | Bonificações e descontos comerciais na base do PIS/Cofins | Repetitivo afetado em 2026, com suspensão nacional dos processos. Discute se bonificações em mercadorias e descontos comerciais condicionados concedidos por fornecedores integram a base do PIS e da Cofins não cumulativos. Divergência entre Turmas: a 1ª tem decidido a favor do contribuinte, a 2ª contra. Pautado para 20/08 e adiado em 14/09; fonte única dá nova pauta na 1ª Seção em 11/11/2026, rel. Afrânio Vilela. |
 | 🔴⚠️ | STF · **ADC 98** | Tese ampla da União: todos os tributos integrariam a base do PIS/Cofins | Movimento estratégico da AGU capaz de esvaziar o Tema 118 e as demais filhotes de uma só vez, independentemente do placar no RE. |
 | 🟢⚠️ | STJ · **Tema 1.276** (REsp 2.123.904/SP) | CPRB permanece na base do PIS/Cofins | A 1ª Seção fixou em 09/09/2026, por unanimidade e sob o rito dos repetitivos, que a contribuição previdenciária sobre a receita bruta integra a base de cálculo do PIS e da Cofins. A tentativa de estender a lógica do Tema 69 foi rejeitada. |
 
@@ -31,6 +31,8 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 **Tema 843 — e daí?** Empresa com crédito presumido de ICMS tem tese vinculante para excluí-lo da base do PIS/Cofins até a CBS substituir as duas contribuições em 2027, e repetição de indébito dos cinco anos anteriores ao pedido. A pergunta que decide o valor é a modulação, que nenhuma fonte noticiou: sem ela, quem não tem ação recupera o quinquênio; com ela, a ressalva costuma proteger só ação ajuizada até o julgamento, e a União pode pedir isso em embargos. Repercute no Tema 1.416 do STJ (IRPJ e CSLL).
 
 **Tema 1.372 — e daí?** O corte em 15/03/2017 é praticamente inerte para quem ajuíza hoje: o quinquênio do art. 168 do CTN já alcança só fatos de 2021 em diante, todos posteriores ao corte. Na prática, a tese vale cheia para quem pede agora, até a CBS substituir PIS e Cofins em 2027; a modulação só restringe quem queria o período anterior a 2017.
+
+**Tema 1.412 — e daí?** Varejo, atacado e distribuição negociam preço por bonificação de forma estrutural: se a tese sair pró-contribuinte, o PIS/Cofins recolhido sobre bonificações nos últimos cinco anos vira indébito; se sair pró-Fazenda, quem excluiu sem ação tem exposição. Em qualquer caso, a discussão perde objeto para fatos a partir de 2027, com a CBS.
 
 **ADC 98 — e daí?** É o maior risco sistêmico do bloco. Acompanhar semanalmente.
 
@@ -44,7 +46,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 
 > ⚠️ **Tema 1.372** — a confirmar: Notícia do STJ de 01/10/2026 confirma tese e modulação; conferir o acórdão publicado e eventuais embargos. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-20)
 
-> ⚠️ **Tema 1.412** — a confirmar: Adiado. Confirmar nova data de julgamento e se a suspensão nacional segue ativa. (última checagem: 2026-08-19)
+> ⚠️ **Tema 1.412** — a confirmar: Confirmar na pauta da 1ª Seção do STJ o julgamento em 11/11/2026 (fonte única) e se a suspensão nacional segue ativa. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-11-09)
 
 > ⚠️ **ADC 98** — a confirmar: Fonte é blog de banca. Conferir a petição inicial e o andamento no portal do STF. (última checagem: 2026-08-19)
 
