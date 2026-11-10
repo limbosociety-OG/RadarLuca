@@ -1,6 +1,6 @@
 {
-  "versao": "2026-11-09T10:14Z",
-  "corte": "2026-11-09",
+  "versao": "2026-11-10T10:13Z",
+  "corte": "2026-11-10",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -152,17 +152,17 @@
       "bloco": "pis-cofins",
       "tribunal": "STJ",
       "tema": "Tema 1.412",
-      "processo": "",
+      "processo": "REsps 2.221.794/PR, 2.221.800 e 2.223.143",
       "titulo": "Bonificações e descontos comerciais na base do PIS/Cofins",
-      "resumo": "Repetitivo afetado em 2026, com suspensão nacional dos processos. Discute se bonificações em mercadorias e descontos comerciais condicionados concedidos por fornecedores integram a base do PIS e da Cofins não cumulativos. Divergência entre Turmas: a 1ª tem decidido a favor do contribuinte, a 2ª contra. Pautado para 20/08 e adiado em 14/09; fonte única dá nova pauta na 1ª Seção em 11/11/2026, rel. Afrânio Vilela.",
-      "status": "afetado",
+      "resumo": "Repetitivo afetado em 2026, com suspensão nacional dos processos. Discute se bonificações em mercadorias e descontos comerciais condicionados concedidos por fornecedores integram a base do PIS e da Cofins não cumulativos. Divergência entre Turmas: a 1ª tem decidido a favor do contribuinte, a 2ª contra. Pautado para 20/08 e adiado em 14/09; duas fontes de escritório (uma de 28/10) dão nova pauta na 1ª Seção em 11/11/2026, rel. Afrânio Vilela. O MPF opinou a favor do contribuinte.",
+      "status": "iminente",
       "placar": null,
       "placarNota": "",
       "edai": "Varejo, atacado e distribuição negociam preço por bonificação de forma estrutural: se a tese sair pró-contribuinte, o PIS/Cofins recolhido sobre bonificações nos últimos cinco anos vira indébito; se sair pró-Fazenda, quem excluiu sem ação tem exposição. Em qualquer caso, a discussão perde objeto para fatos a partir de 2027, com a CBS.",
-      "fonte": "https://rotadajurisprudencia.com.br/?p=80650",
+      "fonte": "https://pinheiroguimaraes.com.br/publicacoes/stj-definira-sobre-a-incidencia-de-pis-cofins-sobre-descontos-e-bonificacoes/",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-11-09",
-      "pendencia": "Confirmar na pauta da 1ª Seção do STJ o julgamento em 11/11/2026 (fonte única) e se a suspensão nacional segue ativa. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+      "verificado_em": "2026-11-10",
+      "pendencia": "Confirmar na pauta oficial da 1ª Seção o julgamento em 11/11/2026 (duas fontes privadas) e se a suspensão nacional segue ativa; acompanhar resultado e eventual modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {
       "id": "t6",
