@@ -56,6 +56,20 @@
   },
   "itens": [
     {
+      "id": "n143",
+      "data": "2026-11-11",
+      "area": "tributario",
+      "orgao": "STJ",
+      "titulo": "STJ tira descontos e bonificações do fornecedor da base do PIS e da Cofins do varejista (Tema 1.412)",
+      "resumo": "Por unanimidade, a 1ª Seção fixou que descontos e bonificações concedidos por fornecedores, vinculados às operações de compra e venda e mesmo quando condicionados a contrapartidas comerciais, reduzem o custo de aquisição e não são receita tributável do adquirente no regime não cumulativo. Ficam ressalvadas as bonificações em dinheiro que representem ingresso patrimonial novo, positivo e definitivo.",
+      "edai": "Indébito de cinco anos para quem recolheu PIS/Cofins sobre bonificações e descontos recebidos, até a CBS em 2027. Modulação não noticiada, o que não confirma ausência. O próximo contencioso é a qualificação da bonificação em dinheiro, que a Seção deixou fora da tese.",
+      "veiculo": "Migalhas",
+      "fonte": "https://www.migalhas.com.br/quentes/468414/stj-exclui-descontos-e-bonificacoes-da-base-do-pis-e-da-cofins",
+      "tese": "t5",
+      "verificacao": "a_confirmar",
+      "pendencia": "Conferir no STJ o texto da tese e se houve modulação. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
       "id": "n142",
       "data": "2026-11-10",
       "area": "tributario",
