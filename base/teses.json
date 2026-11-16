@@ -1,6 +1,6 @@
 {
-  "versao": "2026-11-15T10:13Z",
-  "corte": "2026-11-15",
+  "versao": "2026-11-16T10:14Z",
+  "corte": "2026-11-16",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -684,6 +684,13 @@
     }
   ],
   "boletins": [
+    {
+      "id": "b9",
+      "data": "13 nov 2026",
+      "titulo": "Semana de 09 a 13/11",
+      "corpo": "Semana de uma tese grande. O STJ fixou o Tema 1.412 por unanimidade: descontos e bonificações do fornecedor, vinculados à compra e mesmo condicionados, reduzem o custo de aquisição e não entram na base do PIS/Cofins não cumulativos do varejista; ressalvadas as bonificações em dinheiro que sejam ingresso novo. Indébito de cinco anos até a CBS, modulação não noticiada. A 1ª Seção começou a discutir os limites da rescisória contra coisa julgada tributária de trato continuado (vista de Bellizze). O STJ levou ao STF a tese do litigante único para o contencioso de IBS e CBS. Para estudar: receita versus redução de custo depois do Tema 1.412.",
+      "fonte": "https://www.migalhas.com.br/quentes/468414/stj-exclui-descontos-e-bonificacoes-da-base-do-pis-e-da-cofins"
+    },
     {
       "id": "b8",
       "data": "06 nov 2026",
