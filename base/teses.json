@@ -1,6 +1,6 @@
 {
-  "versao": "2026-11-18T10:13Z",
-  "corte": "2026-11-18",
+  "versao": "2026-11-19T10:13Z",
+  "corte": "2026-11-19",
   "nota_de_geracao": "Fonte única de verdade do acervo. base/mapa-de-teses.md e a semente do portal são GERADOS deste arquivo por scripts/gerar.py. Não editar aqueles dois à mão, a edição é perdida na próxima geração.",
   "preambulo": "Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.",
   "blocos": [
@@ -161,8 +161,8 @@
       "edai": "Varejo, atacado e distribuição têm tese vinculante para excluir da base o desconto e a bonificação em mercadoria recebidos do fornecedor: o recolhido nos últimos cinco anos sobre essas parcelas é indébito, e a exclusão vale até a CBS substituir o PIS e a Cofins em 2027. A ressalva da bonificação em dinheiro abre o contencioso seguinte — a prova de que o valor é redutor de custo, e não receita nova. Nenhuma fonte noticiou modulação, o que não confirma que ela não houve.",
       "fonte": "https://www.migalhas.com.br/quentes/468414/stj-exclui-descontos-e-bonificacoes-da-base-do-pis-e-da-cofins",
       "verificacao": "a_confirmar",
-      "verificado_em": "2026-11-12",
-      "pendencia": "Conferir no STJ o texto literal da tese, o acórdão e se houve modulação; a suspensão nacional cai com a publicação do acórdão. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+      "verificado_em": "2026-11-19",
+      "pendencia": "O Informativo STJ 910 (17/11/2026), lido só no resultado de busca, publica a tese: descontos e bonificações concedidos pelo fornecedor ao varejista, vinculados à operação de compra e venda, não compõem a base do PIS e da Cofins do adquirente, com ressalvas. Falta conferir o texto integral das ressalvas e se houve modulação; a suspensão nacional cai com a publicação do acórdão. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
     },
     {
       "id": "t6",

@@ -2,7 +2,7 @@
 
 # Mapa de Teses
 
-**Corte:** 2026-11-18 · **versão:** 2026-11-18T10:13Z
+**Corte:** 2026-11-19 · **versão:** 2026-11-19T10:13Z
 
 Status processual muda toda semana. Este mapa orienta o que acompanhar, não substitui consulta ao andamento. Item marcado `a confirmar` é candidato a pendência, não é fato: não entra em peça, boletim ou parecer sem fonte primária com data.
 
@@ -46,7 +46,7 @@ O núcleo duro do contencioso da última década, e que precisa ser resolvido an
 
 > ⚠️ **Tema 1.372** — a confirmar: Notícia do STJ de 01/10/2026 confirma tese e modulação; conferir o acórdão publicado e eventuais embargos. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-10-20)
 
-> ⚠️ **Tema 1.412** — a confirmar: Conferir no STJ o texto literal da tese, o acórdão e se houve modulação; a suspensão nacional cai com a publicação do acórdão. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-11-12)
+> ⚠️ **Tema 1.412** — a confirmar: O Informativo STJ 910 (17/11/2026), lido só no resultado de busca, publica a tese: descontos e bonificações concedidos pelo fornecedor ao varejista, vinculados à operação de compra e venda, não compõem a base do PIS e da Cofins do adquirente, com ressalvas. Falta conferir o texto integral das ressalvas e se houve modulação; a suspensão nacional cai com a publicação do acórdão. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária. (última checagem: 2026-11-19)
 
 > ⚠️ **ADC 98** — a confirmar: Fonte é blog de banca. Conferir a petição inicial e o andamento no portal do STF. (última checagem: 2026-08-19)
 
