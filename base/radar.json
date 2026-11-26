@@ -56,6 +56,32 @@
   },
   "itens": [
     {
+      "id": "n148",
+      "data": "2026-11-04",
+      "area": "tributario",
+      "orgao": "STF",
+      "titulo": "ADI 8.043 questiona IBS/CBS diferenciados para refino de combustíveis na Zona Franca",
+      "resumo": "A ABICOM ajuizou em 04/11/2026 ação contra o tratamento favorecido de IBS e CBS à indústria de refino de petróleo instalada na Zona Franca de Manaus e pediu julgamento conjunto com as ações correlatas.",
+      "edai": "É o primeiro ataque concentrado ao regime da Zona Franca na LC 214/2025: quem estruturou operação contando com o benefício passa a ter risco de controle abstrato, cuja eficácia depende de modulação ainda inexistente. Sem liminar, o benefício segue aplicável.",
+      "veiculo": "APET",
+      "fonte": "https://apet.org.br/noticia/stf-recebe-acao-que-contesta-tratamento-diferenciado-de-ibs-e-cbs-para-combustiveis-na-zona-franca-de-manaus/",
+      "verificacao": "a_confirmar",
+      "pendencia": "Confirmar número, relator, dispositivos impugnados da LC 214/2025 e pedido cautelar no portal do STF. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
+      "id": "n147",
+      "data": "2026-11-03",
+      "area": "tributario",
+      "orgao": "TJSP",
+      "titulo": "Liminar em SP tira IBS e CBS da base do ISS a partir de 2027",
+      "resumo": "A 9ª Vara da Fazenda Pública de São Paulo concedeu liminar em 03/11/2026 para excluir IBS e CBS da base de cálculo do ISS, com efeitos a partir de 2027, apoiada no Tema 118 do STF.",
+      "edai": "Decisão isolada de primeiro grau, não precedente: sinaliza que a tese do 'tributo sobre tributo' na transição já chega ao Judiciário antes do primeiro fato gerador relevante. O ajuizamento preventivo contra o município, antes de 2027, é a via que a liminar ilustra; a base no Tema 118 depende do acórdão e da modulação dele, ainda não publicados.",
+      "veiculo": "Felsberg Advogados",
+      "fonte": "https://www.felsberg.com.br/liminar-ibs-cbs-base-calculo-iss-sao-paulo/",
+      "verificacao": "a_confirmar",
+      "pendencia": "Confirmar número do processo, teor da liminar e se o município recorreu. Leitura direta da fonte primária bloqueada na varredura; o dado veio de fonte secundária."
+    },
+    {
       "id": "n146",
       "data": "2026-11-23",
       "area": "tributario",
